@@ -1,0 +1,17 @@
+{
+  "id": "coze_knowledge/txt/0/lottie-动画",
+  "source": "coze_knowledge",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\coze_knowledge\\txt\\0\\lottie-动画.txt",
+  "questions": [
+    "如何在Coze应用中添加Lottie动画组件？",
+    "Lottie动画组件支持哪些事件类型？",
+    "如何实现Lottie动画在特定条件下自动隐藏？",
+    "Lottie动画组件支持哪些组件方法？",
+    "如何自定义Lottie动画并上传JSON文件？"
+  ],
+  "answer": "Lottie 动画\nLottie 动画是一款轻量级、高性能的动画解决方案。扣子应用支持添加 Lottie 动画组件用于播放 Lottie 动画，增强应用的视觉效果和交互体验。\n属性设置\nLottie 动画组件提供了丰富的属性配置选项，以下是一些关键属性配置说明。关于组件尺寸、位置、样式、指针、变换等通用属性的设置方法，请参考\\n设置组件属性和事件。\n内置丰富的动画库\nLottie 动画组件内置了丰富的动画资源库，你可以直接挑选并应用合适的动画效果。\n自定义 Lottie 动画\n支持从本地上传 Lottie  JSON 文件并自动解析为 Lottie 动画。\n循环播放\n打开循环播放后，Lottie 动画会在界面加载时循环播放。\n自动播放\n打开自动播放后，Lottie 动画会在界面加载时自动播放。\n隐藏组件\n控制 Lottie 动画组件隐藏或显示的参数，支持在特定条件下隐藏 Lottie 动画组件。\n设置为 false：显示组件。\n设置为 true：隐藏组件。\n设置为变量：通过变量值（true 或 false）动态控制图片组件的可见性。\n例如在文本生成页面，添加了 Lottie 动画组件（Lottie1）和 Markdown 组件（Markdown1），Lottie 动画组件用于展示应用正处于文本生成状态中，Markdown 组件用于展示生成的文本内容。为了实现当 Markdown 组件开始输出内容时，自动隐藏 Lottie 动画组件的效果，你可以在 Lottie 动画组件的可见性属性中，添加变量{{ Markdown1.content }}。当文本组件中开始输出文本内容时，{{ Markdown1.content }} 值变为 true，Lottie 动画组件将自动隐藏。\n生成文本后，Lottie 动画组件被隐藏。\n事件设置\n通过配置 Lottie 动画组件的事件，可以为 Lottie 动画组件添加丰富的交互功能，以增强用户体验和界面的互动性。\n事件项\\n\n\t\n说明\\n\n\n\n事件类型\\n\n\t\n支持以下事件类型：\\n\n点击时：当用户点击 Lottie 动画组件时触发。\\n\n加载时：当 Lottie 动画组件完成加载时触发。\\n\n播放完成时：当 Lottie 动画播放完成时触发。\\n\n\n\n组件方法\\n\n\t\n支持以下方法：\\n\n播放：播放 Lottie 动画。\\n\n停止：停止 Lottie 动画。\\n\n暂停：暂停 Lottie 动画。\\n\n设置隐藏：隐藏 Lottie 动画。\n事件项\n说明\n事件类型\n支持以下事件类型：\n点击时：当用户点击 Lottie 动画组件时触发。\n加载时：当 Lottie 动画组件完成加载时触发。\n播放完成时：当 Lottie 动画播放完成时触发。\n组件方法\n支持以下方法：\n播放：播放 Lottie 动画。\n停止：停止 Lottie 动画。\n暂停：暂停 Lottie 动画。\n设置隐藏：隐藏 Lottie 动画。\n配置示例\n城市天气画报模板为扣子官方模板，本案例基于城市天气画报模板，添加了 Lottie 动画，提升应用的交互体验。当使用者输入城市名，单击确认后，应用立即开始生成城市画报并自动播放 Lottie 动画，清晰地表达应用正在生成天气画报的状态中，使得界面交互更加生动友好。当应用生成天气画报后，Lottie 动画消失同时界面上展示城市天气画报。\n具体效果图如下：\n输入城市名称\\n\n\\n\n\\n\n\\n\n\\n\n\\n\n\\n\n开始生成图片时循环播放动画\\n\n\\n\n\\n\n\\n\n\\n\n\\n\n\\n\n生成图片后隐藏动画\\n\n\\n\n\\n\n\\n\n\n输入城市名称\n开始生成图片时循环播放动画\n生成图片后隐藏动画",
+  "metadata": {
+    "title": "lottie-动画",
+    "category": "0"
+  }
+}

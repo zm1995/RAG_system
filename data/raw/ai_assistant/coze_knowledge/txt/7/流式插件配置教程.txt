@@ -1,0 +1,541 @@
+流式插件配置教程
+扣子支持流式插件，智能体或工作流在单次调用插件时，可以输出多条消息，每条消息能够以类似打字机的效果逐条动态显示，实现流式输出效果。
+流式插件概述
+流式插件适用于需要实时处理和展示连续消息流的场景，它能够提供动态的消息输出，增强用户体验，例如聊天机器人和实时通知场景。
+说明
+绑定了流式插件的智能体和应用不支持以卡片的形式输出消息，即便是流式插件绑定了卡片，也不会产生任何效果。\n
+在智能体中使用流式插件，流式输出的内容不会经过大模型处理，对于非流式输出的最后一条消息内容，可以选择是否需要大模型处理，而在工作流中使用流式插件，流式输出的内容都不会经过大模型节点处理。\n
+仅基于已有服务创建插件时，支持配置流式插件，而在 IDE 中创建插件和创建端插件都不支持配置流式插件。
+绑定了流式插件的智能体和应用不支持以卡片的形式输出消息，即便是流式插件绑定了卡片，也不会产生任何效果。
+在智能体中使用流式插件，流式输出的内容不会经过大模型处理，对于非流式输出的最后一条消息内容，可以选择是否需要大模型处理，而在工作流中使用流式插件，流式输出的内容都不会经过大模型节点处理。
+仅基于已有服务创建插件时，支持配置流式插件，而在 IDE 中创建插件和创建端插件都不支持配置流式插件。
+协议实现
+配置流式插件，你的业务接口需要实现 Server-Sent Events (SSE) 传输协议，并遵守扣子插件所定义的数据协议规范。
+字段\n
+	
+类型\n
+	
+是否必选\n
+	
+生效维度\n
+	
+字段说明\n
+
+
+id\n
+\n
+	
+string\n
+\n
+	
+必选\n
+\n
+	
+数据包维度\n
+	
+事件 id。\n
+事件的唯一标识符，用于跟踪流式传输中的事件。浏览器会自动记录最后一个接收到的事件 ID，并在发生断开连接时，将此 ID 放入 HTTP 头部的Last-Event-Id字段中，以便重新连接时使用，实现基本的同步机制。通常，每个事件包都被赋予一个用户自定义的唯一标识符，例如 UUID。\n
+
+
+event\n
+	
+string\n
+	
+必选\n
+	
+数据包维度\n
+	
+事件名。\n
+
+
+data\n
+	
+[]byte\n
+	
+必选\n
+	
+数据包维度\n
+	
+消息数据，将 JSON 数据序列化为字节切片（[]byte），在编辑器中显示为 Base64 编码的字符串。\n
+\n
+\n
+
+
+data.stream_id\n
+\n
+	
+string\n
+	
+必选\n
+	
+消息维度\n
+	
+消息 id。\n
+在流式调用过程中，相同的StreamId表示连续的消息片段，属于同一条消息，而不同的StreamId则表示不同的消息。\n
+
+
+data.output_mode\n
+	
+Integer\n
+	
+可选\n
+	
+消息维度\n
+	
+当前 message 的输出模式：\n
+0：一次性完整输出消息\n
+1：分多次输出消息\n
+默认值为 0。\n
+
+
+data.return_type\n
+\n
+	
+Integer\n
+	
+可选\n
+\n
+	
+消息维度\n
+	
+最后一条 message 输出目标：\n
+0：输出到模型，模型总结后返回给用户\n
+1：直接输出给用户\n
+默认值为 0，当output_mode设置为 1 时，该值将被强制更改为 1。\n
+
+
+data.content_type\n
+	
+Integer\n
+	
+可选\n
+	
+数据包维度\n
+	
+本次数据包输出内容的类型，仅可传 0 表示文本，默认值为 0。\n
+
+
+data.context_mode\n
+	
+Integer\n
+	
+可选\n
+	
+消息维度\n
+	
+下次对话时，是否将这条消息加入聊天上下文：\n
+0：加入上下文\n
+1：不加入上下文\n
+默认值为 0。\n
+
+
+data.content\n
+	
+string\n
+	
+可选\n
+	
+数据包维度\n
+	
+业务接口返回内容 ，默认值为 nil。\n
+
+
+data.is_finish\n
+\n
+	
+bool\n
+\n
+	
+必选\n
+\n
+	
+流维度\n
+	
+整个流是否结束。\n
+只需在最后一个业务数据包中设置is_finish标志，无需发送额外的空数据包。\n
+
+
+data.is_last_msg\n
+	
+bool\n
+	
+必选\n
+	
+消息维度\n
+	
+是否为最后一条消息。\n
+
+
+data.is_last_packet_in_msg\n
+	
+bool\n
+	
+必选\n
+	
+数据包维度\n
+	
+是否为当前 message 的最后一个包。\n
+
+
+data.ext\n
+	
+map[string]string\n
+	
+可选\n
+	
+数据包维度\n
+	
+扩展字段，默认值为 nil。
+字段
+类型
+是否必选
+生效维度
+字段说明
+id
+string
+必选
+数据包维度
+事件 id。
+事件的唯一标识符，用于跟踪流式传输中的事件。浏览器会自动记录最后一个接收到的事件 ID，并在发生断开连接时，将此 ID 放入 HTTP 头部的Last-Event-Id字段中，以便重新连接时使用，实现基本的同步机制。通常，每个事件包都被赋予一个用户自定义的唯一标识符，例如 UUID。
+event
+string
+必选
+数据包维度
+事件名。
+data
+[]byte
+必选
+数据包维度
+消息数据，将 JSON 数据序列化为字节切片（[]byte），在编辑器中显示为 Base64 编码的字符串。
+data.stream_id
+string
+必选
+消息维度
+消息 id。
+在流式调用过程中，相同的StreamId表示连续的消息片段，属于同一条消息，而不同的StreamId则表示不同的消息。
+data.output_mode
+Integer
+可选
+消息维度
+当前 message 的输出模式：
+0：一次性完整输出消息
+1：分多次输出消息
+默认值为 0。
+data.return_type
+Integer
+可选
+消息维度
+最后一条 message 输出目标：
+0：输出到模型，模型总结后返回给用户
+1：直接输出给用户
+默认值为 0，当output_mode设置为 1 时，该值将被强制更改为 1。
+data.content_type
+Integer
+可选
+数据包维度
+本次数据包输出内容的类型，仅可传 0 表示文本，默认值为 0。
+data.context_mode
+Integer
+可选
+消息维度
+下次对话时，是否将这条消息加入聊天上下文：
+0：加入上下文
+1：不加入上下文
+默认值为 0。
+data.content
+string
+可选
+数据包维度
+业务接口返回内容 ，默认值为 nil。
+data.is_finish
+bool
+必选
+流维度
+整个流是否结束。
+只需在最后一个业务数据包中设置is_finish标志，无需发送额外的空数据包。
+data.is_last_msg
+bool
+必选
+消息维度
+是否为最后一条消息。
+data.is_last_packet_in_msg
+bool
+必选
+数据包维度
+是否为当前 message 的最后一个包。
+data.ext
+map[string]string
+可选
+数据包维度
+扩展字段，默认值为 nil。
+说明
+每个数据包最大为 250KB。\n
+每个数据包间隔的超时时间为 60s。\n
+data 是 数据对象 经过 JSON 序列化后得到的数据，实际流转时是 []byte 类型。在某些日志输出中，可能会看到这些数据被编码为 Base64 格式，这是正常现象。\n
+生效维度表示字段的作用范围，包括流维度、数据包维度和消息维度。
+每个数据包最大为 250KB。
+每个数据包间隔的超时时间为 60s。
+data 是 数据对象 经过 JSON 序列化后得到的数据，实际流转时是 []byte 类型。在某些日志输出中，可能会看到这些数据被编码为 Base64 格式，这是正常现象。
+生效维度表示字段的作用范围，包括流维度、数据包维度和消息维度。
+以下是一个流请求的数据包标识示例：
+message \n
+	
+数据包维度\n
+
+
+message 1\n
+\n
+	
+数据包 1\n
+is_last_msg=false\n
+is_finish=false\n
+is_last_packet_in_msg=false\n
+	
+数据包 2\n
+is_last_msg=false\n
+is_finish=false\n
+is_last_packet_in_msg=false\n
+	
+...\n
+	
+数据包 End\n
+is_last_msg=false\n
+is_finish=false\n
+is_last_packet_in_msg=true\n
+
+
+message 2\n
+	
+数据包 1\n
+is_last_msg=false\n
+is_finish=false\n
+is_last_packet_in_msg=false\n
+	
+数据包 2\n
+is_last_msg=false\n
+is_finish=false\n
+is_last_packet_in_msg=false\n
+	
+...\n
+	
+数据包 End\n
+is_last_msg=false\n
+is_finish=false\n
+is_last_packet_in_msg=true\n
+
+
+...\n
+	
+...\n
+	
+...\n
+	
+...\n
+	
+...\n
+
+
+message End\n
+	
+数据包 1\n
+is_last_msg=true\n
+is_finish=false\n
+is_last_packet_in_msg=false\n
+	
+数据包 2\n
+is_last_msg=true\n
+is_finish=false\n
+is_last_packet_in_msg=false\n
+	
+...\n
+	
+数据包 End\n
+is_last_msg=true\n
+is_finish=true\n
+is_last_packet_in_msg=true
+message
+数据包维度
+message 1
+数据包 1
+is_last_msg=false
+is_finish=false
+is_last_packet_in_msg=false
+数据包 2
+is_last_msg=false
+is_finish=false
+is_last_packet_in_msg=false
+...
+数据包 End
+is_last_msg=false
+is_finish=false
+is_last_packet_in_msg=true
+message 2
+数据包 1
+is_last_msg=false
+is_finish=false
+is_last_packet_in_msg=false
+数据包 2
+is_last_msg=false
+is_finish=false
+is_last_packet_in_msg=false
+...
+数据包 End
+is_last_msg=false
+is_finish=false
+is_last_packet_in_msg=true
+...
+...
+...
+...
+...
+message End
+数据包 1
+is_last_msg=true
+is_finish=false
+is_last_packet_in_msg=false
+数据包 2
+is_last_msg=true
+is_finish=false
+is_last_packet_in_msg=false
+...
+数据包 End
+is_last_msg=true
+is_finish=true
+is_last_packet_in_msg=true
+以下是一个数据包返回示例：
+{    \n
+    "id" : "xxxxx1",\n
+    "event": "play",\n
+    "data": {\n
+        "is_last_msg":false,\n
+        "is_finish":false,\n
+        "is_last_packet_in_msg":false\n
+        "stream_id":"message1",\n
+        "context_mode": 0,\n
+        "output_mode": 0 ,\n
+        "return_type": 0 ,\n
+        "content_type": 0 ,\n
+        "content": "{插件输出内容}",\n
+        "ext":{\n
+            "example1":"{xxx}",\n
+            "example2":"1",\n
+        }\n
+    }\n
+}
+{
+"id" : "xxxxx1",
+"event": "play",
+"data": {
+"is_last_msg":false,
+"is_finish":false,
+"is_last_packet_in_msg":false
+"stream_id":"message1",
+"context_mode": 0,
+"output_mode": 0 ,
+"return_type": 0 ,
+"content_type": 0 ,
+"content": "{插件输出内容}",
+"ext":{
+"example1":"{xxx}",
+"example2":"1",
+}
+}
+}
+数据 schema 验证
+按照 SSE（Server-Sent Events）的数据包协议进行返回，确保数据格式符合以下示例：
+用 CURL 验证格式：\n
+\n
+\n
+\n
+\n
+\n
+用 Postman 验证格式：\n
+\n
+\n
+\n
+\n
+
+用 CURL 验证格式：
+用 Postman 验证格式：
+配置流式插件
+你已经创建了一个插件，API 接口已经实现 Server-Sent Events (SSE) 传输协议，并且 API 接口遵守扣子插件所定义的数据协议规范，详情请参考\n基于 API 创建一个插件。
+1.
+登录扣子平台。
+2.
+在左侧导航栏中，选择工作空间，并在页面顶部空间列表中选择个人空间或团队空间。
+系统默认创建了一个个人空间，该空间内创建的资源例如智能体、插件、知识库是你的私有资源，其他用户不可见。你也可以创建团队或加入其他团队，团队内的资源可以和其他团队成员共享。更多信息，请参考\n管理团队。
+3.
+在资源库页面，单击目标插件。
+4.
+在插件详情页，单击使用代码编辑工具的图标。
+5.
+在更新插件页面，单击编辑。
+6.
+在 openapi (填写 yaml) 区域，找到需要配置为流式输出的接口，在operationId下添加x-runMode: Streaming。
+代码示例如下：
+info:\n
+    description: stream output demo\n
+    title: Stream Demo\n
+    version: v1\n
+openapi: 3.0.1\n
+paths:\n
+    /your/stream/api:\n
+        post:\n
+            operationId: stream\n
+            x-runMode: Streaming\n
+            requestBody:\n
+                content:\n
+                    application/json:\n
+                        schema:\n
+                            type: object\n
+            responses:\n
+                "200":\n
+                    content:\n
+                        application/json:\n
+                            schema:\n
+                                type: object\n
+                    description: empty response\n
+                default:\n
+                    description: ""\n
+            summary: stream demo\n
+servers:\n
+    - url: https://www.demo.com
+info:
+description: stream output demo
+title: Stream Demo
+version: v1
+openapi: 3.0.1
+paths:
+/your/stream/api:
+post:
+operationId: stream
+x-runMode: Streaming
+requestBody:
+content:
+application/json:
+schema:
+type: object
+responses:
+"200":
+content:
+application/json:
+schema:
+type: object
+description: empty response
+default:
+description: ""
+summary: stream demo
+servers:
+- url: https://www.demo.com
+配置完成后，你可以调试插件。如果插件输出结果符合预期，你就可以发布插件。
+使用流式插件
+你可以在智能体或工作流中使用流式插件，详情可参考\n使用插件。
+注意
+在工作流中使用流式插件，请注意：\n
+即时数据输出：当执行到流式插件节点时，系统会直接输出流式插件返回的数据。只有当所有数据输出完毕后，工作流才会继续执行后续节点。\n
+不支持获取返回值：工作流中的节点暂不支持从流式插件节点获取返回值。\n
+调试限制：在工作流调试过程中，由于流式插件的特性，无法直接展示其输出效果。因此，为了查看流式插件的实际输出，建议在智能体中绑定使用了流式插件的工作流，以便观察和验证流式输出的实际效果。
+在工作流中使用流式插件，请注意：
+即时数据输出：当执行到流式插件节点时，系统会直接输出流式插件返回的数据。只有当所有数据输出完毕后，工作流才会继续执行后续节点。
+不支持获取返回值：工作流中的节点暂不支持从流式插件节点获取返回值。
+调试限制：在工作流调试过程中，由于流式插件的特性，无法直接展示其输出效果。因此，为了查看流式插件的实际输出，建议在智能体中绑定使用了流式插件的工作流，以便观察和验证流式输出的实际效果。

@@ -1,0 +1,67 @@
+插件常见问题
+创建 IDE 插件时，如何读写临时文件？
+创建 IDE 插件时，只支持在/tmp目录下读写临时文件，文件最大为 512MB。
+以插件工具file_writer为例，此工具将当前日期和时间写入一个临时文件，然后读取该文件，并返回读取到的内容。创建 IDE 插件的代码示例如下：
+from datetime import datetime\n
+from pathlib import Path\n
+from runtime import Args\n
+from typings.file_writer.file_writer import Input, Output\n
+\n
+TMP_DIR = "/tmp"\n
+\n
+def handler(args: Args[Input])->Output:\n
+    file_path = TMP_DIR + "/data.txt"\n
+\n
+    # 写入数据 \n
+    try:\n
+        with open(file_path, "w") as file_writer:\n
+            file_writer.write(str(datetime.now()))\n
+    except Exception as e:\n
+        return {\n
+            "message": "write file error: " + str(e),\n
+        }\n
+\n
+    # 读取数据\n
+    try:\n
+        with open(file_path, "r") as file_writer:\n
+            text = file_writer.read()\n
+            return {\n
+                "message": f"read file content: {text}"\n
+            }\n
+    except Exception as e:\n
+        return {\n
+            "message": "read file error: " + str(e),\n
+        }
+from datetime import datetime
+from pathlib import Path
+from runtime import Args
+from typings.file_writer.file_writer import Input, Output
+TMP_DIR = "/tmp"
+def handler(args: Args[Input])->Output:
+file_path = TMP_DIR + "/data.txt"
+# 写入数据
+try:
+with open(file_path, "w") as file_writer:
+file_writer.write(str(datetime.now()))
+except Exception as e:
+return {
+"message": "write file error: " + str(e),
+}
+# 读取数据
+try:
+with open(file_path, "r") as file_writer:
+text = file_writer.read()
+return {
+"message": f"read file content: {text}"
+}
+except Exception as e:
+return {
+"message": "read file error: " + str(e),
+}
+如下图所示，代码运行后，返回读取到的日期和时间。
+通过自定义插件实现音视频转换，图片和视频怎么输出？
+如果要输出图片、视频等多模态内容，你需要准备存储工具，然后将多模态内容转换为 URL 方式进行输出。
+通过 IDE 创建插件时，是否可以使用 Python 实现并提交 async 函数？
+支持使用 Python 实现并提交 async 函数。
+插件使用IP地址，为什么会调试失败？
+建议在配置插件的 URL 或抓取类插件的参数 URL 时，使用域名而非 IP 地址，这样做可以避免请求被服务端的网络安全设置所拦截。

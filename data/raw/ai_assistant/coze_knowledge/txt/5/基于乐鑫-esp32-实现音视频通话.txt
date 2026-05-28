@@ -1,0 +1,241 @@
+基于乐鑫 ESP32 实现音视频通话
+乐鑫提供了 esp-adf 示例项目源码，本文将基于该示例项目源码，详细演示如何在乐鑫 ESP32-S3 芯片的 ESP32-S3-Korvo-2 开发板上实现与智能体的音视频通话功能。该开发板适用于开发多种智能产品，包括但不限于音视频通话设备、智能门铃、宠物监控系统、智能音响、儿童玩具以及智能家具面板等。
+搭建开发环境
+本文基于 esp-adf 示例项目源码进行实现，该仓库已内置稳定版本的 ESP-IDF，无需额外安装。详细的 ESP32-S3 开发环境信息请参见 ESP-IDF 快速入门。
+1.
+获取示例代码。
+a.
+在终端创建一个 esp 目录用于存放相关代码。
+mkdir ~/esp
+mkdir ~/esp
+b.
+进入 esp 目录并克隆代码。
+cd ~/esp\n
+git clone https://github.com/espressif/esp-adf.git
+cd ~/esp
+git clone https://github.com/espressif/esp-adf.git
+c.
+递归更新子模块。
+git submodule update --init --recursive
+git submodule update --init --recursive
+2.
+在 adf 仓库下运行安装脚本。
+sh ./install.sh\n
+sh ./export.sh
+sh ./install.sh
+sh ./export.sh
+3.
+配置环境变量。
+ADF_PATH={{你的 adf 路径}}\n
+IDF_PATH={{你的 idf 路径}}
+ADF_PATH={{你的 adf 路径}}
+IDF_PATH={{你的 idf 路径}}
+适配硬件
+1. 选择开发板
+1.
+进入本地 esp-adf 代码的 volc_rtc 目录。
+cd ~/esp/esp-adf/examples/ai_agent/volc_rtc
+cd ~/esp/esp-adf/examples/ai_agent/volc_rtc
+2.
+设置目标芯片型号，本文使用 esp32s3。
+idf.py set-target esp32s3
+idf.py set-target esp32s3
+3.
+选择开发板。
+idf.py menuconfig
+idf.py menuconfig
+4.
+在弹出的交互界面中选择使用的开发板，本文使用 ESP32-S3-Korvo-2 ，按 S 保存。
+2. 修改 I/O 配置（可选）
+说明
+如果使用乐鑫官方的 ESP32-S3-Korvo-2 开发板，请忽略该步骤。\n
+由于本示例使用的 01_RTC_LCD 开发板在视频流和扬声器的针脚与官方 ESP32-S3-Korvo-2 不一致，需修改驱动代码以确保正常运行。
+如果使用乐鑫官方的 ESP32-S3-Korvo-2 开发板，请忽略该步骤。
+由于本示例使用的 01_RTC_LCD 开发板在视频流和扬声器的针脚与官方 ESP32-S3-Korvo-2 不一致，需修改驱动代码以确保正常运行。
+1.
+使用编码 IDE 打开 esp-adf 目录，单击 components/audio_board_board.c 文件。
+2.
+修改以下内容：
+扬声器 PA 针脚：找到 audio_board_init 函数，将 PA 针脚修改为 TCA9554 的 0 号针脚。将下面的代码替换掉audio_board_init 函数。
+audio_board_handle_t audio_board_init(void)\n
+{\n
+    ESP_LOGW(TAG, "Init board Start!");\n
+    if (board_handle) {\n
+        ESP_LOGW(TAG, "The board has already been initialized!");\n
+        return board_handle;\n
+    }\n
+    board_handle = (audio_board_handle_t) audio_calloc(1, sizeof(struct audio_board_handle));\n
+    AUDIO_MEM_CHECK(TAG, board_handle, return NULL);\n
+    board_handle->audio_hal = audio_board_codec_init();\n
+    board_handle->adc_hal = audio_board_adc_init();\n
+    esp_tca9554_config_t pca_cfg = {\n
+        .i2c_scl = GPIO_NUM_18,\n
+        .i2c_sda = GPIO_NUM_17,\n
+        .interrupt_output = -1,\n
+    };\n
+    tca9554_init(&pca_cfg);\n
+    tca9554_set_io_config(BIT(0), TCA9554_IO_OUTPUT);\n
+    tca9554_set_output_state(BIT(0), TCA9554_IO_HIGH);\n
+    return board_handle;\n
+}
+audio_board_handle_t audio_board_init(void)
+{
+ESP_LOGW(TAG, "Init board Start!");
+if (board_handle) {
+ESP_LOGW(TAG, "The board has already been initialized!");
+return board_handle;
+}
+board_handle = (audio_board_handle_t) audio_calloc(1, sizeof(struct audio_board_handle));
+AUDIO_MEM_CHECK(TAG, board_handle, return NULL);
+board_handle->audio_hal = audio_board_codec_init();
+board_handle->adc_hal = audio_board_adc_init();
+esp_tca9554_config_t pca_cfg = {
+.i2c_scl = GPIO_NUM_18,
+.i2c_sda = GPIO_NUM_17,
+.interrupt_output = -1,
+};
+tca9554_init(&pca_cfg);
+tca9554_set_io_config(BIT(0), TCA9554_IO_OUTPUT);
+tca9554_set_output_state(BIT(0), TCA9554_IO_HIGH);
+return board_handle;
+}
+屏幕偏选信号：屏幕型号为 ST7789，触摸 IC 为 GT911。找到 audio_board_lcd_init 函数中的 io_config 对象，将如下代码替换掉io_config中的初始化代码。
+esp_lcd_panel_io_spi_config_t io_config = {\n
+        .dc_gpio_num = LCD_DC_GPIO,\n
+        .cs_gpio_num = LCD_CS_GPIO,\n
+        .pclk_hz = 60 * 1000 * 1000,\n
+        .lcd_cmd_bits = 8,\n
+        .lcd_param_bits = 8,\n
+        .spi_mode = 0,\n
+        .trans_queue_depth = 10,\n
+        .on_color_trans_done = cb,\n
+        .user_ctx = NULL,\n
+    };
+esp_lcd_panel_io_spi_config_t io_config = {
+.dc_gpio_num = LCD_DC_GPIO,
+.cs_gpio_num = LCD_CS_GPIO,
+.pclk_hz = 60 * 1000 * 1000,
+.lcd_cmd_bits = 8,
+.lcd_param_bits = 8,
+.spi_mode = 0,
+.trans_queue_depth = 10,
+.on_color_trans_done = cb,
+.user_ctx = NULL,
+};
+修改示例项目源码
+你需要修改 esp-adf 示例代码中的 WiFi 信息和扣子配置。
+1.
+配置 WiFi 信息。
+在 config.h#L28  中配置 WiFi 名称和密码。
+2.
+配置扣子。
+在 byte_rtc_request.h#L13 中修改如下配置：
+参数\n
+	
+是否必选\n
+	
+说明\n
+
+
+uri\n
+	
+必选。\n
+	
+请填写 https://api.coze.cn/v1/audio/rooms。\n
+
+
+authorization\n
+	
+必选。\n
+	
+请填写扣子的访问密钥，用于身份认证与鉴权。\n
+体验或调试场景：建议开发者生成一个短期的个人访问令牌（PAT），快速跑通 Realtime SDK 的整体流程。个人访问令牌获取方式可参考\n添加个人访问令牌。\n
+线上环境：线上环境应使用 OAuth 鉴权方案。OAuth 鉴权方案的详细说明可参考\nOAuth 授权概述。\n
+
+
+bot_id\n
+	
+必选。\n
+	
+智能体 ID，获取方法如下：\n
+进入智能体的开发页面，开发页面 URL 中 bot 参数后的数字即为智能体 ID。例如， URL 为https://www.coze.cn/space/341****/bot/73428668*****，则智能体 ID 为73428668*****。\n
+
+
+voice_id\n
+	
+可选。\n
+	
+音色 ID。默认采用柔美女友音色，音色 ID 为 7426720361733046281。你可以调用\n查看音色列表 API 查看当前可用的音色列表，也可以使用\n系统音色列表。
+参数
+是否必选
+说明
+uri
+必选。
+请填写 https://api.coze.cn/v1/audio/rooms。
+authorization
+必选。
+请填写扣子的访问密钥，用于身份认证与鉴权。
+体验或调试场景：建议开发者生成一个短期的个人访问令牌（PAT），快速跑通 Realtime SDK 的整体流程。个人访问令牌获取方式可参考\n添加个人访问令牌。
+线上环境：线上环境应使用 OAuth 鉴权方案。OAuth 鉴权方案的详细说明可参考\nOAuth 授权概述。
+bot_id
+必选。
+智能体 ID，获取方法如下：
+进入智能体的开发页面，开发页面 URL 中 bot 参数后的数字即为智能体 ID。例如， URL 为https://www.coze.cn/space/341****/bot/73428668*****，则智能体 ID 为73428668*****。
+voice_id
+可选。
+音色 ID。默认采用柔美女友音色，音色 ID 为 7426720361733046281。你可以调用\n查看音色列表 API 查看当前可用的音色列表，也可以使用\n系统音色列表。
+3.
+修改 HTTP 请求配置。
+说明
+你也可以自行配置 TLS 证书，配置之后无需修改。
+你也可以自行配置 TLS 证书，配置之后无需修改。
+在 byte_rtc_request.c 文件中，找到 byte_rtc_request 函数中的 http_client_config 变量，将该变量的声明替换为如下的代码：
+esp_http_client_config_t http_client_config = {\n
+    .url = config->uri,\n
+    .query = "esp",\n
+    .event_handler = _http_event_handler,\n
+    .user_data = &rsp_data,\n
+    .disable_auto_redirect = true,\n
+    .buffer_size = DEFAULT_STACK_SIZE,\n
+    .buffer_size_tx = DEFAULT_STACK_SIZE,\n
+    .skip_cert_common_name_check = true,\n
+    .cert_pem = NULL,\n
+    .transport_type = HTTP_TRANSPORT_OVER_SSL,\n
+    .crt_bundle_attach = esp_crt_bundle_attach,\n
+    .is_async = false,\n
+    .timeout_ms = 10000,\n
+    .keep_alive_enable = true\n
+};
+esp_http_client_config_t http_client_config = {
+.url = config->uri,
+.query = "esp",
+.event_handler = _http_event_handler,
+.user_data = &rsp_data,
+.disable_auto_redirect = true,
+.buffer_size = DEFAULT_STACK_SIZE,
+.buffer_size_tx = DEFAULT_STACK_SIZE,
+.skip_cert_common_name_check = true,
+.cert_pem = NULL,
+.transport_type = HTTP_TRANSPORT_OVER_SSL,
+.crt_bundle_attach = esp_crt_bundle_attach,
+.is_async = false,
+.timeout_ms = 10000,
+.keep_alive_enable = true
+};
+4.
+创建并加入扣子房间。
+你需要调用扣子的\n创建房间接口创建房间，再加入房间，才可以与智能体进行对话。在乐鑫示例代码的 volc_rtc.c 文件中已经实现了创建房间的代码，在实际使用的时候，你需要执行如下操作才能使用相关代码。
+a.
+声明一个全局变量。
+const char* g_default_room_id = NULL;  // 定义全局变量
+const char* g_default_room_id = NULL;  // 定义全局变量
+b.
+修改文件中的byte_rtc_engine_create方法，引入请求扣子的代码，并使用扣子返回的 app_id 创建 RTC 引擎。
+c.
+使用扣子返回的 room_id 赋值给全局变量 g_default_room_id 。
+d.
+在voice_read_task方法中，用扣子返回的 room_id 指定对话时的 room_id。
+byte_rtc_send_audio_data(s_volc_rtc.engine, g_default_room_id, voice_data, voice_data_read_sz, &audio_frame_info);
+byte_rtc_send_audio_data(s_volc_rtc.engine, g_default_room_id, voice_data, voice_data_read_sz, &audio_frame_info);
+相关文档
+集成音视频 Realtime 嵌入式 SDK

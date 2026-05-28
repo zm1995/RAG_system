@@ -1,0 +1,591 @@
+渠道消息回调
+开发者发布智能体到自定义渠道时，扣子服务端会将智能体和开发者的基本信息以回调方式发送到渠道指定的回调地址中。渠道侧可以按需配置是否接收消息回调。
+消息回调介绍
+渠道入驻扣子平台后，当有智能体发布到此渠道时，扣子服务端会发送一条 application/json 格式的 POST 请求。渠道侧收到消息回调后，应校验签名、从回调消息中提取信息，在渠道侧进行业务处理后，返回处理结果给扣子服务端。
+目前支持的回调事件类型为智能体发布事件。开发者发布智能体到自定义渠道时，扣子平台会向渠道指定的回调地址发送回调消息，消息中包含智能体和开发者的基本信息。如果渠道入驻时配置了渠道授权，发布智能体时扣子将获取开发者的渠道用户 ID，此 ID 也会包含在回调消息中一起发送到渠道侧。渠道侧收到智能体发布事件回调后，应在指定时间内返回智能体的审核结果，否则智能体发布失败。
+回调事件的详细定义可参考\n回调事件，渠道侧的处理方式可参考\n处理消息回调。
+开启消息回调
+渠道管理员添加发布渠道时，如果配置了平台回调 URL，表示开启消息回调。
+处理消息回调
+渠道侧可参考以下方式处理消息回调。
+步骤一：校验回调消息签名
+为了检验回调事件未被第三方篡改，扣子平台提供验证回调消息签名的方法。将请求头中的 X-Coze-Nonce、X-Coze-Timestamp 参数和回调 Token、回调消息 Body 进行拼接、编码、哈希计算，并校验最终的值是否和请求头中的签名字段 X-Coze-Signature 完全一致。若完全一致，表示验证通过，此消息为扣子官方发送的回调消息。
+校验签名的方式如下：
+1.
+获取参数。
+a.
+获取请求头中的 X-Coze-Timestamp、X-Coze-Nonce 值，分别记为 timestamp、nonce。
+b.
+获取原始请求 Body 的数据，记为 body。
+c.
+获取配置渠道时得到的 token。
+你可以在我的平台管理页面的操作列查看回调 Token。
+2.
+拼接参数，并编码。
+按 timestamp、nonce、token、body 的顺序进行拼接，并将拼接结果进行 UFT-8 编码，即 encode('utf-8') 编码，得到 byte[] b1。
+3.
+将编码结果进行哈希计算。
+对 byte[] b1 进行 SHA-1 哈希计算，得到 bs，并将 bs 编码为 16 进制字符串，记为 sig。
+4.
+校验签名的一致性。
+校验 sig 与请求头中 X-Coze-Signature 的值是否一致。
+通过 Go 进行签名校验的示例代码如下：
+// 签名\n
+func GenPostRequestSignature(nonce string, timestamp string, body string, token string) string {\n
+   var b strings.Builder\n
+   b.WriteString(timestamp)\n
+   b.WriteString(nonce)\n
+   b.WriteString(token)\n
+   b.WriteString(body)\n
+   bs := []byte(b.String())\n
+   h := sha1.New()\n
+   h.Write(bs)\n
+   bs = h.Sum(nil)\n
+   return fmt.Sprintf("%x", bs)\n
+}
+// 签名
+func GenPostRequestSignature(nonce string, timestamp string, body string, token string) string {
+var b strings.Builder
+b.WriteString(timestamp)
+b.WriteString(nonce)
+b.WriteString(token)
+b.WriteString(body)
+bs := []byte(b.String())
+h := sha1.New()
+h.Write(bs)
+bs = h.Sum(nil)
+return fmt.Sprintf("%x", bs)
+}
+步骤二：提取事件信息
+校验签名通过后，你可以从回调信息中提取出详细的事件信息。
+1.
+从事件 Header 中获取 event_type。
+2.
+根据不同的 event_type，解析不同的 event 结构。
+步骤三：渠道业务处理
+根据提取的事件信息，进行对应的业务处理，例如收到智能体发布事件后，可以在渠道侧进行审核，并将审核结果返回给扣子服务端。
+渠道消息回调的超时时间为 10 秒，渠道侧收到消息后，应在 10 秒内响应，否则扣子服务端会判定为响应超时。例如智能体发布事件中，渠道侧应在收到消息回调 10 秒内响应，否则智能体发布失败。
+代码示例
+通过 Go 进行处理消息回调的完整示例代码如下：
+func EventCallback(w http.ResponseWriter, r *http.Request) {\n
+    // 读取请求体\n
+    body, err := ioutil.ReadAll(r.Body)\n
+    if err != nil {\n
+        http.Error(w, "Failed to read request body", http.StatusInternalServerError)\n
+        log.Printf("Failed to read request body: %v", err)\n
+        return\n
+    }\n
+    defer r.Body.Close()\n
+    \n
+    // 记录请求体日志\n
+    log.Printf("EventCallback body %s", string(body))\n
+\n
+    reqSignature := r.Header.Get("X-Coze-Signature")\n
+    reqNonce := r.Header.Get("X-Coze-Nonce")\n
+    reqTimestamp := r.Header.Get("X-Coze-Timestamp")\n
+\n
+    // 校验签名\n
+     sign := Signature(reqNonce, reqTimestamp, string(body), "your_connector_token")\n
+    log.Printf("EventCallback sign gen: %s", sign)\n
+    log.Printf("EventCallback sign result %t", sign == reqSignature)\n
+    if sign != reqSignature{\n
+        // 签名不通过处理\n
+        http.Error(w, "Signature verification failed", http.StatusUnauthorized)\n
+        log.Printf("Signature verification failed")\n
+        return\n
+    }\n
+\n
+    // 反序列事件\n
+    req := &ConnectorCallbackEvent{}\n
+    err := json.Unmarshal(c.GetBodyBytes(), req)\n
+    if err != nil {\n
+       http.Error(w, "Failed to unmarshal ConnectorCallbackEvent", http.StatusInternalServerError)\n
+        log.Printf("Failed to unmarshal ConnectorCallbackEvent: %+v", err)\n
+        return\n
+    }\n
+    \n
+    // 根据不同的 eventType，反序列化为不同的事件体\n
+    var event BotPublishedEvent\n
+    if req.Header.EventType == ConnectorCallbackEventTypeBotPublish {\n
+       err = json.Unmarshal(req.Event, &event)\n
+       if err != nil {\n
+          http.Error(w, "Failed to unmarshal BotPublishedEvent", http.StatusInternalServerError)\n
+            log.Printf("Failed to unmarshal BotPublishedEvent: %+v", err)\n
+            return\n
+       }\n
+    }\n
+    \n
+    // 进行业务处理\n
+    log.Printf("EventCallback BotID %d", event.BotID)\n
+    log.Printf("EventCallback UserID %d", event.UserID)\n
+    log.Printf("EventCallback Description %s", event.Description)\n
+    log.Printf("EventCallback BotName %s", event.BotName)\n
+\n
+    // 返回处理结果\n
+    auditByte, _ := json.Marshal(ConnectorCallbackEventResponse{\n
+        Audit: audit,\n
+    })\n
+    log.Printf("EventCallback auditByte: %s", string(auditByte))\n
+    w.Header().Set("Content-Type", "application/json")\n
+    w.WriteHeader(http.StatusOK)\n
+    _, _ = w.Write(auditByte)\n
+}\n
+\n
+// 签名\n
+func Signature(nonce string, timestamp string, body string, token string) string {\n
+    var b strings.Builder\n
+    b.WriteString(timestamp)\n
+    b.WriteString(nonce)\n
+    b.WriteString(token)\n
+    b.WriteString(body)\n
+    bs := []byte(b.String())\n
+    h := sha1.New()\n
+    h.Write(bs)\n
+    bs = h.Sum(nil)\n
+    return fmt.Sprintf("%x", bs)\n
+}\n
+\n
+// 以下为事件定义：\n
+\n
+// 回调的总结构体\n
+type ConnectorCallbackEvent struct {\n
+    Header      ConnectorCallbackEventHeader `json:"header,omitempty"`\n
+    Event       json.RawMessage              `json:"event,omitempty"`\n
+}\n
+\n
+// 事件类型\n
+type ConnectorCallbackEventType string\n
+const (\n
+    // 发布类型\n
+    ConnectorCallbackEventTypeBotPublish ConnectorCallbackEventType = "bot.published"\n
+)\n
+\n
+// 事件 header\n
+type ConnectorCallbackEventHeader struct {\n
+    EventType  ConnectorCallbackEventType `json:"event_type"`  // 通用事件类型\n
+    EventID    string                     `json:"event_id"`    // 事件 ID\n
+    CreatedAt  int64                      `json:"created_at"`  // 事件发生的UTC时间（毫秒）\n
+}\n
+\n
+// 根据 eventType 返回不同的结构\n
+type BotPublishedEvent struct {\n
+    UserID      int64                        `json:"user_id,omitempty"`     // 用户 ID\n
+    BotID       int64                        `json:"bot_id,omitempty"`      // 机器人 ID\n
+    BotName     string                       `json:"bot_name,omitempty"`    // 机器人名称\n
+    Description string                       `json:"description,omitempty"` // 机器人描述\n
+}\n
+\n
+// 返回结构\n
+type ConnectorCallbackEventResponse struct {\n
+    Audit Audit `json:"audit,omitempty"` // 审核\n
+    ShareLink string `json:"share_link,omitempty"` // 分享链接\n
+}\n
+\n
+type Audit struct{\n
+    AuditStatus AuditStatus  `json:"audit_status,omitempty"`   // 审核状态\n
+    Reason      string      `json:"reason,omitempty"`          // 原因\n
+}\n
+\n
+type AuditStatus int32\n
+const (\n
+    AuditStatus_Progress AuditStatus = 1 // 审核中\n
+    AuditStatus_Audited  AuditStatus = 2 // 通过\n
+    AuditStatus_Reject   AuditStatus = 3 // 拒绝\n
+)
+func EventCallback(w http.ResponseWriter, r *http.Request) {
+// 读取请求体
+body, err := ioutil.ReadAll(r.Body)
+if err != nil {
+http.Error(w, "Failed to read request body", http.StatusInternalServerError)
+log.Printf("Failed to read request body: %v", err)
+return
+}
+defer r.Body.Close()
+// 记录请求体日志
+log.Printf("EventCallback body %s", string(body))
+reqSignature := r.Header.Get("X-Coze-Signature")
+reqNonce := r.Header.Get("X-Coze-Nonce")
+reqTimestamp := r.Header.Get("X-Coze-Timestamp")
+// 校验签名
+sign := Signature(reqNonce, reqTimestamp, string(body), "your_connector_token")
+log.Printf("EventCallback sign gen: %s", sign)
+log.Printf("EventCallback sign result %t", sign == reqSignature)
+if sign != reqSignature{
+// 签名不通过处理
+http.Error(w, "Signature verification failed", http.StatusUnauthorized)
+log.Printf("Signature verification failed")
+return
+}
+// 反序列事件
+req := &ConnectorCallbackEvent{}
+err := json.Unmarshal(c.GetBodyBytes(), req)
+if err != nil {
+http.Error(w, "Failed to unmarshal ConnectorCallbackEvent", http.StatusInternalServerError)
+log.Printf("Failed to unmarshal ConnectorCallbackEvent: %+v", err)
+return
+}
+// 根据不同的 eventType，反序列化为不同的事件体
+var event BotPublishedEvent
+if req.Header.EventType == ConnectorCallbackEventTypeBotPublish {
+err = json.Unmarshal(req.Event, &event)
+if err != nil {
+http.Error(w, "Failed to unmarshal BotPublishedEvent", http.StatusInternalServerError)
+log.Printf("Failed to unmarshal BotPublishedEvent: %+v", err)
+return
+}
+}
+// 进行业务处理
+log.Printf("EventCallback BotID %d", event.BotID)
+log.Printf("EventCallback UserID %d", event.UserID)
+log.Printf("EventCallback Description %s", event.Description)
+log.Printf("EventCallback BotName %s", event.BotName)
+// 返回处理结果
+auditByte, _ := json.Marshal(ConnectorCallbackEventResponse{
+Audit: audit,
+})
+log.Printf("EventCallback auditByte: %s", string(auditByte))
+w.Header().Set("Content-Type", "application/json")
+w.WriteHeader(http.StatusOK)
+_, _ = w.Write(auditByte)
+}
+// 签名
+func Signature(nonce string, timestamp string, body string, token string) string {
+var b strings.Builder
+b.WriteString(timestamp)
+b.WriteString(nonce)
+b.WriteString(token)
+b.WriteString(body)
+bs := []byte(b.String())
+h := sha1.New()
+h.Write(bs)
+bs = h.Sum(nil)
+return fmt.Sprintf("%x", bs)
+}
+// 以下为事件定义：
+// 回调的总结构体
+type ConnectorCallbackEvent struct {
+Header      ConnectorCallbackEventHeader `json:"header,omitempty"`
+Event       json.RawMessage              `json:"event,omitempty"`
+}
+// 事件类型
+type ConnectorCallbackEventType string
+const (
+// 发布类型
+ConnectorCallbackEventTypeBotPublish ConnectorCallbackEventType = "bot.published"
+)
+// 事件 header
+type ConnectorCallbackEventHeader struct {
+EventType  ConnectorCallbackEventType `json:"event_type"`  // 通用事件类型
+EventID    string                     `json:"event_id"`    // 事件 ID
+CreatedAt  int64                      `json:"created_at"`  // 事件发生的UTC时间（毫秒）
+}
+// 根据 eventType 返回不同的结构
+type BotPublishedEvent struct {
+UserID      int64                        `json:"user_id,omitempty"`     // 用户 ID
+BotID       int64                        `json:"bot_id,omitempty"`      // 机器人 ID
+BotName     string                       `json:"bot_name,omitempty"`    // 机器人名称
+Description string                       `json:"description,omitempty"` // 机器人描述
+}
+// 返回结构
+type ConnectorCallbackEventResponse struct {
+Audit Audit `json:"audit,omitempty"` // 审核
+ShareLink string `json:"share_link,omitempty"` // 分享链接
+}
+type Audit struct{
+AuditStatus AuditStatus  `json:"audit_status,omitempty"`   // 审核状态
+Reason      string      `json:"reason,omitempty"`          // 原因
+}
+type AuditStatus int32
+const (
+AuditStatus_Progress AuditStatus = 1 // 审核中
+AuditStatus_Audited  AuditStatus = 2 // 通过
+AuditStatus_Reject   AuditStatus = 3 // 拒绝
+)
+回调事件
+在扣子平台中配置回调地址后，扣子通知服务器以 POST 请求方法向渠道指定的回调地址发送渠道事件通知回调，数据格式为 JSON，字符编码为 UTF-8，签名算法为 HMAC/SHA1。
+请求 Header
+回调消息的公共请求 Header 中包含以下字段：
+字段\n
+	
+类型\n
+	
+说明\n
+
+
+X-Coze-Nonce\n
+	
+String\n
+	
+随机数。\n
+
+
+X-Coze-Timestamp\n
+	
+Integer\n
+	
+回调事件的触发时间，Unixtime 时间戳格式，单位为毫秒。\n
+
+
+X-Coze-Signature\n
+	
+String\n
+	
+扣子服务端签名。你需要使用X-Coze-Timestamp、X-Coze-Nonce 等参数校验签名。详细说明可参考\n处理消息回调。
+字段
+类型
+说明
+X-Coze-Nonce
+String
+随机数。
+X-Coze-Timestamp
+Integer
+回调事件的触发时间，Unixtime 时间戳格式，单位为毫秒。
+X-Coze-Signature
+String
+扣子服务端签名。你需要使用X-Coze-Timestamp、X-Coze-Nonce 等参数校验签名。详细说明可参考\n处理消息回调。
+请求 Body
+消息通知回调的请求 Body 中包括 header 和 event 两个字段。
+Body 中的 header 字段：
+字段\n
+	
+类型\n
+	
+说明\n
+
+
+event_type\n
+\n
+	
+String\n
+	
+事件类型，目前支持的事件类型包括：\n
+bot.published：智能体发布事件。\n
+
+
+event_id\n
+	
+String\n
+	
+事件 ID。\n
+
+
+created_at\n
+	
+Integer\n
+	
+回调事件的触发时间，Unixtime 时间戳格式，单位为毫秒。
+字段
+类型
+说明
+event_type
+String
+事件类型，目前支持的事件类型包括：
+bot.published：智能体发布事件。
+event_id
+String
+事件 ID。
+created_at
+Integer
+回调事件的触发时间，Unixtime 时间戳格式，单位为毫秒。
+Body 中的 event 字段：其中封装了消息的具体信息，其格式与 event_type 有关，各种事件类型的 event 结构不同。
+智能体发布事件
+开发者发布智能体到自定义渠道时，扣子平台会向渠道指定的回调地址发送回调消息，消息中包含智能体和开发者的基本信息。如果渠道入驻时配置了渠道授权，发布智能体时扣子将获取开发者的渠道用户 ID，此 ID 也会包含在回调消息中一起发送到渠道侧。
+渠道侧收到智能体发布事件回调后，应在 10 秒内响应，并返回智能体的审核结果，否则智能体发布失败。如果审核流程无法在 10 秒内完成，可以先发送一条审核中的响应消息，审核结束后再通过回调消息发送审核结果。
+请求 Body 的 event 参数中包括以下参数：
+字段\n
+	
+类型\n
+	
+说明\n
+
+
+user_id\n
+	
+Integer\n
+	
+发布智能体的扣子用户 ID。\n
+
+
+connector_user_id\n
+	
+String\n
+	
+扣子用户在渠道中的用户 ID。仅在配置了渠道授权的场景下返回，详细说明可参考\n步骤三：渠道管理员配置渠道授权。\n
+
+
+user_name\n
+	
+String\n
+	
+发布智能体的扣子用户昵称。\n
+
+
+bot_id\n
+	
+Integer\n
+	
+扣子智能体ID。\n
+
+
+bot_name\n
+	
+String\n
+	
+扣子智能体名称。\n
+
+
+description\n
+	
+String\n
+	
+扣子智能体的描述信息。\n
+
+
+version\n
+	
+String\n
+	
+扣子智能体的版本号。
+字段
+类型
+说明
+user_id
+Integer
+发布智能体的扣子用户 ID。
+connector_user_id
+String
+扣子用户在渠道中的用户 ID。仅在配置了渠道授权的场景下返回，详细说明可参考\n步骤三：渠道管理员配置渠道授权。
+user_name
+String
+发布智能体的扣子用户昵称。
+bot_id
+Integer
+扣子智能体ID。
+bot_name
+String
+扣子智能体名称。
+description
+String
+扣子智能体的描述信息。
+version
+String
+扣子智能体的版本号。
+响应 Body 应包括以下参数：
+字段\n
+	
+类型\n
+	
+说明\n
+
+
+audit\n
+	
+Array of JSON\n
+	
+审核结果。\n
+
+
+audit.audit_status\n
+	
+Integer\n
+	
+审核状态。\n
+1：审核中\n
+2：审核通过\n
+3：审核失败\n
+
+
+audit.reason\n
+	
+String\n
+	
+审核失败时，此字段返回审核失败原因。
+字段
+类型
+说明
+audit
+Array of JSON
+审核结果。
+audit.audit_status
+Integer
+审核状态。
+1：审核中
+2：审核通过
+3：审核失败
+audit.reason
+String
+审核失败时，此字段返回审核失败原因。
+示例如下：
+请求示例：
+{\n
+    // 事件头\n
+   "header":{\n
+      // 事件类型\n
+      "event_type":"bot.published", // 如果是发布，则是 bot.published\n
+      // 事件 id\n
+      "event_id":"12345abc",\n
+      // 事件创建事件\n
+      "created_at":1613427443000\n
+   },\n
+   \n
+   // 事件体，根据事件类型不同，结构也不一样。当前展示的是智能体发布的事件\n
+   "event":{\n
+      // 用户 id\n
+      "user_id":1234567890,\n
+      // 渠道用户 id，仅在配置了渠道授权后返回\n
+      "connector_user_id":"1234567890"\n
+     // 用户昵称\n
+      "user_name": "name123"\n
+      //智能体id\n
+      "bot_id": 9876543210,\n
+      //智能体名称\n
+      "bot_name":"SampleBot",\n
+      //智能体描述\n
+      "description":"This is a sample bot.",\n
+      //智能体版本\n
+      "version": "12345"\n
+   },\n
+}
+{
+// 事件头
+"header":{
+// 事件类型
+"event_type":"bot.published", // 如果是发布，则是 bot.published
+// 事件 id
+"event_id":"12345abc",
+// 事件创建事件
+"created_at":1613427443000
+},
+// 事件体，根据事件类型不同，结构也不一样。当前展示的是智能体发布的事件
+"event":{
+// 用户 id
+"user_id":1234567890,
+// 渠道用户 id，仅在配置了渠道授权后返回
+"connector_user_id":"1234567890"
+// 用户昵称
+"user_name": "name123"
+//智能体id
+"bot_id": 9876543210,
+//智能体名称
+"bot_name":"SampleBot",
+//智能体描述
+"description":"This is a sample bot.",
+//智能体版本
+"version": "12345"
+},
+}
+返回示例：
+// 不同的事件，要求不同的返回体。此处为智能体发布事件，需要返回审核状态\n
+{\n
+   "audit":{\n
+      "audit_status":2 // 1: 审核中；2: 通过；3: 拒绝\n
+      "reason": "不通过原因" // 原因\n
+   }\n
+}
+// 不同的事件，要求不同的返回体。此处为智能体发布事件，需要返回审核状态
+{
+"audit":{
+"audit_status":2 // 1: 审核中；2: 通过；3: 拒绝
+"reason": "不通过原因" // 原因
+}
+}

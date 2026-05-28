@@ -1,0 +1,896 @@
+集成音视频 Realtime Android SDK
+本文档介绍如何集成扣子 Realtime Android SDK，将你在扣子中搭建的 AI 智能体集成到你的 Android 应用中，实现用户与智能体进行音视频通话。
+扣子 Realtime Android SDK 封装了火山引擎 Android RTC 音视频链路相关 API，接入流程简洁高效。
+准备工作
+开始集成 Realtime SDK 前，请确保开发环境满足以下要求：
+操作\n
+	
+说明\n
+
+
+升级为扣子专业版\n
+	
+确保已注册扣子账号，并升级至扣子专业版。具体操作请参见\n升级到专业版。\n
+
+
+发布智能体\n
+	
+已成功搭建并发布智能体为 API 服务。搭建步骤请参见\n搭建一个 AI 助手智能体，发布步骤请参见\n发布智能体为 API 服务。\n
+说明
+若需使用视频理解能力，请为智能体配置一个视觉模型，例如豆包视觉理解模型。 \n
+\n
+
+
+获取访问密钥\n
+	
+获取访问密钥，用于身份认证与鉴权。\n
+体验或调试场景：建议生成短期的个人访问令牌（PAT），以快速完成 Realtime SDK 的整体流程。个人访问令牌的获取方法请参见\n添加个人访问令牌。\n
+线上环境：在线上环境中，应使用 OAuth 鉴权方案。OAuth 鉴权方案的详细说明请参见\nOAuth 授权概述。\n
+说明
+扣子提供了多种鉴权方式的封装，具体请参见鉴权方式的封装，你可以参考鉴权示例代码实现不同方式的 OAuth 认证，以获取和管理访问扣子 API 所需的令牌。\n
+\n
+
+
+准备开发环境\n
+	
+macOS 开发电脑，且可以正常访问互联网\n
+Android Studio\n
+Kotlin 1.9.22 及以上\n
+Android 7.0 或以上版本真机设备，且可以正常访问互联网\n
+Gradle 8.0及以上\n
+
+
+开通 RTC 服务\n
+	
+在火山引擎控制台上开通 RTC 服务。
+操作
+说明
+升级为扣子专业版
+确保已注册扣子账号，并升级至扣子专业版。具体操作请参见\n升级到专业版。
+发布智能体
+已成功搭建并发布智能体为 API 服务。搭建步骤请参见\n搭建一个 AI 助手智能体，发布步骤请参见\n发布智能体为 API 服务。
+说明
+若需使用视频理解能力，请为智能体配置一个视觉模型，例如豆包视觉理解模型。
+若需使用视频理解能力，请为智能体配置一个视觉模型，例如豆包视觉理解模型。
+获取访问密钥
+获取访问密钥，用于身份认证与鉴权。
+体验或调试场景：建议生成短期的个人访问令牌（PAT），以快速完成 Realtime SDK 的整体流程。个人访问令牌的获取方法请参见\n添加个人访问令牌。
+线上环境：在线上环境中，应使用 OAuth 鉴权方案。OAuth 鉴权方案的详细说明请参见\nOAuth 授权概述。
+说明
+扣子提供了多种鉴权方式的封装，具体请参见鉴权方式的封装，你可以参考鉴权示例代码实现不同方式的 OAuth 认证，以获取和管理访问扣子 API 所需的令牌。
+扣子提供了多种鉴权方式的封装，具体请参见鉴权方式的封装，你可以参考鉴权示例代码实现不同方式的 OAuth 认证，以获取和管理访问扣子 API 所需的令牌。
+准备开发环境
+macOS 开发电脑，且可以正常访问互联网
+Android Studio
+Kotlin 1.9.22 及以上
+Android 7.0 或以上版本真机设备，且可以正常访问互联网
+Gradle 8.0及以上
+开通 RTC 服务
+在火山引擎控制台上开通 RTC 服务。
+跑通示例项目源码
+示例项目目录结构
+音视频通话 Android 示例项目的目录结构如下：
+Java
+Kotlin
+\n
+app/\n
+├── build.gradle.kts\n
+├── .gitignore\n
+└── src/\n
+    └── main/\n
+        ├── java/\n
+        │   └── com/\n
+        │       └── coze/\n
+        │           └── java_example/\n
+        │               ├── MainActivity.java\n
+        │               ├── config/\n
+        │               │   └── Config.java\n
+        │               ├── manager/\n
+        │               │   └── CozeAPIManager.java\n
+        │               └── utils/\n
+        │                   └── ToastUtil.java\n
+        ├── res/\n
+        │   ├── layout/\n
+        │   │   └── activity_main.xml\n
+        │   ├── values/\n
+        │   │   ├── colors.xml\n
+        │   │   ├── strings.xml\n
+        │   │   └── themes.xml\n
+        │   ├── ... 其他目录\n
+        └── AndroidManifest.xml
+app/\n
+├── build.gradle.kts\n
+├── .gitignore\n
+└── src/\n
+    └── main/\n
+        ├── java/\n
+        │   └── com/\n
+        │       └── coze/\n
+        │           └── java_example/\n
+        │               ├── MainActivity.java\n
+        │               ├── config/\n
+        │               │   └── Config.java\n
+        │               ├── manager/\n
+        │               │   └── CozeAPIManager.java\n
+        │               └── utils/\n
+        │                   └── ToastUtil.java\n
+        ├── res/\n
+        │   ├── layout/\n
+        │   │   └── activity_main.xml\n
+        │   ├── values/\n
+        │   │   ├── colors.xml\n
+        │   │   ├── strings.xml\n
+        │   │   └── themes.xml\n
+        │   ├── ... 其他目录\n
+        └── AndroidManifest.xml
+app/
+├── build.gradle.kts
+├── .gitignore
+└── src/
+└── main/
+├── java/
+│   └── com/
+│       └── coze/
+│           └── java_example/
+│               ├── MainActivity.java
+│               ├── config/
+│               │   └── Config.java
+│               ├── manager/
+│               │   └── CozeAPIManager.java
+│               └── utils/
+│                   └── ToastUtil.java
+├── res/
+│   ├── layout/
+│   │   └── activity_main.xml
+│   ├── values/
+│   │   ├── colors.xml
+│   │   ├── strings.xml
+│   │   └── themes.xml
+│   ├── ... 其他目录
+└── AndroidManifest.xml
+配置并跑通示例项目
+1.
+克隆音视频通话 Android 示例项目到本地。
+git clone https://github.com/coze-dev/coze-android
+git clone https://github.com/coze-dev/coze-android
+2.
+在配置文件中设置访问令牌、智能体 ID 和音色。
+编辑 main/java-example/src/main/res/values/strings.xml 配置文件，配置 coze_access_token 和 bot_id和音色 ID。
+你可以调用\n查看音色列表 API 查看当前可用的音色列表，也可以使用\n系统音色列表。
+<resources>\n
+    <!-- 其他配置 -->\n
+    \n
+    <!-- 替换为从 https://www.coze.cn/open/oauth/pats 获取到的token-->\n
+    <string name="coze_access_token">pat_PLraJCVarqLuoE1********</string>\n
+    <string name="base_url">https://api.coze.cn</string>\n
+    <!-- 替换为自己的bot -->\n
+    <string name="bot_id">74********</string>\n
+    <!-- 音色ID，可选 -->\n
+    <string name="voice_id">742********09</string>\n
+</resources>
+<resources>
+<!-- 其他配置 -->
+<!-- 替换为从 https://www.coze.cn/open/oauth/pats 获取到的token-->
+<string name="coze_access_token">pat_PLraJCVarqLuoE1********</string>
+<string name="base_url">https://api.coze.cn</string>
+<!-- 替换为自己的bot -->
+<string name="bot_id">74********</string>
+<!-- 音色ID，可选 -->
+<string name="voice_id">742********09</string>
+</resources>
+3.
+编译并运行示例项目。
+a.
+开启 Android 设备的开发者选项，打开 USB 调试，通过 USB 连接线将 Android 设备接入电脑，并在 Android 设备选项中勾选你的 Android 设备。详情参看在硬件设备上运行应用。
+b.
+单击 Android Studio 窗口右上角的 Sync Project with Gradle Files（或使用 Shift ⇧ + Command ⌘ + O 快捷键）同步项目，拉取项目依赖。
+c.
+单击 Android Studio 窗口右上角的 Run 'app' （或使用 Control ⌃ + R 快捷键）开始编译。
+d.
+编译成功后，你的 Android 设备上会出现 Coze Android RTC Demo，在弹窗中选择开启摄像头和麦克风权限。应用界面如下：
+
+\n
+\n
+\n
+\n
+
+    
+    
+Audio/video is not supported
+Please TryRefresh
+
+      
+
+Audio/video is not supported
+Please TryRefresh
+步骤一：（可选）创建并配置 Android 项目
+本步骤为如何创建一个新项目，如集成到已有项目，请直接查看步骤二。
+1.
+打开 Android Studio。在 Welcome to Android Studio 窗口中，单击 New Project。
+2.
+在项目模板页选择 Phone and Tablet，模板使用 No Activity。
+3.
+配置项目信息，完成后单击 Finish。
+在项目配置页，设置项目名称、软件包名称、存储路径等信息，开发语言选择 Kotlin 或 Java，Minimum SDK 选择 API 24。
+4.
+配置权限。
+SDK 已在内部声明所需权限，无需手动添加。
+步骤二：集成 Realtime SDK
+本文以通过 Gradle 直接集成为例。如需手动集成，请参考火山引擎 RTC 文档。
+1.
+添加 Maven 仓库。
+在项目的根目录下找到 settings.gradle.kts 文件，并添加以下内容以配置 Maven 仓库：
+dependencyResolutionManagement {\n
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)\n
+    repositories {\n
+        google()\n
+        mavenCentral()\n
+        maven { url = uri("https://artifact.bytedance.com/repository/Volcengine/") }\n
+        maven { url = uri("https://repo.maven.apache.org/maven2/") }\n
+    }\n
+}
+dependencyResolutionManagement {
+repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+repositories {
+google()
+mavenCentral()
+maven { url = uri("https://artifact.bytedance.com/repository/Volcengine/") }
+maven { url = uri("https://repo.maven.apache.org/maven2/") }
+}
+}
+2.
+配置依赖版本。
+打开项目根目录下的 gradle/libs.versions.toml 文件，配置火山 RTC SDK 和扣子 SDK 的版本信息。建议使用 VSCode 或其他文本编辑器打开该文件。
+Java
+Kotlin
+\n
+\n
+[versions]\n
+# 你的其他配置\n
+volcenginertc = "3.58.1.19400"  # 替换为实际版本号\n
+cozeApi = "0.2.1"  # Coze SDK 版本号\n
+\n
+[libraries]\n
+# 你的其他配置\n
+volcenginertc = { module = "com.volcengine:VolcEngineRTC", version.ref = "volcenginertc" }\n
+coze-api = { module = "com.coze:coze-api", version.ref = "cozeApi" }
+[versions]\n
+# 你的其他配置\n
+volcenginertc = "3.58.1.19400"  # 替换为实际版本号\n
+cozeApi = "0.2.1"  # Coze SDK 版本号\n
+\n
+[libraries]\n
+# 你的其他配置\n
+volcenginertc = { module = "com.volcengine:VolcEngineRTC", version.ref = "volcenginertc" }\n
+coze-api = { module = "com.coze:coze-api", version.ref = "cozeApi" }
+[versions]
+# 你的其他配置
+volcenginertc = "3.58.1.19400"  # 替换为实际版本号
+cozeApi = "0.2.1"  # Coze SDK 版本号
+[libraries]
+# 你的其他配置
+volcenginertc = { module = "com.volcengine:VolcEngineRTC", version.ref = "volcenginertc" }
+coze-api = { module = "com.coze:coze-api", version.ref = "cozeApi" }
+说明
+将 volcenginertc 中的版本号替换为 RTC 实际使用的版本号。具体版本信息可在下载 RTC SDK页面查看。\n
+将 cozeApi 中的版本号替换为扣子 SDK 的最新版本，具体版本信息可在扣子 releases 页面查看。
+将 volcenginertc 中的版本号替换为 RTC 实际使用的版本号。具体版本信息可在下载 RTC SDK页面查看。
+将 cozeApi 中的版本号替换为扣子 SDK 的最新版本，具体版本信息可在扣子 releases 页面查看。
+3.
+拉取依赖。
+修改 toml 文件后，可以通过以下方式拉取相关依赖：
+在终端窗口执行以下命令。
+./gradlew clean build --refresh-dependencies
+./gradlew clean build --refresh-dependencies
+在 IDE 中单击 Sync Now。
+步骤三：实现音视频通话
+说明
+本文以 MainActivity.kt 和 MainActivity.java 中的实现步骤为例，讲解如何实现一个基本的音视频通话功能。本示例并未覆盖全部代码内容，如需查看完整代码，请从音视频通话 Android 示例项目获取完整代码。
+本文以 MainActivity.kt 和 MainActivity.java 中的实现步骤为例，讲解如何实现一个基本的音视频通话功能。本示例并未覆盖全部代码内容，如需查看完整代码，请从音视频通话 Android 示例项目获取完整代码。
+引入头文件
+引入实现音视频通话功能所需的头文件。
+Java
+Kotlin
+\n
+import com.ss.bytertc.engine.RTCRoom;\n
+import com.ss.bytertc.engine.RTCVideo;\n
+import com.coze.openapi.service.service.CozeAPI\n
+\n
+public class MainActivity extends AppCompatActivity {\n
+    private RTCVideo rtcVideo;\n
+    private RTCRoom rtcRoom;\n
+    private CozeAPI cozeCli;\n
+}
+import com.ss.bytertc.engine.RTCRoom;\n
+import com.ss.bytertc.engine.RTCVideo;\n
+import com.coze.openapi.service.service.CozeAPI\n
+\n
+public class MainActivity extends AppCompatActivity {\n
+    private RTCVideo rtcVideo;\n
+    private RTCRoom rtcRoom;\n
+    private CozeAPI cozeCli;\n
+}
+import com.ss.bytertc.engine.RTCRoom;
+import com.ss.bytertc.engine.RTCVideo;
+import com.coze.openapi.service.service.CozeAPI
+public class MainActivity extends AppCompatActivity {
+private RTCVideo rtcVideo;
+private RTCRoom rtcRoom;
+private CozeAPI cozeCli;
+}
+创建用户界面
+创建基本的用户界面，包括本地视频预览视图、控制按钮等，并设置初始状态。将布局文件中定义的组件绑定到代码中，如控制按钮、本地视频预览视图等，并设置相应的事件监听器。
+Java
+Kotlin
+\n
+private void initUI() {\n
+    localViewContainer = findViewById(R.id.local_view_container);\n
+\n
+    btnConnect = findViewById(R.id.btn_connect);\n
+    btnConnect.setBackgroundColor(Color.GRAY);\n
+    btnVideo = findViewById(R.id.btn_video);\n
+    btnVideo.setBackgroundColor(Color.GRAY);\n
+    btnAudio = findViewById(R.id.btn_audio);\n
+    btnAudio.setBackgroundColor(Color.GRAY);\n
+    btnInterrupt = findViewById(R.id.btn_interrupt);\n
+    btnInterrupt.setBackgroundColor(Color.GRAY);\n
+    roomIdInput = findViewById(R.id.room_id_input);\n
+    messageTextView = findViewById(R.id.message_text_view);\n
+\n
+    connect();\n
+    initVideoControl();\n
+    initAudioControl();\n
+    setBtnInterrupt();\n
+}
+private void initUI() {\n
+    localViewContainer = findViewById(R.id.local_view_container);\n
+\n
+    btnConnect = findViewById(R.id.btn_connect);\n
+    btnConnect.setBackgroundColor(Color.GRAY);\n
+    btnVideo = findViewById(R.id.btn_video);\n
+    btnVideo.setBackgroundColor(Color.GRAY);\n
+    btnAudio = findViewById(R.id.btn_audio);\n
+    btnAudio.setBackgroundColor(Color.GRAY);\n
+    btnInterrupt = findViewById(R.id.btn_interrupt);\n
+    btnInterrupt.setBackgroundColor(Color.GRAY);\n
+    roomIdInput = findViewById(R.id.room_id_input);\n
+    messageTextView = findViewById(R.id.message_text_view);\n
+\n
+    connect();\n
+    initVideoControl();\n
+    initAudioControl();\n
+    setBtnInterrupt();\n
+}
+private void initUI() {
+localViewContainer = findViewById(R.id.local_view_container);
+btnConnect = findViewById(R.id.btn_connect);
+btnConnect.setBackgroundColor(Color.GRAY);
+btnVideo = findViewById(R.id.btn_video);
+btnVideo.setBackgroundColor(Color.GRAY);
+btnAudio = findViewById(R.id.btn_audio);
+btnAudio.setBackgroundColor(Color.GRAY);
+btnInterrupt = findViewById(R.id.btn_interrupt);
+btnInterrupt.setBackgroundColor(Color.GRAY);
+roomIdInput = findViewById(R.id.room_id_input);
+messageTextView = findViewById(R.id.message_text_view);
+connect();
+initVideoControl();
+initAudioControl();
+setBtnInterrupt();
+}
+申请设备权限
+在使用音视频通话功能之前，需要确保应用已获取必要的权限，包括麦克风、摄像头、网络访问权限。
+Java
+Kotlin
+\n
+public void requestPermission() {\n
+    String[] PERMISSIONS_STORAGE = {\n
+            Manifest.permission.RECORD_AUDIO,\n
+            Manifest.permission.CAMERA,\n
+            Manifest.permission.INTERNET\n
+\n
+    };\n
+    boolean needPermission = false;\n
+\n
+    for (String permission : PERMISSIONS_STORAGE) {\n
+        if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {\n
+            needPermission = true;\n
+            break;\n
+        }\n
+    }\n
+    if(needPermission){\n
+        requestPermissions(PERMISSIONS_STORAGE, 22);\n
+    }\n
+\n
+}
+public void requestPermission() {\n
+    String[] PERMISSIONS_STORAGE = {\n
+            Manifest.permission.RECORD_AUDIO,\n
+            Manifest.permission.CAMERA,\n
+            Manifest.permission.INTERNET\n
+\n
+    };\n
+    boolean needPermission = false;\n
+\n
+    for (String permission : PERMISSIONS_STORAGE) {\n
+        if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {\n
+            needPermission = true;\n
+            break;\n
+        }\n
+    }\n
+    if(needPermission){\n
+        requestPermissions(PERMISSIONS_STORAGE, 22);\n
+    }\n
+\n
+}
+public void requestPermission() {
+String[] PERMISSIONS_STORAGE = {
+Manifest.permission.RECORD_AUDIO,
+Manifest.permission.CAMERA,
+Manifest.permission.INTERNET
+};
+boolean needPermission = false;
+for (String permission : PERMISSIONS_STORAGE) {
+if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
+needPermission = true;
+break;
+}
+}
+if(needPermission){
+requestPermissions(PERMISSIONS_STORAGE, 22);
+}
+}
+创建扣子房间
+调用扣子的\n创建房间接口创建房间，以便后续从扣子平台获取房间信息。
+Java
+Kotlin
+\n
+// 第一步，在coze创建房间\n
+CreateRoomReq req = CreateRoomReq.builder()\n
+        .botID(Config.getInstance().getBotID())\n
+        .voiceID(Config.getInstance().getVoiceID())\n
+        .build();\n
+roomInfoTemp = cozeCli.audio().rooms().create(req);
+// 第一步，在coze创建房间\n
+CreateRoomReq req = CreateRoomReq.builder()\n
+        .botID(Config.getInstance().getBotID())\n
+        .voiceID(Config.getInstance().getVoiceID())\n
+        .build();\n
+roomInfoTemp = cozeCli.audio().rooms().create(req);
+// 第一步，在coze创建房间
+CreateRoomReq req = CreateRoomReq.builder()
+.botID(Config.getInstance().getBotID())
+.voiceID(Config.getInstance().getVoiceID())
+.build();
+roomInfoTemp = cozeCli.audio().rooms().create(req);
+创建引擎
+调用 createRTCVideo() 方法，使用扣子平台返回的房间信息初始化音视频引擎。
+Java
+Kotlin
+\n
+// 创建引擎\n
+rtcVideo = RTCVideo.createRTCVideo(\n
+        getApplicationContext(),  // 使用ApplicationContext而不是Activity\n
+        roomInfo.getAppID(),\n
+        new IRTCVideoEventHandler() {\n
+            @Override\n
+            public void onWarning(int warn) {\n
+                Log.w(TAG, "RTCVideo warning: " + warn);\n
+            }\n
+\n
+            @Override\n
+            public void onError(int err) {\n
+                Log.e(TAG, "RTCVideo error: " + err);\n
+            }\n
+        },\n
+        null,\n
+        null\n
+);
+// 创建引擎\n
+rtcVideo = RTCVideo.createRTCVideo(\n
+        getApplicationContext(),  // 使用ApplicationContext而不是Activity\n
+        roomInfo.getAppID(),\n
+        new IRTCVideoEventHandler() {\n
+            @Override\n
+            public void onWarning(int warn) {\n
+                Log.w(TAG, "RTCVideo warning: " + warn);\n
+            }\n
+\n
+            @Override\n
+            public void onError(int err) {\n
+                Log.e(TAG, "RTCVideo error: " + err);\n
+            }\n
+        },\n
+        null,\n
+        null\n
+);
+// 创建引擎
+rtcVideo = RTCVideo.createRTCVideo(
+getApplicationContext(),  // 使用ApplicationContext而不是Activity
+roomInfo.getAppID(),
+new IRTCVideoEventHandler() {
+@Override
+public void onWarning(int warn) {
+Log.w(TAG, "RTCVideo warning: " + warn);
+}
+@Override
+public void onError(int err) {
+Log.e(TAG, "RTCVideo error: " + err);
+}
+},
+null,
+null
+);
+设置本端视频渲染视图
+调用 setLocalVideoCanvas() 方法设置本端视频渲染视图。
+Java
+Kotlin
+\n
+// 设置本地预览窗口\n
+TextureView localTextureView = new TextureView(MainActivity.this);\n
+localViewContainer.removeAllViews();\n
+localViewContainer.addView(localTextureView);\n
+\n
+VideoCanvas videoCanvas = new VideoCanvas();\n
+videoCanvas.renderView = localTextureView;\n
+videoCanvas.renderMode = VideoCanvas.RENDER_MODE_HIDDEN;\n
+// 设置本地视频渲染视图\n
+rtcVideo.setLocalVideoCanvas(StreamIndex.STREAM_INDEX_MAIN, videoCanvas);
+// 设置本地预览窗口\n
+TextureView localTextureView = new TextureView(MainActivity.this);\n
+localViewContainer.removeAllViews();\n
+localViewContainer.addView(localTextureView);\n
+\n
+VideoCanvas videoCanvas = new VideoCanvas();\n
+videoCanvas.renderView = localTextureView;\n
+videoCanvas.renderMode = VideoCanvas.RENDER_MODE_HIDDEN;\n
+// 设置本地视频渲染视图\n
+rtcVideo.setLocalVideoCanvas(StreamIndex.STREAM_INDEX_MAIN, videoCanvas);
+// 设置本地预览窗口
+TextureView localTextureView = new TextureView(MainActivity.this);
+localViewContainer.removeAllViews();
+localViewContainer.addView(localTextureView);
+VideoCanvas videoCanvas = new VideoCanvas();
+videoCanvas.renderView = localTextureView;
+videoCanvas.renderMode = VideoCanvas.RENDER_MODE_HIDDEN;
+// 设置本地视频渲染视图
+rtcVideo.setLocalVideoCanvas(StreamIndex.STREAM_INDEX_MAIN, videoCanvas);
+创建并加入 RTC 房间
+调用 createRTCRoom 方法创建 RTC 房间，调用 joinRoom() 方法加入房间。
+Java
+Kotlin
+\n
+// 第创建RTC房间\n
+rtcRoom = rtcVideo.createRTCRoom(roomInfo.getRoomID());\n
+rtcRoom.setRTCRoomEventHandler(rtcRoomEventHandler);\n
+// 用户信息\n
+UserInfo userInfo = new UserInfo(roomInfo.getUid(), "");\n
+// 设置房间配置\n
+RTCRoomConfig roomConfig = new RTCRoomConfig(\n
+        ChannelProfile.CHANNEL_PROFILE_CHAT_ROOM,\n
+        true, true, true);\n
+\n
+// 第四步，加入房间\n
+rtcRoom.joinRoom(roomInfo.getToken(), userInfo, roomConfig);
+// 第创建RTC房间\n
+rtcRoom = rtcVideo.createRTCRoom(roomInfo.getRoomID());\n
+rtcRoom.setRTCRoomEventHandler(rtcRoomEventHandler);\n
+// 用户信息\n
+UserInfo userInfo = new UserInfo(roomInfo.getUid(), "");\n
+// 设置房间配置\n
+RTCRoomConfig roomConfig = new RTCRoomConfig(\n
+        ChannelProfile.CHANNEL_PROFILE_CHAT_ROOM,\n
+        true, true, true);\n
+\n
+// 第四步，加入房间\n
+rtcRoom.joinRoom(roomInfo.getToken(), userInfo, roomConfig);
+// 第创建RTC房间
+rtcRoom = rtcVideo.createRTCRoom(roomInfo.getRoomID());
+rtcRoom.setRTCRoomEventHandler(rtcRoomEventHandler);
+// 用户信息
+UserInfo userInfo = new UserInfo(roomInfo.getUid(), "");
+// 设置房间配置
+RTCRoomConfig roomConfig = new RTCRoomConfig(
+ChannelProfile.CHANNEL_PROFILE_CHAT_ROOM,
+true, true, true);
+// 第四步，加入房间
+rtcRoom.joinRoom(roomInfo.getToken(), userInfo, roomConfig);
+显示实时字幕
+在 IRTCRoomEventHandler 回调中重写onUserMessageReceived方法，解析接收到的用户消息，根据消息中的 event_type 进行不同处理，调用 updateMessage() 方法将消息内容更新到界面上。
+Java
+Kotlin
+\n
+@Override\n
+public void onUserMessageReceived(String uid, String message) {\n
+    try {\n
+        Map<String, Object> messageMap = mapper.readValue(message, new TypeReference<Map<String, Object>>() {});\n
+        Log.d(TAG, "接收到原始消息: " + messageMap);\n
+\n
+        Map<String, String> jsonMap = new HashMap<>();\n
+        for (Map.Entry<String, Object> entry : messageMap.entrySet()) {\n
+            try {\n
+                if (entry.getValue() instanceof String) {\n
+                    jsonMap.put(entry.getKey(), (String) entry.getValue());\n
+                    continue;\n
+                }\n
+                String jsonValue = mapper.writeValueAsString(entry.getValue());\n
+                jsonMap.put(entry.getKey(), jsonValue);\n
+            } catch (JsonProcessingException e) {\n
+                Log.e(TAG, "序列化value失败: " + entry.getKey(), e);\n
+            }\n
+        }\n
+        if (ChatEventType.CONVERSATION_MESSAGE_DELTA.getValue().equals(jsonMap.get("event_type"))){\n
+            Message msg = mapper.readValue(jsonMap.get("data"), Message.class);\n
+            updateMessage(msg.getContent());\n
+        } else if (ChatEventType.CONVERSATION_MESSAGE_COMPLETED.getValue().equals(jsonMap.get("event_type"))) {\n
+            updateMessage("\n");\n
+        }\n
+    } catch (JsonProcessingException e) {\n
+        Log.e(TAG, "解析消息失败", e);\n
+    }\n
+}
+@Override\n
+public void onUserMessageReceived(String uid, String message) {\n
+    try {\n
+        Map<String, Object> messageMap = mapper.readValue(message, new TypeReference<Map<String, Object>>() {});\n
+        Log.d(TAG, "接收到原始消息: " + messageMap);\n
+\n
+        Map<String, String> jsonMap = new HashMap<>();\n
+        for (Map.Entry<String, Object> entry : messageMap.entrySet()) {\n
+            try {\n
+                if (entry.getValue() instanceof String) {\n
+                    jsonMap.put(entry.getKey(), (String) entry.getValue());\n
+                    continue;\n
+                }\n
+                String jsonValue = mapper.writeValueAsString(entry.getValue());\n
+                jsonMap.put(entry.getKey(), jsonValue);\n
+            } catch (JsonProcessingException e) {\n
+                Log.e(TAG, "序列化value失败: " + entry.getKey(), e);\n
+            }\n
+        }\n
+        if (ChatEventType.CONVERSATION_MESSAGE_DELTA.getValue().equals(jsonMap.get("event_type"))){\n
+            Message msg = mapper.readValue(jsonMap.get("data"), Message.class);\n
+            updateMessage(msg.getContent());\n
+        } else if (ChatEventType.CONVERSATION_MESSAGE_COMPLETED.getValue().equals(jsonMap.get("event_type"))) {\n
+            updateMessage("\n");\n
+        }\n
+    } catch (JsonProcessingException e) {\n
+        Log.e(TAG, "解析消息失败", e);\n
+    }\n
+}
+@Override
+public void onUserMessageReceived(String uid, String message) {
+try {
+Map<String, Object> messageMap = mapper.readValue(message, new TypeReference<Map<String, Object>>() {});
+Log.d(TAG, "接收到原始消息: " + messageMap);
+Map<String, String> jsonMap = new HashMap<>();
+for (Map.Entry<String, Object> entry : messageMap.entrySet()) {
+try {
+if (entry.getValue() instanceof String) {
+jsonMap.put(entry.getKey(), (String) entry.getValue());
+continue;
+}
+String jsonValue = mapper.writeValueAsString(entry.getValue());
+jsonMap.put(entry.getKey(), jsonValue);
+} catch (JsonProcessingException e) {
+Log.e(TAG, "序列化value失败: " + entry.getKey(), e);
+}
+}
+if (ChatEventType.CONVERSATION_MESSAGE_DELTA.getValue().equals(jsonMap.get("event_type"))){
+Message msg = mapper.readValue(jsonMap.get("data"), Message.class);
+updateMessage(msg.getContent());
+} else if (ChatEventType.CONVERSATION_MESSAGE_COMPLETED.getValue().equals(jsonMap.get("event_type"))) {
+updateMessage("\n");
+}
+} catch (JsonProcessingException e) {
+Log.e(TAG, "解析消息失败", e);
+}
+}
+开启或关闭本端视频流采集
+监听按钮事件，根据 isVideoEnabled 的状态，调用 stopVideoCapture() 或 startVideoCapture() 方法，实现摄像头的启用或禁用功能。
+Java
+Kotlin
+\n
+private void initVideoControl() {\n
+    btnVideo.setOnClickListener(v -> {\n
+        if (rtcVideo != null) {\n
+            if (isVideoEnabled) {\n
+                stopVideo();\n
+            } else {\n
+                startVideo();\n
+            }\n
+        }else{\n
+            ToastUtil.showAlert(this, "请先连接");\n
+        }\n
+    });\n
+}\n
+\n
+private void stopVideo(){\n
+    rtcVideo.stopVideoCapture();\n
+    btnVideo.setText("打开视频");\n
+    isVideoEnabled = !isVideoEnabled;\n
+}\n
+\n
+private void startVideo(){\n
+    rtcVideo.startVideoCapture();\n
+    btnVideo.setText("关闭视频");\n
+    isVideoEnabled = !isVideoEnabled;\n
+}
+private void initVideoControl() {\n
+    btnVideo.setOnClickListener(v -> {\n
+        if (rtcVideo != null) {\n
+            if (isVideoEnabled) {\n
+                stopVideo();\n
+            } else {\n
+                startVideo();\n
+            }\n
+        }else{\n
+            ToastUtil.showAlert(this, "请先连接");\n
+        }\n
+    });\n
+}\n
+\n
+private void stopVideo(){\n
+    rtcVideo.stopVideoCapture();\n
+    btnVideo.setText("打开视频");\n
+    isVideoEnabled = !isVideoEnabled;\n
+}\n
+\n
+private void startVideo(){\n
+    rtcVideo.startVideoCapture();\n
+    btnVideo.setText("关闭视频");\n
+    isVideoEnabled = !isVideoEnabled;\n
+}
+private void initVideoControl() {
+btnVideo.setOnClickListener(v -> {
+if (rtcVideo != null) {
+if (isVideoEnabled) {
+stopVideo();
+} else {
+startVideo();
+}
+}else{
+ToastUtil.showAlert(this, "请先连接");
+}
+});
+}
+private void stopVideo(){
+rtcVideo.stopVideoCapture();
+btnVideo.setText("打开视频");
+isVideoEnabled = !isVideoEnabled;
+}
+private void startVideo(){
+rtcVideo.startVideoCapture();
+btnVideo.setText("关闭视频");
+isVideoEnabled = !isVideoEnabled;
+}
+静音或取消静音
+监听按钮事件，根据 isAudioEnabled 的状态调用 stopAudioCapture() 或 startAudioCapture() 方法，从而实现麦克风的启用或静音功能。
+Java
+Kotlin
+\n
+private void initAudioControl() {\n
+    btnAudio.setOnClickListener(v -> {\n
+        if (rtcVideo != null) {\n
+            if (isAudioEnabled) {\n
+                stopVoice();\n
+            } else {\n
+                startVoice();\n
+            }\n
+        }else {\n
+            ToastUtil.showAlert(this, "请先连接");\n
+        }\n
+    });\n
+}\n
+\n
+private void startVoice(){\n
+    rtcVideo.startAudioCapture();\n
+    btnAudio.setText("静音");\n
+    isAudioEnabled = !isAudioEnabled;\n
+}\n
+\n
+private void stopVoice(){\n
+    rtcVideo.stopAudioCapture();\n
+    btnAudio.setText("打开声音");\n
+    isAudioEnabled = !isAudioEnabled;\n
+}
+private void initAudioControl() {\n
+    btnAudio.setOnClickListener(v -> {\n
+        if (rtcVideo != null) {\n
+            if (isAudioEnabled) {\n
+                stopVoice();\n
+            } else {\n
+                startVoice();\n
+            }\n
+        }else {\n
+            ToastUtil.showAlert(this, "请先连接");\n
+        }\n
+    });\n
+}\n
+\n
+private void startVoice(){\n
+    rtcVideo.startAudioCapture();\n
+    btnAudio.setText("静音");\n
+    isAudioEnabled = !isAudioEnabled;\n
+}\n
+\n
+private void stopVoice(){\n
+    rtcVideo.stopAudioCapture();\n
+    btnAudio.setText("打开声音");\n
+    isAudioEnabled = !isAudioEnabled;\n
+}
+private void initAudioControl() {
+btnAudio.setOnClickListener(v -> {
+if (rtcVideo != null) {
+if (isAudioEnabled) {
+stopVoice();
+} else {
+startVoice();
+}
+}else {
+ToastUtil.showAlert(this, "请先连接");
+}
+});
+}
+private void startVoice(){
+rtcVideo.startAudioCapture();
+btnAudio.setText("静音");
+isAudioEnabled = !isAudioEnabled;
+}
+private void stopVoice(){
+rtcVideo.stopAudioCapture();
+btnAudio.setText("打开声音");
+isAudioEnabled = !isAudioEnabled;
+}
+停止音视频通话
+1.
+调用 leaveRoom()、destroy() 方法离开并销毁房间。
+2.
+调用 stopVoice()和stopVideo() 方法停止音视频采集。
+3.
+调用 destroyRTCVideo() 方法销毁引擎。
+Java
+Kotlin
+\n
+private void disconnect(){\n
+    if (rtcRoom != null) {\n
+        rtcRoom.leaveRoom();\n
+        rtcRoom.destroy();\n
+    }\n
+    if (rtcVideo != null){\n
+        stopVoice();\n
+        stopVideo();\n
+        RTCVideo.destroyRTCVideo();\n
+        rtcVideo = null;\n
+    }\n
+    ToastUtil.showAlert(this, "断开连接成功");\n
+}
+private void disconnect(){\n
+    if (rtcRoom != null) {\n
+        rtcRoom.leaveRoom();\n
+        rtcRoom.destroy();\n
+    }\n
+    if (rtcVideo != null){\n
+        stopVoice();\n
+        stopVideo();\n
+        RTCVideo.destroyRTCVideo();\n
+        rtcVideo = null;\n
+    }\n
+    ToastUtil.showAlert(this, "断开连接成功");\n
+}
+private void disconnect(){
+if (rtcRoom != null) {
+rtcRoom.leaveRoom();
+rtcRoom.destroy();
+}
+if (rtcVideo != null){
+stopVoice();
+stopVideo();
+RTCVideo.destroyRTCVideo();
+rtcVideo = null;
+}
+ToastUtil.showAlert(this, "断开连接成功");
+}
+说明
+在实现音视频通话后，如遇无声音、无画面、视频卡顿等问题时，你可以使用诊断工具快速排查和定位异常房间及用户，并获取异常根因分析、处理建议、分析报告等。
+在实现音视频通话后，如遇无声音、无画面、视频卡顿等问题时，你可以使用诊断工具快速排查和定位异常房间及用户，并获取异常根因分析、处理建议、分析报告等。

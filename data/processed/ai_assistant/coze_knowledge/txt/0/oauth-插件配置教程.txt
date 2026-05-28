@@ -1,0 +1,93 @@
+OAuth 插件配置教程
+OAuth 是一种开放授权标准，允许第三方应用程序在用户授权的情况下访问用户存储在服务商的资源，而无需提供用户名和密码。如果服务支持 OAuth 认证，并且你希望在插件中集成该服务，你可以创建一个支持 OAuth 认证的插件。创建成功后，智能体需要通过 OAuth 授权流程来获取访问令牌，以便安全地调用集成到插件中的服务。
+本文以扣子 API 为例，为你演示如何创建一个支持 OAuth 认证的插件。
+前提条件
+请确保你已经在 API 服务平台创建了 OAuth 应用，并获取了客户端 ID、客户端密钥等信息，详情请参考 API 服务提供商的开放文档。
+本示例因为在插件中集成的是扣子 API，所以在扣子平台创建 OAuth 应用，详情请参考\n1 创建 OAuth 应用。
+扣子 OAuth 应用的重定向 URL 配置为https://bot-open-api.oceancloudapi.com/api/oauth/authorization_code，获取到的客户端 ID、客户端密钥示例如下：
+操作步骤
+1.
+登录扣子平台。
+2.
+在左侧导航栏中选择工作空间，并在页面顶部空间列表中选择个人空间或团队空间。
+系统默认创建了一个个人空间，该空间内创建的资源例如智能体、插件、知识库是你的私有资源，其他用户不可见。你也可以创建团队或加入其他团队，团队内的资源可以和其他团队成员共享。更多信息，请参考\n工作空间概述。
+3.
+在资源库页面右上角单击 +资源，并选择插件。
+4.
+填写插件基础信息。
+a.
+输入插件名称和描述。
+b.
+插件工具创建方式选择基于已有服务创建。
+c.
+插件 URL：输入 API 的服务地址。
+d.
+将接口的 Header 信息配置到 Header 列表中。
+e.
+授权方式选择 OAuth > standard，然后配置 OAuth 参数。
+配置\n
+	
+说明\n
+
+
+client_id\n
+	
+客户端 ID，是应用在授权服务器中的唯一标识符，授权服务器通过客户端 ID 来识别不同的三方应用。\n
+创建 OAuth 应用时会分配 client_id，本示例输入813924812101982004357116497xxxx.app.coze。\n
+
+
+client_secret\n
+	
+客户端密钥，和客户端 ID 配合使用，用于认证应用的身份，确保只有被授权的应用可以请求授权。\n
+创建 OAuth 应用时会分配 client_secret，本示例输入8jmSA1wi********。\n
+
+
+client_url\n
+	
+服务方的 OAuth 页面URL，用于拼接用户登录授权页的URL。\n
+用户登录插件时，扣子会将用户引导至"[client_url]?response_type=code&client_id=[client_id]&scope=[scope]&state=xyz123&redirect_uri=[coze平台的回调安全地址]。\n
+参考服务方的授权文档获取 client_url ，本示例参考扣子开发指南文档，输入https://www.coze.cn/api/permission/oauth2/authorize，详情请参考\n2 获取访问令牌。\n
+
+
+scope\n
+	
+允许应用程序请求访问用户数据的范围。\n
+参考服务方的授权文档输入 scope。\n
+
+
+authorization_url\n
+	
+获取用户 access token 的 URL 地址。\n
+用户通过client_url授权成功后，三方服务会返回用于获取 token 的 code，并跳转至回调地址。此时，服务提供方会通过对应参数向authorization_url发起请求，获取用户的access_token。\n
+参考服务方的授权文档获取 authorization_url，本示例参考扣子开发指南文档，输入https://api.coze.cn/api/permission/oauth2/token，详情请参考\n2 获取访问令牌。\n
+
+
+authorization_content_type\n
+	
+向 OAuth 提供者发送数据的内容类型，目前仅支持application/json类型。
+配置
+说明
+client_id
+客户端 ID，是应用在授权服务器中的唯一标识符，授权服务器通过客户端 ID 来识别不同的三方应用。
+创建 OAuth 应用时会分配 client_id，本示例输入813924812101982004357116497xxxx.app.coze。
+client_secret
+客户端密钥，和客户端 ID 配合使用，用于认证应用的身份，确保只有被授权的应用可以请求授权。
+创建 OAuth 应用时会分配 client_secret，本示例输入8jmSA1wi********。
+client_url
+服务方的 OAuth 页面URL，用于拼接用户登录授权页的URL。
+用户登录插件时，扣子会将用户引导至"[client_url]?response_type=code&client_id=[client_id]&scope=[scope]&state=xyz123&redirect_uri=[coze平台的回调安全地址]。
+参考服务方的授权文档获取 client_url ，本示例参考扣子开发指南文档，输入https://www.coze.cn/api/permission/oauth2/authorize，详情请参考\n2 获取访问令牌。
+scope
+允许应用程序请求访问用户数据的范围。
+参考服务方的授权文档输入 scope。
+authorization_url
+获取用户 access token 的 URL 地址。
+用户通过client_url授权成功后，三方服务会返回用于获取 token 的 code，并跳转至回调地址。此时，服务提供方会通过对应参数向authorization_url发起请求，获取用户的access_token。
+参考服务方的授权文档获取 authorization_url，本示例参考扣子开发指南文档，输入https://api.coze.cn/api/permission/oauth2/token，详情请参考\n2 获取访问令牌。
+authorization_content_type
+向 OAuth 提供者发送数据的内容类型，目前仅支持application/json类型。
+5.
+单击未授权，然后单击确认。
+6.
+在授权页，单击授权即可完成 OAuth 授权。
+授权成功后，无论是插件调试还是与智能体对话，每次请求调用插件时，用户授权的 access_token 都会在 header 中传递，具体传递内容为：“Authorization”：“[Bearer] [user's access_token]”。

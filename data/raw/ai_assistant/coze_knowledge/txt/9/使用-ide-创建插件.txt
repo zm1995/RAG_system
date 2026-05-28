@@ -1,0 +1,192 @@
+使用 IDE 创建插件
+在扣子 IDE 中，您可以借助 AI 轻松创建插件，无需关心开发环境。创建插件后，必须发布插件才可以被智能体使用。
+扣子 IDE 是扣子提供的在线编码和运行环境，允许您在多种技术栈中创建插件。待插件发布后，IDE 会帮助您托管运行代码，您无需关心环境配置、服务部署等步骤。此外，您可以使用 IDE 内置的 AI 助手获取代码方面的帮助，包括生成代码、修改代码、解释代码和添加注释。
+说明
+个人空间中的插件，仅能被个人调用；团队空间中插件，能被任意团队成员调用。\n
+插件发布了新版本后，使用了这个插件的智能体会自动使用发布的最新版本。
+个人空间中的插件，仅能被个人调用；团队空间中插件，能被任意团队成员调用。
+插件发布了新版本后，使用了这个插件的智能体会自动使用发布的最新版本。
+操作步骤
+1.
+登录扣子平台。
+2.
+在左侧导航栏中选择工作空间，并在页面顶部空间列表中选择个人空间或团队空间。
+系统默认创建了一个个人空间，该空间内创建的资源例如智能体、插件、知识库是你的私有资源，其他用户不可见。你也可以创建团队或加入其他团队，团队内的资源可以和其他团队成员共享。更多信息，请参考\n管理团队。
+3.
+在资源库页面右上角单击 +资源，并选择插件。
+4.
+在新建插件对话框，根据以下信息完成配置并单击确认。
+插件图标：（可选）单击默认图标后，您可以上传本地图片文件作为新的图标。
+插件名称：自定义插件名称，用于标识当前插件。建议输入清晰易理解的名称，便于大语言模型搜索与使用插件。
+插件描述：插件的描述信息，一般用于记录当前插件的用途。
+插件工具创建方式：选择在扣子 IDE中创建。
+IDE 运行时：选择 Node.js 或者 Python3。
+5.
+在插件详情页，单击在IDE中创建工具。
+6.
+在弹出的创建工具对话框，设置工具名称和介绍，以明确工具的用途，并单击确定。
+工具名称和介绍越清晰，大语言模型就越能理解并使用它。创建后，您将跳转到 扣子 IDE 页面进行编码。
+7.
+（可选）在 IDE 左上角工具列表区域，单击 + 图标，向插件添加更多工具。
+您还可以通过单击列表内某一工具的设置图标，来编辑、删除或重置代码。
+8.
+（可选）在 IDE 左下角依赖包区域，管理依赖包，所有工具共用该依赖列表。
+您可以单击 + 或者单击添加依赖按钮，输入依赖包名称并选择版本（可通过依赖名@版本号的格式进行搜索），然后安装依赖包。安装日志显示在控制台 Console 区域。
+9.
+在页面中间代码区域，根据所选的 IDE 运行时，默认内置了代码模板。
+注意
+请勿删除或修改模板内的 handler 方法，否则将导致函数运行失败。\n
+返回内容必须为 JSON 对象。
+请勿删除或修改模板内的 handler 方法，否则将导致函数运行失败。
+返回内容必须为 JSON 对象。
+以下提供了不同 IDE 运行时的代码模板，您可以参考模板内的方式获取输入参数、打印日志。
+Node.js
+/**\n
+ * Each file needs to export a function named `handler`. This function is the entrance to the Tool.\n
+ * @param {Object} args.input - input parameters, you can get test input value by input.xxx.\n
+ * @param {Object} args.logger - logger instance used to print logs, injected by runtime\n
+ * @returns {*} The return data of the function, which should match the declared output parameters.\n
+ * \n
+ * Remember to fill in input/output in Metadata, it helps LLM to recognize and use tool.\n
+ */\n
+export async function handler({ input, logger }: Args<Input>): Promise<Output> {\n
+ const name = input.name || "world";\n
+\n
+ logger.info(name);\n
+\n
+ return {\n
+ message: `Hello, ${name}!`,\n
+ };\n
+};
+/**
+* Each file needs to export a function named `handler`. This function is the entrance to the Tool.
+* @param {Object} args.input - input parameters, you can get test input value by input.xxx.
+* @param {Object} args.logger - logger instance used to print logs, injected by runtime
+* @returns {*} The return data of the function, which should match the declared output parameters.
+*
+* Remember to fill in input/output in Metadata, it helps LLM to recognize and use tool.
+*/
+export async function handler({ input, logger }: Args<Input>): Promise<Output> {
+const name = input.name || "world";
+logger.info(name);
+return {
+message: `Hello, ${name}!`,
+};
+};
+Python3
+# Python code example\n
+"""\n
+Each file needs to export a function named `handler`. This function is the entrance to the Tool.\n
+\n
+Parameters:\n
+args: parameters of the entry function.\n
+args.input - input parameters, you can get test input value by args.input.xxx.\n
+args.logger - logger instance used to print logs, injected by runtime.\n
+\n
+Remember to fill in input/output in Metadata , it helps LLM to recognize and use tool.\n
+\n
+Return:\n
+The return data of the function, which should match the declared output parameters.\n
+"""\n
+def handler(args: Args[Input])->Output:\n
+    # get name from input \n
+    name=args.input.name\n
+\n
+    # print name\n
+    args.logger.info(name)\n
+    \n
+    return {"content": "Hello,"+ name }
+# Python code example
+"""
+Each file needs to export a function named `handler`. This function is the entrance to the Tool.
+Parameters:
+args: parameters of the entry function.
+args.input - input parameters, you can get test input value by args.input.xxx.
+args.logger - logger instance used to print logs, injected by runtime.
+Remember to fill in input/output in Metadata , it helps LLM to recognize and use tool.
+Return:
+The return data of the function, which should match the declared output parameters.
+"""
+def handler(args: Args[Input])->Output:
+# get name from input
+name=args.input.name
+# print name
+args.logger.info(name)
+return {"content": "Hello,"+ name }
+在编码时，支持通过快捷键（macOS 为 command + I、Windows 为 Ctrl + I）唤起 AI 助手，AI 助手可以帮助您：
+生成代码：输入期望的功能，由 AI 为您生成代码。
+修改代码：选中待修改的代码，唤起 AI 助手，由 AI 帮助您修改代码。
+解释代码：选中代码，唤起 AI 助手，输入 /explain 让 AI 解释代码。
+注释代码：选中代码，唤起 AI 助手，输入 /doc 让 AI 为选中的代码添加注释。
+10.
+单击元数据，配置工具的元数据。
+元数据的作用是让大语言模型理解每个工具输入或输出参数有哪些、各个参数有何含义。当用户在使用该工具的智能体时，模型会根据工具的元数据信息，从用户问答中解析、提取出对应的输入参数，并选择调用该工具，流程图如下所示。因此，在工具的元数据内提供详细的参数说明，可以让大语言模型更准确的使用工具。
+以下是一个网页搜索工具的元数据，当智能体内添加了该工具后，模型会根据工具的元数据信息，在收到匹配的用户查询语句时，调用工具处理用户任务。例如，如果用户发送消息查询上海天气，Bot 将会使用该工具响应用户。
+元数据配置说明：
+配置项\n
+	
+描述\n
+
+
+名称\n
+	
+工具名称。建议输入清晰易理解的名称，便于后续大语言模型搜索与使用工具。\n
+
+
+描述\n
+	
+工具的描述信息，一般用于记录当前工具的用途。\n
+
+
+启用\n
+	
+是否启用当前工具。使用说明：\n
+如果工具未开发测试完成，建议先禁用该工具，只启用并发布已通过测试的工具。\n
+如果需要下线某一工具，可将该工具设置为禁用，并再次发布插件。\n
+如果插件中只有一个工具，则不支持禁用该工具。如需下线该工具，您可以选择直接删除该插件，或者创建另一个工具并完成开发测试后，再禁用该工具，最后发布插件。\n
+
+
+输入参数\n
+	
+当前工具对应接口的输入参数信息。准确、清晰易理解的参数名称、描述等信息，可以让大语言模型更准确的使用工具。\n
+
+
+输出参数\n
+	
+当前工具对应接口的输出参数信息。准确、清晰易理解的参数名称、描述等信息，可以让大语言模型更准确的使用工具。
+配置项
+描述
+名称
+工具名称。建议输入清晰易理解的名称，便于后续大语言模型搜索与使用工具。
+描述
+工具的描述信息，一般用于记录当前工具的用途。
+启用
+是否启用当前工具。使用说明：
+如果工具未开发测试完成，建议先禁用该工具，只启用并发布已通过测试的工具。
+如果需要下线某一工具，可将该工具设置为禁用，并再次发布插件。
+如果插件中只有一个工具，则不支持禁用该工具。如需下线该工具，您可以选择直接删除该插件，或者创建另一个工具并完成开发测试后，再禁用该工具，最后发布插件。
+输入参数
+当前工具对应接口的输入参数信息。准确、清晰易理解的参数名称、描述等信息，可以让大语言模型更准确的使用工具。
+输出参数
+当前工具对应接口的输出参数信息。准确、清晰易理解的参数名称、描述等信息，可以让大语言模型更准确的使用工具。
+11.
+在页面右侧单击测试代码图标并输入所需的参数，然后单击 Run 测试工具。
+如果您在元数据设置了输入参数，可单击自动生成图标，由 IDE 生成模拟数据，您只需要调整参数值即可进行测试。
+您可以在控制台 Console 区域查看运行日志、在输出区域查看运行结果，单击更新输出参数，将输出结果中的参数更新到元数据的输出参数中，以确保输出参数的一致性和准确性。
+说明
+如果插件试运行正常，但是在智能体或工作流中运行不符合预期时，建议你检查插件的输出参数是否存在以下情况：\n
+参数定义不完整：未定义所有必要的输出参数和数据类型，可能导致数据处理不全。如果输出参数是数组类型，则必须要明确定义数组元素的数据类型。\n
+数据类型不一致：实际返回参数的数据类型与自定义输出参数的数据类型不匹配时，在智能体中调用插件可能导致输出参数的值为空，而在工作流中调用插件可能会导致运行失败。\n
+未启用的输出参数：已定义输出参数但是未开启，可能导致该参数不被输出。
+如果插件试运行正常，但是在智能体或工作流中运行不符合预期时，建议你检查插件的输出参数是否存在以下情况：
+参数定义不完整：未定义所有必要的输出参数和数据类型，可能导致数据处理不全。如果输出参数是数组类型，则必须要明确定义数组元素的数据类型。
+数据类型不一致：实际返回参数的数据类型与自定义输出参数的数据类型不匹配时，在智能体中调用插件可能导致输出参数的值为空，而在工作流中调用插件可能会导致运行失败。
+未启用的输出参数：已定义输出参数但是未开启，可能导致该参数不被输出。
+12.
+测试完成后，在页面右上角单击发布。
+13.
+在弹出的发布对话框，核对工具信息，并设置是否启用工具，然后单击下一步。
+14.
+在个人信息收集声明 Privacy Collection Statement 对话框，如果该工具会收集、传输用户个人信息，则需要选择是，并根据实际情况选择具体收集的个人信息，否则选择否，最后单击。
+上架到商店
+您可以将创建的插件发布到扣子商店，让更多扣子用户发现、使用您的插件。详情请参考\n将插件上架到商店。

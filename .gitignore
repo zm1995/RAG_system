@@ -1,0 +1,6 @@
+config.py
+*.key
+*.secret
+__pycache__/
+chroma_db/
+venv/

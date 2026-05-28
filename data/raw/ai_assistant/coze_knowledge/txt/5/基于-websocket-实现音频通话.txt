@@ -1,0 +1,282 @@
+基于 WebSocket 实现音频通话
+除了基于 WebRTC 的实时通信方案外，扣子智能语音还推出了 WebSocket OpenAPI 方案，用于实现用户与智能体之间的实时语音通话。该方案通过 WebSocket 协议提供高效、灵活的语音交互能力，适用于多种应用场景。
+注意事项
+WebSocket OpenAPI 支持的音频编码格式如下：
+输入音频：支持 PCM、WAV 或 OGG 格式，默认格式为 WAV。
+输出音频：支持 PCM 或 OPUS 格式，默认为采样率 24000 的 PCM 片段。
+准备工作
+在开始集成 WebSocket OpenAPI 之前，你需要先完成以下准备工作。
+操作\n
+	
+说明\n
+
+
+升级为扣子专业版\n
+	
+确保已注册扣子账号，并升级至扣子专业版。具体操作请参见\n升级到专业版。\n
+
+
+发布智能体\n
+	
+已成功搭建并发布智能体为 API 服务。搭建步骤请参见\n搭建一个 AI 助手智能体，发布步骤请参见\n发布智能体为 API 服务。\n
+
+
+获取访问密钥\n
+	
+获取访问密钥，用于身份认证与鉴权。\n
+体验或调试场景：建议生成短期的个人访问令牌（PAT），以快速完成 Realtime SDK 的整体流程。个人访问令牌的获取方法请参见\n添加个人访问令牌。\n
+线上环境：在线上环境中，应使用 OAuth 鉴权方案。OAuth 鉴权方案的详细说明请参见\nOAuth 授权概述。\n
+说明
+SDK 提供了多种鉴权方式的封装 ，具体鉴权方法可参考鉴权示例代码。
+操作
+说明
+升级为扣子专业版
+确保已注册扣子账号，并升级至扣子专业版。具体操作请参见\n升级到专业版。
+发布智能体
+已成功搭建并发布智能体为 API 服务。搭建步骤请参见\n搭建一个 AI 助手智能体，发布步骤请参见\n发布智能体为 API 服务。
+获取访问密钥
+获取访问密钥，用于身份认证与鉴权。
+体验或调试场景：建议生成短期的个人访问令牌（PAT），以快速完成 Realtime SDK 的整体流程。个人访问令牌的获取方法请参见\n添加个人访问令牌。
+线上环境：在线上环境中，应使用 OAuth 鉴权方案。OAuth 鉴权方案的详细说明请参见\nOAuth 授权概述。
+说明
+SDK 提供了多种鉴权方式的封装 ，具体鉴权方法可参考鉴权示例代码。
+SDK 提供了多种鉴权方式的封装 ，具体鉴权方法可参考鉴权示例代码。
+示例项目源码
+你可以通过扣子 Python SDK 示例代码快速了解调用智能语音 WebSocket OpenAPI 实现语音通话的整体流程，包括语音输入、语音输出以及聊天对话等。
+此外，参考 websockets_chat_realtime_gui.py 文件，你可以快速实现包含图形化界面的智能语音应用。通过 WebSocket 与 扣子 API 通信，快速体验智能语音的 Demo 效果。
+实现语音通话
+步骤一 ： 建立 WebSocket 连接
+发起 HTTP 请求时，在请求头（Header）中添加Authorization信息。Authorization的取值固定为Bearer $Access_Token，用于扣子 OpenAPI 鉴权的访问密钥。将您在准备工作中获取的访问密钥替换掉 $Access_Token 后再发起请求。
+说明
+浏览器不支持在 WebSocket 连接中设置 Header。如果需要通过浏览器发起 WebSocket 建连请求，可以将Authorization 参数放到 URL 的查询参数中。例如，与语音识别 API 建立连接的 URL 格式如下：\n
+\n
+wss://ws.coze.cn/v1/audio/transcriptions?authorization=Bearer xxx
+浏览器不支持在 WebSocket 连接中设置 Header。如果需要通过浏览器发起 WebSocket 建连请求，可以将Authorization 参数放到 URL 的查询参数中。例如，与语音识别 API 建立连接的 URL 格式如下：
+wss://ws.coze.cn/v1/audio/transcriptions?authorization=Bearer xxx
+wss://ws.coze.cn/v1/audio/transcriptions?authorization=Bearer xxx
+以下是建立 WebSocket 连接的 Python 示例代码：
+# example requires websocket-client library:\n
+# pip install websocket-client\n
+\n
+import os\n
+import json\n
+import websocket\n
+\n
+ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN")\n
+\n
+url = "wss://ws.coze.cn/v1/audio/transcriptions"\n
+# 如果是流式语音对话接口，需要在 url 中带上 bot_id \n
+# url = "wss://ws.coze.cn/v1/chat?bot_id=73791654286875***"\n
+headers = [\n
+    "Authorization: Bearer " + ACCESS_TOKEN\n
+]\n
+\n
+def on_open(ws):\n
+    print("Connected to server.")\n
+\n
+def on_message(ws, message):\n
+    data = json.loads(message)\n
+    print("Received event:", json.dumps(data, indent=2))\n
+\n
+ws = websocket.WebSocketApp(\n
+    url,\n
+    header=headers,\n
+    on_open=on_open,\n
+    on_message=on_message,\n
+)\n
+\n
+ws.run_forever()
+# example requires websocket-client library:
+# pip install websocket-client
+import os
+import json
+import websocket
+ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN")
+url = "wss://ws.coze.cn/v1/audio/transcriptions"
+# 如果是流式语音对话接口，需要在 url 中带上 bot_id
+# url = "wss://ws.coze.cn/v1/chat?bot_id=73791654286875***"
+headers = [
+"Authorization: Bearer " + ACCESS_TOKEN
+]
+def on_open(ws):
+print("Connected to server.")
+def on_message(ws, message):
+data = json.loads(message)
+print("Received event:", json.dumps(data, indent=2))
+ws = websocket.WebSocketApp(
+url,
+header=headers,
+on_open=on_open,
+on_message=on_message,
+)
+ws.run_forever()
+步骤二：发送和接收事件
+通过 WebSocket 与扣子智能体进行实时语音交互时，需要通过 WebSocket 接口发送和接收消息。成功连接后，客户端可以发送和接收代表文本、音频、配置更新等的事件。客户端可以发送的事件消息以及从服务器接收的事件消息列表请参见\n双向流式语音识别事件、\n双向流式语音合成事件和\n双向流式对话事件。
+发送和接收事件的 Python 示例代码如下：
+# To send a client event, serialize a dictionary to JSON\n
+# of the proper event type\n
+def on_open(ws):\n
+    print("Connected to server.")\n
+    \n
+    data = {\n
+        "role": "user",\n
+        "content_type": "text",\n
+        "content": "你好呀"\n
+    }\n
+    event = {\n
+        "event_type": "conversation.message.create",\n
+        "data":  data\n
+    }\n
+    ws.send(json.dumps(event))\n
+\n
+# Receiving messages will require parsing message payloads\n
+# from JSON\n
+def on_message(ws, message):\n
+    data = json.loads(message)\n
+    print("Received event:", json.dumps(data, indent=2))
+# To send a client event, serialize a dictionary to JSON
+# of the proper event type
+def on_open(ws):
+print("Connected to server.")
+data = {
+"role": "user",
+"content_type": "text",
+"content": "你好呀"
+}
+event = {
+"event_type": "conversation.message.create",
+"data":  data
+}
+ws.send(json.dumps(event))
+# Receiving messages will require parsing message payloads
+# from JSON
+def on_message(ws, message):
+data = json.loads(message)
+print("Received event:", json.dumps(data, indent=2))
+核心功能
+双向流式语音识别
+扣子提供流式语音识别 WebSocket OpenAPI，可以将指定的音频判断转为文字，支持识别中英文双语种。双向流式语音识别场景下的各类事件详细信息可参考\n双向流式语音识别事件。
+URL：wss://ws.coze.cn/v1/audio/transcriptions
+Headers：Authorization Bearer $Access_Token
+权限：createTranscription
+交互流程如下：
+双向流式语音合成
+扣子提供流式语音合成 WebSocket OpenAPI，可以将文字信息转为指定音色的语音片段。双向流式语音合成场景下的各类事件详细信息可参考\n双向流式语音合成事件。
+URL：wss://ws.coze.cn/v1/audio/speech
+Headers：Authorization Bearer $Access_Token
+权限：createSpeech
+交互流程如下：
+双向流式语音对话
+扣子提供流式语音对话 WebSocket OpenAPI，向指定的智能体发起语音对话。双向流式语音对话场景下的各类事件详细信息可参考\n双向流式对话事件。
+URL：wss://ws.coze.cn/v1/chat
+权限：chat
+Headers：Authorization Bearer $Access_Token
+Query 参数：
+参数\n
+	
+类型\n
+	
+是否必选\n
+	
+说明\n
+
+
+bot_id\n
+\n
+	
+String \n
+\n
+	
+必选\n
+\n
+	
+需要关联的智能体 ID。\n
+进入智能体的开发页面，开发页面 URL 中 bot 参数后的数字就是智能体 ID。例如 https://www.coze.com/space/341****/bot/73428668*****，Bot ID 为 73428668*****。 \n
+说明
+确保调用该接口使用的令牌开通了此智能体所在空间的权限。\n
+确保该智能体已发布为 API 服务。\n
+\n
+
+
+workflow_id\n
+	
+String\n
+	
+可选\n
+	
+待执行的对话流 ID，此对话流应已发布。\n
+进入对话流编排页面，在页面 URL 中，workflow 参数后的数字就是对话流 ID。例如 https://www.coze.com/work_flow?space_id=42463***&workflow_id=73505836754923***，对话流 ID 为 73505836754923***。\n
+说明
+如果智能体为对话流模式，则需要指定对话流的 ID。
+参数
+类型
+是否必选
+说明
+bot_id
+String
+必选
+需要关联的智能体 ID。
+进入智能体的开发页面，开发页面 URL 中 bot 参数后的数字就是智能体 ID。例如 https://www.coze.com/space/341****/bot/73428668*****，Bot ID 为 73428668*****。
+说明
+确保调用该接口使用的令牌开通了此智能体所在空间的权限。\n
+确保该智能体已发布为 API 服务。
+确保调用该接口使用的令牌开通了此智能体所在空间的权限。
+确保该智能体已发布为 API 服务。
+workflow_id
+String
+可选
+待执行的对话流 ID，此对话流应已发布。
+进入对话流编排页面，在页面 URL 中，workflow 参数后的数字就是对话流 ID。例如 https://www.coze.com/work_flow?space_id=42463***&workflow_id=73505836754923***，对话流 ID 为 73505836754923***。
+说明
+如果智能体为对话流模式，则需要指定对话流的 ID。
+如果智能体为对话流模式，则需要指定对话流的 ID。
+交互流程如下：
+WebSocket 事件概述
+使用扣子提供的 WebSocket OpenAPI，你可以实现双向流式语音识别、双向流式语音合成和双向流式语音对话。每个场景中的配置均通过上行事件完成，配置成功后服务端会返回下行事件通知配置结果。通过 WebSocket 事件，你可以使用 WebSocket 协议实现智能语音对话的各种典型场景。
+事件类型
+智能语音 WebSocket 事件包括上行事件和下行事件。每个事件有 ID 和 EventType， 通过 EventType 可以区分具体的事件类型，每个事件类型对应的 Payload 在 Data 中，开发者可以按需去提取需要的内容。
+上行事件：设备端上报给服务端的事件。应用程序需要根据扣子平台提供的事件结构，在触发事件时填充字段内容并上报事件。
+下行事件：服务端下发给设备端的事件，应用程序需要解析下行事件，并根据业务需求进行下一步操作。
+注意事项
+每个上行事件 ID 建议不要重复，故障排查场景下便于定位问题。
+每个事件有 ID 和 EventType， 通过 EventType 可以区分具体的事件类型，每个事件类型对应的 Payload 在 Data 中，开发者可以按需去提取需要的内容。
+公共参数
+智能语音 WebSocket 事件的公共参数如下：
+参数名称\n
+	
+类型\n
+	
+描述\n
+
+
+id\n
+	
+String\n
+	
+事件 ID，也就是事件的唯一标识。由客户端或服务端生成，在故障排查场景下用于定位具体的事件，便于排查问题。\n
+
+
+event_type\n
+	
+String\n
+	
+事件的类型。\n
+
+
+data\n
+	
+JSON\n
+	
+事件的详细信息，其中包含具体事件的业务字段。
+参数名称
+类型
+描述
+id
+String
+事件 ID，也就是事件的唯一标识。由客户端或服务端生成，在故障排查场景下用于定位具体的事件，便于排查问题。
+event_type
+String
+事件的类型。
+data
+JSON
+事件的详细信息，其中包含具体事件的业务字段。

@@ -1,0 +1,875 @@
+集成音视频 Realtime iOS SDK
+扣子 Realtime SDK iOS 版基于火山引擎 RTC SDK 进行封装，支持将扣子的智能体功能与火山引擎 RTC SDK 集成，实现与智能体的实时音视频通话。扣子提示 Swift 和 Objective-C 语言的示例项目源码，你可以参考示例项目源码，快速从零开始构建一个简单的音视频通话应用。
+准备工作
+开始集成 Realtime SDK 前，请确保开发环境满足以下要求：
+操作\n
+	
+说明\n
+
+
+升级为扣子专业版\n
+	
+确保已注册扣子账号，并升级至扣子专业版。具体操作请参见\n升级到专业版。\n
+
+
+发布智能体\n
+	
+已成功搭建并发布智能体为 API 服务。搭建步骤请参见\n搭建一个 AI 助手智能体，发布步骤请参见\n发布智能体为 API 服务。\n
+说明
+若需使用视频理解能力，请为智能体配置一个视觉模型，例如豆包视觉理解模型。 \n
+\n
+
+
+获取访问密钥\n
+	
+获取访问密钥，用于身份认证与鉴权。\n
+体验或调试场景：建议生成短期的个人访问令牌（PAT），以快速完成 Realtime SDK 的整体流程。个人访问令牌的获取方法请参见\n添加个人访问令牌。\n
+线上环境：在线上环境中，应使用 OAuth 鉴权方案。OAuth 鉴权方案的详细说明请参见\nOAuth 授权概述。\n
+说明
+扣子提供了多种鉴权方式的封装，具体请参见鉴权方式的封装，你可以参考鉴权示例代码实现不同方式的 OAuth 认证，以获取和管理访问扣子 API 所需的令牌。\n
+\n
+
+
+准备开发环境\n
+	
+macOS 电脑，且可以正常访问互联网。\n
+Xcode 14.1 或以上版本。本示例采用 16.2 版本。\n
+Apple 开发者账号，开发阶段可以使用个人免费账号。\n
+iOS 11.0 或以上版本真机设备，且可以正常访问互联网。本示例采用 iOS 18.1。\n
+安装 CocoaPods。\n
+
+
+开通 RTC 服务\n
+	
+在火山引擎控制台上开通 RTC 服务。
+操作
+说明
+升级为扣子专业版
+确保已注册扣子账号，并升级至扣子专业版。具体操作请参见\n升级到专业版。
+发布智能体
+已成功搭建并发布智能体为 API 服务。搭建步骤请参见\n搭建一个 AI 助手智能体，发布步骤请参见\n发布智能体为 API 服务。
+说明
+若需使用视频理解能力，请为智能体配置一个视觉模型，例如豆包视觉理解模型。
+若需使用视频理解能力，请为智能体配置一个视觉模型，例如豆包视觉理解模型。
+获取访问密钥
+获取访问密钥，用于身份认证与鉴权。
+体验或调试场景：建议生成短期的个人访问令牌（PAT），以快速完成 Realtime SDK 的整体流程。个人访问令牌的获取方法请参见\n添加个人访问令牌。
+线上环境：在线上环境中，应使用 OAuth 鉴权方案。OAuth 鉴权方案的详细说明请参见\nOAuth 授权概述。
+说明
+扣子提供了多种鉴权方式的封装，具体请参见鉴权方式的封装，你可以参考鉴权示例代码实现不同方式的 OAuth 认证，以获取和管理访问扣子 API 所需的令牌。
+扣子提供了多种鉴权方式的封装，具体请参见鉴权方式的封装，你可以参考鉴权示例代码实现不同方式的 OAuth 认证，以获取和管理访问扣子 API 所需的令牌。
+准备开发环境
+macOS 电脑，且可以正常访问互联网。
+Xcode 14.1 或以上版本。本示例采用 16.2 版本。
+Apple 开发者账号，开发阶段可以使用个人免费账号。
+iOS 11.0 或以上版本真机设备，且可以正常访问互联网。本示例采用 iOS 18.1。
+安装 CocoaPods。
+开通 RTC 服务
+在火山引擎控制台上开通 RTC 服务。
+跑通示例项目源码
+示例项目目录结构
+音视频通话 iOS 示例项目的目录结构如下：
+Swift
+Objective-C
+\n
+├── Podfile\n
+├── coze-swift\n
+│   ├── AppDelegate.swift\n
+│   ├── Assets.xcassets\n
+│   ├── Base.lproj\n
+│   ├── Config                        //配置 API 相关信息\n
+│   ├── Info.plist\n
+│   ├── Models                       //创建房间相关数据结构\n
+│   ├── SceneDelegate.swift\n
+│   ├── Services                       //API 请求封装\n
+│   └── ViewController.swift           //主界面\n
+├── coze-swift.xcodeproj\n
+└── coze-swift.xcworkspace
+├── Podfile\n
+├── coze-swift\n
+│   ├── AppDelegate.swift\n
+│   ├── Assets.xcassets\n
+│   ├── Base.lproj\n
+│   ├── Config                        //配置 API 相关信息\n
+│   ├── Info.plist\n
+│   ├── Models                       //创建房间相关数据结构\n
+│   ├── SceneDelegate.swift\n
+│   ├── Services                       //API 请求封装\n
+│   └── ViewController.swift           //主界面\n
+├── coze-swift.xcodeproj\n
+└── coze-swift.xcworkspace
+├── Podfile
+├── coze-swift
+│   ├── AppDelegate.swift
+│   ├── Assets.xcassets
+│   ├── Base.lproj
+│   ├── Config                        //配置 API 相关信息
+│   ├── Info.plist
+│   ├── Models                       //创建房间相关数据结构
+│   ├── SceneDelegate.swift
+│   ├── Services                       //API 请求封装
+│   └── ViewController.swift           //主界面
+├── coze-swift.xcodeproj
+└── coze-swift.xcworkspace
+配置并跑通示例项目源码
+1.
+克隆音视频通话 iOS 示例项目源码到本地。
+git clone https://github.com/coze-dev/coze-ios
+git clone https://github.com/coze-dev/coze-ios
+2.
+在项目根目录下运行以下命令，初始化并安装项目依赖。
+pod install
+pod install
+3.
+在配置文件中设置 accessToken 和 botid。
+Swift
+Objective-C
+1.
+在项目根目录下，复制coze-swift/Config/APIConfig.swift.template文件为。 \n
+2.
+编辑APIConfig.swift配置文件，配置 accessToken 和 botId。\n
+\n
+import Foundation\n
+\n
+struct APIConfig {\n
+    static let baseURL = "https://api.coze.cn"\n
+    static let accessToken = "pat_sWaR9V4Yr8***" // 替换为从 https://www.coze.cn/open/oauth/pats 获取到的token\n
+    static let botId = "74415109067667***" // 替换为自己的bot ID\n
+    static let voiceId:String? = nil // 音色ID，可选\n
+} \n
+\n
+关键参数说明如下：\n
+accessToken：请替换为准备工作中获取的访问密钥，用于身份认证与鉴权。\n
+botId：智能体 ID，获取方法如下：\n
+进入智能体的开发页面，开发页面 URL 中 bot 参数后的数字即为智能体 ID。例如， URL 为https://www.coze.cn/space/341****/bot/73428668*****，则智能体 ID 为73428668*****。\n
+voiceId：音色 ID。可选。你可以调用\n查看音色列表 API 查看当前可用的音色列表，也可以使用\n系统音色列表。
+1.
+在项目根目录下，复制coze-swift/Config/APIConfig.swift.template文件为。
+2.
+编辑APIConfig.swift配置文件，配置 accessToken 和 botId。
+import Foundation\n
+\n
+struct APIConfig {\n
+    static let baseURL = "https://api.coze.cn"\n
+    static let accessToken = "pat_sWaR9V4Yr8***" // 替换为从 https://www.coze.cn/open/oauth/pats 获取到的token\n
+    static let botId = "74415109067667***" // 替换为自己的bot ID\n
+    static let voiceId:String? = nil // 音色ID，可选\n
+}
+import Foundation
+struct APIConfig {
+static let baseURL = "https://api.coze.cn"
+static let accessToken = "pat_sWaR9V4Yr8***" // 替换为从 https://www.coze.cn/open/oauth/pats 获取到的token
+static let botId = "74415109067667***" // 替换为自己的bot ID
+static let voiceId:String? = nil // 音色ID，可选
+}
+关键参数说明如下：
+accessToken：请替换为准备工作中获取的访问密钥，用于身份认证与鉴权。
+botId：智能体 ID，获取方法如下：
+进入智能体的开发页面，开发页面 URL 中 bot 参数后的数字即为智能体 ID。例如， URL 为https://www.coze.cn/space/341****/bot/73428668*****，则智能体 ID 为73428668*****。
+voiceId：音色 ID。可选。你可以调用\n查看音色列表 API 查看当前可用的音色列表，也可以使用\n系统音色列表。
+4.
+编译并运行项目。
+a.
+使用 Xcode 打开coze-swift.xcworkspace或 coze-objc.xcworkspace。
+b.
+在 Xcode 中连接并选择你的 iOS 真机设备，单击 XCode 窗口左上角的运行按钮（或使用 Command ⌘ + R 快捷键）。
+c.
+在 iOS 设备上打开 Demo 应用时，在弹窗中选择开启麦克风和摄像头权限。
+d.
+体验 Demo 效果，界面类似如下：
+
+\n
+\n
+\n
+\n
+
+    
+    
+Audio/video is not supported
+Please TryRefresh
+
+      
+
+Audio/video is not supported
+Please TryRefresh
+e.
+在音视频通话界面单击连接，连接成功后，你可以与智能体开始实时语音对话。你还可以体验打开或关闭摄像头、静音或取消静音、打断语音通话。
+实现音视频通话
+步骤一：（可选）新建项目
+本步骤为如何创建一个新项目，如集成到已有项目，请跳过该步骤。
+1.
+打开 Xcode，单击 Create New Project... 新建项目。
+2.
+在项目模板页选择 iOS > App，单击 Next。
+3.
+配置项目信息，单击 Next。
+参数\n
+	
+说明\n
+
+
+Product Name\n
+	
+输入项目的名称，该名称将用于标识应用程序。\n
+
+
+Team\n
+	
+选择开发团队。如果尚未登录 Apple 账户，请点击 Add account… 按钮，并按照提示完成登录。登录完成后，即可从下拉菜单中选择您的 Apple 账户作为开发团队。\n
+
+
+Organization Identifier\n
+	
+输入组织标识符，通常为反向域名格式（例如  com.yourcompany ）。\n
+
+
+Interface\n
+	
+选择 Storyboard，用于定义用户界面布局。\n
+
+
+Language\n
+	
+选择 Swift 或 Objective-C，作为项目开发的主要编程语言。
+参数
+说明
+Product Name
+输入项目的名称，该名称将用于标识应用程序。
+Team
+选择开发团队。如果尚未登录 Apple 账户，请点击 Add account… 按钮，并按照提示完成登录。登录完成后，即可从下拉菜单中选择您的 Apple 账户作为开发团队。
+Organization Identifier
+输入组织标识符，通常为反向域名格式（例如  com.yourcompany ）。
+Interface
+选择 Storyboard，用于定义用户界面布局。
+Language
+选择 Swift 或 Objective-C，作为项目开发的主要编程语言。
+4.
+选择项目的存储位置，单击 Create 完成项目创建。
+步骤二：配置签名
+选中项目，进入 TARGETS > coze-objc > Signing & Capabilities，选择 Automatically manage signing。
+步骤三：配置权限
+音视频通话需要使用麦克风、摄像头和网络权限，操作步骤如下：
+1.
+在 Xcode 中，打开项目的 Info.plist 文件。如果该文件不可编辑，可以通过鼠标右键选择 Info，然后选择 Open As > Source Code，以源代码形式查看和编辑。
+2.
+在 Info.plist 文件中，新增以下配置内容，明确告知系统和用户应用程序需要访问的权限及其用途。
+<?xml version="1.0" encoding="UTF-8"?>\n
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n
+<plist version="1.0">\n
+  <dict>\n
+    <key>UIApplicationSceneManifest</key>\n
+    <dict>\n
+      <key>UIApplicationSupportsMultipleScenes</key>\n
+      <false />\n
+      <key>UISceneConfigurations</key>\n
+      <dict>\n
+        <key>UIWindowSceneSessionRoleApplication</key>\n
+        <array>\n
+          <dict>\n
+            <key>UISceneConfigurationName</key>\n
+            <string>Default Configuration</string>\n
+            <key>UISceneDelegateClassName</key>\n
+            <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>\n
+            <key>UISceneStoryboardFile</key>\n
+            <string>Main</string>\n
+          </dict>\n
+        </array>\n
+      </dict>\n
+    </dict>\n
+\n
+    <!-- 新增配置 -->\n
+    <key>NSCameraUsageDescription</key>\n
+    <string>需要访问您的相机以进行视频通话</string>\n
+\n
+    <key>NSMicrophoneUsageDescription</key>\n
+    <string>需要访问您的麦克风以进行语音通话</string>\n
+\n
+    <key>NSAppTransportSecurity</key>\n
+    <string>需要网络权限</string>\n
+    <dict>\n
+      <key>NSAllowsArbitraryLoads</key>\n
+      <true />\n
+    </dict>\n
+    <!-- 新增配置  -->\n
+\n
+  </dict>\n
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>UIApplicationSceneManifest</key>
+<dict>
+<key>UIApplicationSupportsMultipleScenes</key>
+<false />
+<key>UISceneConfigurations</key>
+<dict>
+<key>UIWindowSceneSessionRoleApplication</key>
+<array>
+<dict>
+<key>UISceneConfigurationName</key>
+<string>Default Configuration</string>
+<key>UISceneDelegateClassName</key>
+<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+<key>UISceneStoryboardFile</key>
+<string>Main</string>
+</dict>
+</array>
+</dict>
+</dict>
+<!-- 新增配置 -->
+<key>NSCameraUsageDescription</key>
+<string>需要访问您的相机以进行视频通话</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>需要访问您的麦克风以进行语音通话</string>
+<key>NSAppTransportSecurity</key>
+<string>需要网络权限</string>
+<dict>
+<key>NSAllowsArbitraryLoads</key>
+<true />
+</dict>
+<!-- 新增配置  -->
+</dict>
+</plist>
+步骤四：集成 Realtime SDK
+本文以通过 CocoaPods 直接集成为例。如需手动集成，请参考火山引擎 RTC 文档。
+1.
+在终端窗口执行如下命令安装 CocoaPods。
+sudo gem install cocoapods
+sudo gem install cocoapods
+2.
+进入项目根目录，执行如下命令，创建 Podfile 文件。
+pod init
+pod init
+3.
+打开 Podfile 文件，并将其内容替换为以下代码。建议使用 VSCode 或其他代码编辑器打开项目文件。
+说明
+请将 3.58.1.19400 替换为 RTC 的目标版本号，具体版本信息可在下载 RTC SDK 页面查看。
+请将 3.58.1.19400 替换为 RTC 的目标版本号，具体版本信息可在下载 RTC SDK 页面查看。
+# Uncomment the next line to define a global platform for your project\n
+# platform :ios, '9.0'\n
+source 'https://cdn.cocoapods.org/'\n
+source 'https://github.com/volcengine/volcengine-specs.git'\n
+\n
+target 'coze-swift' do\n
+  # Comment the next line if you don't want to use dynamic frameworks\n
+  use_frameworks!\n
+  pod 'VolcEngineRTC', '3.58.1.19400'\n
+\n
+  # Pods for RTCDemo-Swift\n
+\n
+end
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/volcengine/volcengine-specs.git'
+target 'coze-swift' do
+# Comment the next line if you don't want to use dynamic frameworks
+use_frameworks!
+pod 'VolcEngineRTC', '3.58.1.19400'
+# Pods for RTCDemo-Swift
+end
+4.
+在终端窗口执行 pod install 命令安装 VolcEngineRTC 相关库。
+安装完成后，项目文件夹中将生成一个 coze-objc.xcworkspace 文件。使用 Xcode 打开该文件，以进行后续开发操作。
+5.
+编译与运行。
+编译项目，检查是否存在错误。在 Xcode 中，连接并选择 iOS 真机设备。单击 XCode 窗口左上角的运行按钮（或使用 Command ⌘ + R 快捷键）。
+说明
+仅支持在 iOS 真机设备上运行，不支持在模拟器运行。\n
+如果编译过程中提示错误，请参见\n常见问题。
+仅支持在 iOS 真机设备上运行，不支持在模拟器运行。
+如果编译过程中提示错误，请参见\n常见问题。
+步骤五：实现音视频通话
+说明
+本文以 ViewController.m 中的实现步骤为例，讲解如何实现一个基本的音视频通话功能。本示例并未覆盖全部代码内容，如需查看完整代码，请从音视频通话 iOS 示例项目获取完整代码。
+本文以 ViewController.m 中的实现步骤为例，讲解如何实现一个基本的音视频通话功能。本示例并未覆盖全部代码内容，如需查看完整代码，请从音视频通话 iOS 示例项目获取完整代码。
+引入头文件
+在ViewController.swift 或 ViewController.h 中引入必要的模块，并声明相关属性和方法。
+Swift
+Objective-C
+\n
+import UIKit\n
+import VolcEngineRTC\n
+\n
+class ViewController: UIViewController, ByteRTCVideoDelegate, ByteRTCRoomDelegate {\n
+    var rtcVideo: ByteRTCVideo?\n
+    var rtcRoom: ByteRTCRoom?\n
+    private var roomInfo: RoomData?\n
+}
+import UIKit\n
+import VolcEngineRTC\n
+\n
+class ViewController: UIViewController, ByteRTCVideoDelegate, ByteRTCRoomDelegate {\n
+    var rtcVideo: ByteRTCVideo?\n
+    var rtcRoom: ByteRTCRoom?\n
+    private var roomInfo: RoomData?\n
+}
+import UIKit
+import VolcEngineRTC
+class ViewController: UIViewController, ByteRTCVideoDelegate, ByteRTCRoomDelegate {
+var rtcVideo: ByteRTCVideo?
+var rtcRoom: ByteRTCRoom?
+private var roomInfo: RoomData?
+}
+创建用户界面
+在 ViewController 中实现 createUI 方法，创建本地视频预览视图，定义控制按钮。
+Swift
+Objective-C
+\n
+func createUI() {\n
+    let width = self.view.bounds.size.width\n
+    let height = self.view.bounds.size.height\n
+    \n
+    // 本地预览视图占上半部分\n
+    let previewHeight = height * 0.4\n
+    localView.frame = CGRect(x: 0, y: 0, width: width, height: previewHeight)\n
+    self.view.addSubview(localView)\n
+    \n
+    // 按钮区域\n
+    let buttonY = previewHeight + 10\n
+    let buttonWidth = (width - 30) / 2\n
+    \n
+    joinButton.frame = CGRect(x: 10, y: buttonY, width: buttonWidth, height: 44)\n
+    cameraButton.frame = CGRect(x: width - buttonWidth - 10, y: buttonY, width: buttonWidth, height: 44)\n
+    \n
+    self.view.addSubview(joinButton)\n
+    self.view.addSubview(cameraButton)\n
+}
+func createUI() {\n
+    let width = self.view.bounds.size.width\n
+    let height = self.view.bounds.size.height\n
+    \n
+    // 本地预览视图占上半部分\n
+    let previewHeight = height * 0.4\n
+    localView.frame = CGRect(x: 0, y: 0, width: width, height: previewHeight)\n
+    self.view.addSubview(localView)\n
+    \n
+    // 按钮区域\n
+    let buttonY = previewHeight + 10\n
+    let buttonWidth = (width - 30) / 2\n
+    \n
+    joinButton.frame = CGRect(x: 10, y: buttonY, width: buttonWidth, height: 44)\n
+    cameraButton.frame = CGRect(x: width - buttonWidth - 10, y: buttonY, width: buttonWidth, height: 44)\n
+    \n
+    self.view.addSubview(joinButton)\n
+    self.view.addSubview(cameraButton)\n
+}
+func createUI() {
+let width = self.view.bounds.size.width
+let height = self.view.bounds.size.height
+// 本地预览视图占上半部分
+let previewHeight = height * 0.4
+localView.frame = CGRect(x: 0, y: 0, width: width, height: previewHeight)
+self.view.addSubview(localView)
+// 按钮区域
+let buttonY = previewHeight + 10
+let buttonWidth = (width - 30) / 2
+joinButton.frame = CGRect(x: 10, y: buttonY, width: buttonWidth, height: 44)
+cameraButton.frame = CGRect(x: width - buttonWidth - 10, y: buttonY, width: buttonWidth, height: 44)
+self.view.addSubview(joinButton)
+self.view.addSubview(cameraButton)
+}
+获取房间信息
+通过 NetworkService 获取房间信息。
+Swift
+Objective-C
+\n
+do {\n
+    // 获取房间信息\n
+    let response = try await NetworkService.shared.createRoom(\n
+        botId: APIConfig.botId,\n
+        voiceId: APIConfig.voiceId\n
+    )\n
+    \n
+    // 异常处理\n
+    if response.code != 0 {\n
+        throw NSError(\n
+            domain: "", code: Int(response.code),\n
+            userInfo: [NSLocalizedDescriptionKey: response.msg])\n
+    }\n
+    roomInfo = response.data\n
+} catch {\n
+    print("连接失败: \(error)")\n
+}
+do {\n
+    // 获取房间信息\n
+    let response = try await NetworkService.shared.createRoom(\n
+        botId: APIConfig.botId,\n
+        voiceId: APIConfig.voiceId\n
+    )\n
+    \n
+    // 异常处理\n
+    if response.code != 0 {\n
+        throw NSError(\n
+            domain: "", code: Int(response.code),\n
+            userInfo: [NSLocalizedDescriptionKey: response.msg])\n
+    }\n
+    roomInfo = response.data\n
+} catch {\n
+    print("连接失败: \(error)")\n
+}
+do {
+// 获取房间信息
+let response = try await NetworkService.shared.createRoom(
+botId: APIConfig.botId,
+voiceId: APIConfig.voiceId
+)
+// 异常处理
+if response.code != 0 {
+throw NSError(
+domain: "", code: Int(response.code),
+userInfo: [NSLocalizedDescriptionKey: response.msg])
+}
+roomInfo = response.data
+} catch {
+print("连接失败: \(error)")
+}
+创建 RTC 引擎
+创建并初始化 RTC 引擎。
+Swift
+Objective-C
+\n
+func buildRTCEngine() {\n
+    guard let roomInfo = self.roomInfo else { return }\n
+    \n
+    self.rtcVideo = ByteRTCVideo.createRTCVideo(\n
+        roomInfo.app_id, delegate: self, parameters: [:])\n
+}
+func buildRTCEngine() {\n
+    guard let roomInfo = self.roomInfo else { return }\n
+    \n
+    self.rtcVideo = ByteRTCVideo.createRTCVideo(\n
+        roomInfo.app_id, delegate: self, parameters: [:])\n
+}
+func buildRTCEngine() {
+guard let roomInfo = self.roomInfo else { return }
+self.rtcVideo = ByteRTCVideo.createRTCVideo(
+roomInfo.app_id, delegate: self, parameters: [:])
+}
+采集音视频并设置本端渲染
+1.
+调用 startAudioCapture() 开启麦克风音频流采集，调用 startVideoCapture() 开启摄像头视频流采集。
+2.
+调用 setLocalVideoCanvas() 方法设置本端视频渲染视图。
+Swift
+Objective-C
+\n
+// 开启音频采集\n
+self.rtcVideo?.startAudioCapture()\n
+\n
+// 开启视频采集（可选）\n
+self.rtcVideo?.startVideoCapture()
+// 开启音频采集\n
+self.rtcVideo?.startAudioCapture()\n
+\n
+// 开启视频采集（可选）\n
+self.rtcVideo?.startVideoCapture()
+// 开启音频采集
+self.rtcVideo?.startAudioCapture()
+// 开启视频采集（可选）
+self.rtcVideo?.startVideoCapture()
+创建并加入房间
+1.
+调用 createRTCRoom 接口创建 RTC 房间。
+2.
+调用 joinRoom 接口加入 RTC 房间。
+Swift
+Objective-C
+\n
+// 创建房间\n
+self.rtcRoom = self.rtcVideo?.createRTCRoom(roomInfo.room_id)\n
+self.rtcRoom?.delegate = self\n
+\n
+let userInfo = ByteRTCUserInfo()\n
+userInfo.userId = roomInfo.uid\n
+\n
+let roomCfg = ByteRTCRoomConfig()\n
+roomCfg.isAutoPublish = true\n
+roomCfg.isAutoSubscribeAudio = true\n
+roomCfg.isAutoSubscribeVideo = true\n
+\n
+// 加入房间\n
+self.rtcRoom?.joinRoom(roomInfo.token, userInfo: userInfo, roomConfig: roomCfg)
+// 创建房间\n
+self.rtcRoom = self.rtcVideo?.createRTCRoom(roomInfo.room_id)\n
+self.rtcRoom?.delegate = self\n
+\n
+let userInfo = ByteRTCUserInfo()\n
+userInfo.userId = roomInfo.uid\n
+\n
+let roomCfg = ByteRTCRoomConfig()\n
+roomCfg.isAutoPublish = true\n
+roomCfg.isAutoSubscribeAudio = true\n
+roomCfg.isAutoSubscribeVideo = true\n
+\n
+// 加入房间\n
+self.rtcRoom?.joinRoom(roomInfo.token, userInfo: userInfo, roomConfig: roomCfg)
+// 创建房间
+self.rtcRoom = self.rtcVideo?.createRTCRoom(roomInfo.room_id)
+self.rtcRoom?.delegate = self
+let userInfo = ByteRTCUserInfo()
+userInfo.userId = roomInfo.uid
+let roomCfg = ByteRTCRoomConfig()
+roomCfg.isAutoPublish = true
+roomCfg.isAutoSubscribeAudio = true
+roomCfg.isAutoSubscribeVideo = true
+// 加入房间
+self.rtcRoom?.joinRoom(roomInfo.token, userInfo: userInfo, roomConfig: roomCfg)
+渲染本端视频流
+调用 setLocalVideoCanvas 方法配置本端视频渲染视图。
+Swift
+Objective-C
+\n
+func bindLocalRenderView() {\n
+    let canvas = ByteRTCVideoCanvas.init()\n
+    canvas.view = self.localView\n
+    canvas.renderMode = .hidden\n
+    self.rtcVideo?.setLocalVideoCanvas(.indexMain, withCanvas: canvas)\n
+}
+func bindLocalRenderView() {\n
+    let canvas = ByteRTCVideoCanvas.init()\n
+    canvas.view = self.localView\n
+    canvas.renderMode = .hidden\n
+    self.rtcVideo?.setLocalVideoCanvas(.indexMain, withCanvas: canvas)\n
+}
+func bindLocalRenderView() {
+let canvas = ByteRTCVideoCanvas.init()
+canvas.view = self.localView
+canvas.renderMode = .hidden
+self.rtcVideo?.setLocalVideoCanvas(.indexMain, withCanvas: canvas)
+}
+实时字幕显示
+处理接收到的用户消息并实时显示字幕。
+Swift
+Objective-C
+当收到 conversation.message.delta 事件时，系统会根据事件类型处理消息：\n
+如果是新消息，则通过messageList.append(message)将其添加到消息列表中。\n
+如果是消息的增量更新，则通过lastMessage += message对最后一条消息进行追加更新。\n
+处理完成后，调用messageTableView.reloadData()方法，刷新 UITableView 并显示最新的字幕内容。\n
+\n
+func addMessage(_ message: String, eventType: String) {\n
+    DispatchQueue.main.async {\n
+        if self.lastEventType == "conversation.message.delta" {\n
+            if var lastMessage = self.messageList.last {\n
+                lastMessage += message\n
+                self.messageList[self.messageList.count - 1] = lastMessage\n
+            }\n
+        } else if eventType == "conversation.message.delta" {\n
+            self.messageList.append(message)\n
+        }\n
+        \n
+        self.lastEventType = eventType\n
+        self.messageTableView.reloadData()\n
+    }\n
+}\n
+
+当收到 conversation.message.delta 事件时，系统会根据事件类型处理消息：
+如果是新消息，则通过messageList.append(message)将其添加到消息列表中。
+如果是消息的增量更新，则通过lastMessage += message对最后一条消息进行追加更新。
+处理完成后，调用messageTableView.reloadData()方法，刷新 UITableView 并显示最新的字幕内容。
+func addMessage(_ message: String, eventType: String) {\n
+    DispatchQueue.main.async {\n
+        if self.lastEventType == "conversation.message.delta" {\n
+            if var lastMessage = self.messageList.last {\n
+                lastMessage += message\n
+                self.messageList[self.messageList.count - 1] = lastMessage\n
+            }\n
+        } else if eventType == "conversation.message.delta" {\n
+            self.messageList.append(message)\n
+        }\n
+        \n
+        self.lastEventType = eventType\n
+        self.messageTableView.reloadData()\n
+    }\n
+}
+func addMessage(_ message: String, eventType: String) {
+DispatchQueue.main.async {
+if self.lastEventType == "conversation.message.delta" {
+if var lastMessage = self.messageList.last {
+lastMessage += message
+self.messageList[self.messageList.count - 1] = lastMessage
+}
+} else if eventType == "conversation.message.delta" {
+self.messageList.append(message)
+}
+self.lastEventType = eventType
+self.messageTableView.reloadData()
+}
+}
+开启或关闭本端视频流采集
+在 cameraButtonTapped 回调中，通过按钮的 isSelected 状态切换，调用 startVideoCapture() 或 stopVideoCapture()方法，实现摄像头的启用或禁用功能。
+Swift
+Objective-C
+\n
+\n
+@objc private func cameraButtonTapped() {\n
+    cameraButton.isSelected = !cameraButton.isSelected\n
+    \n
+    if cameraButton.isSelected {\n
+        self.rtcVideo?.startVideoCapture()\n
+    } else {\n
+        self.rtcVideo?.stopVideoCapture()\n
+    }\n
+}
+@objc private func cameraButtonTapped() {\n
+    cameraButton.isSelected = !cameraButton.isSelected\n
+    \n
+    if cameraButton.isSelected {\n
+        self.rtcVideo?.startVideoCapture()\n
+    } else {\n
+        self.rtcVideo?.stopVideoCapture()\n
+    }\n
+}
+@objc private func cameraButtonTapped() {
+cameraButton.isSelected = !cameraButton.isSelected
+if cameraButton.isSelected {
+self.rtcVideo?.startVideoCapture()
+} else {
+self.rtcVideo?.stopVideoCapture()
+}
+}
+静音或取消静音
+在 muteButtonTapped 回调中，根据按钮的选中状态调用 startAudioCapture() 或 stopAudioCapture()方法，从而实现麦克风的启用或静音功能。
+Swift
+Objective-C
+\n
+\n
+@objc private func muteButtonTapped() {\n
+    muteButton.isSelected = !muteButton.isSelected\n
+    \n
+    if muteButton.isSelected {\n
+        self.rtcVideo?.stopAudioCapture()\n
+    } else {\n
+        self.rtcVideo?.startAudioCapture()\n
+    }\n
+}
+@objc private func muteButtonTapped() {\n
+    muteButton.isSelected = !muteButton.isSelected\n
+    \n
+    if muteButton.isSelected {\n
+        self.rtcVideo?.stopAudioCapture()\n
+    } else {\n
+        self.rtcVideo?.startAudioCapture()\n
+    }\n
+}
+@objc private func muteButtonTapped() {
+muteButton.isSelected = !muteButton.isSelected
+if muteButton.isSelected {
+self.rtcVideo?.stopAudioCapture()
+} else {
+self.rtcVideo?.startAudioCapture()
+}
+}
+打断通话
+调用 sendUserMessage 方法，实现在语音通话过程中，用户可以打断通话。打断通话后，将停止音频流输出。
+Swift
+Objective-C
+\n
+\n
+@objc private func interruptButtonTapped() {\n
+    let message = [\n
+        "id": "event_1",\n
+        "event_type": "conversation.chat.cancel",\n
+        "data": "{}"\n
+    ]\n
+    \n
+    do {\n
+        let jsonData = try JSONSerialization.data(withJSONObject: message)\n
+        if let jsonString = String(data: jsonData, encoding: .utf8) {\n
+            self.rtcRoom?.sendUserMessage(\n
+                APIConfig.botId, \n
+                message: jsonString,\n
+                config: ByteRTCMessageConfig.reliableOrdered)\n
+        }\n
+    } catch {\n
+        print("Error creating JSON: \(error)")\n
+    }\n
+}
+@objc private func interruptButtonTapped() {\n
+    let message = [\n
+        "id": "event_1",\n
+        "event_type": "conversation.chat.cancel",\n
+        "data": "{}"\n
+    ]\n
+    \n
+    do {\n
+        let jsonData = try JSONSerialization.data(withJSONObject: message)\n
+        if let jsonString = String(data: jsonData, encoding: .utf8) {\n
+            self.rtcRoom?.sendUserMessage(\n
+                APIConfig.botId, \n
+                message: jsonString,\n
+                config: ByteRTCMessageConfig.reliableOrdered)\n
+        }\n
+    } catch {\n
+        print("Error creating JSON: \(error)")\n
+    }\n
+}
+@objc private func interruptButtonTapped() {
+let message = [
+"id": "event_1",
+"event_type": "conversation.chat.cancel",
+"data": "{}"
+]
+do {
+let jsonData = try JSONSerialization.data(withJSONObject: message)
+if let jsonString = String(data: jsonData, encoding: .utf8) {
+self.rtcRoom?.sendUserMessage(
+APIConfig.botId,
+message: jsonString,
+config: ByteRTCMessageConfig.reliableOrdered)
+}
+} catch {
+print("Error creating JSON: \(error)")
+}
+}
+停止音视频通话
+1.
+依次调用 leaveRoom 和destroy 接口离开并销毁房间。
+2.
+调用destroyRTCVideo 接口释放引擎资源，避免内存泄漏。
+Swift
+Objective-C
+\n
+\n
+deinit {\n
+    // 销毁房间\n
+    self.rtcRoom?.leaveRoom()\n
+    self.rtcRoom?.destroy()\n
+    self.rtcRoom = nil\n
+    \n
+    // 销毁引擎\n
+    ByteRTCVideo.destroyRTCVideo()\n
+    self.rtcVideo = nil\n
+}
+deinit {\n
+    // 销毁房间\n
+    self.rtcRoom?.leaveRoom()\n
+    self.rtcRoom?.destroy()\n
+    self.rtcRoom = nil\n
+    \n
+    // 销毁引擎\n
+    ByteRTCVideo.destroyRTCVideo()\n
+    self.rtcVideo = nil\n
+}
+deinit {
+// 销毁房间
+self.rtcRoom?.leaveRoom()
+self.rtcRoom?.destroy()
+self.rtcRoom = nil
+// 销毁引擎
+ByteRTCVideo.destroyRTCVideo()
+self.rtcVideo = nil
+}
+说明
+在实现音视频通话后，如遇无声音、无画面、视频卡顿等问题时，您可以使用诊断工具快速排查和定位异常房间及用户，并获取异常根因分析、处理建议、分析报告等。
+在实现音视频通话后，如遇无声音、无画面、视频卡顿等问题时，您可以使用诊断工具快速排查和定位异常房间及用户，并获取异常根因分析、处理建议、分析报告等。
+常见问题
+编译时提示 Sandbox: rsync.samba(xxxxx) deny(1)
+Xcode 15 及以上版本如果提示该错误，请按以下步骤进行处理：
+在 Xcode 中，选中项目，选择 TARGETS > 项目名称 > Build Settings，在 Build Options 区域，将 User Script Sandboxing 的值修改为 No。
+编译时提示 No such module 'VolcEngineRTC'
+请使用 iOS 真机进行测试，不支持使用模拟器运行。
+提示 doesn't match RTCDemo-Swift.app's iOS  deployment target
+该错误可能是由于真机的 iOS 版本与 Xcode 的配置版本不一致导致的。解决方法如下：
+在 Xcode 中，选中项目，选择 TARGETS > 项目名称 > General。在 Minimum Deployments 区域，将 iOS 版本号修改为与真机一致的版本。

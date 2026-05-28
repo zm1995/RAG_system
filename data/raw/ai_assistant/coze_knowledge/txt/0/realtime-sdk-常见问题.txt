@@ -1,0 +1,367 @@
+Realtime SDK 常见问题
+本文介绍扣子 Realtime SDK 集成过程中的常见问题和处理方法。
+如何申请设备权限？
+使用 Realtime SDK 时，需要申请麦克风和摄像头权限，你可以在页面初始化后申请，也可以在需要使用 Realtime SDK 进行音视频通话时申请。Realtime SDK 提供了一个函数用于检查以及申请设备权限，示例代码如下：
+import { RealtimeUtils } from '@coze/realtime-api';\n
+\n
+const checkVideo = false; // 如需申请摄像头权限，请设置为 true\n
+const result = RealtimeUtils.checkDevicePermission(checkVideo);
+import { RealtimeUtils } from '@coze/realtime-api';
+const checkVideo = false; // 如需申请摄像头权限，请设置为 true
+const result = RealtimeUtils.checkDevicePermission(checkVideo);
+说明
+麦克风权限为必选，摄像头权限仅在视频通话时才需要。
+麦克风权限为必选，摄像头权限仅在视频通话时才需要。
+这个函数本质上就是调用了浏览器的 navigator.mediaDevices.getUserMedia 接口，你也可以使用该 API 来申请设备权限，这样后续就无需调用 RealtimeUtils.checkDevicePermission 方法了，示例代码如下：
+try {\n
+  const stream = await navigator.mediaDevices.getUserMedia({\n
+    audio: true,\n
+    video: false, // 如需申请摄像头权限，请设置为 true\n
+  });\n
+  const tracks = stream.getTracks();\n
+  tracks.forEach((track) => track.stop());\n
+} catch (e) {\n
+  console.log('设备权限获取失败');\n
+}
+try {
+const stream = await navigator.mediaDevices.getUserMedia({
+audio: true,
+video: false, // 如需申请摄像头权限，请设置为 true
+});
+const tracks = stream.getTracks();
+tracks.forEach((track) => track.stop());
+} catch (e) {
+console.log('设备权限获取失败');
+}
+为什么每次打开应用都会收到设备权限申请提示？
+使用 Realtime SDK 时，需要申请麦克风和摄像头权限，若通过 webview 嵌入 H5 页面的方式使用 Realtime SDK，在 Android手机、iOS 手机或小程序里打开应用时，每次都得重新申请设备权限。这是因为移动端原生的安全限制造成的。建议使用火山引擎原生的 veRTC 客户端 SDK，你可以参考扣子提供的 Demo 来快速集成，具体方法请参见 \n集成音视频 Realtime iOS SDK、\n集成音视频 Realtime iOS SDK（Objective-C）、\n集成音视频 Realtime Android SDK（Java）和\n 集成音视频 Realtime Android SDK。
+如果你还是想要通过 webview 嵌入 H5 页面的方式使用 Realtime SDK ，你可以参考如下实现思路：
+1.
+提前检测所需要的设备权限。
+2.
+原生应用做好配置：如果 webview 需要设备权限，需要在原生应用中提前进行配置，否则可能导致权限申请失败。
+3.
+引导用户开启权限：当用户没有开启设备权限或者拒绝了权限申请时，要提醒用户手动去开启。这样当打开 webview 时，用户只需要再点击确认一下就能获取权限了 。
+为什么连接成功，但无法对话？
+由于浏览器安全限制，Realtime SDK 需要用户点击某个按钮来触发调用 connect 方法，不能在初始化时就调用connect 方法来自动触发连接。如果无法对话，请检查调用 connect 方法的实现方式是否正确。
+如何处理网络断线重连？
+音视频通话对稳定的网络环境有较高依赖，当网络异常、网络抖动或应用切换到后台而被回收设备权限时，会导致无法对话。本文详细介绍网络异常的几种典型场景以及优化方案。
+典型场景
+场景一：网络抖动
+网络在短时间内发生抖动时，若对网络变化进行监控，其状态可能会先变为离线（offline），随后又恢复为在线（online）。Realtime SDK 具备处理短时间网络波动的能力，这种波动对用户无感知，也不会影响实时对话。
+Realtime SDK 提供了 client.network.quality 事件，你可以监听该事件，实时获取网络情况。示例代码如下：
+import { EventNames } from '@coze/realtime-api';\n
+\n
+// client 为 RealtimeClient 实例\n
+client.on(EventNames.ALL, (eventName, event) => {\n
+  if (eventName === EventNames.NETWORK_QUALITY) {\n
+    const uplinkNetworkQuality = event?.uplinkNetworkQuality;\n
+    console.log('uplinkNetworkQuality', uplinkNetworkQuality);\n
+  }\n
+});
+import { EventNames } from '@coze/realtime-api';
+// client 为 RealtimeClient 实例
+client.on(EventNames.ALL, (eventName, event) => {
+if (eventName === EventNames.NETWORK_QUALITY) {
+const uplinkNetworkQuality = event?.uplinkNetworkQuality;
+console.log('uplinkNetworkQuality', uplinkNetworkQuality);
+}
+});
+当监听 client.network.quality 事件时，若发生网络抖动，网络状态 uplinkNetworkQuality 的值会从 DOWN 迅速恢复为 EXCELLENT。网络状态的具体说明如下表所示。
+属性\n
+	
+值\n
+	
+描述\n
+
+
+UNKNOWN\n
+	
+0\n
+	
+网络质量未知。\n
+
+
+EXCELLENT\n
+	
+1\n
+	
+网络质量极好。\n
+
+
+GOOD\n
+	
+2\n
+	
+主观感觉和 Excellent 差不多，但码率可能略低。\n
+
+
+POOR\n
+	
+3\n
+	
+主观感受有瑕疵但不影响沟通。\n
+
+
+BAD\n
+	
+4\n
+	
+勉强能沟通但不顺畅。建议降低采样率、码率或通过 UI 提示用户是否切换为纯语音通话。\n
+
+
+VBAD\n
+	
+5\n
+	
+网络质量非常差，基本不能沟通。建议通过 UI 给出弱网提示。\n
+
+
+DOWN\n
+	
+6\n
+	
+网络连接断开，无法通话。
+属性
+值
+描述
+UNKNOWN
+0
+网络质量未知。
+EXCELLENT
+1
+网络质量极好。
+GOOD
+2
+主观感觉和 Excellent 差不多，但码率可能略低。
+POOR
+3
+主观感受有瑕疵但不影响沟通。
+BAD
+4
+勉强能沟通但不顺畅。建议降低采样率、码率或通过 UI 提示用户是否切换为纯语音通话。
+VBAD
+5
+网络质量非常差，基本不能沟通。建议通过 UI 给出弱网提示。
+DOWN
+6
+网络连接断开，无法通话。
+此外，如果监听浏览器的 offline 和 online 事件，当网络抖动发生时，网络状态会先变为 offline。由于其时效性比 client.network.quality 更快，所以通常会先收到 offline 事件，之后才会收到 uplinkNetworkQuality = 6 事件。监听浏览器事件的示例代码如下：
+function checkNetworkStatus() {\n
+  if (!navigator.onLine) {\n
+    console.log('network offline');\n
+  }\n
+}\n
+// Listen for online/offline events\n
+window.addEventListener('online', checkNetworkStatus);\n
+window.addEventListener('offline', checkNetworkStatus);
+function checkNetworkStatus() {
+if (!navigator.onLine) {
+console.log('network offline');
+}
+}
+// Listen for online/offline events
+window.addEventListener('online', checkNetworkStatus);
+window.addEventListener('offline', checkNetworkStatus);
+场景二：网络切换或短时间（一般< 10秒）网络异常
+当进行网络切换，例如从 Wifi 切换到移动网络（反之亦然）时，由于网络切换过程涉及设备与网络之间的重新连接以及 IP 地址的重新分配等操作，会导致短暂的网络中断。具体表现为，尽管网络显示正常，但无法进行正常对话，需要等待几秒钟，直到 SDK 重新连接后才能恢复通话。
+同样，当网络短时间（<10 秒）内断网，恢复正常后也可能会出现几秒钟的不可用状态。
+若监听 client.network.quality 事件，在这种情况下网络状态 uplinkNetworkQuality 的值会一直保持为 DOWN，直至网络恢复正常状态。
+若监听 Web RTC 的 iceState 状态，在短时间网络异常时，iceState 的取值先是 connected，经过一段时间后才会变为 disconnected。示例代码如下：
+try {\n
+  // client 为 RealtimeClient 实例\n
+  const iceState = client.getRtcEngine()?.iceState;\n
+  console.log('get iceState', iceState);\n
+} catch (e) {\n
+  console.error('get iceState failed', e);\n
+}
+try {
+// client 为 RealtimeClient 实例
+const iceState = client.getRtcEngine()?.iceState;
+console.log('get iceState', iceState);
+} catch (e) {
+console.error('get iceState failed', e);
+}
+场景三：长时间（一般>20秒）网络异常
+当网络长时间断网时，智能体会在断网 22 秒后强制主动退出。当网络恢复正常后，通常会收到 server.bot.leave 事件，但也有可能收不到该事件。此时，Realtime SDK 无法自动重连，需要用户手动进行重连操作。
+如果监听 client.network.quality 事件，当网络恢复正常时，其值会变为 1（即 EXCELLENT，表示网络正常）。
+如果监听 Web RTC 的 iceState 状态，当网络恢复正常时，其取值可能为 undefined，也可能是 connected，这表明 WebRTC 状态正常，但实际上 SDK 已经断开连接，无法继续使用。
+场景四：应用 APP 切换至后台
+当应用切换至后台时，系统可能会收回设备的权限（如语音权限）。当应用再次切换到前台时，可能需要重新申请设备权限；也有可能页面会重新加载；还有一种极端情况是，没有重新申请设备权限，但网络正常却无法通话，此时需要手动重新申请设备权限才能恢复使用。
+优化方案
+扣子提供\n主动断开连接和\n自动重连两种优化方案思路。
+方案\n
+	
+实现难易\n
+	
+使用场景\n
+
+
+\n主动断开连接\n
+	
+简单\n
+	
+适用于对实时性要求不高的场景。\n
+
+
+\n自动重连\n
+	
+复杂\n
+	
+适用于对实时性要求较高的场景，例如音视频通话。\n
+网络环境不稳定的场景，自动重连方案可以提升用户体验。
+方案
+实现难易
+使用场景
+主动断开连接
+简单
+适用于对实时性要求不高的场景。
+自动重连
+复杂
+适用于对实时性要求较高的场景，例如音视频通话。
+网络环境不稳定的场景，自动重连方案可以提升用户体验。
+主动断开连接
+若网络出现异常，通常会触发 offline 事件。此事件可通过浏览器的 API 进行监控，原生应用也能监控到该事件并将其发送至 webview。当监控到 offline 事件后，若短时间内（可设为 10 秒）网络恢复正常，Realtime SDK 能够自动重连。若 10 秒后网络依旧异常，则主动断开连接，让用户手动重连。
+另外如果长时间切换至后台后再切换至前台时，可能页面会重新加载，请根据业务实际情况进行处理。
+const checkNetworkStatus = () => {\n
+  let timer: NodeJS.Timeout | null = null;\n
+  \n
+  function handleNetworkStatus() {\n
+    if (!navigator.onLine) {\n
+      timer = setTimeout(() => {\n
+        if (!navigator.onLine) {\n
+          console.log('network offline 10s');\n
+          // client 为 RealtimeClient 实例\n
+          client.disconnect();\n
+        }\n
+      }, 10 * 1000);\n
+    } else {\n
+      timer && clearTimeout(timer);\n
+    }\n
+  }\n
+  // 监听 online/offline 事件\n
+  window.addEventListener('online', handleNetworkStatus);\n
+  window.addEventListener('offline', handleNetworkStatus);\n
+};
+const checkNetworkStatus = () => {
+let timer: NodeJS.Timeout | null = null;
+function handleNetworkStatus() {
+if (!navigator.onLine) {
+timer = setTimeout(() => {
+if (!navigator.onLine) {
+console.log('network offline 10s');
+// client 为 RealtimeClient 实例
+client.disconnect();
+}
+}, 10 * 1000);
+} else {
+timer && clearTimeout(timer);
+}
+}
+// 监听 online/offline 事件
+window.addEventListener('online', handleNetworkStatus);
+window.addEventListener('offline', handleNetworkStatus);
+};
+说明
+通过原生应用监控网络状态变化比通过 webview 嵌入 H5 页面的方式更可靠、时效性更高，你可以监听网络情况并实时将信息发送给 webview 进行处理。
+通过原生应用监控网络状态变化比通过 webview 嵌入 H5 页面的方式更可靠、时效性更高，你可以监听网络情况并实时将信息发送给 webview 进行处理。
+自动重连
+扣子提供了基于 React Hooks 和 Vue Class 的自动重连及网络异常处理机制。你可以根据实际技术栈选择合适的实现方式。
+React Hooks
+扣子基于 React Hooks 提供了一个 useNetworkError.ts Hook，用于处理网络异常情况。你可以监听 connectStatus 来获取网络连接状态，并将网络情况及时反馈给用户。使用方法如下：
+// clientRef 是 RealtimeClient 实例\n
+// connectStatus 是连接状态，监听这个状态，让用户及时了解网络情况\n
+const { connectStatus } = useNetworkError({ clientRef });
+// clientRef 是 RealtimeClient 实例
+// connectStatus 是连接状态，监听这个状态，让用户及时了解网络情况
+const { connectStatus } = useNetworkError({ clientRef });
+Vue Class
+扣子还提供了一个基于 Vue Class 的 NetworkErrorManager.ts  类，用于处理网络异常情况。你可以监听 connectStatus 来获取网络连接状态，并将网络情况及时反馈给用户。使用方法如下：
+<template>\n
+  <div>\n
+    <p>连接状态: {{ connectStatus }}</p>\n
+  </div>\n
+</template>\n
+\n
+<script lang="ts">\n
+import { defineComponent, onMounted, onUnmounted, ref } from 'vue';\n
+import { NetworkErrorManager } from './NetworkErrorManager';\n
+import type { RealtimeClient } from '@coze/realtime-api';\n
+\n
+export default defineComponent({\n
+  name: 'YourComponent',\n
+  setup() {\n
+    const connectStatus = ref('disconnected');\n
+    let networkManager: NetworkErrorManager | null = null;\n
+\n
+    onMounted(() => {\n
+      // 假设你已经有了 RealtimeClient 的实例\n
+      const client: RealtimeClient = /* your client instance */;\n
+      \n
+      // 创建 NetworkErrorManager 实例\n
+      networkManager = new NetworkErrorManager(client);\n
+      \n
+      // 监听状态变化\n
+      networkManager.onStatusChange = (status) => {\n
+        connectStatus.value = status;\n
+      };\n
+    });\n
+\n
+    onUnmounted(() => {\n
+      // 清理资源\n
+      networkManager?.destroy();\n
+      networkManager = null;\n
+    });\n
+\n
+    return {\n
+      connectStatus,\n
+    };\n
+  },\n
+});\n
+</script>
+<template>
+<div>
+<p>连接状态: {{ connectStatus }}</p>
+</div>
+</template>
+<script lang="ts">
+import { defineComponent, onMounted, onUnmounted, ref } from 'vue';
+import { NetworkErrorManager } from './NetworkErrorManager';
+import type { RealtimeClient } from '@coze/realtime-api';
+export default defineComponent({
+name: 'YourComponent',
+setup() {
+const connectStatus = ref('disconnected');
+let networkManager: NetworkErrorManager | null = null;
+onMounted(() => {
+// 假设你已经有了 RealtimeClient 的实例
+const client: RealtimeClient = /* your client instance */;
+// 创建 NetworkErrorManager 实例
+networkManager = new NetworkErrorManager(client);
+// 监听状态变化
+networkManager.onStatusChange = (status) => {
+connectStatus.value = status;
+};
+});
+onUnmounted(() => {
+// 清理资源
+networkManager?.destroy();
+networkManager = null;
+});
+return {
+connectStatus,
+};
+},
+});
+</script>
+说明
+useNetworkError.ts Hook 和 NetworkErrorManager.ts  类内部通过监听以下事件实现网络状态的实时更新：\n
+浏览器 offline 事件：当网络异常时，触发 offline 事件，提示用户网络中断。\n
+Realtime SDK 的 uplinkNetworkQuality 事件：当事件值为 6（即网络状态为 DOWN）时，判定 SDK 无法正常使用。\n
+ WebRTC 的 iceState 事件：当事件状态为 disconnect 时，判定 SDK 无法正常使用。\n
+本地语音设备流检测：每隔 5 秒检查本地语音设备流是否正常。如果设备流为undefined，则判定语音设备流异常，SDK 无法正常使用。
+useNetworkError.ts Hook 和 NetworkErrorManager.ts  类内部通过监听以下事件实现网络状态的实时更新：
+浏览器 offline 事件：当网络异常时，触发 offline 事件，提示用户网络中断。
+Realtime SDK 的 uplinkNetworkQuality 事件：当事件值为 6（即网络状态为 DOWN）时，判定 SDK 无法正常使用。
+WebRTC 的 iceState 事件：当事件状态为 disconnect 时，判定 SDK 无法正常使用。
+本地语音设备流检测：每隔 5 秒检查本地语音设备流是否正常。如果设备流为undefined，则判定语音设备流异常，SDK 无法正常使用。
