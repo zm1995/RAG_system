@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_217",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在配置输出变量时，如何选择合适的数据类型？",
+    "变量类型设置为 array<string> 后，输出数据格式是怎样的？",
+    "除了 string 和 integer，输出变量还支持哪些数据类型？",
+    "在 workflows 中，如何定义和引用输出变量？",
+    "输出变量的命名规则有哪些注意事项？",
+    "问1：老师，这个两个string，表示的一个是定值，一个是变量值的意思吗"
+  ],
+  "answer": "在输出配置中，变量名称为 questions，用于存储最终输出的数据。该变量的数据类型可设置为多种类型，例如 string（字符串）、integer（整数）、array<string>（字符串数组）等。选择数据类型时，需根据实际输出内容的格式和需求进行设定，以确保数据正确传递和处理。",
+  "metadata": {
+    "original_question": "问1：老师，这个两个string，表示的一个是定值，一个是变量值的意思吗",
+    "row": 217,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

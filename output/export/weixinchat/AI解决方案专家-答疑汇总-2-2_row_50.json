@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_50",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze中，Agent调用工作流时，开始节点的输入参数是否必须由用户对话内容触发？",
+    "Coze工作流开始节点的输入参数能否从知识库或外部API动态获取？",
+    "如何确保Coze Agent在启动工作流时传递的参数格式与工作流开始节点要求一致？",
+    "Coze工作流开始节点的输入参数是否支持默认值设置，以避免参数缺失？",
+    "在Coze中，Agent通过工作流处理任务时，开始节点的参数传递是否支持多轮对话上下文？",
+    "咨询个问题，coze里面agent使用工作流时，工作流开始节点的输入参数从哪里给到工作流？"
+  ],
+  "answer": "在Coze平台中，Agent调用工作流时，工作流开始节点的输入参数通常通过Agent的对话窗口配置的提示词（Prompt）来定义。具体而言，用户需要在Agent的配置界面中设置Prompt，明确指示Agent在何种条件下启动工作流，以及启动时应传递哪些参数。这些参数可以来源于用户对话输入、Agent上下文或预设值。为确保参数正确传递，建议在Prompt中详细描述参数名称、类型和来源，并在工作流开始节点中验证参数格式。此外，Coze支持通过变量映射或动态数据源（如知识库或API）来填充参数，但需在节点配置中显式声明。",
+  "metadata": {
+    "original_question": "咨询个问题，coze里面agent使用工作流时，工作流开始节点的输入参数从哪里给到工作流？",
+    "row": 50,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

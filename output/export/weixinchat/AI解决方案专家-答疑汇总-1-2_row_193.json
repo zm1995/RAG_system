@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_193",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze平台上开发智能体时，是否必须进行模型微调（如SFT、RLHF）才能实现特定功能？",
+    "使用workflows构建应用时，如何在不修改底层模型的情况下提升Agent的响应准确性？",
+    "知识库在Agent开发中扮演什么角色？能否替代模型训练步骤？",
+    "对于非技术用户，在Coze中创建智能体是否需要了解预训练、SFT等概念？",
+    "如果我想让Agent具备行业专业知识，除了模型训练，还有哪些低代码方法可以实现？",
+    "如果自己做个应用Agent，是不是可以越过预训练这个阶段，直接进行STF、Reward Model、PPO就可以了？"
+  ],
+  "answer": "对于大多数应用场景，尤其是基于Coze、智能体、workflows或知识库等平台开发的应用，通常无需进行模型层的SFT（监督微调）、Reward Model（奖励模型）或PPO（近端策略优化）训练。这些操作属于模型层的高级定制，而预训练大模型厂商已提供基础能力。开发者完全可以在应用层通过配置提示词、构建workflows、集成知识库等方式实现功能需求，无需直接修改底层模型。只有在需要深度定制模型行为或处理极端特殊场景时，才考虑进行模型微调。",
+  "metadata": {
+    "original_question": "如果自己做个应用Agent，是不是可以越过预训练这个阶段，直接进行STF、Reward Model、PPO就可以了？\n因为预训练大模型厂商已经做好了",
+    "row": 193,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

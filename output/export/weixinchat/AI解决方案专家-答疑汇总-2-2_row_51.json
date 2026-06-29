@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_51",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在智能体开发中，LLM 和 RPA 如何协同工作？",
+    "RPA 在 workflows 中扮演什么角色？",
+    "除了 LLM，还有哪些模型可以用于智能体？",
+    "如何将 RPA 集成到 coze 平台的操作流程中？",
+    "LLM 在知识库管理中有哪些典型应用场景？",
+    "让 LLM 去做 RPA，这里的LLM 和 RPA 分别是什么意思？"
+  ],
+  "answer": "LLM 是大型语言模型（Large Language Model）的缩写，指代一种基于深度学习技术、能够理解和生成自然语言文本的模型。在本课程中，我们主要围绕 LLM 这一模型类型进行讲解，未涉及其他模型。RPA 是机器人流程自动化（Robotic Process Automation）的缩写，指通过软件机器人自动执行一系列预设的点击、输入等操作，以完成特定业务流程或任务。",
+  "metadata": {
+    "original_question": "让 LLM 去做 RPA，这里的LLM 和 RPA 分别是什么意思？",
+    "row": 51,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

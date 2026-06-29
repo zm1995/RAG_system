@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_205",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze平台中，LLM的JSON格式输出除了通过API直接调用外，还有哪些方式可以被外部系统处理？",
+    "Coze作为中介连接LLM和外部工具时，其核心作用是什么？",
+    "如果跳过Coze平台，开发者如何自行处理LLM的固定格式输出以实现工具调用？",
+    "Function Calling和MCP在Coze生态中如何协同工作？",
+    "在Coze workflows中，如何配置LLM输出JSON格式以便后续节点处理？",
+    "原来如此，所以需要用json格式，所以llm可以通过api直接实现调用功能，也可以不通过coze。这里coze就相当于一个中介进行了连接？"
+  ],
+  "answer": "是的，如果LLM的固定格式输出不由Coze平台来承接和处理，而是由开发者自行编写的代码来承接和处理，那么无论是通过API直接调用，还是通过MCP（模型上下文协议）来调用工具，都是可行的。因此，Function Calling和MCP是相互配合的关系，Coze在此过程中充当了中介角色，负责连接LLM与外部工具或服务。",
+  "metadata": {
+    "original_question": "原来如此，所以需要用json格式，所以llm可以通过api直接实现调用功能，也可以不通过coze。这里coze就相当于一个中介进行了连接？",
+    "row": 205,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

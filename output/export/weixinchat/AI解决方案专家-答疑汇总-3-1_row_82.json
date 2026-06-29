@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_82",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze平台上，如何系统性地设计一个复杂工作流的主prompt，避免直接抄袭？",
+    "对于智能体开发新手，有哪些具体步骤可以逐步提升编写高效prompt的能力？",
+    "在构建Agent工作流时，如何通过实践积累经验来优化prompt的逻辑性和准确性？",
+    "能否举例说明在Coze中，从简单到复杂的工作流场景如何倒逼prompt的迭代升级？",
+    "如何理解大模型的能力边界，并在编写prompt时有效利用这一认知？",
+    "AutoGPT自己能把整个工作流实现出来，但是主prompt真写不出来，只能抄。。。。能介绍下这个是怎么一步一步思考写出来的吗？"
+  ],
+  "answer": "编写高效prompt并无高深技巧，关键在于系统性的实践积累。建议从简单场景入手，逐步增加工作流复杂度，在此过程中，复杂场景会自然促使您优化prompt的逻辑性和精确度。核心在于：1）深入理解大模型的能力边界，通过大量交互熟悉其响应特性；2）注重逻辑性，确保prompt指令清晰、无歧义；3）积累实操经验，从失败案例中学习调整。在Coze或Agent开发中，可遵循“设计-测试-迭代”循环，逐步提升prompt质量。",
+  "metadata": {
+    "original_question": "AutoGPT自己能把整个工作流实现出来，但是主prompt真写不出来，只能抄。。。。能介绍下这个是怎么一步一步思考写出来的吗？",
+    "row": 82,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

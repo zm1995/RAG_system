@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_239",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Transformer中，Embedding和Positional Encoding层是否包含可训练参数？",
+    "Transformer中的Wq、Wk、Wv和W0这些权重矩阵与全连接层有何区别？",
+    "前馈神经网络（FFN）在Transformer中为何需要两个权重矩阵W1和W2？",
+    "Transformer的注意力机制中，Query、Key、Value的线性变换是否共享权重？",
+    "在Transformer架构中，哪些组件是线性变换，哪些是非线性变换？",
+    "在Transformer中，Embedding、Positional Encoding、Wq、Wk、Wv、W0和Linear这几个地方的神经网络是不是没有中间层，在前馈神经网络的这里就有一个中间层，所以会计算W1和W2，我这样理解对吗？"
+  ],
+  "answer": "您的理解是正确的。在Transformer中，Embedding层、Positional Encoding层、以及注意力机制中的权重矩阵Wq、Wk、Wv和输出投影矩阵W0（通常称为Linear层）均不包含中间层，它们执行的是线性变换或固定编码，没有非线性激活函数。而前馈神经网络（FeedForward Network, FFN）部分则包含一个中间层，通常由两个全连接层组成，分别对应权重矩阵W1和W2，并在两者之间应用非线性激活函数（如ReLU），从而引入非线性变换能力。",
+  "metadata": {
+    "original_question": "在Transformer中，Embedding、Positional Encoding、Wq、Wk、Wv、W0和Linear这几个地方的神经网络是不是没有中间层，在前馈神经网络的这里就有一个中间层，所以会计算W1和W2，我这样理解对吗？",
+    "row": 239,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

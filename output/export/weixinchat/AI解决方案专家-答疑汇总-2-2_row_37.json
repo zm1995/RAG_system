@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_37",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "DeepSeek的7种模型中，除了蒸馏模型外，671B参数模型是否完全独立研发？",
+    "蒸馏模型与671B参数模型在训练数据和方法上有何本质区别？",
+    "DeepSeek的蒸馏技术具体如何应用于Llama和千问模型？",
+    "671B参数模型是否使用了其他开源模型的数据或架构？",
+    "DeepSeek的7种模型在性能和应用场景上如何划分？",
+    "请教：这个deepseek，出了7种模型，说是6个是从Llama和千问蒸馏过来的，那么，只有671b最大参数的是ds自己的吗？"
+  ],
+  "answer": "DeepSeek发布的7种模型中，有6个蒸馏模型，这些模型通过将DeepSeek-R1模型生成的问题和回答作为蒸馏数据，用于微调不同尺寸的Llama和千问（Qwen）模型。而671B参数模型是DeepSeek自主研发的，未使用蒸馏技术，其训练数据和架构完全独立于其他开源模型。",
+  "metadata": {
+    "original_question": "请教：这个deepseek，出了7种模型，说是6个是从Llama和千问蒸馏过来的，那么，只有671b最大参数的是ds自己的吗？",
+    "row": 37,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

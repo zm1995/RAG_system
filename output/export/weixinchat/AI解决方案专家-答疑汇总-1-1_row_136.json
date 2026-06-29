@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_136",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "auto工作流的demo解析课具体会涵盖哪些内容？",
+    "除了demo解析课，还有哪些资源可以学习auto工作流？",
+    "auto工作流在coze平台上的应用场景有哪些？",
+    "如何获取auto工作流的详细操作手册？",
+    "auto工作流与其他类型工作流（如手动工作流）的主要区别是什么？",
+    "这个auto工作流，后面会详细讲么"
+  ],
+  "answer": "是的，该auto工作流将在后续课程中详细讲解，并设有专门的demo解析课，以帮助用户深入理解其操作和应用。",
+  "metadata": {
+    "original_question": "这个auto工作流，后面会详细讲么",
+    "row": 136,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_90",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze智能体开发中，如何正确计算YOLO模型的边界框参数（x, y, w, h）？",
+    "针对YOLO的损失函数，在Agent工作流中应如何实现其计算逻辑？",
+    "在知识库中存储YOLO模型训练数据时，如何确保x, y, w, h参数的格式一致性？",
+    "使用Workflows构建YOLO目标检测流程时，如何处理边界框坐标的归一化问题？",
+    "在Coze平台中，如何通过智能体自动计算YOLO损失函数中的分类损失和定位损失？",
+    "昨天像我这样不是很懂怎么算YOLO的 x y w h c 和他的loss function的话，我又找到这个："
+  ],
+  "answer": "是的，您的理解是正确的。在Coze平台及相关产品（如智能体、Workflows、知识库）中，处理YOLO模型的边界框参数（x, y, w, h）和损失函数时，需遵循以下规范：边界框坐标通常以归一化形式表示，其中x和y为中心点坐标，w和h为宽度和高度，c为置信度。损失函数计算需结合分类损失、定位损失和置信度损失，具体实现可参考YOLO官方文档或Coze工作流中的自定义节点。建议在知识库中存储标准化格式的数据，并在Workflows中通过脚本节点实现精确计算。",
+  "metadata": {
+    "original_question": "昨天像我这样不是很懂怎么算YOLO的 x y w h c 和他的loss function的话，我又找到这个：",
+    "row": 90,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

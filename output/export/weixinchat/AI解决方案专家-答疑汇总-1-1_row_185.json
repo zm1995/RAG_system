@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_185",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze平台上，除了手动调整切片内容，还有哪些方法可以优化RAG切片效果？",
+    "如何通过代码实现Coze中RAG切片按标题分割的功能？",
+    "Coze的RAG切片功能在哪些场景下表现不佳，是否有替代方案？",
+    "企业级RAG系统通常如何解决切片不准确的问题？",
+    "Coze平台未来是否会改进RAG切片功能以支持标题分割？",
+    "崔老师，现在coze上的rag切片功能不太好用，还无法根据标题去切，这个除了人工调整切片内容，是不是得通过代码来实现更高效一点。"
+  ],
+  "answer": "是的，目前Coze平台的RAG切片功能在按标题分割方面存在不足，这导致其在实际生产环境中效率较低。因此，许多企业倾向于自行开发完整的RAG系统，以实现更精准的切片和更高的生产效率。这种现状部分源于Coze等平台当前RAG功能的局限性。",
+  "metadata": {
+    "original_question": "崔老师，现在coze上的rag切片功能不太好用，还无法根据标题去切，这个除了人工调整切片内容，是不是得通过代码来实现更高效一点。",
+    "row": 185,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

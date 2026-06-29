@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_209",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "使用MoE架构的模型在微调时，是否需要针对不同厂家模型调整LoRA等微调代码？",
+    "除了开源训练代码，是否有第三方库或平台提供了MoE模型的训练和微调支持？",
+    "对于闭源的MoE模型，用户如何获取其训练或微调所需的代码资源？",
+    "MoE模型的训练代码与普通Transformer模型的训练代码在实现上有哪些主要差异？",
+    "在Coze或Agent等产品中集成MoE模型时，是否需要自行编写训练代码，还是平台提供了现成方案？",
+    "不同的厂家的MoE都需要自己动手写训练代码吗？还是有厂家或者第三方给出了实现了？"
+  ],
+  "answer": "对于开源MoE模型，需查阅对应厂商是否公开了训练代码。微调代码（如LoRA）的实现与普通模型差异不大，通常可在GitHub等平台找到通用实现。若模型为闭源，则需依赖厂商提供的API或SDK进行微调，无法直接获取训练代码。第三方库（如Hugging Face Transformers）已逐步支持部分MoE模型的加载与微调，但具体支持程度需参考库文档。在Coze或Agent等产品中集成MoE模型时，平台通常提供预训练模型调用接口，无需用户自行编写训练代码，但自定义微调可能需要使用平台提供的训练工具或外部代码。",
+  "metadata": {
+    "original_question": "不同的厂家的MoE都需要自己动手写训练代码吗？还是有厂家或者第三方给出了实现了？",
+    "row": 209,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

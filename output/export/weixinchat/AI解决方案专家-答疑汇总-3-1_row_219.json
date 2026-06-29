@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_219",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "Coze智能体如何通过API或SDK集成到第三方应用中？",
+    "在Coze中创建的Agent能否部署到微信、钉钉等国内主流平台？",
+    "Coze智能体发布为API后，企业开发人员需要具备哪些技能才能完成接入？",
+    "Coze是否支持将智能体嵌入到网页或移动App中？",
+    "Coze智能体接入外部系统时，是否需要额外的服务器或中间件支持？",
+    "后面会讲coze接入其他平台吗，如果boss不好讲可以讲其他平台吗，现在如果用coze搭建一个agent，感觉就只能在coze上用，但是实际情况并不会所有人都有coze，或者能不能讲一下coze的接入方式"
+  ],
+  "answer": "Coze智能体可以通过发布功能集成到多种平台。具体操作是：点击右上角的“发布”按钮，系统会列出支持直接发布的平台列表，用户可选择目标平台一键发布。对于不支持直接发布的平台，用户可将已创建的Agent发布为API或SDK，然后交由公司研发人员通过编写代码将其接入到企业自有产品或系统中。该接入过程通常较为简单，一名工程师大约一天即可完成，但需要具备一定的编程能力。",
+  "metadata": {
+    "original_question": "后面会讲coze接入其他平台吗，如果boss不好讲可以讲其他平台吗，现在如果用coze搭建一个agent，感觉就只能在coze上用，但是实际情况并不会所有人都有coze，或者能不能讲一下coze的接入方式",
+    "row": 219,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

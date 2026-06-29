@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_100",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在SONY门店店员案例中，大模型如何确保输出的是5次尝试中的最高得分回答，而无需在prompt中显式指定？",
+    "SONY门店店员案例中，best score和best response变量是如何协同工作以选择最优回答的？",
+    "在类似SONY门店店员的多轮生成场景中，如何通过变量机制自动筛选最佳结果？",
+    "如果SONY门店店员案例中需要输出最低得分回答，应如何调整变量逻辑？",
+    "在coze或agent开发中，如何利用中间变量实现类似best score的择优功能？",
+    "老师在SONY门店店员这个案例里，大模型怎么知道要输出5次里的最高得分的回答，没有prome里有写过"
+  ],
+  "answer": "在SONY门店店员案例中，系统通过设置中间变量来实现自动选择最高得分回答。具体机制如下：首先，定义一个名为'best score'的变量，用于存储当前最高的得分，初始值设为0或负无穷；同时，定义一个'best response'变量，用于存储对应最高得分的回答。在每次生成回答后，系统会计算该回答的得分，并与'best score'中的当前最高分进行比较。如果新得分高于当前最高分，则更新'best score'为新得分，并将'best response'更新为当前回答。经过5次迭代后，'best response'中保存的就是得分最高的回答。此过程无需在prompt中显式指定，完全由变量逻辑自动完成。",
+  "metadata": {
+    "original_question": "老师在SONY门店店员这个案例里，大模型怎么知道要输出5次里的最高得分的回答，没有prome里有写过",
+    "row": 100,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

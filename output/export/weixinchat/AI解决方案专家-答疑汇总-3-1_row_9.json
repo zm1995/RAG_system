@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_9",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在RAG系统中，如果embedding模型和LLM的向量维度不同，系统是如何处理这种差异的？",
+    "除了维度不匹配，embedding模型和LLM在训练数据或领域上是否需要保持一致？",
+    "在Coze或智能体平台中，配置RAG流程时，是否必须指定embedding模型与LLM的对应关系？",
+    "如果使用不同的embedding模型，对RAG系统的检索准确率会有多大影响？",
+    "在workflows中，如何确保embedding模型输出的向量能被LLM有效利用？",
+    "老师，你昨天回答了2个问题，答案都是不需要一致，本质原因是因为：RAG和LLM之间不直接交互，而是通过PROMTP，是吗？\n1.embedding模型需要跟我们选用的LLM匹配吗？\n2.embedding需要和LLM的embedding一样吗？比如说GPT是12288维，那embedding的模型出来的向量也需要是12288维吗？"
+  ],
+  "answer": "是的，本质原因在于RAG（检索增强生成）系统的工作机制：embedding模型和LLM（大语言模型）之间并不直接交互，而是通过提示词（Prompt）进行间接连接。因此，embedding模型是独立于LLM的组件，不需要与LLM进行匹配。具体来说，embedding模型的向量维度无需与LLM的嵌入维度一致，实际应用中两者通常不同，embedding向量的维度普遍在几百到一千多维之间，而LLM的嵌入维度可能更高（如GPT的12288维）。这种独立性使得系统设计更加灵活，开发者可以根据检索任务选择最合适的embedding模型，而不受LLM的限制。",
+  "metadata": {
+    "original_question": "老师， 你昨天回答了2个问题，答案都是不需要一致，本质原因是因为：RAG和LLM之间不直接交互，而是通过PROMTP，是吗？\n1.embedding模型需要跟我们选用的LLM匹配吗？\n2.embedding需要和LLM的embedding一样吗？比如说GPT是12288维，那embedding的模型出来的向量也需要是12288维吗？",
+    "row": 9,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

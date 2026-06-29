@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_56",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在构建RAG系统时，embedding模型和rerank模型是否必须来自同一供应商？",
+    "如果使用不同厂商的embedding和rerank模型，会对检索效果产生什么影响？",
+    "在coze平台中，能否混合使用不同来源的embedding和rerank模型？",
+    "对于智能体开发，选择不同RAG产品的embedding和rerank模型时需要注意哪些兼容性问题？",
+    "在workflows中，如何配置来自不同供应商的embedding和rerank模型以实现最佳性能？",
+    "embedding 和rerank 模型，可以分别用两家不同的RAG模型产品 拼凑一起用么"
+  ],
+  "answer": "是的，embedding模型和rerank模型可以分别来自不同的RAG产品供应商。这两个步骤在技术实现上是独立的，不要求必须使用同一家厂商的模型。在实际应用中，您可以根据具体需求选择最适合的embedding模型和rerank模型进行组合，但需注意确保接口兼容性和数据格式的一致性，以避免潜在的集成问题。",
+  "metadata": {
+    "original_question": "embedding 和rerank 模型，可以分别用两家不同的RAG模型产品 拼凑一起用么",
+    "row": 56,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

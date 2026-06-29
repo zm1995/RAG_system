@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_211",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在实操AutoGPT demo时，除了重写prompt，还有哪些关键环节需要重点关注？",
+    "对于不熟悉编程的用户，如何更高效地理解并改写AutoGPT demo中的prompt？",
+    "AutoGPT demo中的工作流设计对模型表现有何影响？如何通过调整工作流来优化结果？",
+    "在测试AutoGPT demo时，如何评估不同模型在处理复杂文件任务时的能力边界？",
+    "如果用户希望将AutoGPT demo应用于实际业务，除了prompt改写，还需要考虑哪些因素？",
+    "我们实操这个demo的主要目的，就是通过自己的思维框架和语言逻辑，将你的prompt完全改掉，改成自己的后看看能否运行，对吧？  老师写的prompt感觉程序员风格拉满，没有写过代码的我，理解起来有些吃力，我准备用自己的语言重写一遍所有prompt"
+  ],
+  "answer": "AutoGPT demo的核心目标并非聚焦于prompt的具体编写方式，而是通过熟悉其复杂的工作流，逐步掌握每一步的操作步骤。用户应通过多次测试，体验不同复杂度的文件任务，并观察不同模型的表现，从而深入理解各模型的能力边界。对于不熟悉编程的用户，建议先理解工作流的整体逻辑，再根据自身语言习惯重写prompt，以确保流程的顺畅运行。",
+  "metadata": {
+    "original_question": "我们实操这个demo的主要目的，就是通过自己的思维框架和语言逻辑，将你的prompt完全改掉，改成自己的后看看能否运行，对吧？  老师写的prompt感觉程序员风格拉满，没有写过代码的我，理解起来有些吃力，我准备用自己的语言重写一遍所有prompt",
+    "row": 211,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

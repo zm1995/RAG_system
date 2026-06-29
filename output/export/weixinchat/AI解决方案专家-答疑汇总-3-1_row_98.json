@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_98",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "Coze平台中的不同空间在功能上有哪些差异？",
+    "在Agent开发中，如何选择合适的工作空间？",
+    "智能体空间和知识库空间的使用场景有何不同？",
+    "Workflows空间与其他空间在配置上有什么区别？",
+    "Coze中多个空间之间是否可以共享资源？",
+    "这2个空间有什么区别？"
+  ],
+  "answer": "在Coze平台中，不同空间的核心功能基本一致，主要区别在于每个空间内预置的演示示例（demo）不同。这些demo用于展示特定场景下的应用或功能，用户可以根据自身需求选择相应的空间进行学习和开发。建议根据实际项目需求，选择包含相关demo的空间以提升效率。",
+  "metadata": {
+    "original_question": "这2个空间有什么区别？",
+    "row": 98,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

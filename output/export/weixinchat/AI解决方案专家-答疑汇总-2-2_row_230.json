@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_230",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在coze中，如何让模型输出的表格数据以可视化表格形式展示？",
+    "模型输出markdown格式的表格后，coze是否支持自动渲染为表格样式？",
+    "除了markdown和json，还有哪些格式可以用于在coze中表示表格数据？",
+    "在coze workflows中，如何处理模型输出的表格数据以便后续节点使用？",
+    "coze知识库中的表格数据能否直接用于模型训练或生成表格输出？",
+    "目前的模型是不是没办法把普通【XX：xxxx】这类的多行文本，转换成表格形式？"
+  ],
+  "answer": "当前模型本质上只能输出纯文本内容，因此当要求模型生成表格时，模型会采用JSON或Markdown等结构化文本格式来模拟表格。这些格式在多数LLM产品中会被解析并显示为表格样式，但Coze平台目前未将模型输出的结构化文本自动渲染为可视化表格。实际上，模型已按预期输出了表格数据，只是Coze的界面未提供相应的渲染支持。用户可自行将模型输出的JSON或Markdown文本复制到支持表格渲染的工具中查看，或通过Coze的插件功能实现表格展示。",
+  "metadata": {
+    "original_question": "目前的模型是不是没办法把普通【XX：xxxx】这类的多行文本，转换成表格形式？",
+    "row": 230,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

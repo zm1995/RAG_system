@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_83",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在coze工作流中，变量值的修改是否立即生效？为什么需要额外的节点来存储？",
+    "智能体中的variables变量，修改后不重新设置会有什么影响？",
+    "在agent工作流里，大模型节点输出后，如何确保变量值被正确保存？",
+    "知识库与workflows结合使用时，变量修改后是否需要手动触发存储操作？",
+    "在coze中，变量值的修改和存储是分离的吗？具体流程是怎样的？",
+    "为什么修改variable的值之后，还要再设置一遍呢？修改的时候不是直接就修改到variables变量里了吗？"
+  ],
+  "answer": "在coze工作流中，变量值的修改和存储是两个独立的步骤。大模型节点仅负责处理并整理需要存储到中间变量中的信息，但并不会直接修改variables变量。整理完成后，大模型节点将信息输出，由后续的专门节点（如变量设置节点）负责将整理好的信息实际存储到中间变量中。因此，修改变量值后需要再设置一遍，以确保信息被正确保存并应用于后续流程。",
+  "metadata": {
+    "original_question": "为什么修改variable的值之后，还要再设置一遍呢？修改的时候不是直接就修改到variables变量里了吗？",
+    "row": 83,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_189",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在智能体应用中，通过语音指令让智能体执行一个预设的API调用，这属于function calling吗？",
+    "如果智能体通过语音识别后，调用工作流中的某个节点来打开外部应用，这算不算function calling？",
+    "在Coze平台上，使用语音输入触发一个知识库查询，然后返回结果，这个过程是否涉及function calling？",
+    "智能体通过语音指令执行一个简单的动作，比如发送消息或播放音乐，这属于function calling吗？",
+    "在workflows中，语音唤醒后自动执行一个多步骤任务，比如打开应用并输入数据，这算function calling吗？",
+    "原问题：1、老师，请问在手机上通过语音唤醒智能助手，然后通过语音让其打开某个app，这个操作属于functioncalling吗？\n2、老师，那只是唤起其他app，没做其他操作，也属于fuction calling吗"
+  ],
+  "answer": "1、第一个问题中的操作不属于function calling。因为手机通过语音唤醒智能助手并打开App的过程，主要依赖手机本地运行的音频解析和指令识别算法模块，这些模块通常基于轻量级模型或规则引擎，无需调用大模型或复杂的函数调用机制，效率较高。\n2、第二个问题中，唤醒后自动启动某个App的操作属于function calling。在手机上，如果专门部署了针对特定任务（如启动App）进行训练和优化的Transformer模型，该模型可以解析语音指令并触发对应的函数调用。目前许多智能硬件中会集成此类模型，以实现高效的指令执行。",
+  "metadata": {
+    "original_question": "1、老师，请问在手机上通过语音唤醒智能助手，然后通过语音让其打开某个app，这个操作属于functioncalling吗？\n2、老师，那只是唤起其他app，没做其他操作，也属于fuction calling吗",
+    "row": 189,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

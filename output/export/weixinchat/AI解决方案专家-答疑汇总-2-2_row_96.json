@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_96",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "DeepSeekMoE中的门控路由网络在Transformer Decoder中的具体作用是什么？",
+    "在DeepSeekMoE架构中，每个Decoder层的专家网络数量是否固定？",
+    "DeepSeekMoE的Router是如何决定将token分配给哪些专家网络的？",
+    "DeepSeekMoE与标准FFN在Transformer Decoder中的实现有何关键区别？",
+    "在Coze或Agent产品中，DeepSeekMoE的Router设计如何影响模型性能？",
+    "DeepSeekMoE是优化改进的FFN，（GPT里W1和W2部分）这里是每一个Transformer Decoder里都有一个DeepSeekMoE的Router吗？"
+  ],
+  "answer": "是的，在DeepSeekMoE架构中，每一个Transformer Decoder层都包含一个门控路由网络（Router）以及一批专家网络。门控路由网络负责根据输入token的特征，动态选择激活哪些专家网络，从而实现稀疏激活和高效计算。这种设计使得每个Decoder层都能独立地进行专家分配，以优化模型性能和资源利用。",
+  "metadata": {
+    "original_question": "DeepseekMoE是优化改进的ffn，（gpt里W1和W2部分）这里是每一个transfor decoder里都有一个deepseekmoe的router吗？",
+    "row": 96,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

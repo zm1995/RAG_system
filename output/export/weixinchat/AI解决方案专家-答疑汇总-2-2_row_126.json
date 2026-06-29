@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_126",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在transform中，向量化过程是否依赖于上下文或模型状态？",
+    "如果输入文本相同但格式略有不同（如大小写或标点），transform生成的向量是否会变化？",
+    "transform的向量化步骤是否支持批量处理，且批量内各输入的向量化结果是否独立？",
+    "在transform中，向量化后的向量维度是否固定，与输入文本长度无关？",
+    "transform的向量化过程是否可逆，即能否从向量还原出原始文本？",
+    "transform里面，每次输入的时候第一步都是转化为向量吗，那多次输入同一句话，可能转化的向量结果是不一样的吗"
+  ],
+  "answer": "是的，在transform中，第一步始终是将输入文本转化为向量。对于相同的输入文本，无论输入多少次，生成的向量结果都是完全一致的，因为向量化过程是确定性的，不依赖于外部状态或随机因素。",
+  "metadata": {
+    "original_question": "transform里面，每次输入的时候第一步都是转化为向量吗，那多次输入同一句话，可能转化的向量结果是不一样的吗",
+    "row": 126,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

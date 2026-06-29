@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_82",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze平台中，如何通过代码实现connector与外部系统的数据对接？",
+    "使用workflows时，connector的代码编写需要遵循哪些规范？",
+    "能否详细说明connector在智能体中的应用场景及其代码实现步骤？",
+    "在知识库集成中，connector的代码实现是否支持自定义数据拉取逻辑？",
+    "对于agent开发，connector的代码实现有哪些常见的最佳实践？",
+    "请问大家这个connecter的具体实现，可以大概讲讲么，直接写代码吗？"
+  ],
+  "answer": "connector的实现通常涉及编写代码来完成系统间的数据打通与拉取。具体而言，开发者需要根据目标系统的API或协议，编写相应的连接逻辑，包括认证、请求发送、数据解析与存储等步骤。在Coze、agent、智能体、workflows或知识库等产品中，connector的代码实现应遵循平台提供的接口规范，确保数据交互的稳定性和安全性。建议参考官方文档中的示例代码，并根据实际业务需求进行定制化开发。",
+  "metadata": {
+    "original_question": "问题：请问大家这个connecter的具体实现，可以大概讲讲么，直接写代码吗？",
+    "row": 82,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

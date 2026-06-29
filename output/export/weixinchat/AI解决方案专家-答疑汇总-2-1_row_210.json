@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_210",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Transformer模型中，自注意力机制的计算复杂度为什么比RNN高？",
+    "RNN和Transformer在处理长序列数据时，计算效率有何差异？",
+    "除了计算复杂度，RNN和Transformer在模型训练和推理时还有哪些性能瓶颈？",
+    "在Coze或智能体开发中，选择RNN还是Transformer作为基础模型，主要考虑哪些因素？",
+    "如何优化Transformer模型的计算效率，以降低其在大规模数据上的运算成本？",
+    "我听的时候也好奇后来去问GPT了，还是没懂，因为编码器解码器不都是几亿几千亿的运算量吗，是比这个还大吗"
+  ],
+  "answer": "RNN的计算复杂度较低。对于一个包含n个元素的序列数据，RNN的扫描计算复杂度为O(n)，而自注意力机制的计算复杂度为O(n²)。因此，RNN在计算量上明显小于自注意力机制。",
+  "metadata": {
+    "original_question": "我听的时候也好奇后来去问GPT了，还是没懂，因为编码器解码器不都是几亿几千亿的运算量吗，是比这个还大吗",
+    "row": 210,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

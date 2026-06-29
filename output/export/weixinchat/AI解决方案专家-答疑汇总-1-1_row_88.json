@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_88",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Demo中，故事合成语音示例的三个Function calling配置，是否有详细的文档说明其配置步骤？",
+    "除了故事合成语音，Demo中是否还有其他预配置的Function calling示例供我们参考学习？",
+    "如果我想自定义Function calling配置，Demo是否提供了模板或指导？",
+    "在课程中，是否会提供Function calling配置的实操演练，还是仅讲解理论？",
+    "对于初学者，如何快速上手配置Function calling，是否有推荐的实践路径？",
+    "Demo中的示例，比如：故事合成语音，需要配置三个 Function calling，是有配置好让我们学习吗？还是需要我们自己摸索去做配置？"
+  ],
+  "answer": "Demo中的示例（如故事合成语音）已预先配置好三个Function calling，供用户直接学习和参考。在课程中，讲师会详细解析这些配置，但可能不会重复讲解该具体案例，而是会更换其他场景，继续深入讲解工具的使用方法。用户无需自行摸索配置，可直接利用现有示例进行学习。",
+  "metadata": {
+    "original_question": "Demo中的示例，比如：故事合成语音，需要配置三个 Function calling，是有配置好让我们学习吗？还是需要我们自己摸索去做配置？",
+    "row": 88,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

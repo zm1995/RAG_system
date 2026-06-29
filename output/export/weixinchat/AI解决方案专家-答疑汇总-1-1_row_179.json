@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_179",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "如何设置工作流超时时间以避免agent调用中断？",
+    "在agent调用工作流时，如何监控其执行状态以防止超时？",
+    "工作流执行超时后，agent是否有自动重试机制？",
+    "如何优化工作流设计以减少agent调用时的超时风险？",
+    "agent调用工作流超时后，如何向用户提供友好的错误提示？",
+    "请问agent时常调用工作流的时候会超时中止，有没什么好的方法避免"
+  ],
+  "answer": "为避免agent调用工作流时因超时而中止，建议在工作流执行期间定期向用户发送状态更新消息，例如进度提示或确认信息，以保持对话的活跃性并告知用户工作流仍在正常运行。此外，可考虑优化工作流逻辑，减少单次执行时间，或设置合理的超时阈值并启用重试机制，从而降低超时中断的概率。",
+  "metadata": {
+    "original_question": "请问agent时常调用工作流的时候会超时中止，有没什么好的方法避免",
+    "row": 179,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

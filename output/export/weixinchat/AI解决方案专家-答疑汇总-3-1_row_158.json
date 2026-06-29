@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_158",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Python中调用DeepSeek等大模型时，需要安装哪些依赖库？",
+    "如何获取DeepSeek或其他大模型的API密钥？",
+    "调用大模型API时，请求参数通常包含哪些字段？",
+    "在Python代码中，如何设置大模型API的请求超时时间？",
+    "调用大模型API返回的响应数据格式是什么？",
+    "可以在python代码中调用deepseek或者其他大模型么？请求的api_url应该是什么呀？"
+  ],
+  "answer": "是的，可以在Python代码中调用DeepSeek或其他大模型。API URL是大模型服务商提供的接口地址，用于与模型进行交互。具体URL格式取决于所选模型服务商，例如DeepSeek的API URL通常为https://api.deepseek.com/v1/chat/completions。调用时需携带必要的认证信息（如API密钥）和请求参数（如模型名称、输入文本等）。",
+  "metadata": {
+    "original_question": "可以在python代码中调用deepseek或者其他大模型么？请求的api_url应该是什么呀？",
+    "row": 158,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

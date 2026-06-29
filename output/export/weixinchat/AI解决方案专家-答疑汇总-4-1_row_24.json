@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_24",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze平台上，插件和MCP在开发方式上有哪些不同？",
+    "MCP协议如何实现与Coze插件的互操作性？",
+    "Coze插件和MCP在调用外部服务时，各自的优缺点是什么？",
+    "对于开发者而言，选择使用Coze插件还是MCP，主要考虑哪些因素？",
+    "Coze平台未来是否会完全用MCP替代现有插件体系？",
+    "老师，coze上的插件跟MCP本质上有什么区别么"
+  ],
+  "answer": "Coze平台上的插件是针对特定互联网服务专门开发的，需要为每个服务单独编写代码和适配。而MCP（Model Context Protocol）是一种通用协议，支持MCP的互联网服务可以直接通过该协议进行调用，无需为每个服务单独开发插件。简而言之，插件是定制化的解决方案，MCP是标准化的通用接口。",
+  "metadata": {
+    "original_question": "老师，coze上的插件跟MCP本质上有什么区别么",
+    "row": 24,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

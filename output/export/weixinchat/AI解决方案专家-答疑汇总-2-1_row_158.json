@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_158",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Transformer架构中，除了掩码机制外，Encode和Decode在注意力计算方式上还有哪些关键差异？",
+    "对于LLM的文本生成任务，Decode模块的掩码自注意力机制如何具体影响下一个字的预测准确性？",
+    "Encode输出的向量在语义理解任务中，与Decode输出的向量在特征表示上有何本质不同？",
+    "在Coze或Agent等产品中，Encode和Decode的设计如何影响智能体对用户意图的理解和响应生成？",
+    "如果移除Decode中的掩码机制，LLM在生成连续文本时会出现哪些典型问题？",
+    "Encode与Decode本质上最大的区别就是一个是多头自注意力机制，一个是掩码的多头自注意力机制，对于LLM来说，更符合输出下一个字的任务，是否还有其他本质区别么？"
+  ],
+  "answer": "在Transformer架构中，Encode与Decode的核心区别在于掩码机制的应用。Encode采用多头自注意力机制，能够同时关注输入序列中的所有位置，从而全面理解上下文语义，其输出的向量主要用于表示和理解一段文字的整体含义。Decode则使用掩码的多头自注意力机制，在计算注意力时限制每个位置只能关注其之前的位置，确保生成过程符合因果顺序，其输出的向量专门用于预测下一个字或词，以支持自回归式文本生成。此外，Decode还通过交叉注意力机制与Encode的输出交互，进一步融合输入信息。这些设计使得Encode更侧重于语义理解，而Decode更专注于序列生成任务。",
+  "metadata": {
+    "original_question": "Encode与Decode本质上最大的区别就是一个是多头自注意力机制，一个是掩码的多头自注意力机制，对于LLM来说，更符合输出下一个字的任务，是否还有其他本质区别么？",
+    "row": 158,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

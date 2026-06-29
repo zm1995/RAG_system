@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_63",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在coze平台上，如何集成视觉检测模型进行图像识别任务？",
+    "使用智能体进行视觉检测时，如何选择合适的多模态模型？",
+    "在workflows中，如何配置YOLO模型以实现高精度目标检测？",
+    "知识库中存储的视觉检测模型文档，如何快速检索并应用到实际项目中？",
+    "对于初学者，在agent开发中如何入门视觉检测模型的调用与优化？",
+    "老师你好，请问有没有什么视觉检测方面的开源大模型推荐？"
+  ],
+  "answer": "对于视觉检测任务，推荐使用多模态模型进行简单的图像识别，这类模型能够理解图像内容。若对检测精度有较高要求，建议采用YOLO（You Only Look Once）或UNet模型。YOLO适用于实时目标检测，而UNet擅长图像分割任务。这些模型的具体原理将在后续的视觉模型课程中详细讲解。",
+  "metadata": {
+    "original_question": "老师你好，请问有没有什么视觉检测方面的开源大模型推荐？",
+    "row": 63,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

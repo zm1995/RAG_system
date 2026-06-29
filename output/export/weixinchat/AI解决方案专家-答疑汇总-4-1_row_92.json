@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_92",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在智能体开发中，大模型、向量化模型和重排序模型各自承担什么角色？",
+    "如何选择适合知识库的向量化模型和重排序模型？",
+    "大模型与向量化模型在文本处理任务中的核心差异是什么？",
+    "重排序模型在 workflows 中如何提升检索结果的准确性？",
+    "在 coze 平台中，大模型、向量化模型和重排序模型如何协同工作？",
+    "大模型，向量化模型，重排序模型有什么区别"
+  ],
+  "answer": "大模型（Large Language Model, LLM）：接收一段文本输入，通过深度学习算法生成对应的文本输出，广泛应用于对话生成、内容创作等任务。\n\n向量化模型（Embedding Model）：将输入文本转换为固定长度的数值向量，用于衡量文本间的语义相似度，常用于信息检索和聚类分析。\n\n重排序模型（Rerank Model）：接收两段文本输入，输出一个介于0到1之间的相关度分数，表示两段文本在语义上的匹配程度，通常用于优化检索结果的排序。",
+  "metadata": {
+    "original_question": "大模型，向量化模型，重排序模型有什么区别",
+    "row": 92,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

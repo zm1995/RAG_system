@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_119",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "海外版Coze的付费模式与国内版有何不同？",
+    "在海外版Coze上运行demo时，如何查看自己的剩余额度？",
+    "海外版Coze的团队额度是否支持成员共享？",
+    "国内版Coze的团队额度充值后，所有成员都能使用吗？",
+    "海外版Coze上调试demo时，如果额度不足，有哪些解决方案？",
+    "我刚开始听正式课，尝试海外版Coze上运行demo, 页面提示要付费？"
+  ],
+  "answer": "是的，海外版Coze的团队额度不支持成员共享。在调试时，每位用户必须使用自己的个人额度。相比之下，国内版Coze允许所有团队成员使用已充值的团队额度进行调试。",
+  "metadata": {
+    "original_question": "我刚开始听正式课，尝试海外版Coze上运行demo, 页面提示要付费？",
+    "row": 119,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

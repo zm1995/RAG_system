@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_133",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze平台中，如何通过微调训练来构建一个针对特定场景的Reward Model？",
+    "除了Reward Model，在智能体开发中还有哪些替代技术可以实现类似的效果，且成本更低？",
+    "Reward Model在Workflows中如何集成，以优化智能体的决策过程？",
+    "在知识库应用中，Reward Model能否用于评估检索结果的相关性？如何实现？",
+    "如果Reward Model只能输出打分，那么在Agent系统中如何利用这个分数来改进模型行为？",
+    "最后得到的这个Reword Model，已经不是一个语言模型了，因为它只会打分，其他啥都不会了\n这点是怎么实现的，如果我们想针对某种特定场景去生成一个特定的RM，要怎么做"
+  ],
+  "answer": "Reward Model本质上仍然是一个语言模型，它能够理解人类语言，但在输出时仅生成一个评分，而不产生文本回答。其实现方式是通过微调训练，即在预训练语言模型的基础上，使用标注的偏好数据（如人类对回答的排序）进行监督学习，使模型学会对输入内容进行打分。针对特定场景构建Reward Model，通常需要收集该场景下的偏好数据，然后对基础模型进行微调。然而，在应用层，构建Reward Model的门槛较高，不建议直接实施。相反，可以采用其他替代技术，如基于规则的评分、使用预训练的评分模型或利用强化学习中的奖励函数设计，这些方法性能良好且成本较低。",
+  "metadata": {
+    "original_question": "最后得到的这个Reword Model，已经不是一个语言模型了，因为它只会打分，其他啥都不会了\n这点是怎么实现的，如果我们想针对某种特定场景去生成一个特定的RM，要怎么做",
+    "row": 133,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

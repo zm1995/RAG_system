@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_97",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "问题1：在MoE架构的Transformer中，门控网络是如何决定激活哪两个专家网络的？",
+    "问题2：MoE模型中的16个专家网络是否共享相同的参数，还是各自独立训练？",
+    "问题3：在Transformer的每一层中，多头自注意力机制和MoE模块的处理顺序是怎样的？",
+    "问题4：MoE架构相比传统Transformer模型，在计算效率和模型容量方面有哪些优势？",
+    "问题5：GPT-4等大型语言模型采用MoE结构时，通常包含多少层Transformer，以及如何管理专家网络的负载均衡？",
+    "原问题：问题3：16个Feed forward网络是在每一层transformer多头自注意力后由门控网络选出两个FF网络，传给FF并列接收输出然后各自处理后，再加权汇总后输出的吗？"
+  ],
+  "answer": "是的，在MoE（混合专家模型）架构中，Transformer的每一层处理流程如下：首先执行多头自注意力机制，随后进入门控网络模块。该门控网络负责从16个专家网络（即前馈网络）中决策激活哪两个专家网络。被选中的两个专家网络并行接收输入，各自独立处理后，其输出通过加权汇总的方式合并，形成该层的最终输出。这一过程完成后，进入Transformer的下一层。例如，GPT-4等大型模型可能包含约120层这样的结构。MoE架构通过稀疏激活机制，在保持模型容量的同时显著提升计算效率，目前已成为主流架构之一。",
+  "metadata": {
+    "original_question": "问题3：16个Feed forward网络是在每一层transformer多头自注意力后由门控网络选出两个FF网络，传给FF并列接收输出然后各自处理后，再加权汇总后输出的吗？",
+    "row": 97,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

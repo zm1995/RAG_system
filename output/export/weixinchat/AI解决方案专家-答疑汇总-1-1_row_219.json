@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_219",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze平台上，如何获取并配置API密钥以调用智能体功能？",
+    "申请API密钥时，需要提供哪些信息或完成哪些验证步骤？",
+    "API密钥在使用过程中是否有调用次数或频率的限制？",
+    "如果API密钥泄露或丢失，应该如何及时处理以保障安全？",
+    "不同平台（如Coze、OpenAI）的API密钥申请流程有何异同？",
+    "老师，我有个问题，申请API密钥是怎样一个流程？申请API密钥需要花钱吗？"
+  ],
+  "answer": "API密钥是平台用于验证调用者身份和权限的凭证。在Coze、Agent、智能体、Workflows、知识库等产品中，申请API密钥的通用流程如下：首先，登录目标平台的开发者控制台或API管理页面；其次，根据指引创建应用或项目，并选择所需权限；然后，系统会生成唯一的API密钥（通常包含Key和Secret）。申请API密钥本身通常免费，但部分平台要求先完成实名认证或绑定支付方式，且调用API时可能按使用量计费（如按请求次数或数据量收费）。例如，Coze平台提供免费额度，超出后需充值；而OpenAI的GPT API则需预充值才能启用。建议在申请前仔细阅读平台的API文档和定价说明。",
+  "metadata": {
+    "original_question": "老师，我有个问题，申请API密钥是怎样一个流程？申请API密钥需要花钱吗？",
+    "row": 219,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

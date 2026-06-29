@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_156",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在构建AI解决方案时，如何根据任务复杂度判断使用单Agent还是多Agent架构？",
+    "多Agent协作相比单Agent在哪些场景下具有明显优势？",
+    "设计AI解决方案时，单Agent和多Agent在性能和维护成本上有何差异？",
+    "如何评估一个任务是否适合拆分为多个Agent协作完成？",
+    "在Coze平台中，单Agent和多Agent的实现方式有哪些关键区别？",
+    "我想问一下，当我在设计AI解决方案的时候，我该如何抉择，这个解决方案我用单agent来做还是多agent协作来做呢？"
+  ],
+  "answer": "选择单Agent还是多Agent架构需基于具体业务场景和任务特性。核心设计原则是模块化：每个Agent应专注于单一类型的工作，以提升效率和可维护性。若任务可拆分为多个独立子任务，且子任务间需协同或并行处理，则多Agent协作更合适；反之，若任务简单或需紧密耦合，单Agent即可。此外，需考虑性能开销：多Agent可能增加通信和协调成本，但能提升扩展性。在Coze平台中，单Agent通常集成多个工作流，而多Agent通过独立Agent间协作实现复杂功能。建议从任务复杂度、资源约束和可维护性角度综合评估。",
+  "metadata": {
+    "original_question": "我想问一下，当我在设计AI解决方案的时候，我该如何抉择，这个解决方案我用单agent来做还是多agent协作来做呢？",
+    "row": 156,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

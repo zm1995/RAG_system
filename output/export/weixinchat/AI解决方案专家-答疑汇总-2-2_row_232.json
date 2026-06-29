@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_232",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze平台中，使用知识库与模型训练在知识更新机制上有何不同？",
+    "通过workflows调用文档输入时，模型是否会基于这些文档进行参数调整？",
+    "智能体在运行时，prompt中的文档输入和模型微调对模型行为的影响有何本质区别？",
+    "在Agent开发中，如何理解模型训练与prompt注入文档在持久性学习上的差异？",
+    "使用Coze知识库功能时，文档内容是否会被模型记住并用于后续对话？",
+    "模型训练和prompt里输入文档这种learn，具体有啥区别呢？后者是否也会更新模型参数？"
+  ],
+  "answer": "模型训练会直接修改模型的参数，从而改变模型的行为和知识结构，使模型变得更聪明或适应特定任务。而prompt中的文档输入（如通过知识库或workflows注入）不会更新模型参数，模型仅临时参考这些文档内容生成回答，不会记住或学习这些知识，也不会因此改变其内部参数。因此，prompt输入不会使模型变得更聪明或持久性地掌握新知识。",
+  "metadata": {
+    "original_question": "模型训练和prompt里输入文档这种learn，具体有啥区别呢？后者是否也会更新模型参数？",
+    "row": 232,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

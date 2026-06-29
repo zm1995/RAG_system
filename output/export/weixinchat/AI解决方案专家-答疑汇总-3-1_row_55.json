@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_55",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "老师，Coze平台中Python代码的运行环境是否支持安装第三方库？",
+    "在Coze的Python环境中，代码执行是否有时间或资源限制？",
+    "Coze的Python运行环境与本地环境相比，有哪些主要差异？",
+    "如果我在Coze的Python环境中运行代码，能否访问外部网络或文件系统？",
+    "Coze平台是否支持在Python代码中调用其他Coze组件，如知识库或工作流？",
+    "老师，这段python代码是在coze的python环境运行的吗，还是在本地的python环境运行的"
+  ],
+  "answer": "是的，该Python代码是在Coze平台提供的运行环境中执行的。Coze的Python运行环境是一个预配置的云端环境，支持标准Python库，但可能对第三方库的安装有特定限制。与本地环境不同，Coze环境具有资源限制（如执行时间和内存），并且通常无法直接访问外部网络或本地文件系统。此外，Coze环境允许通过API或内置函数与其他Coze组件（如知识库、工作流）进行交互，以实现更复杂的功能。",
+  "metadata": {
+    "original_question": "老师，这段python代码是在coze的python环境运行的吗，还是在本地的python环境运行的",
+    "row": 55,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

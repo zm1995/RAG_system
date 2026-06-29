@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_172",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在zero shot场景下，如何通过优化prompt设计来提升模型表现？",
+    "zero shot与few shot在prompt设计上有哪些关键区别？",
+    "小团队在zero shot应用中，如何有效引入RAG或参考知识来增强效果？",
+    "zero shot模式下，prompt迭代的具体步骤和最佳实践是什么？",
+    "除了prompt设计，还有哪些因素会影响zero shot模型的输出质量？",
+    "以及zero shot怎么涨呢🤔，zero没上下文提示的话，不就是大模型本身的能力吗（我们只是选型调用），我们小团队是在这个过程里面调什么的呀？是“样例怎么写才能让模型表现好“吗"
+  ],
+  "answer": "在zero shot场景下，虽然不提供样例，但prompt的设计至关重要。需要根据产品需求持续迭代prompt，包括优化指令的清晰度、引入参考知识（如通过RAG检索相关信息）等，以引导模型输出更符合预期的结果。小团队在此过程中主要调整的是prompt的表述方式、结构以及外部知识的整合策略，而非模型本身。",
+  "metadata": {
+    "original_question": "以及zero shot怎么涨呢🤔，zero没上下文提示的话，不就是大模型本身的能力吗（我们只是选型调用），我们小团队是在这个过程里面调什么的呀？是“样例怎么写才能让模型表现好“吗",
+    "row": 172,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

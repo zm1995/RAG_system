@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_149",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在使用Coze平台集成不同大模型时，如何确保模型输出的JSON格式与工作流中的工具调用正确匹配？",
+    "如果DeepSeek-V3模型在智能体中频繁出现工具调用幻觉，有哪些调试方法可以优化其行为？",
+    "在Coze的Workflows中，如何配置知识库与模型交互，以避免模型输出不符合预期的JSON结构？",
+    "对于不支持function call的模型（如DeepSeek-V3），在Agent设计中应如何设计提示词来减少幻觉输出？",
+    "通义千问·max在Coze中表现稳定，但DeepSeek-V3工具调用版本不稳定，如何通过调整参数或工作流逻辑来提升DeepSeek-V3的可靠性？",
+    "老师你好，有个现象不太能理解，需要帮忙解说，具体如下：咱们询问天气的实例，在三种模型下表现如下：【DeepSeek-V3】输出json，但该模型备注明确说明不支持functioncall【DeepSeek-V3·工具调用】输出：模型幻觉调用拆件，该模型为v3 function call版本【通义千问·max】输出json，该模型备注function call、json输出1.不支持functioncall的deepseek-v3模型为什么会输出json格式来尝试进行function call，个人理解：这个应该幻觉才对2.function call版本的deepseek-v3面对完全相同的prompts为什么会幻觉调用插件，个人理解：这个模型应该输出json格式来尝试进行function call才对，第1个试验应该幻觉才对。3.这个是支持function call的通义千问·max这个输出json是符合预期的"
+  ],
+  "answer": "您观察到的现象确实反映了不同模型在function call能力上的差异。首先，语言模型普遍具备输出JSON格式的能力，但能否严格按预期格式输出并正确触发工具调用，取决于模型与工具之间的调试和配合。DeepSeek-V3模型在function call方面的打磨相对初级，因此即使模型本身不支持function call，它仍可能因训练数据中的模式而输出JSON格式，这属于模型的一种“幻觉”行为。对于DeepSeek-V3的工具调用版本，它虽然被设计为支持function call，但由于模型细节优化不足，面对相同提示词时可能产生不稳定的调用行为，例如错误地触发插件。相比之下，通义千问·max在function call和JSON输出方面经过了更细致的打磨，因此表现符合预期。建议在使用DeepSeek模型时，通过更明确的提示词约束、增加示例或调整工作流逻辑来减少幻觉，并考虑在Coze平台中结合知识库或规则引擎来增强稳定性。",
+  "metadata": {
+    "original_question": "老师你好，有个现象不太能理解，需要帮忙解说，具体如下：\n咱们询问天气的实例，在三种模型下表现如下：\n【DeepSeek-V3】输出json，但该模型备注明确说明不支持functioncall\n【DeepSeek-V3·工具调用】输出：模型幻觉调用拆件，该模型为v3 function call版本\n【通义千问·max】输出json，该模型备注function call、json输出\n1.不支持functioncall的deepseek-v3模型为什么会输出json格式来尝试进行function call，个人理解：这个应该幻觉才对\n2.function call版本的deepseek-v3面对完全相同的prompts为什么会幻觉调用插件，个人理解：这个模型应该输出json格式来尝试进行function call才对，第1个试验应该幻觉才对。\n3.这个是支持function call的通义千问·max这个输出json是符合预期的",
+    "row": 149,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

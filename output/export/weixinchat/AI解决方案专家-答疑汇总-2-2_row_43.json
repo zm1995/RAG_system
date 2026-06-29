@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_43",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "老师，DeepSeek在训练方法上的具体创新点有哪些，使其能够显著降低成本？",
+    "除了成本优势，DeepSeek在模型架构或推理效率上是否有其他创新？",
+    "DeepSeek的训练方法是否适用于其他大模型，比如Coze或Agent相关的模型优化？",
+    "DeepSeek的低成本训练方法对智能体或Workflows的开发有何实际影响？",
+    "老师，DeepSeek的模型能力与GPT-4o相比，在特定任务（如知识库问答）上是否有独特优势？",
+    "老师，所以您的看法是deepseek主要创新点在于训练方法，以至于能够降低成本？实际模型能力本身的提升并没有多少创新点是吗？"
+  ],
+  "answer": "是的，DeepSeek的核心创新主要在于其训练方法，通过优化训练流程和资源利用，显著降低了成本，从而以较低投入训练出与GPT-4o和GPT-o1性能相当的模型。在模型能力方面，DeepSeek并未超越GPT系列，其优势主要体现在成本效率上，而非模型能力的本质提升。",
+  "metadata": {
+    "original_question": "老师，所以您的看法是deepseek主要创新点在于训练方法，以至于能够降低成本？实际模型能力本身的提升并没有多少创新点是吗？",
+    "row": 43,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

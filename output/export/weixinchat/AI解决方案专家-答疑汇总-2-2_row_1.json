@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_1",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "老师，function calling 和 RPA 在技术实现上有哪些主要区别？",
+    "使用 function calling 功能时，是否需要额外配置或训练模型？",
+    "function calling 在智能体（agent）开发中扮演什么角色？",
+    "除了 function calling，还有哪些方法可以实现大模型与外部工具的交互？",
+    "在 workflows 中集成 function calling 时，需要注意哪些关键点？",
+    "老师，functioncalling属于RPA吗？进行functioncalling需要微调大模型吗？"
+  ],
+  "answer": "function calling 不属于 RPA（机器人流程自动化）。function calling 是大模型的一项内置能力，用于调用外部函数或 API 以扩展模型的功能。当前主流的大模型（如 GPT-4、Claude 等）均已原生支持 function calling，无需进行微调即可直接使用。用户只需在调用模型时定义函数描述，模型即可根据输入自动选择合适的函数进行调用。",
+  "metadata": {
+    "original_question": "老师，functioncalling属于RPA吗？进行functioncalling需要微调大模型吗？",
+    "row": 1,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

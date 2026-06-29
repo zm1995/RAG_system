@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_25",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "我们公司领导要求用智能体自动打开多个网页并填写信息，同时结合deepseek进行判断，这种需求在coze平台上能否实现？",
+    "在coze中搭建一个能自动浏览网页、填写表单并调用deepseek做决策的智能体，需要哪些关键步骤？",
+    "除了coze，还有哪些平台或工具支持类似AutoGLM的网页自动化与AI判断功能？",
+    "如何评估在coze上实现网页自动化与deepseek集成的复杂度和可行性？",
+    "如果要在coze上实现领导要求的智能体功能，有哪些常见的坑或限制需要注意？",
+    "我们公司领导看到了就让搞个智能体打开各种网页，填信息，还用deepseek做判断。"
+  ],
+  "answer": "针对您描述的需求，建议参考智谱官方的AutoGLM产品，该产品专注于网页自动化与AI判断的结合。然而，此类功能的实现复杂度较高，并非在coze平台上简单搭建即可完成。我们有一节专门的课程详细讲解了相关技术原理和实现方法，但需要深入理解自动化流程、API集成以及AI模型的调用逻辑。建议先评估具体需求范围，再选择合适的技术方案。",
+  "metadata": {
+    "original_question": "我们公司领导看到了就让搞个智能体打开各种网页，填信息，还用deepseek做判断。",
+    "row": 25,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

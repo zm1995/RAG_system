@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_85",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在ViT模型中，图像被分割成patch后，这些patch的向量表示是通过什么机制学习得到的？",
+    "ViT中的patch嵌入层与NLP中的词嵌入层在训练方式上有何异同？",
+    "ViT模型如何处理不同图像中patch像素值差异大的问题，以确保嵌入层能有效学习？",
+    "在ViT训练过程中，patch嵌入层的参数是如何根据任务目标进行调整的？",
+    "ViT的patch嵌入层是否依赖于预训练数据集的规模？如果训练数据不足，会有什么影响？",
+    "崔老师，ViT中将图像分割成patch，然后patch向量化，那patch的向量值是训练出来的吗？如果是的话不同的图像，像素值都不一样，不像词token那样固定，怎么训练呢"
+  ],
+  "answer": "是的，ViT中将patch转换为向量的嵌入层是训练得到的，类似于Transformer中的词嵌入模块。该层本质上是一个神经网络，初始时对patch的映射是随机的，输出向量没有意义。随后，模型根据整体任务（如图像分类）定义的总误差（如交叉熵损失），通过反向传播算法自动调整该层的参数，以最小化总误差。由于patch不像NLP中的token那样有固定的词汇表（如10万多个不同的token），每个patch的像素值因图像而异，因此该嵌入层无法依赖预定义的映射关系。它必须从大量训练数据中学习通用规律，通过观察不同patch的特征（如边缘、纹理）来优化映射。尽管该层不可能见过所有可能的patch，但经过充分训练后，它能从见过的数据中提取有效特征，从而具备良好的泛化能力。",
+  "metadata": {
+    "original_question": "崔老师，ViT中将图像分割成patch，然后patch向量化，那patch的向量值是训练出来的吗？如果是的话不同的图像，像素值都不一样，不像词token那样固定，怎么训练呢",
+    "row": 85,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

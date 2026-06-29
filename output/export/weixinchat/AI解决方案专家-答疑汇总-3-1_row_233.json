@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_233",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在coze的agent中，function call的底层实现机制是怎样的？",
+    "如果我想在自定义代码中调用deepseek r1的API实现function call，需要遵循哪些步骤？",
+    "coze的agent与自定义代码调用API实现function call，在工具注册和回调处理上有哪些关键区别？",
+    "在deepseek r1的API中，function call的请求和响应格式具体是什么？",
+    "如何在不使用现成框架的情况下，手动实现deepseek r1 API的function call功能？",
+    "coze的agent可以很方便的function call，那如果我自己写个代码调deepseep r1的API，怎么实现fc呢？"
+  ],
+  "answer": "通过编写代码调用API实现function call，其核心机制是函数回调。具体而言，您需要预先定义若干个函数（即工具），并将这些函数的描述信息告知大模型。当大模型判断需要调用某个工具时，它会生成一个包含函数名称和参数的回调请求。您需要解析该请求，执行对应的函数，并将结果返回给大模型。许多开发框架（如LangChain、OpenAI SDK）已内置此功能，您可以直接使用这些框架，只需编写具体的函数逻辑即可。若需手动实现，则需处理API请求中的function_call字段，解析模型返回的调用指令，并确保响应格式符合API规范。",
+  "metadata": {
+    "original_question": "coze的agent可以很方便的function call，那如果我自己写个代码调deepseep r1的API，怎么实现fc呢？",
+    "row": 233,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

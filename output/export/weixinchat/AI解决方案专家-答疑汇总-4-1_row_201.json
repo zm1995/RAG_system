@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_201",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在骑手招聘助手demo中，如果我想使用自己的站点数据文件，应该如何修改prompt中的文件路径？",
+    "骑手招聘助手demo中，代码执行器插件支持哪些文件格式？是否必须使用xlsx文件？",
+    "在骑手招聘助手demo中，除了文件路径，还需要在prompt中配置哪些参数才能正确计算距离？",
+    "骑手招聘助手demo运行时提示文件路径不存在，如何检查文件是否已正确上传到代码执行器的工作目录？",
+    "在骑手招聘助手demo中，如果使用file_url提供的在线文件，是否还需要在prompt中指定本地文件路径？",
+    "骑手招聘助手这个demo，计算距离用户地址3公里内的站点，prompt里的”文件路径为：\"/mnt/data/sites_geocoded.xlsx\"，这个是要把该excel文件放在哪里？不太懂哈，我试运行提示说文件路径不存在或无法访问。另外，已经提供了file_url地址是不是就够了，还需要弄“文件路径为：\"/mnt/data/sites_geocoded.xlsx”这个吗？"
+  ],
+  "answer": "在骑手招聘助手demo中，计算距离用户地址3公里内站点时，prompt中指定的文件路径“/mnt/data/sites_geocoded.xlsx”是代码执行器（Code Runner）插件内部工作目录下的文件路径。该文件需要预先上传到代码执行器插件的工作目录中，具体操作步骤如下：首先，在Coze平台中打开代码执行器插件，通过其文件上传功能将sites_geocoded.xlsx文件上传到指定位置；然后，确保文件上传成功后，prompt中的路径会自动匹配。如果仅提供了file_url地址，通常不需要再指定本地文件路径，因为代码执行器可以直接从URL读取文件。但若prompt中同时包含file_url和本地路径，系统可能会优先使用本地路径，导致文件不存在错误。建议检查文件是否已正确上传，并确认prompt中只保留一种文件引用方式。",
+  "metadata": {
+    "original_question": "骑手招聘助手这个demo，计算距离用户地址3公里内的站点，prompt里的”文件路径为：\"/mnt/data/sites_geocoded.xlsx\"，这个是要把该excel文件放在哪里？不太懂哈，我试运行提示说文件路径不存在或无法访问。另外，已经提供了file_url地址是不是就够了，还需要弄“文件路径为：\"/mnt/data/sites_geocoded.xlsx”这个吗？",
+    "row": 201,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

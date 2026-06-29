@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_97",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "请问Agentic RAG在智能体中的应用场景有哪些？",
+    "能否详细解释Agentic RAG与知识库结合的工作流程？",
+    "在Coze平台上，如何实现Agentic RAG的配置与优化？",
+    "Agentic RAG在workflows中如何提升任务执行效率？",
+    "针对Agentic RAG，有哪些最佳实践或常见问题解决方案？",
+    "老师好，请问后续可以针对，Agentic RAG，做一些介绍和讲解么？"
+  ],
+  "answer": "后续内容将专注于行业案例的分析，不再单独对Agentic RAG进行介绍和讲解。如需了解Agentic RAG的相关信息，建议参考已有的操作手册或文档资源。",
+  "metadata": {
+    "original_question": "老师好，请问后续可以针对，Agentic RAG，做一些介绍和讲解么？",
+    "row": 97,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

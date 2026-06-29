@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_114",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在coze平台上开发的应用如何与TikTok的用户市场进行集成？",
+    "阿里国际对coze和dify这类AI应用平台的支持策略是什么？",
+    "coze海外版应用在TikTok上的收费模式目前有哪些限制？",
+    "阿里即将推出的类似coze的产品将如何与现有阿里生态体系整合？",
+    "coze和dify在跨境电商场景中的应用前景如何？",
+    "如果在coze做个应用能直接在tiktok的用户市场里销售就好了，不知道阿里国际那边对coze和dify的态度怎样？"
+  ],
+  "answer": "1. 海外版coze开发的应用可以通过链接在TikTok上使用，用户点击链接即可访问，但目前功能较为初级，收费功能尚未打通，预计未来会逐步完善。2. 阿里国际计划推出类似coze的产品，旨在鼓励用户在其平台上创建Agent，并天然与阿里生态体系（如电商、支付等）打通，实现直接发布和使用，这是明确的发展方向。",
+  "metadata": {
+    "original_question": "如果在coze做个应用能直接在tiktok的用户市场里销售就好了，不知道阿里国际那边对coze和dify的态度怎样？",
+    "row": 114,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

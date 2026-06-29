@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_22",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在客服系统中，如何合理划分场景以确定需要编写多少个prompt？",
+    "对于客服系统的prompt设计，是否可以将多个相似场景合并为一个prompt？",
+    "在coze智能体中，prompt的数量与客服系统效果之间是否存在直接关系？",
+    "针对客服系统的workflows，如何评估是否需要为每个子任务单独编写prompt？",
+    "在知识库与智能体结合的场景下，prompt的编写策略应如何调整以优化效果？",
+    "老师，我想问一下客服系统的prompt部分，是一个场景就需要写一个prompt吗？比如图里展示的推荐套餐场景需要写一个prompt，如果有其他任务就需要再另外写prompt吗？"
+  ],
+  "answer": "在客服系统中，prompt的编写数量取决于对效果的具体需求。场景划分得越细致，需要编写的prompt数量越多，相应的效果也会更优。例如，若推荐套餐场景与其他任务（如订单查询、投诉处理）差异较大，建议为每个独立场景编写单独的prompt，以确保针对性和准确性。若场景间存在高度相似性，可考虑合并为一个prompt，但需注意可能降低特定场景的响应质量。总体而言，为达到最佳效果，推荐为每个关键场景编写专属prompt，即使数量较多（如8个），也能显著提升系统表现。",
+  "metadata": {
+    "original_question": "老师，我想问一下客服系统的prompt部分，是一个场景就需要写一个prompt吗？比如图里展示的推荐套餐场景需要写一个prompt，如果有其他任务就需要再另外写prompt吗？",
+    "row": 22,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_2",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "老师，MOE架构中，专家网络的具体结构是什么？它和传统的feedforward层在参数数量上有何区别？",
+    "在coze或agent产品中，MOE是如何实现专家路由的？是否会影响模型的推理速度？",
+    "MOE中的专家向量是如何训练的？它和feedforward层的权重更新方式有什么不同？",
+    "如果我想在workflows中集成MOE模型，需要注意哪些配置或优化点？",
+    "MOE架构在智能体应用中，如何平衡专家数量和计算效率？有没有推荐的实践方案？",
+    "老师，我在听deepseek的MOE，有点不明白，MOE是把原先transfromer里的feedfoward放大4倍的功能干掉了么，取代的是一个专家的向量？也就是w0和这个专家向量进行一个计算，是么？"
+  ],
+  "answer": "MOE（混合专家模型）并非简单地用一个向量取代feedforward层，而是用多个专家网络（每个专家网络通常是一个与feedforward结构相似的神经网络）来替代单一的feedforward层。在MOE中，输入数据通过一个路由机制被分配给不同的专家网络，每个专家网络独立处理其分配到的数据，最后将各专家的输出进行加权融合。因此，MOE不是用一个向量进行计算，而是通过多个神经网络并行处理，从而提升模型的容量和效率。",
+  "metadata": {
+    "original_question": "老师，我在听deepseek的MOE，有点不明白，MOE是把原先transfromer里的feedfoward放大4倍的功能干掉了么，取代的是一个专家的向量？也就是w0和这个专家向量进行一个计算，是么？",
+    "row": 2,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

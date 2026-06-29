@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_181",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze工作流中，string和integer数据类型的主要区别是什么？",
+    "如何判断在智能体开发中何时使用string类型，何时使用integer类型？",
+    "在workflows中，如果错误地将数字存储为string类型，会引发哪些问题？",
+    "除了string和integer，Coze工作流还支持哪些常见的数据类型？",
+    "在知识库查询中，为什么比较操作通常要求使用integer而非string？",
+    "老师 我在复现 店员回答问题的工作流的时候遇到了一个疑问，箭头处的string和integer相当于俩单位么？文字的值要使用string而数字的值要使用integer？不太理解这两个表达的含义，以及什么情况下该选择哪一个。"
+  ],
+  "answer": "是的，string和integer是两种不同的数据类型。string用于表示文本数据，例如姓名、描述等；integer用于表示整数数字，例如数量、年龄等。在大多数情况下，使用string即可满足需求。但在需要进行数值比较（如大小判断）的场景中，必须使用integer，因为string类型无法直接进行数值比较。选择数据类型时，应根据数据的实际用途：如果数据是文本或不需要数值运算，使用string；如果数据是数字且需要参与数学运算或比较，使用integer。",
+  "metadata": {
+    "original_question": "老师 我在复现 店员回答问题的工作流的时候遇到了一个疑问，箭头处的string和integer相当于俩单位么？文字的值要使用string而数字的值要使用integer？不太理解这两个表达的含义，以及什么情况下该选择哪一个。",
+    "row": 181,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

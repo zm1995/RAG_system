@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_217",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在coze智能体工作流图中，从“collected prompts”到“k generations”的连线是否准确反映了实际数据处理流程？",
+    "如何验证coze操作手册中工作流图的连线逻辑是否正确？",
+    "在agent工作流图中，如果发现连线错误，应该如何修正以确保文档准确性？",
+    "coze知识库中的流程图是否必须严格遵循实际执行逻辑，还是可以为了简化而调整？",
+    "在workflows操作手册中，如何确保流程图中的连线与底层代码逻辑一致？",
+    "ppt课件中，有一条线（从 collected prompts 连接到 k generations）是不是画错了？应该连接到best model那里才对吧？"
+  ],
+  "answer": "流程图的主要作用是辅助理解工作流程的整体逻辑，而非精确反映每一步的物理连接。在理解工作流程后，连线的具体细节（如从“collected prompts”连接到“k generations”还是“best model”）对整体理解影响有限。建议以官方文档或实际代码实现为准，若发现明显错误，可向文档维护团队反馈以进行修正。",
+  "metadata": {
+    "original_question": "ppt课件中，有一条线（从 collected prompts 连接到 k generations）是不是画错了？应该连接到best model那里才对吧？",
+    "row": 217,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_227",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在coze中，如何将工作流输出的字符串变量正确嵌入到prompt中？",
+    "工作流生成的案例数据能否作为动态prompt的一部分，在智能体对话中实时调用？",
+    "coze的prompt是否支持引用知识库内容与工作流输出组合使用？",
+    "在agent中，如何调试工作流输出未成功集成到prompt的问题？",
+    "coze workflows的输出结果能否作为条件判断后动态生成prompt的依据？",
+    "老师，在coze的prompt中可以调用通过工作流生成的字符串作为prompt的一部分来运作吗？比如通过工作流生成案例，将其调用到prompt中工作。我试了半天没成功"
+  ],
+  "answer": "答：\n可以的。在coze中，工作流生成的字符串可以作为prompt的一部分被调用。具体实现方式如下：\n1. 在工作流中，将生成的字符串输出为变量（例如`case_output`）。\n2. 在prompt编辑器中，通过`{{workflow_output.case_output}}`的语法引用该变量。\n3. 确保工作流在prompt执行前已完成运行，且输出格式与prompt要求一致。\n\n例如，在医疗行业案例的demo中，我们利用知识库中的信息，通过工作流生成新的案例字符串，然后将其嵌入到prompt中，使智能体能够基于动态案例进行回答。如果遇到调用失败的情况，请检查：\n- 工作流是否成功执行并输出字符串。\n- 变量名称是否与prompt中引用的名称完全匹配。\n- 工作流输出是否包含多余的空格或特殊字符。\n\n建议在调试时，先在工作流节点后添加一个“输出”节点，查看生成的字符串内容，确保其符合预期。",
+  "metadata": {
+    "original_question": "老师，在coze的prompt中可以调用通过工作流生成的字符串作为prompt的一部分来运作吗？比如通过工作流生成案例，将其调用到prompt中工作。我试了半天没成功",
+    "row": 227,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

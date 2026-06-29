@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_221",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze中，sys prompt和user prompt在模型处理时有何区别？",
+    "如何决定在智能体设计中将提示词放在sys prompt还是user prompt中？",
+    "sys prompt和user prompt的合并机制是否会影响模型输出的质量？",
+    "在workflows中，sys prompt和user prompt的放置位置对执行结果有影响吗？",
+    "当提示词内容较多时，sys prompt和user prompt的选择是否仍无关紧要？",
+    "为什么有时候是sys prompt 有时候是写在user呢"
+  ],
+  "answer": "在Coze平台中，sys prompt和user prompt在模型处理时最终会被合并为一个输入发送给模型。因此，当提示词内容较少时，两者在运行效果上没有本质区别，放置位置不影响最终输出。然而，在提示词内容较多或需要明确区分系统指令与用户输入的场景下，建议根据功能需求合理分配：sys prompt通常用于定义模型的行为规则或角色设定，而user prompt用于传递具体的用户查询或任务指令。这种区分有助于提高提示词的可维护性和清晰度。",
+  "metadata": {
+    "original_question": "为什么有时候是sys prompt 有时候是写在user呢",
+    "row": 221,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

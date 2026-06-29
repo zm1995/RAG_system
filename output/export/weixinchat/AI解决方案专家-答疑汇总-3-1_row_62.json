@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_62",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze平台中，如何设计一个智能体来读取Excel文件并生成代码？",
+    "使用Workflows时，如何通过Prompt优化让大模型稳定输出读取Excel的代码？",
+    "在知识库中存储Excel读取的示例代码后，如何通过Agent调用并确保代码准确性？",
+    "针对大模型生成Excel读取代码不一致的问题，有哪些具体的Prompt模板或技巧可以推荐？",
+    "在Coze中，如何结合AutoGPT课程内容提升大模型生成代码的可靠性？",
+    "崔老师，让大模型写一段代码去读excel，这个写给大模型的prompt有没有标准或样例，自己尝试了几次每次大模型输出的都不一样，自己无法判断哪个是对的？或者怎么优化prompt能让大模型给出更好的代码"
+  ],
+  "answer": "针对大模型生成Excel读取代码时输出不一致的问题，建议采用以下优化策略：首先，在Prompt中明确指定编程语言（如Python）和库（如pandas或openpyxl），例如“请使用Python的pandas库编写代码读取Excel文件”。其次，提供具体的输入输出示例，如“假设Excel文件包含列A和列B，请输出每行的数据”。此外，可以要求大模型分步骤解释代码逻辑，以增强可验证性。在Coze平台中，您还可以利用AutoGPT课程中的技巧，通过Workflows设计多轮对话或结合知识库存储已验证的代码模板，从而提升输出的稳定性和准确性。具体课程内容将于今日开通，建议您关注相关模块以获取更详细的指导。",
+  "metadata": {
+    "original_question": "崔老师，让大模型写一段代码去去读excel，这个写给大模型的prompt有没有标准或样例，自己尝试了几次每次大模型输出的都不一样，自己无法判断哪个是对的？或者怎么优化prompt能让大模型给出更好的代码",
+    "row": 62,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

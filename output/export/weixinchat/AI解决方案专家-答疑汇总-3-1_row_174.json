@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_174",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze的prompt中，使用#、##、###标记标题时，是否会影响智能体对内容的解析顺序？",
+    "除了#、##、###，在workflows的prompt中是否还有其他符号用于表示标题层级或注释？",
+    "在知识库的文档编写中，使用markdown标题格式（如#、##）是否有助于提升智能体检索信息的效率？",
+    "在agent的prompt设计中，如何正确使用#、##、###来组织复杂指令，以避免智能体误解？",
+    "在Coze的智能体开发中，prompt中的注释（如#后的内容）是否会被智能体忽略，还是作为上下文的一部分？",
+    "请问prompt里# ## ###是代表123级标题，同时起注释的作用吗"
+  ],
+  "answer": "是的，在Coze、agent、智能体、workflows及知识库等相关产品的操作中，使用#、##、###分别代表一级、二级和三级标题，这是遵循Markdown格式的规范。这些符号不仅用于定义标题层级，还起到注释的作用，帮助开发者或用户对prompt内容进行结构化组织和说明。在智能体解析时，标题层级会影响内容的理解顺序，而注释部分通常会被视为上下文的一部分，但具体处理方式可能因产品实现而异。建议在编写prompt时，明确使用这些符号来提升可读性和解析准确性。",
+  "metadata": {
+    "original_question": "请问prompt里# ## ###是代表123级标题，同时起注释的作用吗",
+    "row": 174,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

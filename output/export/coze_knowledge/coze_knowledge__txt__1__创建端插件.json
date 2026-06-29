@@ -1,0 +1,17 @@
+{
+  "id": "coze_knowledge/txt/1/创建端插件",
+  "source": "coze_knowledge",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\coze_knowledge\\txt\\1\\创建端插件.txt",
+  "questions": [
+    "在Coze中创建端插件的第一步是什么？",
+    "填写插件基础信息时，需要选择哪种创建方式？",
+    "如何在插件详情页中添加新的工具？",
+    "配置输入参数时，工具函数名称的作用是什么？",
+    "当大模型成功召回端插件后，对话状态会如何变化？"
+  ],
+  "answer": "创建端插件\n通过 IDE 创建\n1.\n在资源库页面右上角单击 +资源，并选择插件。\n2.\n填写插件基础信息。\na.\n输入插件名称和描述。\nb.\n插件工具创建方式选择端插件，并单击确定。\n3.\n在插件详情页单击创建工具。\n4.\n根据页面提示填写工具的基本信息。\n5.\n配置插件的输入参数、输出参数，并完成调试和校验。\n其中，输入参数中的工具函数应填写工具函数名称。当大模型成功召回端插件后，对话会转为 required_action 状态，对应事件中的 name 就是工具函数中填写的名称。",
+  "metadata": {
+    "title": "创建端插件",
+    "category": "1"
+  }
+}

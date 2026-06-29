@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_180",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在PPO训练后，如何通过迭代Reward Model来进一步提升模型性能？",
+    "优化Reward Model时，人工标注偏好数据的频率和规模应该如何确定？",
+    "除了人工标注，还有哪些方法可以用于优化Reward Model？",
+    "在Coze或Agent产品中，Reward Model的优化是否与模型训练轮次有直接关联？",
+    "如何评估Reward Model优化后的效果，是否有具体的量化指标？",
+    "昨天提到：GPT在PPO提升模型能力之后，还应该继续优化Reward Model。那么，这需要增加人工标注回答的数据量来实现还是如何？这种优化迭代需要进行多少次，是不是根据经验看最后的模型回答效果就行。有没有检验标准？"
+  ],
+  "answer": "在PPO训练运行多轮后，应继续升级Reward Model，因为随着模型能力提升，原有的奖励模型可能不再适用。实现方式与Llama模型类似，即重新标注偏好数据。实际上，这些公司持续收集偏好数据，并在需要时用于训练。优化迭代的总次数没有固定标准，主要依据投入产出比（ROI）来决定：评估继续优化带来的模型能力提升是否值得投入，以及是否存在其他更高投入产出比的方案来提升模型能力。这本质上是一个资源分配和成本效益分析的过程。",
+  "metadata": {
+    "original_question": "昨天提到：GPT在PPO提升模型能力之后，还应该继续优化Reward Model。那么，这需要增加人工标注回答的数据量来实现还是如何？\n这种优化迭代需要进行多少次，是不是根据经验看最后的模型回答效果就行。有没有检验标准？",
+    "row": 180,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

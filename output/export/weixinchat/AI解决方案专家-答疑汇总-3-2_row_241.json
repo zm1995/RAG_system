@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_241",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Transformer模型中，linear层除了计算解码器输出与Embedding的相关度外，还有哪些关键作用？",
+    "GPT-1中通过调整linear层来适配不同任务，这种设计背后的原理是什么？",
+    "为什么说解码器输出的特征向量具有通用性，可以用于多种自然语言处理任务？",
+    "在GPT-1的架构中，linear层的参数调整如何影响最终输出结果的语义和准确性？",
+    "除了GPT-1，其他基于Transformer的模型（如BERT）是否也通过类似方式利用linear层实现任务适配？",
+    "transformer里面linear的作用是计算解码器输出的向量和Embedding的相关度，为啥gpt1的时候可以通过改变linear来改变模型的输出结果？"
+  ],
+  "answer": "在Transformer模型中，解码器输出的向量是对输入文本提取的高维特征表示，该向量蕴含了文本的语义信息。在GPT-1中，不同的下游任务（如文本分类、情感分析等）通过使用不同的线性层（linear layer）来将解码器输出的特征向量映射到对应的任务空间。这种设计的核心原理在于，解码器输出的特征向量具有通用性，能够捕捉文本的深层语义，因此只需调整线性层的参数即可适配不同任务，而无需重新训练整个模型。线性层的作用是将特征向量转换为特定任务的输出分布，例如在语言生成任务中计算与Embedding的相关度以预测下一个词，而在其他任务中则直接输出分类结果。通过改变线性层的权重，模型能够灵活调整输出结果，从而适应多样化的应用场景。",
+  "metadata": {
+    "original_question": "transformer里面linear的作用是计算解码器输出的向量和Embedding的相关度，为啥gpt1的时候可以通过改变linear来改变模型的输出结果？",
+    "row": 241,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

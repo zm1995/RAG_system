@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_84",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "老师，BERT模型在Coze智能体开发中主要承担什么角色？",
+    "在Workflows中，如何利用BERT模型提升文本处理效率？",
+    "Embedding模型和Reranker模型在知识库检索中的具体区别是什么？",
+    "除了BERT，还有哪些基于Transformer Encoder-only架构的模型适用于Agent开发？",
+    "在Coze平台中，如何配置BERT模型以实现更精准的语义理解？",
+    "老师，请问这里的BERT是基于Transformer编码器的Encoder-only架构吗？和Embedding模型、Reranker模型有什么关联呢？"
+  ],
+  "answer": "是的，BERT模型基于Transformer编码器的Encoder-only架构。Embedding模型和Reranker模型同样采用Transformer Encoder-only架构，即BERT架构。这三者均属于该架构的变体，但功能侧重不同：Embedding模型主要用于将文本转换为向量表示，便于相似度计算；Reranker模型则用于对初步检索结果进行重排序，提升相关性；BERT模型本身则擅长上下文语义理解，常用于特征提取或微调任务。在Coze、Agent、Workflows或知识库等产品中，这些模型可协同工作，例如通过Embedding模型生成向量索引，结合Reranker模型优化搜索结果，或利用BERT模型进行深度语义分析。",
+  "metadata": {
+    "original_question": "老师，请问这里的BERT是基于Transformer编码器的Encoder-only架构吗？和Embedding模型、Reranker模型有什么关联呢？",
+    "row": 84,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

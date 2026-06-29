@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_26",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在coze智能体开发中，特征提取和升维操作分别适用于哪些场景？",
+    "如何通过workflows实现数据升维以提升模型性能？",
+    "知识库中的特征提取与升维技术如何协同工作？",
+    "在agent设计中，升维操作是否会影响模型的推理效率？",
+    "Transformer中的Feed Forward模块如何具体实现升维效果？",
+    "那老师，如果降维做的事情叫特征提取的话，升维要达到的效果是什么？"
+  ],
+  "answer": "升维的主要目的是将低维特征映射到高维空间，以增强模型的表达能力和非线性拟合能力。在Transformer架构中，Feed Forward模块通过线性变换和激活函数实现升维，将输入特征维度扩展至更高维度，从而捕获更复杂的特征交互关系。这一操作常见于深度学习模型，例如在coze智能体或workflows中，升维可用于提升模型对复杂任务的处理能力，但需注意计算资源的消耗。",
+  "metadata": {
+    "original_question": "那老师，如果降维做的事情叫特征提取的话，升维要达到的效果是什么？",
+    "row": 26,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

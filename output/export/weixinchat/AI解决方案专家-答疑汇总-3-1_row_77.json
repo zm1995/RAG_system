@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_77",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze工作流中，如何排查节点输入输出与预期不符的问题？",
+    "当Agent智能体在循环中输出空字符串时，可能的原因有哪些？",
+    "如何验证Workflows中主Prompt的action输出是否正确触发后续节点？",
+    "在知识库驱动的文件处理Demo中，如何确保all_result变量正确传递数据？",
+    "Coze工作流调试时，如何逐节点比较输入输出以定位异常？",
+    "崔老师，文件自动处理的Demo复现，又遇到些问题不知道哪个细节出问题了，主逻辑循环中\n1. 更新all_result输入和输出全是空格\n2. 更新主prompt输入的String2也都是空格\n3. 主Prompt输出的action是ListFlieNames，当时调试界面没有显示判断执行分流到下一步合成new_result"
+  ],
+  "answer": "请参照我们提供的工作流模板，分别运行两个分支，并输入相同的数据。然后，逐个节点比较输入和输出，从第一个节点开始检查，直到发现输入或输出与预期不一致的节点，从而定位问题所在。",
+  "metadata": {
+    "original_question": "崔老师，文件自动处理的Demo复现，又遇到些问题不知道哪个细节出问题了，主逻辑循环中\n1. 更新all_result输入和输出全是空格\n2. 更新主prompt输入的String2也都是空格\n3. 主Prompt输出的action是ListFlieNames，当时调试界面没有显示判断执行分流到下一步合成new_result",
+    "row": 77,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

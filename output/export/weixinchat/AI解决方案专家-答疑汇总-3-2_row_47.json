@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_47",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze智能体中，语音Token序列转换为音频的过程是否依赖于外部工具或插件？",
+    "F5-TTF模型中的flow matching步骤具体是如何将语音Token序列转化为音频的？",
+    "除了flow matching，语音Token序列转音频过程中还涉及哪些关键步骤？",
+    "在Agent开发中，如何配置语音Token到音频的转换模块以确保高效运行？",
+    "Workflows中集成语音Token转音频功能时，是否需要额外引入专门的音频处理库？",
+    "语音Token序列，转成音频信息，不是LLM的能力，那是需要另外专门的软件来实现吗？"
+  ],
+  "answer": "语音Token序列转换为音频的过程并非由LLM直接完成，而是模型内部集成的多个步骤之一。其中，一个关键步骤称为flow matching，它专门负责将语音Token序列转化为音频。这一过程完全在模型内部实现，无需依赖外部专门的软件或工具。在Coze、Agent、智能体、Workflows或知识库等产品中，该功能已内置于模型架构中，用户无需额外配置或集成第三方程序。",
+  "metadata": {
+    "original_question": "语音Token序列，转成音频信息， 不是LLM的能力，那是需要另外专门的软件来实现吗？ \nF5-TTF至少包含2部分：LLM + 专门代码写的程序，是吗",
+    "row": 47,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

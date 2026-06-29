@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_36",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "DeepSeek-R1-Distill-Qwen-32B 模型在 Coze 平台上的实际应用效果如何？",
+    "在智能体开发中，使用蒸馏模型相比原始模型有哪些性能提升？",
+    "如何评估 DeepSeek-R1-Distill-Qwen-32B 在 workflows 中的推理效率？",
+    "知识库集成蒸馏模型时，需要注意哪些数据质量优化点？",
+    "从 Qwen2.5-32B 蒸馏到 DeepSeek-R1-Distill-Qwen-32B 后，模型在复杂任务上的表现是否更稳定？",
+    "依据您的经验看，  deepseek-ai/DeepSeek-R1-Distill-Qwen-32B   这个模型，从Qwen2.5-32B  蒸馏后， 比原始的 Qwen/Qwen2.5-32B-Instruct  要好更好用么？"
+  ],
+  "answer": "蒸馏模型 DeepSeek-R1-Distill-Qwen-32B 是通过与 DeepSeek 模型进行多轮对话，收集并整理高质量的对话数据，然后利用这些数据对 Qwen/Qwen2.5-32B-Instruct 进行微调得到的。由于训练数据质量较高，该蒸馏模型在多数任务上的表现通常优于原始模型，尤其在遵循指令和生成连贯回复方面有显著提升。",
+  "metadata": {
+    "original_question": "依据您的经验看，  deepseek-ai/DeepSeek-R1-Distill-Qwen-32B   这个模型，从Qwen2.5-32B  蒸馏后， 比原始的 Qwen/Qwen2.5-32B-Instruct  要好更好用么？",
+    "row": 36,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

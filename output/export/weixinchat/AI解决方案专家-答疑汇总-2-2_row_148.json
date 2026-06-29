@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_148",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "老师，我的知识库是Excel格式，包含多个字段标签，如果要用Coze的RAG功能，是否必须将表格转换为Word文档？",
+    "在Coze中创建知识库时，支持哪些数据格式？Excel表格是否可以直接使用？",
+    "如果我的数据是Excel表格，如何选择Coze知识库的类型？文档型和表格型有什么区别？",
+    "老师，Coze的表格型知识库是否支持多字段标签的Excel数据？需要提前做哪些处理？",
+    "除了转换为Word文档，还有哪些方法可以将Excel表格数据用于Coze的RAG功能？",
+    "老师，我现在的知识库是以excel表格形式整理的，对话带有多个字段标签。如果要做RAG不能直接用表格？是要转换成下图这样的word文档？"
+  ],
+  "answer": "在Coze平台上创建知识库时，支持三种类型：文档型、表格型和图片型。对于Excel表格格式的数据，您有两种处理方式：一是将Excel表格转换为Word文档格式，然后使用文档型知识库；二是直接使用Coze的表格型知识库，无需转换。表格型知识库能够直接处理Excel表格中的多字段标签数据，因此您可以根据实际需求选择合适的方式。",
+  "metadata": {
+    "original_question": "老师，我现在的知识库是以excel表格形式整理的，对话带有多个字段标签。如果要做RAG不能直接用表格？是要转换成下图这样的word文档？",
+    "row": 148,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

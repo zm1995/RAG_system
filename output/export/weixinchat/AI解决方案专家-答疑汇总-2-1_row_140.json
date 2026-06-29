@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_140",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze平台中，知识库的Embedding向量是如何生成的？是否支持用户自定义优化？",
+    "智能体中的Embedding层在模型训练后，其参数是否会更新？更新后对下游任务有何影响？",
+    "Workflows中使用的Embedding向量是否与LLM模型中的Embedding共享？优化时需要注意什么？",
+    "Agent在对话过程中，Embedding向量的优化方向是什么？如何评估优化效果？",
+    "Coze产品中，Embedding向量的维度是否可以调整？调整后对知识检索性能有何影响？",
+    "崔老师，字典是Embedding后生成的吧？这个不是应该固定的吗？为什么后续还会优化？优化的目的和方向是什么？优化以后那么Embedding函数是否也变化了？"
+  ],
+  "answer": "在LLM模型中，Embedding并非一个函数，而是一个查找表（Lookup Table）。每个Token通过查表操作即可获取其对应的12288维向量。然而，向量中每个坐标的具体数值并非固定不变，而是需要通过机器学习训练来确定。训练过程中，模型会根据任务目标（如语言建模、分类等）自动调整Embedding向量的数值，以优化模型性能。因此，Embedding向量会随着训练过程不断优化，其优化方向是使向量能更准确地表示Token的语义和上下文关系。优化后，Embedding查找表本身会发生变化，但查表操作（即Embedding函数）的逻辑保持不变。",
+  "metadata": {
+    "original_question": "崔老师，字典是Embedding后生成的吧？这个不是应该固定的吗？为什么后续还会优化？优化的目的和方向是什么？优化以后那么Embedding函数是否也变化了？",
+    "row": 140,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

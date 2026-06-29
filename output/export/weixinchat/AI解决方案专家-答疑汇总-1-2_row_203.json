@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_203",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在计算Transformer模型参数量时，如果层数从96层增加到120层，除了层数变化外，还需要调整哪些关键参数？",
+    "对于新模型，如何确定每层中注意力头的数量？是否与层数有固定比例关系？",
+    "在计算参数量时，self-attention和feedforward部分的参数如何分别计算？",
+    "如果新模型的feedforward放大倍数不是4倍，如何影响参数量的计算？",
+    "在评估新模型参数量时，向量维度、层数、注意力头数和feedforward放大倍数之间如何相互影响？",
+    "老师你好，假如有新的模型我想计算参数量，也是transfomer，新模型是120层，不是96层了，计算的时候是说（selfattention+feedfoword）*96改成*120，还是说里面的head也要改成*120？这个层是怎么理解？谢谢"
+  ],
+  "answer": "在计算Transformer模型参数量时，层数与每层的注意力头数没有必然的相等关系。对于新模型，需要逐一确定每个组件的具体数值，包括向量维度、注意力头数、feedforward放大倍数等。例如，层数从96层增加到120层时，仅将公式中的层数从96改为120是不够的，还需确认每层的注意力头数是否变化，以及feedforward部分的放大倍数（通常为4倍或其他值）。参数量计算应基于self-attention和feedforward两部分的具体参数，其中self-attention参数与向量维度和注意力头数相关，feedforward参数与向量维度和放大倍数相关。因此，需全面收集新模型的架构细节，才能准确计算总参数量。",
+  "metadata": {
+    "original_question": "老师你好，假如有新的模型我想计算参数量，也是transfomer，新模型是120层，不是96层了，计算的时候是说（selfattention+feedfoword）*96改成*120，还是说里面的head也要改成*120？这个层是怎么理解？谢谢",
+    "row": 203,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

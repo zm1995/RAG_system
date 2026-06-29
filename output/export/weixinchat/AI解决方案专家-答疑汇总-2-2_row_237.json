@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_237",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在智能体开发中，训练数据集和prompt设计的主要区别是什么？",
+    "如何通过调整prompt来优化模型输出，而不涉及模型参数训练？",
+    "在coze平台中，训练数据集通常用于哪些场景？",
+    "训练数据集和知识库在功能上有何不同？",
+    "在workflows中，如何结合prompt和训练数据提升智能体性能？",
+    "我们常说训练数据集，其实就是看prompt怎么写，让模型更优，理解对吗"
+  ],
+  "answer": "训练数据集和prompt设计是两个完全不同的概念。训练数据集涉及模型参数的调整，通过提供大量标注数据来更新模型的权重，从而改变模型的行为和性能。而prompt设计是指通过精心构造输入文本，引导预训练模型生成期望的输出，不改变模型参数。在coze、agent、智能体、workflows或知识库等产品中，训练数据集通常用于微调模型以适应特定任务，而prompt设计则用于优化模型在特定场景下的响应。两者相辅相成，但本质不同：训练数据集改变模型本身，prompt设计则利用模型已有能力。",
+  "metadata": {
+    "original_question": "我们常说训练数据集，其实就是看prompt怎么写，让模型更优，理解对吗",
+    "row": 237,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_24",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在 prompt tuning 中，训练好的前缀是否可以在不同任务间共享使用？",
+    "prompt tuning 的前缀训练完成后，是否支持在推理时根据输入动态调整？",
+    "如何评估 prompt tuning 中前缀在不同场景下的泛化能力？",
+    "prompt tuning 与 fine-tuning 在参数更新机制上有何本质区别？",
+    "在 prompt tuning 中，前缀的长度和初始化方式对微调效果有何影响？",
+    "prompt tuning 在微调时，是可以按照不同的场景训练出不同的前缀吗？这个前缀在训练好后就不论问题是什么都不会在运行时根据 user prompt 再变了吧？"
+  ],
+  "answer": "在 prompt tuning 中，前缀（prefix）是针对特定任务或场景进行训练的。虽然理论上可以为不同场景分别训练不同的前缀，但实际效果可能不理想，因为前缀一旦训练完成，在推理阶段将保持固定，不会根据用户输入的 prompt 动态变化。这意味着前缀的泛化能力有限，主要适用于训练时定义的场景。",
+  "metadata": {
+    "original_question": "prompt tuning 在微调时，是可以按照不同的场景训练出不同的前缀吗？这个前缀在训练好后就不论问题是什么都不会在运行时根据 user prompt 再变了吧？",
+    "row": 24,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

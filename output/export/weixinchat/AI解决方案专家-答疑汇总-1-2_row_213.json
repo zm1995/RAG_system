@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_213",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze平台中，如果使用特定任务数据对智能体进行微调，是否会导致模型遗忘其他能力？如何避免这种情况？",
+    "在Agent开发中，如何平衡特定任务数据训练与模型通用能力的保持？",
+    "在Workflows中，如果使用单一类型的数据进行模型训练，会对模型性能产生什么影响？",
+    "在知识库构建中，如何设计数据混合策略，以避免模型在特定任务上过拟合？",
+    "在Coze中，使用SFT和RM训练智能体时，如何确保模型不会因专项数据而丢失已有知识？",
+    "老师，有没有可能，llama3的训练过程是：pretrain→”特定任务数据SFT“→偏好数据RM→特定任务数据SFT后的LLM，进行rejection→SFT data→STF data STF"
+  ],
+  "answer": "答：通常不建议仅使用特定任务数据来专门训练模型。如果在某个训练阶段仅使用专项数据（例如仅使用代码编写数据），会导致模型在该阶段训练后过度偏向于擅长该特定任务，从而破坏模型已学习到的其他能力。为避免这种情况，建议在训练过程中混合多种类型的数据，以保持模型的通用性和平衡性。",
+  "metadata": {
+    "original_question": "老师，有没有可能，llama3的训练过程是：pretrain→”特定任务数据SFT“→偏好数据RM→特定任务数据SFT后的LLM，进行rejection→SFT data→STF data STF",
+    "row": 213,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

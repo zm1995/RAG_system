@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_210",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在coze或智能体开发中，embedding向量化是否支持自定义token到向量的映射？",
+    "对于workflows中的文本处理，embedding向量的维度是否固定，以及如何影响模型性能？",
+    "知识库中的文档经过embedding后，不同文档中相同token的向量是否完全一致？",
+    "在agent应用中，positional embedding如何影响模型对文本顺序的理解？",
+    "embedding向量化过程中，token的向量表示是否会在模型训练后发生变化？",
+    "崔老师，想和您确认下，embedding将token变成向量，是固定的一一对应的是吗？不论什么段落，纯语义的向量化是固定的，只是positional embedding会有差别？"
+  ],
+  "answer": "是的，embedding将每个token映射为一个固定的向量，这种映射关系是一一对应的。在模型训练过程中，每个向量中的各个坐标数值会通过训练数据不断调整，以优化语义表示。需要注意的是，positional embedding用于编码token的位置信息，它与token本身的语义向量是独立的，但共同影响模型的最终输出。",
+  "metadata": {
+    "original_question": "崔老师，想和您确认下，embedding将token变成向量，是固定的一一对应的是吗？不论什么段落，纯语义的向量化是固定的，只是positional embedding会有差别？",
+    "row": 210,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

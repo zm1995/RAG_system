@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_129",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze的智能体开发中，如何利用SQL对Excel表格进行数据计算？",
+    "大模型在Workflows中处理表格数据时，其SQL生成能力是否依赖于特定的训练数据？",
+    "知识库中的表格数据能否通过自然语言查询直接转换为SQL操作？",
+    "大模型对Excel表格的理解程度如何影响其在Agent中的实际应用效果？",
+    "在Coze平台中，如何验证大模型生成的SQL语句对表格计算的准确性？",
+    "原问题：话说文件处理demo里，好像都能写sql对表格做计算，是不是说明大模型能理解excel表格？"
+  ],
+  "answer": "大模型能够编写SQL对表格进行处理，主要基于其训练过程中接触的大量数据，这些数据包括自然语言指令、表格结构描述以及对应的SQL语句。通过这种训练，模型学会了根据表格结构生成SQL语句。然而，这种能力并不等同于模型真正理解了Excel表格的内容或语义，它更多是基于模式匹配和统计规律的表现。因此，在评估模型对表格的理解程度时，需要谨慎区分其表面能力与深层理解。",
+  "metadata": {
+    "original_question": "话说文件处理demo里，好像都能写sql对表格做计算，是不是说明大模型能理解excel表格？",
+    "row": 129,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

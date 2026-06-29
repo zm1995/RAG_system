@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_105",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze平台中，Agent调用工作流时，Agent的提示词和工作流节点的提示词是否存在优先级或覆盖规则？",
+    "如果工作流中的多个大模型节点使用了不同的系统提示词，这些提示词之间是否会相互影响或共享上下文？",
+    "Agent的Prompt如何传递给工作流中的第一个节点，以及后续节点如何获取Agent的上下文信息？",
+    "在Workflows中，用户提示词和系统提示词在节点执行时是如何组合的，是否有特定的拼接顺序？",
+    "当Agent调用工作流时，工作流节点中的提示词是否可以引用Agent的变量或输出结果？",
+    "崔老师，agent调用了工作流，那么agent的prompt和工作流各个节点中的prompt（系统的、用户的）是怎么拼接的，这个顺序有没有什么规则？"
+  ],
+  "answer": "在Coze平台中，Agent调用工作流时，Agent的提示词与工作流中各节点的提示词不会进行拼接。工作流中的每个大模型节点都是独立运行的，相当于与大模型完成一次独立的对话。因此，每个大模型节点都拥有自己独立的系统提示词和用户提示词，这些提示词之间互不干扰，也不会与Agent的提示词合并。工作流节点执行时，仅使用自身配置的提示词，不继承或引用Agent的提示词内容。",
+  "metadata": {
+    "original_question": "崔老师，agent调用了工作流，那么agent的prompt和工作流各个节点中的prompt（系统的、用户的）是怎么拼接的，这个顺序有没有什么规则？",
+    "row": 105,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

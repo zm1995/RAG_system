@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_250",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在模型训练过程中，SFT和强化学习阶段是否共享相同的模型架构？",
+    "模型架构在SFT和强化学习阶段是否会发生变化？",
+    "SFT和强化学习阶段对模型参数的影响是什么？",
+    "模型架构确定后，后续训练阶段（如SFT和强化学习）是否允许调整架构？",
+    "在模型训练的不同阶段，架构的稳定性如何保证？",
+    "那后面SFT和强化学习阶段也是用的这个架构吗？"
+  ],
+  "answer": "是的，模型架构一旦确定后便不再更改。SFT（监督微调）和强化学习阶段属于不同的训练阶段，每个阶段均针对同一模型进行模型参数的调优，而架构保持不变。",
+  "metadata": {
+    "original_question": "那后面SFT和强化学习阶段也是用的这个架构吗？",
+    "row": 250,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

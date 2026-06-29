@@ -1,0 +1,17 @@
+{
+  "id": "coze_knowledge/txt/0/插件常见问题",
+  "source": "coze_knowledge",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\coze_knowledge\\txt\\0\\插件常见问题.txt",
+  "questions": [
+    "在Coze中创建IDE插件时，临时文件的读写有哪些限制？",
+    "如何通过自定义插件实现音视频转换并输出图片或视频？",
+    "Coze的IDE插件是否支持Python的async函数？",
+    "为什么在Coze插件中使用IP地址会导致调试失败？",
+    "Coze插件中如何避免因网络安全设置导致的请求被拦截？"
+  ],
+  "answer": "插件常见问题\n创建 IDE 插件时，如何读写临时文件？\n创建 IDE 插件时，只支持在/tmp目录下读写临时文件，文件最大为 512MB。\n以插件工具file_writer为例，此工具将当前日期和时间写入一个临时文件，然后读取该文件，并返回读取到的内容。创建 IDE 插件的代码示例如下：\nfrom datetime import datetime\\n\nfrom pathlib import Path\\n\nfrom runtime import Args\\n\nfrom typings.file_writer.file_writer import Input, Output\\n\n\\n\nTMP_DIR = \"/tmp\"\\n\n\\n\ndef handler(args: Args[Input])->Output:\\n\n    file_path = TMP_DIR + \"/data.txt\"\\n\n\\n\n    # 写入数据 \\n\n    try:\\n\n        with open(file_path, \"w\") as file_writer:\\n\n            file_writer.write(str(datetime.now()))\\n\n    except Exception as e:\\n\n        return {\\n\n            \"message\": \"write file error: \" + str(e),\\n\n        }\\n\n\\n\n    # 读取数据\\n\n    try:\\n\n        with open(file_path, \"r\") as file_writer:\\n\n            text = file_writer.read()\\n\n            return {\\n\n                \"message\": f\"read file content: {text}\"\\n\n            }\\n\n    except Exception as e:\\n\n        return {\\n\n            \"message\": \"read file error: \" + str(e),\\n\n        }\nfrom datetime import datetime\nfrom pathlib import Path\nfrom runtime import Args\nfrom typings.file_writer.file_writer import Input, Output\nTMP_DIR = \"/tmp\"\ndef handler(args: Args[Input])->Output:\nfile_path = TMP_DIR + \"/data.txt\"\n# 写入数据\ntry:\nwith open(file_path, \"w\") as file_writer:\nfile_writer.write(str(datetime.now()))\nexcept Exception as e:\nreturn {\n\"message\": \"write file error: \" + str(e),\n}\n# 读取数据\ntry:\nwith open(file_path, \"r\") as file_writer:\ntext = file_writer.read()\nreturn {\n\"message\": f\"read file content: {text}\"\n}\nexcept Exception as e:\nreturn {\n\"message\": \"read file error: \" + str(e),\n}\n如下图所示，代码运行后，返回读取到的日期和时间。\n通过自定义插件实现音视频转换，图片和视频怎么输出？\n如果要输出图片、视频等多模态内容，你需要准备存储工具，然后将多模态内容转换为 URL 方式进行输出。\n通过 IDE 创建插件时，是否可以使用 Python 实现并提交 async 函数？\n支持使用 Python 实现并提交 async 函数。\n插件使用IP地址，为什么会调试失败？\n建议在配置插件的 URL 或抓取类插件的参数 URL 时，使用域名而非 IP 地址，这样做可以避免请求被服务端的网络安全设置所拦截。",
+  "metadata": {
+    "title": "插件常见问题",
+    "category": "0"
+  }
+}

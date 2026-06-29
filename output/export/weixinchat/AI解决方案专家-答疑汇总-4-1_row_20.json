@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_20",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze工作流中，如何配置循环节点来处理多个链接的读取？",
+    "Coze工作流中的循环节点支持哪些类型的迭代逻辑？",
+    "使用Coze工作流时，如何确保link reader插件能处理所有输入的链接？",
+    "Coze工作流中循环节点的输入输出格式有哪些要求？",
+    "在Coze工作流中，除了循环节点，还有哪些方式可以批量处理数据？",
+    "请教下老师， 一个coze的问题， 试着做一个工作用的agent，和工作流\n\n这个 link reader plugin ，给它设置的输入 上一个节点（大模型）的输出， 输出格式为 object [{}],    其实会有多个link，\n但实际运行发现 这个link reader 只能读一个link， \n\n所以问题是， 这个工作流里面 能不能加 while ****；do somthing。。 这样的逻辑呢？\n@崔超"
+  ],
+  "answer": "是的，Coze工作流支持循环节点。您可以通过添加循环节点来实现对多个链接的迭代处理。具体操作时，将link reader插件放置在循环节点内部，并配置循环节点以遍历输入的链接数组。这样，每个链接都会被依次处理，从而解决只能读取单个链接的问题。",
+  "metadata": {
+    "original_question": "请教下老师， 一个coze的问题， 试着做一个工作用的agent，和工作流\n\n这个 link reader plugin ，给它设置的输入 上一个节点（大模型）的输出， 输出格式为 object [{}],    其实会有多个link，\n但实际运行发现 这个link reader 只能读一个link， \n\n所以问题是， 这个工作流里面 能不能加 while ****；do somthing。。 这样的逻辑呢？\n@崔超",
+    "row": 20,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

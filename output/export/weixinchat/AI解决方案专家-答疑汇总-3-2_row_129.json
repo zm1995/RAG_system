@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_129",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在课程中，各行业解决方案的讲解是否完全依赖Coze平台？如果Coze无法实现，会如何补充？",
+    "学习Python对于非技术背景的学员在课程后期有什么具体帮助？",
+    "课程中提到的Coze demo与实际商业化产品在实现方式上有哪些主要区别？",
+    "对于希望从事AI应用开发的学员，课程是否建议优先掌握Coze还是Python？",
+    "课程后期是否会提供除Coze外的其他工具或框架的实操指导？",
+    "崔老师 我想问下 课程后期的关于各行业的解决方案 都是基于coze的使用去做讲解么？那还有必要再学pyhton的内容么"
+  ],
+  "answer": "各行业的解决方案大多无法仅通过Coze平台完整实现。课程中，我们会针对Coze的1-2个功能制作演示demo进行讲解，但正式的商业化产品通常仍需通过编写代码完成。对于非工程师背景的学员，学习Python有助于理解技术逻辑和提升问题解决能力，但学习目标不应设定为成为专业研发工程师。",
+  "metadata": {
+    "original_question": "崔老师 我想问下 课程后期的关于各行业的解决方案 都是基于coze的使用去做讲解么？那还有必要再学pyhton的内容么",
+    "row": 129,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

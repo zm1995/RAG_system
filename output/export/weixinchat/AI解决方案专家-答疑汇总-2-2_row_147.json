@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_147",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在coze平台中，embedding模型如何处理多义词在不同语境下的语义差异？",
+    "知识库中的文本切片长度对embedding向量的语义表达有何影响？",
+    "如何确保embedding模型生成的向量在智能体对话中准确匹配用户意图？",
+    "workflows中多个embedding向量如何协同工作以处理复杂语义？",
+    "在agent应用中，embedding向量的确定性是否会导致语义理解偏差？",
+    "老师好，请问：embedding 模型将一段文字描述转为向量【确定的向量】，但这段文字，在不同的上下文语境中，所代表的含义应该会有所不同，一个【确定的向量】如何适应在不同的上下文中、去表达出不同的语义呢？"
+  ],
+  "answer": "在embedding模型中，一段文字通常以较长的文本切片（如几百字）作为输入，这样的切片内容相对完整，其语义在不同上下文中变化较小，因此可以用一个确定的向量来表示。对于较短或歧义性较强的文本，可以通过增加上下文信息或使用动态embedding技术（如基于Transformer的模型）来提升语义表达的准确性。在coze、agent或workflows等产品中，建议合理设置知识库的文本切片长度，并结合多轮对话或意图识别机制，以优化向量匹配效果。",
+  "metadata": {
+    "original_question": "老师好，请问：embedding 模型将一段文字描述转为向量【确定的向量】，但这段文字，在不同的上下文语境中，所代表的含义应该会有所不同，一个【确定的向量】如何适应在不同的上下文中、去表达出不同的语义呢？",
+    "row": 147,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_233",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "问1：老师，hugging face是需要注册吗？登陆网页进去只能用两三次",
+    "问2：Hugging Face的免费额度具体是如何计算和消耗的？",
+    "问3：除了等待时间恢复，有没有其他方式可以增加Hugging Face的使用额度？",
+    "问4：Hugging Face的模型运行时长额度用完会有什么提示？",
+    "问5：在Hugging Face上运行模型时，如何查看剩余的使用额度？",
+    "问6：Hugging Face的免费额度是否适用于所有模型和功能？"
+  ],
+  "answer": "是的，Hugging Face需要注册才能获得完整的使用权限。注册用户会获得一个初始的5分钟模型运行时长额度。每次运行模型时，系统会根据实际运行时间扣除相应额度。当额度用完后，需要等待额度自动恢复，恢复过程是逐步进行的，无需手动操作。建议合理规划模型运行时间，以充分利用免费额度。",
+  "metadata": {
+    "original_question": "问1：老师，hugging face是需要注册吗？登陆网页进去只能用两三次",
+    "row": 233,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

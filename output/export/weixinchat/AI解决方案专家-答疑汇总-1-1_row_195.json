@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_195",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在训练reranker模型时，人工标注数据的具体流程是怎样的？",
+    "除了标注相关度分数和正负例，还有哪些常见的数据标注方法用于reranker模型？",
+    "reranker模型的打分机制是否完全依赖人工设定的规则，还是可以自动学习？",
+    "如何评估reranker模型在标注数据上的表现，以确保其准确性？",
+    "在coze或智能体产品中，reranker模型的应用场景有哪些？",
+    "所以reranker模型的打分也是先需要人工设定好打分机制和样例对吗？"
+  ],
+  "answer": "是的，reranker模型的训练通常采用人工与机器相结合的方式。需要标注大量数据，主要有两种方法：一种是直接标注相关度分数，这对标注人员的专业要求较高；另一种是仅标注数据中的正例和负例，让模型通过机器学习逐步理解和探索内在规律。",
+  "metadata": {
+    "original_question": "所以reranker模型的打分也是先需要人工设定好打分机制和样例对吗？",
+    "row": 195,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

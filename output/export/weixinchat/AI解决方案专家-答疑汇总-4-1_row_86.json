@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_86",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Transformer模型中，add&norm模块的具体作用是什么？",
+    "残差连接如何解决深度神经网络中的退化问题？",
+    "层归一化与批量归一化在add&norm中的区别是什么？",
+    "add&norm模块在模型训练中如何提升稳定性？",
+    "残差连接和层归一化在智能体或工作流中的应用场景有哪些？",
+    "add&norm到底是干嘛的"
+  ],
+  "answer": "add&norm模块由残差连接和层归一化两部分组成。残差连接用于解决深度神经网络中因层数增加而导致的退化问题，即模型层数增多时性能反而下降的现象。它通过将输入直接添加到输出中，使梯度能够更有效地反向传播，从而缓解梯度消失或爆炸。层归一化则是一种归一化技术，用于对每一层的输出进行标准化处理，避免数值范围过度发散，从而提升训练的稳定性和收敛速度。具体原理可参考ResNet相关文献或课程中关于残差连接和归一化的详细讲解。",
+  "metadata": {
+    "original_question": "add&norm到底是干嘛的",
+    "row": 86,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

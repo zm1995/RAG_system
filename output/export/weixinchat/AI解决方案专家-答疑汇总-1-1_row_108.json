@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_108",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze平台中，如何利用Workflows自动生成每个题目的视频讲解？",
+    "智能体在知识库中存储的题目解析，能否通过自动化流程生成视频内容？",
+    "对于大规模题库，Agent如何高效筛选并生成视频讲解，避免资源浪费？",
+    "在Coze中，是否支持将文本解析直接转换为视频讲解，并集成到学习系统中？",
+    "如何优化Workflows，使其在生成视频讲解时能处理十亿级别的题目数据？",
+    "Answer.AI中，每个题解后的“video explanation”按钮，是否能够自动将解题过程生成为视频讲解？这个功能看起来很有用。"
+  ],
+  "answer": "这种情况并不常见，因为相关题目的数据量通常非常庞大。例如，K12在线教育公司的题库中往往包含数十亿道题目及其对应的解析。在进行模型微调时，可能并不需要用到如此海量的数据，因此自动生成视频讲解的功能在实现上存在一定挑战，通常需要结合具体平台（如Coze、Agent、Workflows）的自动化能力进行定制化开发。",
+  "metadata": {
+    "original_question": "Answer.AI，每个题解完之后，那个按钮video explanation，是可以实现把每个题讲解的过程自动生成视频讲解的吗\n这个好像很有用",
+    "row": 108,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

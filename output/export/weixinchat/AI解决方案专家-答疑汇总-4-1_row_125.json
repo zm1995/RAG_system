@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_125",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在配置工作流时，如何确定引用哪个节点的输出作为变量？",
+    "变量值的选取规则是否与prompt拼接的目标有关？",
+    "如果我想在prompt中插入用户输入，应该引用哪个变量？",
+    "在知识库查询后，如何选择引用结果作为后续步骤的输入？",
+    "变量引用是否支持动态条件判断，比如根据值大小选择不同数据？",
+    "这个变量值是依据什么确定选哪个的？"
+  ],
+  "answer": "变量值的选取取决于您希望如何构建新的prompt。具体来说，您需要根据prompt中需要包含的内容来决定引用哪些数据。例如，如果您希望prompt中包含用户输入、知识库查询结果或前一步骤的输出，则应引用对应的变量。引用规则是：选择与目标内容匹配的变量，确保prompt拼接后能准确反映您的意图。在Coze、Agent或Workflows中，变量引用通常通过节点输出或输入字段进行配置，您可以根据实际需求灵活选择。",
+  "metadata": {
+    "original_question": "这个变量值是依据什么确定选哪个的？",
+    "row": 125,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_40",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze平台中，使用全参数量微调时，显存需求是如何计算的？",
+    "LoRA微调相比全参数微调，在显存占用上能节省多少倍？",
+    "在Agent开发中，如何估算LoRA微调所需的显存大小？",
+    "对于Workflows中的模型微调，LoRA的A和B矩阵参数如何影响显存？",
+    "在知识库场景下，LoRA微调与全参数微调的显存需求差异有多大？",
+    "老师，全参数量微调至少需要4倍的显存？使用lora微调的显存需求需求是多少"
+  ],
+  "answer": "全参数量微调至少需要4倍的显存，因为需要存储模型参数、梯度、优化器状态等。使用LoRA微调时，显存需求需单独计算：LoRA引入两个低秩矩阵A和B，其参数量取决于矩阵的行数和列数。在decoder的每一层中，需要确定哪些矩阵（如Q、K、V、O等）被注入LoRA参数，然后乘以总层数，得到总注入参数量。每个参数占用4个字节（单精度浮点数），据此可计算出显存占用。相比全参数微调，LoRA的显存需求通常少几十倍，具体倍数取决于模型大小和LoRA的秩设置。",
+  "metadata": {
+    "original_question": "老师，全参数量微调至少需要4倍的显存？使用lora微调的显存需求需求是多少",
+    "row": 40,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

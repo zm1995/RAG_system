@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_116",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在模型微调中，PPO和DPO各自的核心原理是什么？",
+    "PPO和DPO同时使用时，如何平衡两者的训练效果？",
+    "对于资源有限的小型团队，在PPO和DPO之间应如何选择？",
+    "PPO和DPO在强化学习框架下的主要区别是什么？",
+    "在模型训练中，PPO和DPO分别适用于哪些类型的任务或数据？",
+    "崔老师，您好！模型学习ppo，dpo，ppo和dpo同时使用，请问这3种情况分别应用在什么场景？"
+  ],
+  "answer": "PPO（Proximal Policy Optimization）和DPO（Direct Preference Optimization）是两种不同的模型微调技术，它们并非针对特定应用场景，而是根据实际需求和资源条件进行选择。PPO是一种基于强化学习的优化方法，通过限制策略更新幅度来稳定训练，适用于需要平衡探索与利用的任务；DPO则直接利用偏好数据优化模型，无需显式奖励函数，适合偏好明确的场景。同时使用两者时，需根据模型表现和训练目标调整权重，通常用于复杂任务中结合两者的优势。选择哪种方法取决于公司或团队的具体情况，如数据可用性、计算资源和经验偏好。",
+  "metadata": {
+    "original_question": "崔老师，您好！\n模型学习ppo，dpo，ppo和dpo同时使用，请问这3种情况分别应用在什么场景？",
+    "row": 116,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

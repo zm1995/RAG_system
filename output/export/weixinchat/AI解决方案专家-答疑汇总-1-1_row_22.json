@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_22",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze或Agent的智能体训练中，SFT阶段是否包含类似GPT或LLaMA中的指令微调内容？",
+    "对于Workflows和知识库的集成，SFT阶段如何与指令微调区分？",
+    "在智能体开发中，SFT阶段是否必须使用标注数据，还是可以结合无监督学习？",
+    "SFT阶段在Coze平台上的具体实现与GPT或LLaMA的SFT有何异同？",
+    "在Agent的微调过程中，SFT阶段是否等同于指令微调，还是包含更广泛的任务？",
+    "像gpt或llama在SFT阶段，是否用到了下图红框里的内容？我能理解主要的过程是指令微调，但为什么这个阶段要定义为SFT呢，表中SFT与指令微调在用途上是不同的？"
+  ],
+  "answer": "在相关产品（如Coze、Agent、智能体、Workflows、知识库）的操作手册中，SFT（Supervised Fine-Tuning）阶段通常指监督微调，而指令微调（Instruction Tuning）是SFT的一个子集。具体而言，SFT阶段可能使用类似GPT或LLaMA中的指令数据（如红框内容），但指令微调专注于优化模型对指令的响应能力，而SFT涵盖更广泛的监督学习任务，包括但不限于指令微调。因此，在概念上，SFT与指令微调并非完全等同，而是包含关系。",
+  "metadata": {
+    "original_question": "像gpt或llama在SFT阶段，是否用到了下图红框里的内容？我能理解主要的过程是指令微调，但为什么这个阶段要定义为SFT呢，表中SFT与指令微调在用途上是不同的？",
+    "row": 22,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_187",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在 Coze 平台中，如何评估像 DeepSeek 这样的开源模型是否适合特定的智能体开发场景？",
+    "使用 DeepSeek 开源模型构建 workflows 时，需要注意哪些性能或兼容性问题？",
+    "对于知识库集成，DeepSeek 模型相比闭源模型有哪些优势和劣势？",
+    "在 agent 设计中，如何根据业务需求选择 DeepSeek 模型与其他开源模型的组合？",
+    "DeepSeek 开源模型在 Coze 中的部署和调优步骤是什么？",
+    "deepseek 这种开源模型适合哪些场景呢？"
+  ],
+  "answer": "开源模型如 DeepSeek 的适用性并非由场景类型决定，而是取决于模型的能力是否满足特定业务需求。评估时，应重点关注模型在准确性、响应速度、上下文理解等方面的表现，并结合实际任务进行测试。例如，在 Coze 平台中，可通过对比模型在知识库查询、智能体对话或 workflows 自动化中的效果，来判断其是否适合。建议优先选择能力与需求匹配度高的模型，而非盲目追求开源或闭源属性。",
+  "metadata": {
+    "original_question": "deepseek 这种开源模型适合哪些场景呢？",
+    "row": 187,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

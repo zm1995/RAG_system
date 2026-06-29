@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_85",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze平台中，AutoGPT与Function Call在实现自动调用时，其底层逻辑有何不同？",
+    "能否详细解释AutoGPT中的思维链（Chain of Thought）机制，以及它如何影响智能体的决策过程？",
+    "在Workflows中，如何结合Function Call实现类似AutoGPT的自动化任务？",
+    "AutoGPT与Function Call在知识库集成方面有哪些差异？",
+    "在Agent开发中，如何选择使用AutoGPT还是Function Call来优化任务执行效率？",
+    "https://blog.csdn.net/2401_84205765/article/details/140628154 这里面的AutoGPT与今天晚上讲到的Function Call的自动调用，老师能讲下区别吗？"
+  ],
+  "answer": "回答：AutoGPT与Function Call在自动调用方面存在显著差异。AutoGPT采用思维链（Chain of Thought）机制，通过逐步推理来分解复杂任务，从而实现自动化决策和执行。而Function Call则侧重于直接调用预定义的函数或API，以完成特定功能。在Coze平台中，AutoGPT更适用于需要多步推理和动态规划的场景，而Function Call则适合执行明确、单一的操作。后续课程将详细讲解AutoGPT的思维链原理及其应用。",
+  "metadata": {
+    "original_question": "https://blog.csdn.net/2401_84205765/article/details/140628154\n这里面的AutoGPT与今天晚上讲到的Function Call的自动调用，老师能讲下区别吗？",
+    "row": 85,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

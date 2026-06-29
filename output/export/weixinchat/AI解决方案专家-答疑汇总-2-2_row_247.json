@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_247",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze中，如果重写查询功能导致知识库检索失效，应该如何排查和解决？",
+    "Coze的重写查询功能是否会影响工作流中的知识库调用？",
+    "如何避免在Coze的prompt中混合多种任务类型导致模型表现不佳？",
+    "Coze中重写查询功能与知识库的交互机制是什么？",
+    "在Coze中，什么情况下应该使用工作流而不是单条prompt来处理多任务？",
+    "这个coze自己的重写查询感觉这样好像是个bug ，他是改写了我的查询，结果差知识库没用，在给大模型prompt的时候也没用。。。"
+  ],
+  "answer": "该现象并非bug，而是由于在单条prompt中混合了多种不同类型的任务，且这些任务存在先后次序要求。这种设计本身不适合在单条prompt中实现，因为模型难以同时处理并正确排序多个任务。建议将此类需求拆分为工作流（workflows）来实现，通过工作流中的节点分别处理不同任务，确保知识库检索和prompt调用按预期执行。",
+  "metadata": {
+    "original_question": "这个coze自己的重写查询感觉这样好像是个bug ，他是改写了我的查询，结果差知识库没用，在给大模型prompt的时候也没用。。。",
+    "row": 247,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

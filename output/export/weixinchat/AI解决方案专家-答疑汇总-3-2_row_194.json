@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_194",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在RAGFlow、Dify这类现成平台中，部署和开发的主要区别是什么？",
+    "如果我想使用deepseek结合RAG实现一个智能问答系统，具体需要哪些技术步骤？",
+    "对于非技术人员，如何选择使用现成平台部署还是自行开发RAG应用？",
+    "除了RAGFlow和Dify，还有哪些常见的RAG部署平台或工具？",
+    "deepseek模型本身是否支持RAG功能，还是需要额外集成？",
+    "我问了大模型，它给了我三种方法：1、RAGFlow，用一个框架来本地部署；2、用docker容器化部署；3、deepseek结合RAG实现。这三种方法是否都属于您说的研发自己写代码开发？这三个里面的最后一个我不太理解，是deepseek本身就带有RAG技术能力的意思吗？"
+  ],
+  "answer": "您的问题表述可能不够准确，需要先区分“自己部署一个”和“自己开发一个”这两个不同的方案。这两种工作通常由程序员执行。对于“自己部署一个”，这指的是使用现成的平台或代码，例如RAGFlow、Dify等，这些平台提供了完整的解决方案，无需自行开发，只需进行部署操作，但部署过程仍需要程序员完成。而“自己开发一个”，例如您提到的deepseek结合RAG实现，这属于自行开发范畴，需要编写代码来集成deepseek模型与RAG技术。deepseek模型本身并不内置RAG功能，它只是一个语言模型，需要额外集成RAG框架（如检索组件）才能实现检索增强生成。因此，前两种方法属于部署现成方案，最后一种属于自行开发。",
+  "metadata": {
+    "original_question": "我问了大模型，它给了我三种方法：\n1、RAGFlow，用一个框架俩本地部署\n2、用docker容器化部署\n3、deepseek结合RAG实现\n\n这三种方法是否都属于您说的研发自己写代码开发？这三个里面的最后一个我不太理解，是deepseek本身就带有RAG技术能力的意思吗",
+    "row": 194,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

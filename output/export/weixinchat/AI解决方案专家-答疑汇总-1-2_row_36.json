@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_36",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在使用国内版Coze时，如何确保工作流在知识库之前被调用？",
+    "Coze平台中，工作流和知识库的执行顺序是由什么决定的？",
+    "如果Coze的prompt中指定了调用工作流，但实际执行时优先检索知识库，可能的原因有哪些？",
+    "在Coze中，如何调整工作流和知识库的优先级以避免冲突？",
+    "Coze平台的设计是否允许用户自定义工作流和知识库的执行顺序？",
+    "崔老师，用国内版coze遇到个问题，prompt里明确了当用户表达需要XXXX时调用工作流，但运行的时候总是直接检索知识库，不调用工作流。这个是prompt的问题还是LLM理解能力的问题呀？"
+  ],
+  "answer": "在Coze平台中，工作流和知识库的执行顺序是由平台功能设计决定的，而非LLM的理解能力。如果prompt中明确指定了调用工作流，但系统优先执行知识库，这属于Coze平台的默认行为，可能与平台对知识库的优先级设置有关。要解决此问题，建议检查工作流和知识库的配置，确保prompt中的指令与平台逻辑一致，或通过调整工作流触发条件来改变执行顺序。",
+  "metadata": {
+    "original_question": "崔老师，用国内版coze遇到个问题，prompt里明确了当用户表达需要XXXX时调用工作流，但运行的时候总是直接检索知识库，不调用工作流。这个是prompt的问题还是LLM理解能力的问题呀？",
+    "row": 36,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

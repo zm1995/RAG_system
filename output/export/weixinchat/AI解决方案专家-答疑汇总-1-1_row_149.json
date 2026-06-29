@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_149",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在GPT模型中，全连接层具体出现在哪些模块中？",
+    "窗口长度如何影响Transformer模型中的全连接层设计？",
+    "除了feed forward和linear层，GPT模型中还有其他全连接结构吗？",
+    "在自然语言处理模型中，全连接层与窗口长度通常如何关联？",
+    "如何理解GPT模型中全连接层的作用及其与上下文窗口的关系？",
+    "问3：和窗口长度相关的全连接"
+  ],
+  "answer": "在GPT模型中，全连接层主要出现在两个模块中：前馈神经网络（feed forward）和线性投影层（linear）。前馈神经网络通常由两个全连接层组成，中间包含激活函数；线性投影层则用于将隐藏状态映射到词汇表大小。窗口长度（即上下文长度）并不直接与全连接层相关，而是影响注意力机制的计算范围。全连接层的参数数量与输入维度相关，而输入维度通常由模型配置决定，与窗口长度无直接关联。因此，GPT模型中没有专门与窗口长度相关的全连接层设计。",
+  "metadata": {
+    "original_question": "问3：和窗口长度相关的全连接",
+    "row": 149,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_231",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在与MES、WMS、ERP等系统集成时，AI赋能的典型架构是怎样的？",
+    "企业选择自建AI平台与使用云服务的主要考量因素有哪些？",
+    "对于数据量较大的企业，自部署AI系统在成本上是否具有优势？",
+    "如何评估AI系统与现有业务系统（如MES、WMS、ERP）对接时的数据安全风险？",
+    "在AI赋能过程中，如何平衡自部署的灵活性与云服务的便捷性？",
+    "如果跟mes,wms,erp对接，ai赋能，应该是怎么样的方式，自己部署，是不是不太现实"
+  ],
+  "answer": "是否选择自部署主要取决于数据安全要求。若企业无严格的数据安全合规需求，通常不会采用自部署方式。此外，当AI系统的使用量达到一定规模后，自部署可能因资源利用率提高而更具成本效益。因此，决策需综合评估数据安全、使用量及长期成本等因素。",
+  "metadata": {
+    "original_question": "如果跟mes,wms,erp对接，ai赋能，应该是怎么样的方式，自己部署，是不是不太现实",
+    "row": 231,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

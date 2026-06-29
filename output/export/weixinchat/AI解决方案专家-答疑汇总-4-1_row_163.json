@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_163",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在function call中，注册信息具体包含哪些内容？",
+    "MCP server如何管理工具信息，Host在其中扮演什么角色？",
+    "function call和MCP在工具信息注册与调用流程上有何区别？",
+    "Host在转发工具信息给模型时，是否会修改或过滤这些信息？",
+    "如果多个MCP server提供同名工具，Host如何处理冲突？",
+    "function call 的时候一堆的注册信息，对比mcp是在host吗？那些信息是在注册的时候加入的吗？"
+  ],
+  "answer": "莫欣老师回复：在MCP架构中，每一组工具信息由各自的MCP server独立管理。Host（主机）主要负责将来自不同MCP server的工具信息进行打包整合，并将整合后的信息转发给模型进行处理。工具信息并非在注册时由Host添加，而是由MCP server在启动或配置时自行注册和维护。Host仅作为中转和协调的角色，不直接管理工具的具体注册信息。",
+  "metadata": {
+    "original_question": "function call 的时候一堆的注册信息，对比mcp是在host吗？那些信息是在注册的时候加入的吗？",
+    "row": 163,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

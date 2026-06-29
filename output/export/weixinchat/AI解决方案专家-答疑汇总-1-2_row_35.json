@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_35",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在构建类似支小宝的自然语言交互功能时，如何实现意图识别和参数解析？",
+    "开发自然语言交互的智能体时，常用的技术栈包括哪些？",
+    "如何利用Function Calling和Agent框架实现多轮对话中的槽位填充？",
+    "在Coze或Workflows中，如何设计一个支持自然语言交互的智能体？",
+    "自然语言交互功能中，意图识别和参数解析的常见实现方式有哪些？",
+    "崔老师，类似支小宝这种自然语言来交互的功能调用，用了哪些开发技术和框架呢？（Funtioncalling，agent？？）"
+  ],
+  "answer": "实现类似支小宝的自然语言交互功能，主要涉及意图识别、参数解析和多轮对话填槽等技术。意图识别用于对用户请求进行分类，参数解析用于提取关键信息，多轮对话填槽则通过逐步收集缺失信息来完成复杂任务。这些技术通常基于Function Calling和Agent框架实现，整体架构并不复杂，但需要精细设计以提升交互体验。",
+  "metadata": {
+    "original_question": "崔老师，类似支小宝这种自然语言来交互的功能调用，用了哪些开发技术和框架呢？（Funtioncalling，agent？？）",
+    "row": 35,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

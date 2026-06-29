@@ -4,3 +4,19 @@
 [2026-05-27T19:03:08] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表分割\AI解决方案专家-答疑汇总-2-2.xlsx: 缺少列 question/answer，当前列: ['文字提问问题', '文本解答']
 [2026-05-27T19:03:08] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表分割\AI解决方案专家-答疑汇总-3-1.xlsx: 缺少列 question/answer，当前列: ['文字提问问题', '文本解答']
 [2026-05-28T09:01:55] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\excel\AI解决方案专家-答疑汇总-1-1.xlsx: 行 3: questions 数量不足 (5)
+[2026-06-27T14:58:30] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\excel\AI解决方案专家-答疑汇总-1-1.xlsx: 行 3: questions 数量不足 (5)
+[2026-06-27T14:58:38] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\excel\AI解决方案专家-答疑汇总-1-2.xlsx: 行 1: questions 数量不足 (5)
+[2026-06-27T14:58:43] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\excel\AI解决方案专家-答疑汇总-2-1.xlsx: 行 0: questions 数量不足 (5)
+[2026-06-27T14:58:47] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\excel\AI解决方案专家-答疑汇总-2-2.xlsx: 行 0: questions 数量不足 (5)
+[2026-06-27T14:58:59] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\excel\AI解决方案专家-答疑汇总-3-1.xlsx: 行 1: questions 数量不足 (5)
+[2026-06-27T14:59:03] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\excel\AI解决方案专家-答疑汇总-3-2.xlsx: 行 0: questions 数量不足 (5)
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\excel\AI解决方案专家-答疑汇总-4-1.xlsx: 行 1: questions 数量不足 (5)
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\excel\~$AI解决方案专家-答疑汇总-1-1.xlsx: Excel file format cannot be determined, you must specify an engine manually.
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表转excel\AI解决方案专家-答疑汇总-1-1.xlsx: 缺少列 文字提问问题/文本解答，当前列: ['content', 'questions']
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表转excel\AI解决方案专家-答疑汇总-1-2.xlsx: 缺少列 文字提问问题/文本解答，当前列: ['content', 'questions']
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表转excel\AI解决方案专家-答疑汇总-2-1.xlsx: 缺少列 文字提问问题/文本解答，当前列: ['content', 'questions']
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表转excel\AI解决方案专家-答疑汇总-2-2.xlsx: 缺少列 文字提问问题/文本解答，当前列: ['content', 'questions']
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表转excel\AI解决方案专家-答疑汇总-3-1.xlsx: 缺少列 文字提问问题/文本解答，当前列: ['content', 'questions']
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表转excel\AI解决方案专家-答疑汇总-3-2.xlsx: 缺少列 文字提问问题/文本解答，当前列: ['content', 'questions']
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表转excel\AI解决方案专家-答疑汇总-4-1.xlsx: 缺少列 文字提问问题/文本解答，当前列: ['content', 'questions']
+[2026-06-27T14:59:13] D:\helen\workspace\repositories\RAG_System\data\raw\ai_assistant\weixinchat\问题列表转excel\AI解决方案专家-答疑汇总-all.xlsx: 缺少列 文字提问问题/文本解答，当前列: ['questions', 'content']

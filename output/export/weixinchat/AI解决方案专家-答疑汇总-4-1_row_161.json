@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_161",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze平台中，使用RAGFlow时是否必须本地部署，还是可以调用云端服务？",
+    "对于智能体开发，Embedding模型有哪些在线API可供选择，而无需自行部署？",
+    "在workflows中集成RAGFlow，推荐采用本地部署还是云服务方式？",
+    "知识库构建时，Embedding模型的部署方式（本地或在线）对性能有何影响？",
+    "Coze平台是否支持直接调用预训练的Embedding模型，从而避免本地部署的复杂性？",
+    "RAGFlow和Embedding模型，这俩还得自己在开发环境上本地部署吗"
+  ],
+  "answer": "RAGFlow的具体部署方式取决于您的需求，它支持本地部署，但也可以考虑使用云端服务。对于Embedding模型，您可以选择调用在线API（如OpenAI、Cohere等提供的服务），也可以选择自行本地部署模型。两种方式各有优劣：在线调用简化了运维，但可能涉及数据隐私和成本问题；本地部署则提供更高的控制权和数据安全性，但需要更多的技术资源和维护工作。",
+  "metadata": {
+    "original_question": "RAGFlow和Embedding模型，这俩还得自己在开发环境上本地部署吗",
+    "row": 161,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

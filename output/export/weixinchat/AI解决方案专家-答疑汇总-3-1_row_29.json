@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_29",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在文件分析工作流中，开始节点试运行时，如何正确构造JSON输入以模拟文件上传？",
+    "文件分析工作流的开始节点试运行，JSON输入中文件路径和问题字段的格式要求是什么？",
+    "如何通过试运行功能测试文件分析工作流的开始节点，而不依赖外部Agent？",
+    "文件分析工作流开始节点试运行时，JSON结构中的文件数据应如何表示？",
+    "在Coze中，文件分析工作流开始节点试运行的JSON输入示例是什么？",
+    "文件分析那个工作流，开始节点试运行，这边的这个JSON结构该怎么输入呀？"
+  ],
+  "answer": "在文件分析工作流中，开始节点试运行时，JSON输入结构需包含文件数据和问题字段。具体格式如下：文件数据应使用数组形式，每个文件对象包含文件名（name）和文件内容（content，Base64编码）或文件路径（path）；问题字段为字符串。例如：{\"files\": [{\"name\": \"example.pdf\", \"content\": \"base64_encoded_content\"}], \"question\": \"请分析文件内容\"}。建议先通过外部Agent上传文件并运行工作流，然后查看工作流运行记录中各节点的输入数据，以获取准确的JSON结构示例。",
+  "metadata": {
+    "original_question": "文件分析那个工作流，开始节点试运行，这边的这个JSON结构该怎么输入呀？",
+    "row": 29,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

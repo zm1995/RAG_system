@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_99",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "图片问答助手功能如何启用？",
+    "上传图片后，助手能识别哪些类型的问题？",
+    "图片问答助手支持哪些图片格式？",
+    "如果图片问答助手显示为空，可能是什么原因？",
+    "如何确保图片问答助手正确识别图片内容？",
+    "老师 这个图片问答助手 是空的呀"
+  ],
+  "answer": "图片问答助手功能默认处于可用状态。您可以直接上传图片，然后针对图片内容提出问题，助手将根据图片信息进行回答。如果界面显示为空，请确保已正确上传图片文件，并检查网络连接是否正常。",
+  "metadata": {
+    "original_question": "老师 这个图片问答助手 是空的呀",
+    "row": 99,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_132",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "Reward Model 在 LLM 训练流程中具体扮演什么角色？",
+    "Reward Model 的训练数据通常来源于哪里？",
+    "Reward Model 与普通语言模型在功能上有哪些本质区别？",
+    "在 Coze 或智能体开发中，Reward Model 如何用于优化 workflows？",
+    "Reward Model 的训练是否依赖于特定的知识库或标注数据？",
+    "Reword Model也是一个训练完某个阶段任务的LLM吧，还是一种特定模型？"
+  ],
+  "answer": "Reward Model 是在监督微调（SFT）阶段完成后，从当时最优的 LLM 模型中提取出来，并经过额外微调训练得到的一种特定模型。在 LLM 训练流程中，除了 Reward Model 外，其他训练阶段均针对最新的 LLM 进行优化，以增强其能力。而 Reward Model 则是在 SFT 结束后，将当时的 LLM 模型用于另一种微调训练，最终得到的模型不再具备语言生成能力，仅用于对输出进行评分或排序，以评估生成结果的质量。",
+  "metadata": {
+    "original_question": "Reword Model也是一个训练完某个阶段任务的LLM吧，还是一种特定模型？",
+    "row": 132,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

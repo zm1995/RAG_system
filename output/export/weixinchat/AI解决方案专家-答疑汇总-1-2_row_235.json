@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_235",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Rejected Sampling中，从10～30条回答里保留3条优质回答，这个数量是固定的吗？",
+    "Rejected Sampling方法中，保留的回答数量（如3条）对模型性能的影响有多大？",
+    "除了保留3条回答，Rejected Sampling中是否允许保留2条或4条回答？",
+    "在Rejected Sampling中，如何确定保留的优质回答数量？",
+    "Rejected Sampling中，保留回答的数量是否与Llama 3技术报告中的设置一致？",
+    "Rejected Sampling，从10～30条回答中，留3条优质回答，是不是个固定的条数，只留3条，还是2～4条？"
+  ],
+  "answer": "在Rejected Sampling中，从10～30条回答中保留3条优质回答并非固定不变，保留2条或4条对模型训练的影响通常较小。具体数量可根据实际需求调整，建议参考Llama 3的技术报告（PDF）以获取更详细的设置说明。",
+  "metadata": {
+    "original_question": "“Rejected Sampling”，从10～30条回答中，留3条优质回答，是不是个固定的条数，只留3条，还是2～4条？",
+    "row": 235,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

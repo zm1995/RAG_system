@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_17",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在调试代码解释器节点时，如果FinalOutput显示为空，但后续LLM节点仍引用该变量，如何排查问题？",
+    "代码解释器节点执行失败后，FinalOutput为空，是否会影响工作流中其他节点的运行？",
+    "如何确保代码解释器节点的输出FinalOutput在LLM节点中正确传递？",
+    "在Coze工作流中，FinalOutput变量为空时，有哪些常见原因及解决方法？",
+    "如果代码解释器节点运行成功，FinalOutput中的数值格式如何影响LLM节点的解析？",
+    "然后在调试这个代码解释器节点的时候，显示这个FinaOutput里的内容为空，但是我们在下一个解析计算结果的LLM节点里，它的输入的变量值，又是FinaOutput，这个怎么理解呢"
+  ],
+  "answer": "当代码解释器节点运行失败时，其输出变量FinalOutput会为空。若后续LLM节点引用了该变量，则LLM节点将接收到空值，可能导致执行异常或结果错误。若代码解释器节点运行成功，FinalOutput中会包含有效数值，LLM节点可正常解析。建议在调试时检查代码解释器节点的执行日志，确认错误原因（如语法错误、依赖缺失等），并确保节点间的变量引用正确。",
+  "metadata": {
+    "original_question": "然后在调试这个代码解释器节点的时候，显示这个FinaOutput里的内容为空，但是我们在下一个解析计算结果的LLM节点里，它的输入的变量值，又是FinaOutput，这个怎么理解呢",
+    "row": 17,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

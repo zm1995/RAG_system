@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_168",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze智能体的embedding处理中，如果两个输入token的原始向量相同，但位置编码不同，模型如何区分它们？",
+    "在Agent的workflows中，position信息是如何通过维度编码实现的？是否依赖于固定的维度子集？",
+    "对于智能体中的input向量，如果i和j的原始向量一致，但embedding和position向量不同，解码器能否正确识别不同的token？",
+    "在知识库的向量化过程中，如何确保相同原始向量但不同位置的token被正确区分？是否涉及维度分配约定？",
+    "在Coze的模型架构中，Wo层如何应对输入向量重复但位置信息不同的情况？其识别能力是否依赖于特定维度？",
+    "这里有没有可能会出现i号input向量和j号input向量一样，但i号embedding/position向量与j号embedding/position向量不同的情况？对于i和j号input向量解码器，处理的是相同原始向量，但实际的token却不一样呢？\n如果不存在这种情况，是通过约定用了12288个维度里面几个固定的的维度来表示position信息吗？"
+  ],
+  "answer": "在W0层，当输入维度从非12288转换到12288时，不会出现问题。因为96个小弟聚合的信息本身存在一定程度的重复，而Wo层具备识别这些重复信息的能力，能够有效处理输入向量相同但位置信息不同的情况。position信息并非通过固定维度的子集来表示，而是通过整体维度编码实现。",
+  "metadata": {
+    "original_question": "这里有没有可能会出现i号input向量和j号input向量一样，但i号embedding/position向量与j号embedding/position向量不同的情况？对于i和j号input向量解码器，处理的是相同原始向量，但实际的token却不一样呢？\n如果不存在这种情况，是通过约定用了12288个维度里面几个固定的的维度来表示position信息吗？",
+    "row": 168,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

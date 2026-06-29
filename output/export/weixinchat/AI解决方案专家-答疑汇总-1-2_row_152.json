@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_152",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "老师，PPO算法在强化学习中具体是如何实现策略优化的？",
+    "PPO与传统的策略梯度方法相比，主要有哪些改进点？",
+    "在Coze或Agent开发中，PPO算法可以应用于哪些场景？",
+    "PPO算法是否依赖于特定的模型架构，还是可以灵活适配？",
+    "老师，PPO算法中的“近端”概念指的是什么？",
+    "老师，PPO是个优化策略，不是一个单独的模型是不？"
+  ],
+  "answer": "是的，PPO（Proximal Policy Optimization）是一套用于强化学习的模型训练和策略迭代方法，它并非一个独立的模型，而是一种优化算法。PPO通过限制策略更新的幅度，在保证训练稳定性的同时提高样本效率，常用于智能体（Agent）的决策优化中。",
+  "metadata": {
+    "original_question": "老师，PPO是个优化策略，不是一个单独的模型是不？",
+    "row": 152,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

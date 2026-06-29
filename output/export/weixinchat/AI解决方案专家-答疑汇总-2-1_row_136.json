@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_136",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Transformer模型中，Nx参数具体控制的是哪一部分的重复次数？",
+    "Nx与神经网络层数在概念上有何本质区别？",
+    "在Coze或Agent的workflows中，Nx是否用于指定循环计算的轮数？",
+    "Nx参数对模型的计算复杂度有何影响？",
+    "在智能体或知识库的配置中，Nx通常如何设置？",
+    "崔老师，Nx指的是神经网络的层数吗"
+  ],
+  "answer": "Nx并非指神经网络的层数，而是指编码器（Encoder）和解码器（Decoder）各自重复的模块数量，即模型需要执行的计算轮数。每个模块内部包含神经网络层，但也包含其他非神经网络组件（如注意力机制、前馈网络等）。因此，Nx控制的是整个模块的堆叠次数，而非单纯神经网络的层数。",
+  "metadata": {
+    "original_question": "崔老师，Nx指的是神经网络的层数吗",
+    "row": 136,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

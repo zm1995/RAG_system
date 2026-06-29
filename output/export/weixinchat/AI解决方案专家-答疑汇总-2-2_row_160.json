@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_160",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "老师，DeepSeek在处理上传的PDF或Word文档时，是直接由R1模型解析内容，还是需要借助其他组件进行预处理？",
+    "对于DeepSeek上传的图片，R1模型是否具备原生多模态识别能力，还是依赖外部工具转换后再分析？",
+    "DeepSeek中，用户上传的附件（如表格、代码文件）是如何被转化为模型可理解的格式的？",
+    "在DeepSeek的工作流中，处理非文本文件（如音频、视频）时，是否需要额外的模型或插件进行转码？",
+    "老师，DeepSeek的R1模型能否直接处理压缩包（如ZIP）内的文件，还是需要先解压并单独上传？",
+    "老师，deepseek这里输入的文件或者图片，是R1模型直接就能识别吗，还是说中间经过别的模型给它加工过这些附件？"
+  ],
+  "answer": "模型本身无法直接读取文件。对于图片，DeepSeek的多模态模型可以直接识别其内容。对于其他文件类型（如PDF、Word、Excel等），系统会通过预设的代码功能进行预处理，提取文件中的文本内容，并将其转换为纯文本格式后输入给模型进行分析。",
+  "metadata": {
+    "original_question": "老师，deepseek这里输入的文件或者图片，是R1模型直接就能识别吗，还是说中间经过别的模型给它加工过这些附件？",
+    "row": 160,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

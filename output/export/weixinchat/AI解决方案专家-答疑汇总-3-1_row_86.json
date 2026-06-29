@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_86",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在coze中，如何将JSON数组字符串转换为字符串格式以便在workflows中循环处理？",
+    "使用coze的智能体时，怎样把数组格式的数据拆分成单个字符串，用于后续的search操作？",
+    "在coze workflows中，如果输入是JSON数组字符串，如何通过节点处理使其适应loop循环？",
+    "coze中，如何将知识库返回的数组字符串转换为单个字符串，以便在agent中逐条搜索？",
+    "在coze中，处理JSON数组字符串时，有哪些节点可以用于格式转换，并确保后续loop能正确执行？",
+    "老师，我想问下coze中，json array string要如何转换成string格式？目标是将组拆成单个，后续search做loop（search要求是string格式）"
+  ],
+  "answer": "在coze中，将JSON数组字符串转换为字符串格式，可以通过使用大模型节点或文本处理节点来实现。具体操作是，在节点中配置相应的转换逻辑，例如使用大模型节点解析JSON数组并提取每个元素，或者使用文本处理节点进行字符串分割。需要注意的是，如果后续需要进行循环处理（loop），保持数组格式更为合适，因为数组包含多条数据，可以逐条循环处理并执行搜索操作。",
+  "metadata": {
+    "original_question": "老师，我想问下coze中，json array string要如何转换成string格式？目标是将组拆成单个，后续search做loop（search要求是string格式）",
+    "row": 86,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

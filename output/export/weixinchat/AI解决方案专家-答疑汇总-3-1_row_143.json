@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_143",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze中，如何配置知识库以支持图片输出？",
+    "Coze的图片知识库与普通知识库在功能上有何区别？",
+    "除了知识库，Coze中还有哪些方式可以实现图片回复？",
+    "在Coze中，使用Excel知识库时，能否通过代码扩展来支持图片输出？",
+    "Coze的图片知识库demo具体如何操作，能否详细说明？",
+    "那有办法直接回复图片吗？"
+  ],
+  "answer": "在Coze平台中，基于Excel构建的知识库不支持直接回复图片。然而，通过程序员编写的代码实现的知识库可以支持图片输出。Coze提供了专门的图片知识库功能，并附有演示demo，该demo展示了如何配置和使用图片知识库以实现图片回复。建议参考该demo进行具体操作。",
+  "metadata": {
+    "original_question": "那有办法直接回复图片吗？",
+    "row": 143,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

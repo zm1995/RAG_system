@@ -1,0 +1,17 @@
+{
+  "id": "coze_knowledge/txt/5/火山引擎服务条款与隐私政策-专业版",
+  "source": "coze_knowledge",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\coze_knowledge\\txt\\5\\火山引擎服务条款与隐私政策-专业版.txt",
+  "questions": [
+    "Coze专业版的服务条款中，用户数据的所有权归属是如何规定的？",
+    "在使用Coze智能体时，隐私政策如何保护用户的个人信息不被第三方滥用？",
+    "火山引擎的用户协议中，对于用户创建的工作流和知识库内容有哪些使用限制？",
+    "如果用户需要删除在Coze平台上的所有数据，根据隐私政策，流程是怎样的？",
+    "Coze专业版的服务条款是否允许用户将智能体用于商业用途，需要满足哪些条件？"
+  ],
+  "answer": "火山引擎服务条款与隐私政策（专业版）\n火山隐私政策\n火山用户协议",
+  "metadata": {
+    "title": "火山引擎服务条款与隐私政策-专业版",
+    "category": "5"
+  }
+}

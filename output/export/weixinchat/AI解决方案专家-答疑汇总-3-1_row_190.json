@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_190",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在骑手招聘助手的工作流中，Python代码节点的upload_file_url参数，除了从Agent对话窗口获取，还有哪些推荐的数据源？",
+    "如何确保上传到Coze平台的文件链接在Python代码中稳定可用？",
+    "在Coze工作流中，使用upload_file_url时，文件存储的最佳实践是什么？",
+    "如果我想在Coze工作流中动态生成文件并获取其URL，应该如何实现？",
+    "Coze平台对上传文件的大小和类型有哪些限制？",
+    "老师，我在看骑手招聘助手的工作流中，有一段是运行Python代码，入参里的upload_file_url是哪里获取的，文件是放在Coze平台的吗？"
+  ],
+  "answer": "在骑手招聘助手的工作流中，upload_file_url参数通常通过将文件上传到Coze平台的Agent对话窗口来获取，系统会生成一个临时链接。然而，这种做法并非最佳实践，因为链接可能不稳定或存在访问限制。推荐的做法是将文件托管在独立的服务器或云存储服务（如阿里云OSS、AWS S3）上，生成一个稳定的下载链接，然后将其作为upload_file_url的输入。这样可以确保工作流的可靠性和可扩展性。",
+  "metadata": {
+    "original_question": "老师，我在看骑手招聘助手的工作流中，有一段是运行Python代码，入参里的upload_file_url是哪里获取的，文件是放在Coze平台的吗？",
+    "row": 190,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

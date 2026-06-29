@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_228",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "老师，除了手动拆分PDF再逐个处理，有没有更高效的方法来批量处理这些文档？",
+    "在Coze或智能体平台上，如何利用知识库功能自动处理拆分后的PDF文件？",
+    "如果我想用workflows自动化流程，将PDF拆分后直接输入到ChatGPT，应该怎么设计？",
+    "老师，RAG和手动拆分PDF再提问的方式相比，具体有哪些优势？",
+    "在Coze中，如何配置一个智能体来接收多个小PDF文件并自动回答相关问题？",
+    "老师，我将pdf拆分成了很小的文档，然后每个拿到chatgpt里面做，结果还可以，就是需要一个一个去处理。"
+  ],
+  "answer": "答：将PDF拆分成小文档后，逐个发送给ChatGPT处理确实可行，但效率较低。这种方式本质上与RAG（检索增强生成）类似，因为RAG也是先检索出最相关的知识切片，再基于该切片生成回答。然而，RAG的优势在于自动化：它无需手动拆分和逐个提问，而是通过知识库自动检索并整合信息。在Coze或智能体平台上，您可以利用知识库功能，将PDF文件直接上传并建立索引，然后通过workflows设计自动化流程，实现批量处理。例如，配置一个智能体，使其在接收到多个小PDF文件后，自动调用RAG机制检索相关内容并生成回答，从而避免手动操作。建议您尝试使用Coze的知识库和workflows功能，以提升处理效率。",
+  "metadata": {
+    "original_question": "老师，我将pdf拆分成了很小的文档，然后每个拿到chatgpt里面做，结果还可以，就是需要一个一个去处理。",
+    "row": 228,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

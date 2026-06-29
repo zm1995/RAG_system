@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_85",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze中，如果表格内容超过字数限制，除了转为图片还有哪些处理方法？",
+    "使用多模态模型识别图片表格时，如何确保长图截取不丢失关键数据？",
+    "PDF转Word后表格格式错乱，在Coze中如何通过知识库或Workflows修复？",
+    "在Agent中，如何结合Markdown和图片识别技术高效处理多页表格数据？",
+    "Coze的Workflows中，如何自动化将PDF表格转换为可检索的Markdown格式？",
+    "如果已经有表格的markdown文字了，直接基于markdown来构建上述文字应该也是可以的。所以转为图片再多模态识别图片，不太明具体的逻辑，麻烦老师给解答一下，好多页组合的表格，合并成长图也不可能连续。我们是先通过插件工具把pdf转换成word形式"
+  ],
+  "answer": "是的，将表格内容转为Markdown文字后，这些文字可用于检索。但需注意，当表格内容字数过多时，可能会超出模型的处理限制。若未超出字数限制，直接使用Markdown文字是可行的。将表格截取为图片，主要是为了利用多模态模型对图片的理解能力，从而更准确地回答与表格相关的问题。在截取多页表格时，可以采用类似网页长截图的技术，将多页表格合并为一张长图，确保连续性。将PDF转换为Word格式后，仍可能遇到表格格式错乱的问题，建议在Coze中结合知识库或Workflows进行格式修复或数据提取。",
+  "metadata": {
+    "original_question": "如果已经有表格的markdown文字了，直接基于markdown来构建上述文字应该也是可以的。所以转为图片再多模态识别图片，不太明具体的逻辑，麻烦老师给解答一下，好多页组合的表格，合并成长图也不可能连续。我们是先通过插件工具把pdf转换成word形式",
+    "row": 85,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

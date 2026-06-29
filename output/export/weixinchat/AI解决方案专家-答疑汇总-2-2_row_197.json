@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_197",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze智能体中，如何确保AI严格按照prompt中的指令从知识库检索内容并输出指定问题？",
+    "使用workflows时，AI输出与预设questions不一致，可能涉及哪些配置或模型选择问题？",
+    "在Agent开发中，如何优化prompt以提高DeepSeek模型执行检索和提问任务的准确性？",
+    "Coze知识库与prompt结合使用时，AI输出偏离预期，常见原因有哪些？",
+    "如何调整Coze智能体的prompt设计，使其在不同模型（如GPT和DeepSeek）下表现一致？",
+    "原问题：崔老师，我想请教一下，就是咱们在prompt里已经写明了，要让AI根据用户的主诉，先去知识库里检索相关的内容，并将input0作为模型阶段的输入，并要求AI将下面的questions作为输出去跟进提问用户，但试运行阶段，我测试出来，AI跟进提问的内容与questions检索出来的结果不一致，这个是什么原因呢？"
+  ],
+  "answer": "该问题通常源于prompt设计对特定模型（如DeepSeek）的适配性不足。原始prompt从海外版GPT场景迁移而来，在GPT上表现良好，但DeepSeek在处理口语化或复杂指令时可能产生偏差。建议优化prompt：明确指定输出格式，使用结构化指令（如JSON或列表），减少模糊表述；同时检查知识库检索逻辑，确保input0正确传递；若问题持续，可考虑调整模型参数或切换至更适配的模型。",
+  "metadata": {
+    "original_question": "崔老师，我想请教一下，就是咱们在prompt里已经写明了，要让AI根据用户的主诉，先去知识库里检索相关的内容，并将input0作为模型阶段的输入，并要求AI将下面的questions作为输出去跟进提问用户，但试运行阶段，我测试出来，AI跟进提问的内容与questions检索出来的结果不一致，这个是什么原因呢？",
+    "row": 197,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

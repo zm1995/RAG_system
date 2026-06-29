@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_170",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze中，Chatflow和Workflow的主要功能差异是什么？",
+    "如何选择在Coze中使用Chatflow还是Workflow来构建智能体？",
+    "Coze的Chatflow能否完全替代Workflow的功能？",
+    "在Coze中，Chatflow如何自动获取用户消息和历史对话？",
+    "Coze的Workflow是否支持处理多轮对话场景？",
+    "Coze里Chatflow和Workflow有区别吗？"
+  ],
+  "answer": "在Coze中，Chatflow是一种特殊类型的工作流，其核心特性是自动将用户最新发送的消息作为输入参数，并能够便捷地访问和利用历史对话信息。相比之下，Workflow是更通用的流程设计工具，不默认绑定用户消息或历史对话，适用于更广泛的自动化任务场景。两者在功能定位上存在差异：Chatflow专注于对话交互场景，而Workflow则适用于非对话或复杂流程编排。",
+  "metadata": {
+    "original_question": "coze 里chatflow 和workflow 有区别吗？",
+    "row": 170,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

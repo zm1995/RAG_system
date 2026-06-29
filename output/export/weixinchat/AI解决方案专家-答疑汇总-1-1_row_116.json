@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_116",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在LDM中，U-Net的每一层是如何与文本prompt向量进行QKV计算的？",
+    "U-Net在LDM中执行特征融合和卷积操作时，QKV机制具体在哪个阶段介入？",
+    "LDM中U-Net的QKV机制如何影响图像生成过程中的特征放大与抑制？",
+    "在LDM的U-Net架构中，文本向量与图像特征进行注意力计算的具体流程是什么？",
+    "LDM中U-Net的每一步都进行QKV计算，这对模型性能有何影响？",
+    "问1：老师，有个问题请教一下，就是LDM中，U-Net的步骤中怎么和QKV机制结合起来呢？U-Net自己也有特征融合，卷积等操作，是在哪个步骤做QKV的呢？"
+  ],
+  "answer": "在LDM中，U-Net的每一层在完成卷积操作后，都会与文本prompt向量进行QKV（Query-Key-Value）注意力计算。具体而言，U-Net的每个尺度层（无论特征图尺寸大小）都会将当前层的特征图作为Query，文本prompt向量作为Key和Value，通过注意力机制计算相关性。相关性高的区域会被放大，相关性低的区域则被抑制，从而实现对图像生成过程的文本引导。这一过程在U-Net的每一步中均执行，确保文本信息持续影响特征提取与融合。",
+  "metadata": {
+    "original_question": "问1：老师，有个问题请教一下，就是LDM中，U-Net的步骤中怎么和QKV机制结合起来呢？U-Net自己也有特征融合，卷积等操作，是在哪个步骤做QKV的呢？",
+    "row": 116,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

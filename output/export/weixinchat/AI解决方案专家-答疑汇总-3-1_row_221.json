@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_221",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "产品经理在Coze平台上调试Agent时，通常需要关注哪些具体环节？",
+    "除了在Coze上发布Agent，产品经理还有哪些方法可以优化用户体验？",
+    "产品经理与程序员协作开发Agent时，各自的主要职责是什么？",
+    "在Coze平台上，如何通过调试Prompt来提升Agent的性能？",
+    "产品经理在Agent开发过程中，如何利用数据工作来改进产品？",
+    "产品经理有时候需要关注用户体验去不断的调式产品，这个过程就是会在扣子上发布agent去完成这一步吗？"
+  ],
+  "answer": "在Coze平台上进行Agent的更新与发布仅是优化用户体验的一种方式。更常见的做法是产品经理与程序员协作，通过编写代码来开发Agent。在此过程中，产品经理的主要职责包括梳理工作流程、调试Prompt以及进行数据相关的工作，以确保Agent能够满足用户需求并提升体验。",
+  "metadata": {
+    "original_question": "产品经理有时候需要关注用户体验去不断的调式产品，这个过程就是会在扣子上发布agent去完成这一步吗？",
+    "row": 221,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

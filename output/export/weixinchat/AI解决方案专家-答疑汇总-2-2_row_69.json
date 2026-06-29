@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_69",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze智能体开发中，如何利用CUDA加速自注意力机制的计算？",
+    "GPT-3的2048个token窗口在Workflows中如何影响序列处理？",
+    "自注意力机制在知识库查询时，如何通过并行计算提升效率？",
+    "Agent处理长序列时，2048个向量的维度是如何确定的？",
+    "在Coze中，如何配置Workflows以优化自注意力机制的并行计算性能？",
+    "自注意力机制如何使用CUDA并行计算，一串序列2048个向量是怎么来的？"
+  ],
+  "answer": "自注意力机制利用CUDA并行计算时，通常通过将序列分割成多个块并在GPU上并行处理每个块来实现。以GPT-3模型为例，2048个向量代表模型的前文窗口宽度，即模型在生成下一个token时，可以同时参考前2048个token的上下文信息。这个窗口大小是模型架构设计的一部分，决定了模型处理序列长度的能力。在Coze或相关智能体产品中，类似机制可用于优化长文本处理，通过Workflows配置并行计算任务，提升推理效率。",
+  "metadata": {
+    "original_question": "问题：自注意力机制如何使用CUDA并行计算，一串序列2048个向量是怎么来的？",
+    "row": 69,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

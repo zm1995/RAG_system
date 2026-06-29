@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_148",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在课程设计中，选择coze而非dify的主要考量因素有哪些？",
+    "dify在私有化部署方面有哪些优势，而coze在哪些场景下表现更优？",
+    "对于构建复杂AI产品，coze和dify各自存在哪些局限性？",
+    "如果未来需要从coze迁移到dify，需要注意哪些关键点？",
+    "在AI Agent开发中，coze和dify分别适合哪些类型的用户或项目？",
+    "原问题"
+  ],
+  "answer": "私有化部署场景下，dify确实更具优势，因为它支持本地化部署，能更好地满足数据安全和定制化需求。然而，coze和dify在构建复杂产品方面均存在局限性，两者都难以独立完成高度复杂的AI Agent开发。最终，无论是使用coze还是dify，当项目复杂度超出工具能力范围时，仍需通过编写代码来实现核心功能。因此，两者在本质上差异不大，选择取决于具体需求，如课程中选用coze可能基于其易用性、生态集成或教学适配性等因素。",
+  "metadata": {
+    "original_question": "听起来dify的应用场景好像比coze更广更灵活，咱的课程现在是使用coze工具的，当时为啥没选用dify这个工具呢，是dify还有一些局限性啥的吗？",
+    "row": 148,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

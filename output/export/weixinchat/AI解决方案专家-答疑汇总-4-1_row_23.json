@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_23",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Transformer模型中，Decoder中的注意力机制和最后的输出层都使用了Softmax函数，它们的作用有何不同？",
+    "Softmax函数在注意力机制中是如何实现归一化的？为什么对角线上的值不一定是1？",
+    "在Coze或智能体相关的操作手册中，Softmax函数通常用于哪些场景？",
+    "如果注意力矩阵中的某一行经过Softmax后，对角线上的值接近1，这说明了什么？",
+    "在Workflows或知识库中，Softmax函数的应用是否与模型训练中的梯度计算有关？",
+    "最后面有softmax ,  decoder里面的注意力机制也有softmax吧？  这2个softmax有区别吗？\n\n相关度矩阵计算，从左上到右下的一条直线上的N个数，一定都是1，对吧？"
+  ],
+  "answer": "在Transformer模型中，Decoder中的注意力机制和最后的输出层都使用了Softmax函数，它们的作用本质相同，都是进行归一化处理，将输入向量转换为概率分布。然而，注意力机制中的Softmax用于计算注意力权重，使得每个位置的权重之和为1，从而突出相关位置的重要性；而输出层的Softmax则用于将隐藏状态转换为类别概率，用于最终的分类或生成任务。关于注意力矩阵，经过Softmax后，每一行的元素之和为1，但对角线上的元素并不一定为1，而是取决于该位置与其他位置的相关性。如果对角线上的值较大，说明该位置与自身高度相关，但通常不会恰好等于1，因为Softmax函数会考虑所有位置的得分，并分配概率。",
+  "metadata": {
+    "original_question": "最后面有softmax ,  decoder里面的注意力机制也有softmax吧？  这2个softmax有区别吗？\n\n相关度矩阵计算，从左上到右下的一条直线上的N个数，一定都是1，对吧？",
+    "row": 23,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

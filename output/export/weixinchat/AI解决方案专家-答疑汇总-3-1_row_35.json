@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_35",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "如何检查生成回答节点中prompt的配置是否正确？",
+    "在设置生成回答节点时，如何正确引用用户输入的问题？",
+    "生成回答节点中prompt配置错误会导致哪些常见问题？",
+    "如何通过节点配置确保用户问题被正确传递到生成回答节点？",
+    "生成回答节点中引用用户输入时，六边形符号的具体作用是什么？",
+    "得看一下生成回答的那个节点，组织的prompt是否正确"
+  ],
+  "answer": "在生成回答节点中，需要确保正确引用用户输入的问题。当前配置中未引用用户输入，可能是手动填写了内容。正确的做法是点击六边形符号，从开始节点中选择并引用用户输入的问题字段，以确保prompt能够动态获取用户输入。",
+  "metadata": {
+    "original_question": "得看一下生成回答的那个节点，组织的prompt是否正确",
+    "row": 35,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

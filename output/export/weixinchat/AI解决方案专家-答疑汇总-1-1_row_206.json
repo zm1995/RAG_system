@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_206",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "支小助在Coze平台中是否支持多Agent之间的任务分配与结果汇总？",
+    "在智能体设计中，支小助如何实现类似微服务的模块化协作？",
+    "支小助的Agent架构是否包含上下级关系，例如主Agent协调子Agent执行任务？",
+    "支小助的demo版本与完整多Agent系统在协作机制上有哪些关键差异？",
+    "在workflows中，支小助如何通过知识库实现Agent间的信息共享？",
+    "支小助算多agent协作或者什么上下级协作吗"
+  ],
+  "answer": "支小助在真实场景中应支持多Agent协作，但当前demo版本未实现此功能。多Agent概念本身在互联网产品中并不特殊，类似于模块化或微服务设计，每个模块各司其职。在Agent领域，这种设计同样属于常规实践，其实际意义可能被过度强调。支小助的架构中，Agent之间不存在严格的上下级关系，而是通过任务分配和结果汇总实现协作。在Coze平台中，可通过workflows和知识库配置来增强Agent间的信息共享与协调，但demo版本仅展示了基础功能。",
+  "metadata": {
+    "original_question": "问题：支小助算多agent协作或者什么上下级协作吗",
+    "row": 206,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

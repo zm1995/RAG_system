@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_61",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze平台中，使用智能体进行文生图时，是否完全不需要调用encoder模块？",
+    "对于workflows中的图像处理任务，encoder和加噪过程在哪些场景下是必需的？",
+    "在知识库中存储的图片，通过agent进行图像重建时，流程是否与训练阶段一致？",
+    "Coze的智能体在生成图片时，是否只依赖decoder部分，而忽略encoder和加噪步骤？",
+    "在workflows中，如何配置流程以区分文生图和图像重建任务对encoder的使用？",
+    "意思是LDM只有训练模型的时候才用到encoder。生图的时候只用到下面的部分，文字向量—>潜空间ZT—多轮去噪过程—>潜空间Z0—>decoder—>最终图片"
+  ],
+  "answer": "在文生图任务中，确实不会使用encoder和加噪过程，仅利用文字向量到潜空间ZT、多轮去噪、潜空间Z0、decoder到最终图片的流程。但在图像重建等任务中，仍需先通过encoder和加噪过程获取ZT，再执行后续步骤。",
+  "metadata": {
+    "original_question": "意思是LDM只有训练模型的时候才用到encoder。生图的时候只用到下面的部分，文字向量—>潜空间ZT—多轮去噪过程—>潜空间Z0—>decoder—>最终图片",
+    "row": 61,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

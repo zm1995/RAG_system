@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_145",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze中使用Deepseek V3模型时，图片无法作为索引，是否必须更换模型才能支持图片索引功能？",
+    "如果当前工作流中图片无法被索引，除了更换模型外，还有哪些配置或步骤可以解决？",
+    "在Agent或智能体设计中，图片索引失败是否与知识库的配置有关？如何调整？",
+    "使用Workflows处理图片时，如何确保图片数据能被正确索引和检索？",
+    "在RAG流程中，图片无法索引的常见原因有哪些？如何排查和修复？",
+    "图片无法设置成索引，是不是要换模型，现在用的是Deepseek V3？"
+  ],
+  "answer": "图片无法设置成索引是正常现象，因为当前模型（如Deepseek V3）不支持将图片直接作为索引。请回顾RAG（检索增强生成）流程：在标准RAG中，索引通常针对文本数据构建，图片需通过其他方式处理，例如使用多模态模型或单独存储图片元数据。若需图片索引功能，建议更换支持多模态的模型（如GPT-4V或Claude 3），或调整工作流，将图片描述文本化后索引。",
+  "metadata": {
+    "original_question": "图片无法设置成索引，是不是要换模型，现在用的是Deepseek V3？",
+    "row": 145,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

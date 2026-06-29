@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_4",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Transformer模型中，Q和K的内积计算是否等同于特征聚合？",
+    "Attention机制中，Q和K的点积在编码器和解码器中的具体作用有何不同？",
+    "多头注意力机制中，多个注意力头是如何通过内积实现信息聚合的？",
+    "在自回归解码过程中，Q和K的内积是否重复聚合了编码器和解码器的信息？",
+    "Transformer中的三个多头注意力层是否都执行了相同的信息聚合操作？",
+    "听完上节课我有个问题没串起来，这个attention函数中q和k的内积放在encode里面是不是相当于在数据聚合？那放到Decode中也是一样的步骤吗？算是muti注意力里的一部分？就等于把自回归输出内容聚合了一遍又和decode中聚合过的向量又聚合了一遍，总共3个muti attention就聚合了3遍吗？@崔超"
+  ],
+  "answer": "内积运算的核心目的是计算查询（Q）与键（K）之间的相关度系数。在信息聚合过程中，每个信息项被赋予不同的权重，而内积正是用于确定这些权重的关键步骤。通过内积计算出的相关度系数，后续的加权求和操作能够有效地聚合信息。",
+  "metadata": {
+    "original_question": "听完上节课我有个问题没串起来，这个attention函数中q和k的内积放在encode里面是不是相当于在数据聚合？那放到Decode中也是一样的步骤吗？算是muti注意力里的一部分？就等于把自回归输出内容聚合了一遍又和decode中聚合过的向量又聚合了一遍，总共3个muti attention就聚合了3遍吗？@崔超",
+    "row": 4,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

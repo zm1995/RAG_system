@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_235",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在骑手招聘助手 workflow 版的工作流中，CodeRunner 节点除了代码外，如何通过 URL 上传文件？",
+    "CodeRunner 插件处理上传文件时，文件 URL 的生成机制是什么？",
+    "在 workflow 中，CodeRunner 的输入参数 upload_file_name 和 upload_file_url 的具体作用是什么？",
+    "如果我想在 CodeRunner 中使用本地文件，应该如何将其转换为 URL 格式？",
+    "CodeRunner 插件对上传文件的大小和类型有哪些限制？",
+    "我问下在骑手招聘助手 workflow版里面的那个工作流里面，在codeRunner里面的输入有upload_file_name为sites_geocoded.xlsx，upload_file_url为https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/e629a64fca7741a0b79d1633900ce78b.xlsx~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1749188006&x-signature=4sscWfLeG6NmX81nMFEDf1A6vJ4%3D，这个是要将sites_geocoded.xlsx这个文件上传到什么地方，然后产生这个URL吗？"
+  ],
+  "answer": "在骑手招聘助手 workflow 版的工作流中，CodeRunner 节点支持通过 URL 方式额外提供一个文件。具体操作是：在 CodeRunner 的输入参数中，设置 upload_file_name 为指定的文件名（如 sites_geocoded.xlsx），同时设置 upload_file_url 为文件的 URL 地址。CodeRunner 插件会将该 URL 对应的文件下载并保存到其服务器上，保存时使用 upload_file_name 指定的文件名。该 URL 通常由文件存储服务（如对象存储）生成，确保文件可公开访问。",
+  "metadata": {
+    "original_question": "我问下在骑手招聘助手 workflow版里面的那个工作流里面，在codeRunner里面的输入有upload_file_name为sites_geocoded.xlsx，upload_file_url为https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/e629a64fca7741a0b79d1633900ce78b.xlsx~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1749188006&x-signature=4sscWfLeG6NmX81nMFEDf1A6vJ4%3D，这个是要将sites_geocoded.xlsx这个文件上传到什么地方，然后产生这个URL吗？",
+    "row": 235,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

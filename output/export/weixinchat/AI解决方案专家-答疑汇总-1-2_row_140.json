@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_140",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在六道轮回的reward model训练中，偏好数据的标注流程具体是怎样的？",
+    "六道轮回的reward model训练与Llama和GPT的偏好数据标注方法有何不同？",
+    "六道轮回的reward model训练是否需要大量人工标注的偏好数据？",
+    "在六道轮回的reward model训练中，如何确保偏好数据的质量和一致性？",
+    "六道轮回的reward model训练中，偏好数据的规模对模型性能有何影响？",
+    "六道轮回的reward mode训练是怎么训练呢？还是要海量的偏好数据？那这个偏好数据是认为标注的？这里跟三部曲的标注有什么实现上的不一样呢？"
+  ],
+  "answer": "在六道轮回的reward model训练中，偏好数据的标注方式与Llama和GPT存在差异。具体而言，Llama的偏好数据标注流程为：针对每个问题生成4个回答，并对这些回答进行排序；而GPT的偏好数据标注流程为：针对每个问题生成2个回答，并标注一个回答比另一个回答好到什么程度。六道轮回的reward model训练可能采用类似的偏好数据标注方法，但具体实现细节需参考其官方文档或相关研究。",
+  "metadata": {
+    "original_question": "六道轮回的reward mode训练是怎么训练呢？还是要海量的偏好数据？那这个偏好数据是认为标注的？这里跟三部曲的标注有什么实现上的不一样呢？",
+    "row": 140,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

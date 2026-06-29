@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_149",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在国内使用Coze插件时，如何解决网络访问限制问题？",
+    "开发一个类似案例中的问卷插件，需要掌握哪些编程技能？",
+    "如何将问卷平台的API集成到Coze的workflows中？",
+    "在Coze中创建插件时，如何确保数据安全与合规性？",
+    "除了问卷类插件，Coze还支持哪些类型的插件开发？",
+    "您案例里的那个插件，我怎么在国内用呀，我要是想写类似的插件应该怎么写。"
+  ],
+  "answer": "首先，选择一个提供开放API的问卷工具平台，例如腾讯问卷或问卷星，确保其API支持创建问卷和获取问卷数据。然后，通过编程语言（如Python或JavaScript）调用这些API，实现问卷的创建、数据收集等功能。在Coze中，您可以将代码部署在节点中运行，或将其封装为插件以便复用。开发时需注意API的认证方式（如API密钥）和请求频率限制，并遵循平台的使用规范。",
+  "metadata": {
+    "original_question": "您案例里的那个插件，我怎么在国内用呀，我要是想写类似的插件应该怎么写。",
+    "row": 149,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

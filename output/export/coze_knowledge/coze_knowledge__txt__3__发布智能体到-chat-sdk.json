@@ -1,0 +1,17 @@
+{
+  "id": "coze_knowledge/txt/3/发布智能体到-chat-sdk",
+  "source": "coze_knowledge",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\coze_knowledge\\txt\\3\\发布智能体到-chat-sdk.txt",
+  "questions": [
+    "如何获取智能体ID以便在Chat SDK中使用？",
+    "发布智能体到Chat SDK前需要完成哪些前置步骤？",
+    "如果智能体未发布为Chat SDK，使用时会遇到什么错误？",
+    "如何确认智能体发布到Chat SDK的审核状态？",
+    "Chat SDK的主要用途是什么？"
+  ],
+  "answer": "发布智能体到 Chat SDK\n编排智能体并试运行通过后，可以将智能体发布到 Chat SDK，开发者可以在自己开发的网站中快速添加一个 AI 应用，为网站集成智能对话服务。\n操作步骤\n1.\n登录扣子平台。\n2.\n在智能体的编排页面，复制并保存当前页面 URL 的最后一个字符串。\n这个是智能体 ID，将在以后的配置中使用。\n3.\n点击发布。\n4.\n在发布页面，选择 Chat SDK，并单击发布。\n未发布为 Chat SDK 的智能体，使用 Chat SDK 时会报错 提示：智能体已经被解绑。\n5.\n确认审核通过。\n你可以在发布历史页面查看每次发布的审核结果，审核通过后再能执行后续操作安装 Chat SDK。查看发布历史的方式，可参考\\n管理智能体版本。\n后续操作\n安装并使用 Chat SDK",
+  "metadata": {
+    "title": "发布智能体到-chat-sdk",
+    "category": "3"
+  }
+}

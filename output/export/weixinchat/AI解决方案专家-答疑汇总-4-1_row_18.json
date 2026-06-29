@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_18",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Transformer模型中，注意力机制中的相关度系数具体是如何通过点积和softmax函数计算的？",
+    "Transformer-2中的自注意力机制与标准Transformer在相关度计算上有何不同？",
+    "如何解释Transformer模型中Q、K、V矩阵在计算相关度系数时的作用？",
+    "在Coze或智能体开发中，如何利用Transformer的相关度系数优化知识库的检索效果？",
+    "Transformer-2的相关度系数计算中，softmax函数的温度参数对结果有何影响？",
+    "崔老师，请问transformer-2相关度系数是怎么计算出来的"
+  ],
+  "answer": "Transformer-2中的相关度系数计算基于注意力机制，具体步骤如下：首先，将查询向量（Query）与键向量（Key）进行点积运算，得到原始相关度分数；然后，将所有位置的点积结果通过softmax函数进行归一化处理，得到最终的相关度系数。点积计算衡量了两个向量之间的相似度，而softmax函数则将分数转换为概率分布，确保所有系数的和为1。建议查阅点积和softmax的数学公式以深入理解其原理。",
+  "metadata": {
+    "original_question": "崔老师，请问transformer-2相关度系数是怎么计算出来的",
+    "row": 18,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

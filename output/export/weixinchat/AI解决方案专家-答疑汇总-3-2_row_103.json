@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_103",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在模型设计中，参数共享的具体实现机制是什么？",
+    "Embedding层和Linear层在参数复用上有什么联系？",
+    "如何理解模型训练中参数在不同层之间的传递过程？",
+    "在Coze或智能体开发中，参数共享对模型性能有何影响？",
+    "能否详细解释Embedding层参数在Linear层计算中的角色？",
+    "在模型设计的时候，就是取一样的参数，放在一个地方存储，共用一块内存，对吧？是不是可以类比为前面Embedding是编码，后面Linear是还原？"
+  ],
+  "answer": "在模型设计中，参数共享并非简单的内存共用，而是指Embedding层的参数在训练过程中被优化，并在计算到Linear层时被复制使用。具体来说，Embedding层包含一组参数，这些参数在训练阶段参与梯度更新，随着模型优化而调整。当模型计算到Linear层时，系统会将Embedding层的参数复制一份，用于Linear层的计算。这一过程确保了参数的一致性，同时避免了重复存储，提高了内存利用效率。需要注意的是，参数共享并不等同于编码与还原的类比，而是模型内部参数复用的具体实现。",
+  "metadata": {
+    "original_question": "在模型设计的时候，就是取一样的参数，放在一个地方存储，共用一块内存，对吧\n\n是不是可以类比为前面Embedding是编码，后面Linear是还原",
+    "row": 103,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

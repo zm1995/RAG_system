@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_190",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在AI领域，如何准确定义一个系统是否为真正的Agent？",
+    "除了规划、决策、反思和调用工具，Agent还应具备哪些核心能力？",
+    "豆包上的智能体与通用Agent在功能实现上有哪些关键区别？",
+    "为什么角色扮演类的智能体不能代表广义上的Agent概念？",
+    "在构建Agent时，如何避免将简单的角色扮演系统误认为是完整的Agent？",
+    "崔老师，为什么说豆包上的智能体不算agent。必须包含规划、决策、反思、调用工具才算ai agent嘛"
+  ],
+  "answer": "豆包上的智能体在严格意义上可被视为Agent的一种形式，但主要局限于角色扮演场景，这仅是Agent的特定子集，不能代表广义上的Agent概念。广义的Agent通常需要具备规划、决策、反思和调用工具等核心能力，以实现自主性和目标导向的行为。因此，将豆包上的智能体等同于所有Agent是一种误解，这种理解不够准确。",
+  "metadata": {
+    "original_question": "崔老师，为什么说豆包上的智能体不算agent。必须包含规划、决策、反思、调用工具才算ai agent嘛",
+    "row": 190,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

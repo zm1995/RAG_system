@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_135",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Transformer模型中，Encoder输出的所有向量在Decoder中是如何被利用的？",
+    "为什么Decoder在生成序列时只关注Encoder的最后一个输出向量，而忽略其他向量？",
+    "Encoder生成的多向量在注意力机制中扮演什么角色？",
+    "能否详细解释Encoder输出向量与Decoder输入之间的关系？",
+    "在序列到序列模型中，Encoder的中间向量是否对Decoder的每一步生成都有贡献？",
+    "老师，请教一下，Encoder的时候输出了token数量的向量，每一个向量都能涵盖前面一整篇文章的信息。之后做Decoder的时候，却只使用最后一个token为主题中心的向量。那他前面生成那么多向量的用途是什么。"
+  ],
+  "answer": "在Transformer模型中，Encoder输出的所有向量并非仅用于生成最后一个向量，而是通过注意力机制在Decoder的每一步中被动态利用。具体来说，Decoder在生成每个输出token时，会计算当前隐藏状态与Encoder所有输出向量的注意力权重，从而加权聚合这些向量以获取上下文信息。这种机制使得Decoder能够关注输入序列的不同部分，而不仅仅是最后一个向量。因此，Encoder生成的多向量为Decoder提供了丰富的上下文表示，支持更准确的序列生成。关于Encoder和Decoder的内部机制，建议进一步学习相关文献以深入理解。",
+  "metadata": {
+    "original_question": "老师，请教一下，Encoder 的时候输出了token数量的向量，每一个向量都能涵盖前面一整篇文章的信息。之后做Decoder的时候，却只使用最后一个token为主题中心的向量。那他前面生成那么多向量的用途是什么。",
+    "row": 135,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

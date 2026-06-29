@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_117",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze智能体开发中，参数数量如何影响模型的性能表现？",
+    "tokens在Workflows流程中具体指什么，与模型参数有何不同？",
+    "知识库中的参数设置是否会影响tokens的消耗量？",
+    "Agent的参数调整与tokens使用效率之间是否存在优化关系？",
+    "在构建智能体时，如何平衡参数复杂度和tokens成本？",
+    "小白提问，参数和tokens 是独立的还是有关联的呢"
+  ],
+  "answer": "参数和tokens是模型中两个独立但相关的概念。参数是模型内部的数学公式系数，参数越多，模型的数学结构越复杂，能够捕捉更精细的数据模式。tokens则是文本处理的基本单位，代表输入或输出文本被切分后的最小片段。在Coze、Agent、智能体等产品中，参数决定了模型的计算能力和复杂度，而tokens直接关联到实际处理的文本量及计算资源消耗。两者没有直接的数值换算关系，但参数规模较大的模型通常需要更多tokens来充分训练和发挥性能，同时在实际使用中也会影响tokens的消耗效率。",
+  "metadata": {
+    "original_question": "小白提问，参数和tokens 是独立的还是有关联的呢",
+    "row": 117,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

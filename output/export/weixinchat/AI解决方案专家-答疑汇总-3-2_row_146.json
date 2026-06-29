@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_146",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "DPO策略在LLaMA训练中的具体应用场景是什么？",
+    "合成数据方法在AI模型训练中扮演什么角色？",
+    "强化学习阶段在大型语言模型训练中面临哪些主要挑战？",
+    "除了DPO，还有哪些替代强化学习的训练策略？",
+    "如何评估DPO策略相比传统强化学习的优势？",
+    "DPO的实现是否和合成数据这个方法的诞生有比较直接的关系？"
+  ],
+  "answer": "DPO（Direct Preference Optimization）并非由LLaMA模型首创，在LLaMA采用此方法之前，DPO已在科研领域存在。科研领域具有多样性，同一问题会有众多研究者进行不同尝试，因此可借鉴的优秀方法较多。LLaMA团队在决策时，会综合自身情况选择合适的方法。DPO的产生与强化学习的难度密切相关，许多研究者都在探索更简单且效果更优的训练方式。合成数据方法在模型训练中主要用于生成训练样本，但其与DPO的诞生并无直接因果关系。DPO的核心在于直接优化偏好，而非依赖传统的强化学习阶段，这有助于简化训练流程并提升效率。",
+  "metadata": {
+    "original_question": "换句话来说，其实在各方面的因素下，可能当时llama3的RL进行的并不顺利，因此采用了大量生成prompt的方式，绕过RL阶段，也因此诞生了DPO策略？\n我想问的其实是DPO的实现是否和合成数据这个方法的诞生有比较直接的关系？",
+    "row": 146,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

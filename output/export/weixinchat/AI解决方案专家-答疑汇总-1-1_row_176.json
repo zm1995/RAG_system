@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_176",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze的Agent框架中，function call和tool在实现智能体功能时各自扮演什么角色？",
+    "如何理解Agent框架中function call与tool之间的调用关系？",
+    "在Workflows中，function call和tool的使用场景有何不同？",
+    "Coze智能体开发中，function call和tool在参数传递和结果处理上有什么区别？",
+    "在Agent框架中，tool是否必须依赖function call才能执行？",
+    "老师，想问个概念性问题，agent框架里function call和tool是什么关系，有啥区别"
+  ],
+  "answer": "在Agent框架中，function call是模型的一种能力，它允许模型根据用户输入或上下文动态决定调用哪个函数，并生成相应的参数。而tool则是实际执行具体任务的工具，例如调用API、查询数据库或执行计算等。function call负责决策和调度，tool负责执行和返回结果。两者协同工作：function call确定需要使用的工具并传递参数，tool执行操作并返回结果给模型，从而完成智能体的功能。",
+  "metadata": {
+    "original_question": "老师，想问个概念性问题，agent框架里function call和tool是什么关系，有啥区别",
+    "row": 176,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

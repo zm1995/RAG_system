@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_133",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在coze中，使用few-shot示例时，如何确保示例与当前任务的相关性以提升模型输出质量？",
+    "除了few-shot，还有哪些方法可以在prompt中引导LLM更好地理解任务语义？",
+    "在agent开发中，few-shot示例的数量和多样性对模型性能有何影响？",
+    "workflows中集成few-shot时，如何平衡示例的详细程度与token消耗？",
+    "知识库检索与prompt内few-shot在提升输出准确性方面，各自的适用场景是什么？",
+    "老师，我想问下，prompt里增加few shot，本质上还是基于相似度匹配，关联示例，让输出更好吗？"
+  ],
+  "answer": "在prompt中增加few-shot示例与知识库的相似度匹配机制有本质区别。知识库依赖向量相似度检索，而few-shot示例直接嵌入prompt中，利用自注意力机制使LLM全面理解prompt内所有内容的语义。这意味着LLM真正理解了示例中的文字含义，并基于这种理解来回答问题，从而显著提升输出质量。相比之下，知识库的相似度匹配仅基于表面特征，缺乏深层语义理解，因此few-shot在效果上更为高级。",
+  "metadata": {
+    "original_question": "老师，我想问下，prompt里增加few shot，本质上还是基于相似度匹配，关联示例，让输出更好吗？",
+    "row": 133,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_183",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "如何解决使用梯子时访问Hugging Face资源失败的问题？",
+    "在Coze或Agent开发中，网络连接不稳定会影响Workflows执行吗？",
+    "使用智能体时，遇到模型下载超时该如何排查？",
+    "知识库同步失败是否与网络代理设置有关？",
+    "Workflows运行缓慢，除了梯子外还有哪些常见原因？",
+    "请问你用的梯子网络速率是多少。。我用的梯子，run一次（切换节点了也不行）。3小时都不成功。"
+  ],
+  "answer": "该问题主要与Hugging Face平台的访问限制相关，而非梯子本身的网络速率。Hugging Face的模型和数据集下载可能因地区或网络策略受限，导致即使切换梯子节点也无法成功。建议检查Hugging Face的可用性，或尝试使用镜像站点、离线下载等方式解决。在Coze、Agent、Workflows或知识库等产品中，网络问题通常需从目标服务端排查，而非仅依赖代理工具。",
+  "metadata": {
+    "original_question": "请问你用的梯子网络速率是多少。。我用的梯子，run一次（切换节点了也不行）。3小时都不成功。",
+    "row": 183,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_224",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "如何配置Coze智能体，使其仅通过内部API访问私有知识库而不暴露于公网？",
+    "在Coze中，有哪些安全措施可以防止知识库内容被外部用户直接访问？",
+    "Coze是否支持通过私有网络或VPN连接来保护知识库的访问？",
+    "如果不想将知识库直接上传到Coze，有哪些替代方案可以实现知识检索功能？",
+    "Coze的Workflows中如何设计流程，确保知识库查询请求仅来自授权的Agent？",
+    "那我还想打搅一下，coze有方法可以让我私有知识库不暴露在外网的方法吗？"
+  ],
+  "answer": "为了避免将私有知识库暴露在外网，您可以选择不直接将知识库上传到Coze平台。相反，您可以通过配置Coze上的Agent，使其通过API或自定义插件来请求外部知识检索服务。这样，知识库的访问仅限于Agent内部，不会直接暴露于公网，从而增强了安全性。",
+  "metadata": {
+    "original_question": "那我还想打搅一下，coze有方法可以让我私有知识库不暴露在外网的方法吗？",
+    "row": 224,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

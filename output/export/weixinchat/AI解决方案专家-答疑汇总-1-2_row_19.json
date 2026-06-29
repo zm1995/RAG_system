@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_19",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze工作流中，如何配置大语言模型节点来执行Python代码？",
+    "使用大语言模型编写Python节点时，如何指定文件路径和名称？",
+    "在【骑手招聘助手】工作流中，Python节点常用的库有哪些，各自的作用是什么？",
+    "Coze工作流中，Python节点需要安装的库如何区分内置和第三方？",
+    "在Coze工作流中，如何通过链接让大语言模型访问外部文件？",
+    "问题1：在磕【骑手招聘助手】工作流的时候，其中一个用大语言模型去写python的节点，里面的提示词有这几个疑问，能解答一下吗"
+  ],
+  "answer": "在Coze工作流中，使用大语言模型编写Python节点时，文件路径和名称由用户自行定义，并需告知大语言模型。链接的作用是将文件上传至网络，以便大语言模型能够访问。常用的Python库包括：pandas用于解析Excel文件、进行数据筛选和计算；re用于字符串匹配；math用于数学计算；datetime用于获取时间戳；openpyxl用于Excel文件的读写操作。其中，re、math、datetime是Python内置库，无需额外安装；而pandas和openpyxl需要通过pip install命令安装。",
+  "metadata": {
+    "original_question": "问题1：在磕【骑手招聘助手】工作流的时候，其中一个用大语言模型去写python的节点，里面的提示词有这几个疑问，能解答一下吗",
+    "row": 19,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

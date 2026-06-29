@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_54",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "老师，在AutoGPT海外版工作流中，文件输出链接失效，如何排查是链接过期还是服务器问题？",
+    "老师，AutoGPT海外版工作流中，FileURL无法访问，是否可以通过重新发送文件来更新链接？",
+    "老师，AutoGPT海外版工作流输出文件时，链接访问失败，有没有标准步骤来获取有效链接？",
+    "老师，AutoGPT海外版工作流中，文件链接打不开，是否与Agent对话窗口中的文件发送有关？",
+    "老师，AutoGPT海外版工作流输出文件链接失效，如何通过调试功能获取新的可用链接？",
+    "老师，文件自动处理AutoGPT海外版的工作流所需输出这里，FileURL访问不了，是不是文件服务器出差错了"
+  ],
+  "answer": "答：您可以先尝试点击那几个文件链接，检查是否能正常下载。如果无法下载，通常是因为链接已过期。请注意，该工作流并未使用独立的文件服务器，而是通过Agent对话窗口发送文件来生成链接。您可以在Agent对话窗口中重新发送这些文件，然后在调试功能中查找并获取新的有效链接。建议定期更新链接以确保可用性。",
+  "metadata": {
+    "original_question": "老师，文件自动处理AutoGPT海外版的工作流所需输出这里，FileURL访问不了，是不是文件服务器出差错了",
+    "row": 54,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

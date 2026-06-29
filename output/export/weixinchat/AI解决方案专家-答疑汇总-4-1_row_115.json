@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_115",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "RAG在智能体工作流中如何具体实现知识检索与prompt重组？",
+    "重组后的prompt相比原始prompt，在内容结构和信息量上有哪些关键变化？",
+    "RAG技术是否仅用于知识库检索，还是可以扩展到其他数据源？",
+    "在Coze平台中，RAG组件如何与workflows集成以优化用户输入？",
+    "RAG重组prompt时，如何确保检索到的信息与用户意图高度匹配？",
+    "为什么RAG是用来重组user prompt的？或者重组后的prompt和原promt有什么区别？我理解RAG不应该是帮助LLM检索信息用的嘛？"
+  ],
+  "answer": "大语言模型本身无法直接访问知识库，其交互的唯一途径是通过prompt。因此，RAG（检索增强生成）的核心机制是：首先从知识库或其他数据源中检索与用户查询最相关的信息，然后将这些信息整合到原始prompt中，形成一个新的、信息增强的prompt。这个重组后的prompt包含了原始用户意图和补充的上下文知识，从而帮助大语言模型生成更准确、更相关的回答。简而言之，RAG通过检索和重组prompt，间接实现了知识库的利用，而非直接让模型访问数据库。",
+  "metadata": {
+    "original_question": "为什么RAG是用来重组user prompt的？ 或者重组后的prompt和原promt有什么区别？我理解RAG不应该是帮助LLM检索信息用的嘛？",
+    "row": 115,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

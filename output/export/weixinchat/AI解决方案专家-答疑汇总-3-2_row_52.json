@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_52",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "使用Coze处理Excel文件时，如何确保大模型能完整返回所有数据？",
+    "Coze中读取Excel的插件返回内容不完整，可能的原因有哪些？",
+    "在Coze工作流中，如何设置才能让大模型输出更长的内容？",
+    "Coze解析Excel时，大模型输出字数限制是多少？如何突破？",
+    "Coze中处理小文件Excel，大模型返回结果截断的常见解决方法是什么？",
+    "用coze解析整理excel。文件很小，大模型经常返回不全是什么情况？"
+  ],
+  "answer": "首先，检查用于读取Excel文件的插件，确认其获取的内容是否完整。其次，统计这些内容的总字数，判断是否超过了模型的字数限制。如果以上两点均无问题，大模型通常不会遗漏数据。需要注意的是，大模型单次输出的字数有限制，若要求输出的内容较多，也可能超出限制导致返回不全。建议将大任务拆分为多个小任务，或使用分页、分段处理的方式，以确保输出完整。",
+  "metadata": {
+    "original_question": "用coze  解析整理 excel。文件很小， 大模型经常返回不全是什么情况？",
+    "row": 52,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

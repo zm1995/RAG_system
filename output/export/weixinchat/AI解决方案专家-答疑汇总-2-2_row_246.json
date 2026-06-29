@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_246",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze工作流中，如何利用LLM生成代码来执行复杂的数学运算？",
+    "当工作流需要精确计算时，如何通过大模型节点编写代码并执行？",
+    "在智能体开发中，如何避免LLM直接计算导致的误差，转而使用代码执行节点？",
+    "在Workflows中，如何设计一个步骤让LLM生成计算代码，再由另一个节点运行？",
+    "在知识库应用中，如何结合LLM和代码执行节点处理数值计算任务？",
+    "让LLM写代码算数，是写一段能做算术的代码吗？"
+  ],
+  "answer": "是的。由于LLM直接进行数值计算时准确率较低，因此在工作流中，当某个步骤需要精确计算时，可以添加一个大模型节点，让LLM生成一段执行计算任务的代码。随后，再使用一个代码执行节点来运行这段代码，从而确保计算结果的准确性。",
+  "metadata": {
+    "original_question": "“让LLM写代码算数”，是写一段能做算术的代码吗？",
+    "row": 246,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

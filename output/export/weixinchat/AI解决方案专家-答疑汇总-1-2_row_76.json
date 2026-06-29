@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_76",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "除了企业自有数据和Hugging Face公共数据集，还有哪些常见的数据集来源？",
+    "如果需要购买数据集，有哪些可靠的平台或渠道？",
+    "如何评估和获取高质量的数据集，避免低质量数据？",
+    "在数据采集过程中，除了购买和爬虫，还有哪些合法获取数据的方式？",
+    "针对特定领域（如医疗、金融），有哪些专业的数据集来源？",
+    "问下：数据集的来源： 除了企业自己数据、 公共huggingface数据， 还有哪些来源？ 如果要买数据集，有哪些途径？"
+  ],
+  "answer": "数据集的来源包括但不限于：企业自有数据、公共数据集平台（如Hugging Face、Kaggle、UCI Machine Learning Repository、Google Dataset Search）、开源数据仓库（如Data.gov、AWS Open Data）、学术研究机构发布的数据集、以及通过API从第三方服务获取的数据。购买数据集的途径包括：专业数据交易平台（如DataMarket、Infochimps）、数据经纪商（如Acxiom、Experian）、以及行业特定的数据供应商。需要注意的是，购买的数据集质量参差不齐，建议在购买前仔细评估数据来源的可靠性、数据质量指标（如完整性、准确性、时效性）以及是否符合使用场景。此外，自行编写爬虫抓取数据时，应遵守相关法律法规和网站的使用条款，避免侵犯版权或违反隐私政策。",
+  "metadata": {
+    "original_question": "问下：数据集的来源： 除了企业自己数据、 公共huggingface数据， 还有哪些来源？    如果要买数据集，有哪些途径？",
+    "row": 76,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

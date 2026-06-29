@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_186",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在构建AI应用时，如何平衡prompt编写与workflow设计的时间投入？",
+    "对于AI应用产品，需求文档的核心内容与传统软件需求文档有何不同？",
+    "如果先设计workflow再写prompt，可能会遇到哪些常见问题？",
+    "在Coze或类似平台中，prompt和workflow的迭代顺序是否会影响最终效果？",
+    "AI应用产品的需求文档是否需要包含prompt和workflow的具体细节？",
+    "我有两个问题。1是promt和workflow,一般是先写哪个。2、AI应用产品仍然需要写需求文档吗？要写的话，会传统的需求文档在内容书写上会有什么区别？"
+  ],
+  "answer": "关于prompt和workflow的编写顺序，通常没有固定的先后要求。一般流程是：首先针对具体场景和任务进行初步规划，明确需要AI执行的步骤，然后开始编写。在实际操作中，编写workflow的时间投入可能较多，但workflow中的许多节点也涉及prompt的编写。因此，两者往往是交替进行的，而非严格区分先后。\n\n对于AI应用产品，需求文档仍然需要编写，但其内容与传统需求文档存在显著差异。传统需求文档侧重于功能描述、用户界面和业务逻辑，而AI应用的需求文档应更关注以下方面：\n- 任务场景与目标：明确AI需要解决的具体问题。\n- 数据与输入：定义输入数据的格式、来源及预处理要求。\n- prompt设计：描述prompt的结构、关键指令及预期输出。\n- workflow流程：详细说明工作流的步骤、节点逻辑及异常处理。\n- 评估标准：设定AI输出的质量指标，如准确性、一致性等。\n总之，AI应用的需求文档应更注重AI行为的定义和验证，而非传统软件的功能实现细节。",
+  "metadata": {
+    "original_question": "我有两个问题。1是promt和workflow,一般是先写哪个。2、AI应用产品仍然需要写需求文档吗？要写的话，会传统的需求文档在内容书写上会有什么区别？",
+    "row": 186,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

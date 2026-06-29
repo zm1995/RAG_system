@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_126",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在手机上运行DeepSeek时，GPU性能是否会影响生成文本的准确性？",
+    "手机GPU处理能力对DeepSeek的推理速度有何具体影响？",
+    "DeepSeek在低端手机和高端手机上输出的内容质量是否存在差异？",
+    "手机硬件（如GPU、内存）对DeepSeek模型运行稳定性的影响有哪些？",
+    "DeepSeek在手机上的输出结果是否完全独立于设备性能？",
+    "手机上的deepseek输出的内容会受手机gpu处理性能的限制吗？"
+  ],
+  "answer": "DeepSeek输出的内容质量不受手机GPU处理性能的限制。只要模型能够在设备上成功运行，其生成的结果在准确性和一致性上保持一致。硬件性能主要影响运行速度，即处理时间的长短，而不会改变输出的内容效果。因此，不同GPU性能的手机在运行DeepSeek时，仅存在速度差异，输出内容的质量是相同的。",
+  "metadata": {
+    "original_question": "手机上的deepseek输出的内容会受手机gpu处理性能的限制吗？",
+    "row": 126,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

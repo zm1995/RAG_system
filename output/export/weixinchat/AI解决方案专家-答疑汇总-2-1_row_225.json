@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_225",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在计算模型参数时，初始输入的三个token是否被视为模型参数的一部分？",
+    "模型训练过程中，输入的token与模型参数在定义和功能上有何区别？",
+    "如何区分模型参数和输入数据在机器学习中的作用？",
+    "在coze或智能体开发中，输入token是否会影响模型参数的更新？",
+    "模型参数初始化为随机数后，输入数据如何参与训练过程？",
+    "崔老师，问一下，算参数的时候，最开始输入的三个token要不要算进去呢？"
+  ],
+  "answer": "模型参数是机器学习模型内部的可学习变量，初始化为随机数，通过训练过程不断优化以提升模型性能。输入数据（如token）是模型处理的外部信息，不参与参数更新，也不属于模型参数。因此，最初输入的三个token不应计入模型参数的计算中。",
+  "metadata": {
+    "original_question": "崔老师，问一下，算参数的时候，最开始输入的三个token要不要算进去呢？",
+    "row": 225,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

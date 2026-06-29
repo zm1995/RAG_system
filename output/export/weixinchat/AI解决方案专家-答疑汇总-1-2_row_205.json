@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_205",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze中设置智能体时，如何确保系统提示词中的双语要求被持续执行？",
+    "为什么在Coze的workflows中，某些步骤的提示词会覆盖全局的双语输出设置？",
+    "在Coze知识库中，如何配置文档以支持智能体的中英文双语回答？",
+    "Coze智能体的系统提示词中，如何编写prompt才能稳定实现中英文交替输出？",
+    "在Coze中，如果智能体偶尔忽略双语要求，如何通过调试或日志定位问题？",
+    "老师，chatgpt里的自定义gpt预设，我要求他中英文双语回答，为什么它不执行。只回答中文 ，有一次回答终于双语了 但下一次又变成中文。"
+  ],
+  "answer": "答：建议在Coze平台的系统提示词中明确编写双语输出要求，例如使用“请始终以中英文双语形式回答，先中文后英文”等具体指令。同时，检查是否在workflows或知识库中存在覆盖该设置的prompt。若问题持续，可尝试优化prompt结构，避免模糊表述，并利用Coze的调试功能验证每次对话的提示词执行情况。",
+  "metadata": {
+    "original_question": "老师，chatgpt里的自定义gpt预设，我要求他中英文双语回答，为什么它不执行。只回答中文 ，有一次回答终于双语了 但下一次又变成中文。",
+    "row": 205,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

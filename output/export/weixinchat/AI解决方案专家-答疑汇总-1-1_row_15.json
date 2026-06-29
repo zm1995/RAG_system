@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_15",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze的agent配置中，如何确保大模型能准确理解每个工具的参数要求？",
+    "智能体在调用workflows时，大模型是如何从上下文中提取工具调用所需的具体参数值的？",
+    "对于知识库中的工具描述，大模型是否会自动学习参数格式，还是需要手动在prompt中明确指定？",
+    "在agent初始化时，如果tools包含多个相似工具，大模型如何区分并选择正确的参数？",
+    "Coze的agent在推理过程中，大模型对工具参数的生成是否依赖于训练数据中的模式，还是完全基于当前prompt的上下文？",
+    "agent这个例子里面 LLM可以帮忙推理生成这一步要执行哪个action（工具），包括传给工具的参数和取值，那大模型是根据什么来生成工具所需要的参数和取值呢？@崔超  是在agent初始化时候把tools 里面的每个tool的func对应请求参数也放到prompt里面去了吗？"
+  ],
+  "answer": "是的，在agent初始化时，每个工具（tool）的详细描述，包括其功能、可用的参数名称、类型以及取值约束，都会被整合到系统prompt中。大模型通过自注意力机制，从prompt的上下文中提取与当前任务相关的信息，从而推理出需要执行的action（工具）及其对应的参数和取值。这种设计确保了模型能够基于提供的工具信息进行准确的参数生成，而无需依赖外部数据或额外训练。",
+  "metadata": {
+    "original_question": "agent这个例子里面 LLM可以帮忙推理生成这一步要执行哪个action（工具），包括传给工具的参数和取值，那大模型是根据什么来生成工具所需要的参数和取值呢？@崔超  是在agent初始化时候把tools 里面的每个tool的func对应请求参数也放到prompt里面去了吗？",
+    "row": 15,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

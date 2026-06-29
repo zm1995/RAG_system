@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_111",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "老师，在Coze工作流中，如果我想让InspectExcel节点输出所有行数据，而不是默认的3行，应该如何修改配置？",
+    "在Coze的Agent设计里，工作流节点升级后，原本用于写代码的节点被移除，这是否会影响复杂逻辑的执行？",
+    "老师，在Coze工作流中，InspectExcel节点的输出行数是否可以通过调整Prompt参数来控制？具体怎么操作？",
+    "在Coze智能体开发中，工作流中的InspectExcel节点只输出前3行数据，这是为了预览表格结构，还是存在其他限制？",
+    "老师，Coze工作流升级后，执行主Prompt时自动生成代码，那之前专门写代码的节点是否还有保留的必要？",
+    "老师，您的讲解视频中的这个地方，和现在工作流里面的不一样，是有没有这个大模型来执行插件都可以？\n\n现在的工作流，在step1的时候，就是那个action是InspectExcel的时候，我的excel里面有好多行数据，但是他只输出了3行，是在哪里做了限制了吗？"
+  ],
+  "answer": "在Coze工作流中，InspectExcel节点默认输出前3行数据，这是为了帮助大模型快速了解表格结构，并非功能限制。若需输出所有行，您可以在该节点的Prompt中明确指定输出行数，例如修改为“输出所有行数据”。此外，工作流升级后，执行主Prompt时已集成代码生成功能，因此移除了专门用于写代码的节点，这不会影响复杂逻辑的执行，因为主Prompt能够自动处理代码编写任务。",
+  "metadata": {
+    "original_question": "老师，您的讲解视频中的这个地方，和现在工作流里面的不一样，是有没有这个大模型来执行插件都可以？\n\n现在的工作流，在step1的时候，就是那个action是InspectExcel的时候，我的excel里面有好多行数据，但是他只输出了3行，是在哪里做了限制了吗？",
+    "row": 111,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

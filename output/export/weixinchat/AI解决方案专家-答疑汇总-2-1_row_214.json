@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_214",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze智能体模型中，复用参数（如embedding）是否会影响模型的实际参数量计算？",
+    "如何准确统计包含复用参数的模型总参数量？",
+    "在workflows中，参数复用是否会导致参数计数重复？",
+    "对于agent模型，复用参数在参数总量中应如何标注？",
+    "知识库中模型的参数复用机制是否会影响性能评估？",
+    "我有个疑问啊 您说linear时候的那个参数是复用embedding的？那么这个参数是不是不应该重复计算到总的参数里面啊？"
+  ],
+  "answer": "关键在于明确标识复用参数的存在。例如，若模型总参数量为1746亿，其中包含6亿复用参数，则可表述为“模型参数总量为1746亿（含6亿复用参数）”；或者表述为“模型参数总量为1752亿（包含6亿复用参数）”。两种表述方式均可接受，但需确保复用参数被清晰标注，以避免混淆。",
+  "metadata": {
+    "original_question": "我有个疑问啊 您说linear时候的那个参数是复用embedding的？那么这个参数是不是不应该重复计算到总的参数里面啊？",
+    "row": 214,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

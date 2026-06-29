@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_208",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "function call 在 LLM 中具体是如何实现工具调用的？",
+    "function call 与 tool use 在概念上有什么区别？",
+    "function call 是否依赖于特定的模型架构？",
+    "function call 的输出格式通常有哪些规范要求？",
+    "function call 在智能体开发中扮演什么角色？",
+    "function call 不是一个实体吧，只是解决llm调用工具的一种技术吧？"
+  ],
+  "answer": "function call 并非一个实体，而是大型语言模型（LLM）的一项核心能力。它通过解析用户对话内容的语义，自主决策是否调用外部工具，并按照预定义的格式输出文字表达，以描述工具使用的具体需求。这种机制使得 LLM 能够与外部系统交互，扩展其功能边界。",
+  "metadata": {
+    "original_question": "function call不是一个实体吧，只是解决llm调用工具的一种技术吧？",
+    "row": 208,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

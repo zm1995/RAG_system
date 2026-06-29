@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_184",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze国内版搭建工作流时，使用Kimi模型，如何确保敏感词字段在最终输出中不被清空？",
+    "Coze工作流中，LLM输出变量类型设置为array<string>时，敏感词字段在最终输出中为空，可能的原因有哪些？",
+    "在Coze国内版中，使用Kimi模型处理工作流，如何避免敏感词输出被意外过滤？",
+    "Coze工作流中，敏感词字段在原始输出中存在但最终输出为空，是否与模型或平台设置有关？",
+    "在Coze国内版中，如何调试工作流中敏感词字段输出不一致的问题？",
+    "我用的国内版字节在搭工作流，LLM用的kimi，原始输出中看到sensitive_words是有输出的，但是最终输出中sensitive_words就为空了，我看我设置的输出变量类型没有问题，是array<string>，请问这个能怎么解决呀？（下面提供了两张截图）"
+  ],
+  "answer": "针对您描述的问题，在Coze国内版工作流中使用Kimi模型时，敏感词字段在原始输出中存在但在最终输出中为空，可能的原因包括：1. 输出变量类型设置不匹配，建议尝试将类型改为array<obj>，看是否能正常运行；2. 国内模型在处理敏感词时可能存在过滤机制，导致部分字段被清空；3. 工作流中的节点配置或数据传递逻辑有误。建议您先检查输出变量类型，若改为array<obj>后问题解决，则可能是类型兼容性问题；若仍无效，需排查模型输出处理逻辑或联系Coze技术支持。",
+  "metadata": {
+    "original_question": "我用的国内版字节在搭工作流，LLM用的kimi，原始输出中看到sensitive_words是有输出的，但是最终输出中sensitive_words就为空了，我看我设置的输出变量类型没有问题，是array<string>，请问这个能怎么解决呀？（下面提供了两张截图）",
+    "row": 184,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_223",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "既然Dify支持本地部署，为什么很多企业仍然优先选择Coze？",
+    "Coze在功能迭代和生态建设方面相比Dify有哪些具体优势？",
+    "学习Coze对提升AI智能体开发能力有何长远价值？",
+    "Coze的插件生态如何支持更复杂的业务场景？",
+    "在无法本地部署的情况下，Coze如何保障数据安全与合规性？",
+    "coze不能本地部署，dify可以，我们依然学习coze的原因是什么？或者说相较coze有哪些优势？"
+  ],
+  "answer": "尽管Coze不支持本地部署，而Dify支持，但学习Coze仍有以下核心优势：首先，Coze与Dify在操作和功能上基本一致，学习重点应放在认知与能力提升上，而非软件操作本身，因此选择Coze或Dify对学习效果影响不大。其次，Coze的生态系统更为完善，插件资源丰富，能够支持更多样化的应用场景。此外，Coze投入的研发力量较大，产品迭代速度非常快，能及时引入最新技术和功能，确保用户始终处于行业前沿。这些因素使得Coze在易用性、扩展性和创新性方面具有显著优势。",
+  "metadata": {
+    "original_question": "coze不能本地部署，dify可以，我们依然学习coze的原因是什么？或者说相较coze有哪些优势？",
+    "row": 223,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

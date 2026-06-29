@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_249",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "Transformer架构在预训练阶段之后，是否还能用于其他训练阶段？",
+    "除了预训练语言模型，Transformer架构还能应用于哪些类型的模型？",
+    "Transformer架构与预训练语言模型之间是什么关系？",
+    "在模型训练中，Transformer架构是否只适用于语言任务？",
+    "如何理解Transformer是一种模型架构而非具体的预训练模型？",
+    "transformer是预训练语言模型吗？那其他训练阶段也用这个模型吗？"
+  ],
+  "answer": "Transformer是一种模型架构，用于构建神经网络模型。基于该架构进行训练后得到的模型，可以被称为预训练语言模型。然而，通常不会直接将Transformer本身称为预训练语言模型，因为预训练语言模型是指经过特定训练过程（如大规模无监督学习）后的具体模型实例，而Transformer是构建这些模型的基础框架。此外，Transformer架构不仅用于预训练阶段，还可以应用于其他训练阶段，如微调或特定任务的训练，并且其应用范围不限于语言任务，还涵盖图像、音频等领域。",
+  "metadata": {
+    "original_question": "transformer是预训练语言模型吗？那其他训练阶段也用这个模型吗？",
+    "row": 249,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

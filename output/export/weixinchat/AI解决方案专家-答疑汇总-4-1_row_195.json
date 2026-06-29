@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_195",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在知识库中，outputlist 和 output 分别适用于哪些具体场景？",
+    "如何确保知识库检索结果中的图片与文本答案对应一致？",
+    "能否通过配置让 AI 在知识库中仅输出指定列的数据？",
+    "知识库返回多个结果时，如何控制 AI 选择最合适的那个？",
+    "在 workflows 中，如何利用 outputlist 处理多条知识库记录？",
+    "老师我有点疑惑，那个知识库的输出有outputlist 和 output 其实两个有什么区别？因为我尝试了一下有时发现回答是正确的但是图片是发到是别的答案。我在想我可不可以让AI指定输出excel里哪一列呢"
+  ],
+  "answer": "在知识库中，output 通常用于返回单个检索结果，而 outputlist 则用于返回多个检索结果。当知识库检索到多条匹配记录时，outputlist 会包含所有结果，而 output 仅返回其中一条（通常是置信度最高的）。若出现图片与文本答案不匹配的情况，可能是因为检索结果中图片字段与文本字段未正确关联，建议检查知识库中数据字段的映射关系。关于指定输出 Excel 中的某一列，可以通过在知识库配置中设置输出字段来实现，例如在查询时明确指定所需列名，或使用 workflows 中的字段提取节点进行精确控制。",
+  "metadata": {
+    "original_question": "老师我有点疑惑，那个知识库的输出有outputlist 和 output 其实两个有什么区别？因为我尝试了一下有时发现回答是正确的但是图片是发到是别的答案。我在想我可不可以让AI指定输出excel里哪一列呢",
+    "row": 195,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

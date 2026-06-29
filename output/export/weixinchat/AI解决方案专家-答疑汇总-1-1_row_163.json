@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_163",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze中创建语音合成Agent时，工作流预览不显示语音URL但调试正常，可能的原因有哪些？",
+    "如何确保Coze工作流中的语音合成输出在Agent预览中正确显示？",
+    "Coze Agent中语音合成工作流的输出与预览不一致，应如何排查和解决？",
+    "在Coze中，工作流调试成功但Agent预览失败，通常与哪些配置有关？",
+    "Coze语音合成Agent的Prompt设置如何影响工作流输出的显示？",
+    "老师，故事合成语音的agent，我做了个语音合成的工作流，预览中不显示语音网址，但调试中是可以看到网址的"
+  ],
+  "answer": "答：\n首先，请确保工作流的输出节点已正确配置，并返回了预期的语音URL格式。然后，检查Agent的Prompt设置，确保其能够正确引用工作流的输出。通常，通过调整Agent的Prompt，明确指示其使用工作流返回的语音URL，即可解决预览不显示的问题。如果问题仍然存在，请验证工作流输出是否包含必要的字段，并确认Agent的输入输出映射是否正确。",
+  "metadata": {
+    "original_question": "老师，故事合成语音的agent，我做了个语音合成的工作流，预览中不显示语音网址，但调试中是可以看到网址的",
+    "row": 163,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

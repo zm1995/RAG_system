@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_58",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在LLM应用中，除了few-shot和微调，还有哪些常见的方法可以让模型学会新任务？",
+    "如果使用few-shot方法，如何设计样例才能提高模型的学习效果？",
+    "在Coze或智能体开发中，如何平衡few-shot的token消耗和响应速度？",
+    "微调LLM时，需要准备哪些数据以及注意哪些事项？",
+    "在workflows中，如何结合RAG和few-shot来优化任务执行效率？",
+    "问下要LLM学会一个新任务，是不是优先并且目前用的最多的是用few-shot，但few-shot可能会样例太少学不会吧，如果这样是不是就在LLM上再接个自己训练的模型，这种方式和微调优先选哪个？"
+  ],
+  "answer": "在LLM应用中，让模型学会新任务的常用方法包括one-shot、few-shot和微调。目前，one-shot和few-shot是最常用的方法，因为它们实现简单且效果显著。然而，这些方法要求每次用户提问时都附带相关样例，否则模型回答质量可能下降。为此，通常需要结合RAG（检索增强生成）技术，例如在自动招聘助手中，通过RAG确保大多数用户问题都能匹配到至少一个样例。但这种方法也存在弊端：所有问答都需要RAG和样例，当文本量较大时，会导致响应速度变慢或token消耗增加。因此，在并发量较高的情况下，从响应速度和token费用角度考虑，微调可能是更优的选择。总体而言，建议优先尝试few-shot结合RAG，若遇到性能或成本瓶颈，再考虑微调，这样的顺序更务实且易于落地。",
+  "metadata": {
+    "original_question": "问下要LLM学会一个新任务，是不是优先并且目前用的最多的是用few-shot，但few-shot可能会样例太少学不会吧，如果这样是不是就在LLM上再接个自己训练的模型，这种方式和微调优先选哪个？",
+    "row": 58,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

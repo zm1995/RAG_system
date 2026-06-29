@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_248",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在构建AI产品时，Agent与模块之间的关系是什么？",
+    "如何理解Agent在AI解决方案中的角色？",
+    "AI产品是否必须由多个Agent组成？",
+    "Agent和模块在AI系统设计中是否可以互换使用？",
+    "设计AI产品时，如何划分不同的Agent或模块？",
+    "那我的理解未来 我们做AI产品or解决方案的话，是不是就是做一个agent"
+  ],
+  "answer": "这种理解并不准确。AI产品通常由多个功能模块组成，每个模块具备特定的能力，这些模块可以被称为多个Agent。因此，AI产品并非单一Agent，而是多个Agent或模块协同工作的系统。每个Agent负责处理特定任务，通过组合实现整体解决方案。",
+  "metadata": {
+    "original_question": "那我的理解未来 我们做AI产品or解决方案的话，是不是就是做一个agent",
+    "row": 248,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

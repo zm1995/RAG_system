@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_41",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "对于像Formcheck AI这样的iOS MVP产品，如何利用AI工具（如Cursor）来弥补前端和数据库知识的不足？",
+    "在开发类似Formcheck AI的MVP时，如何高效整合PC端已实现的核心功能到iOS平台？",
+    "如果缺乏iOS开发经验，有哪些具体步骤可以借助AI快速构建一个功能完整的MVP？",
+    "除了Cursor，还有哪些AI工具或资源可以帮助非iOS开发者完成移动端MVP的开发？",
+    "在开发Formcheck AI这类产品时，如何确保AI生成的代码质量并避免常见错误？",
+    "老师想问您一下对Formcheck Ai这种ios商店_MVP产品如何看待，如果想做这种mvp我该怎么做，它的所有可视范围核心的功能代码大部分在PC我已经都实现了，前端和数据库的之前没接触过，我目前思考的是cursor介入，好想做这一类产品，老师知道哪有这样的机会或者我该怎么做嘛"
+  ],
+  "answer": "对于缺乏前端或iOS开发经验的工程师，利用AI工具（如Cursor）编写代码已成为一种常见且有效的解决方案。许多后端工程师通过AI辅助完成前端或iOS代码的编写，从而成功交付项目。建议您首先明确PC端已实现的核心功能，然后使用AI工具逐步生成iOS界面和数据库交互代码。同时，可以结合在线教程或社区资源（如GitHub示例）来验证和优化AI生成的代码。挑战这一过程是可行的，关键在于分步实施并持续测试。",
+  "metadata": {
+    "original_question": "老师想问您一下对Formcheck Ai这种ios商店_MVP产品如何看待，如果想做这种mvp我该怎么做，它的所有可视范围核心的功能代码大部分在PC我已经都实现了，前端和数据库的之前没接触过，我目前思考的是cursor介入，好想做这一类产品，老师知道哪有这样的机会或者我该怎么做嘛",
+    "row": 41,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

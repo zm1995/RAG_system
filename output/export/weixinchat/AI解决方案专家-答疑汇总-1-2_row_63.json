@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_63",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在1750亿参数模型的多卡训练中，如何估算每个节点保存checkpoint所需的存储空间？",
+    "预训练1750亿参数模型时，除了参数本身，还有哪些因素会影响checkpoint的大小？",
+    "使用混合精度训练（如FP16）时，1750亿参数模型的checkpoint存储需求会如何变化？",
+    "在多节点多卡环境中，如何优化checkpoint的存储策略以减少磁盘占用？",
+    "1750亿参数模型训练时，如果开启激活检查点（activation checkpointing），对checkpoint大小有何影响？",
+    "问题：崔老师，咨询一个模型训练问题，预训练时候1750亿参数量，多卡环境中开checkpoint的话，存储方面有多少需求，每个节点每次checkpoint的大小会有多少呢？"
+  ],
+  "answer": "针对1750亿参数模型的checkpoint存储需求，需综合考虑参数存储和训练中间结果。参数本身加载到显存中会占用空间，而训练过程中的中间结果（如梯度、优化器状态等）通常需要额外2-3倍的参数量级。因此，最低存储需求约为参数总量的4倍。具体大小取决于参数精度：若使用FP32（4字节/参数），则参数存储约700GB，总需求约2.8TB；若使用FP16（2字节/参数），则参数存储约350GB，总需求约1.4TB。每个节点保存一份checkpoint时，需按此计算。建议参考原理课第6节内容获取更详细的估算方法。",
+  "metadata": {
+    "original_question": "问题：崔老师，咨询一个模型训练问题，预训练时候1750亿参数量，多卡环境中开checkpoint的话，存储方面有多少需求，每个节点每次checkpoint的大小会有多少呢？",
+    "row": 63,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

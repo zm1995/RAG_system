@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_67",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze平台中，Embedding模型与向量数据库是如何协同工作的？",
+    "智能体开发中，Embedding模型除了文本向量化，是否还参与相似度计算？",
+    "Workflows中如何利用Embedding模型和知识库实现高效检索？",
+    "Agent使用Embedding模型时，向量数据库的检索逻辑是由模型自动完成还是需要手动编码？",
+    "在Coze知识库中，Embedding模型输出的向量如何被用于匹配最相关的知识片段？",
+    "崔老师这句话具体该怎么理解，EMbedding模型的作用不仅仅只是把文本转换成向量吗？他还有操作向量数据库计算、查找出相似度最高的知识片段的能力吗？"
+  ],
+  "answer": "原表述不够严谨。Embedding模型的核心功能是将文本转换为向量表示，而检索过程（包括向量数据库中的计算、查找相似度最高的知识片段）依赖于程序员编写的检索逻辑以及向量数据库的索引和搜索算法。这些能力并非Embedding模型本身提供，而是由外部系统和代码实现。在Coze、Agent、Workflows或知识库等产品中，Embedding模型仅负责向量化，后续的相似度计算和检索由向量数据库和检索算法完成。",
+  "metadata": {
+    "original_question": "崔老师这句话具体该怎么理解，EMbedding模型的作用不仅仅只是把文本转换成向量吗？他还有操作向量数据库计算、查找出相似度最高的知识片段的能力吗？",
+    "row": 67,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

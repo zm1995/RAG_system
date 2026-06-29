@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_225",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在dify的工作流中，如何设置循环的终止条件？",
+    "dify中异步节点的执行状态如何监控？",
+    "如何在dify中实现条件分支以控制循环流程？",
+    "dify的迭代节点支持哪些类型的退出机制？",
+    "在dify工作流中，如何确保异步节点执行完毕后再进行下一步操作？",
+    "dify中如何break迭代？对于异步节点，如何判断是否结束？"
+  ],
+  "answer": "在Dify中，要中断一个循环，需要在循环节点内设置判断条件，当条件满足时执行Break节点即可终止迭代。对于异步节点，需要关注其执行完成后的通知机制，通常异步节点会通过回调或事件触发的方式通知工作流引擎，从而判断节点是否结束。建议查阅Dify官方文档中关于异步节点状态监控的具体实现方法。",
+  "metadata": {
+    "original_question": "dify中如何break迭代？对于异步节点，如何判断是否结束？",
+    "row": 225,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

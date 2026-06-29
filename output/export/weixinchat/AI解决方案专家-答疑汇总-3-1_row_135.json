@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_135",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "如何通过调整prompt让Coze根据PRD生成更详细的操作手册？",
+    "在Coze中，使用readdoc插件读取PRD后，如何控制输出内容的长度和结构？",
+    "能否通过工作流（workflows）将PRD拆解为多个部分，逐步生成操作手册？",
+    "Coze智能体在生成操作手册时，如何指定章节标题和内容格式？",
+    "如果PRD内容复杂，如何利用知识库辅助Coze生成符合要求的操作手册？",
+    "如果是给定一个系统PRD，让它根据这个PRD生成一个系统操作手册，我用了readdoc插件，它输出的内容基本上是用几百字剪短总结了下有啥功能。怎么能让它输出一个符合我要求的操作手册呢"
+  ],
+  "answer": "为了生成符合要求的操作手册，您需要在prompt中明确指定手册的撰写角度（如功能概述、操作步骤、注意事项等）以及内容的细致程度（如每个步骤的详细描述、截图要求等）。此外，建议创建一个工作流（workflows），将PRD内容分段处理，逐段生成手册，以确保输出的完整性和准确性。",
+  "metadata": {
+    "original_question": "如果是给定一个系统PRD，让它根据这个PRD生成一个系统操作手册，我用了readdoc插件，它输出的内容基本上是用几百字剪短总结了下有啥功能。怎么能让它输出一个符合我要求的操作手册呢",
+    "row": 135,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_157",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "DPO（Direct Preference Optimization）与SFT在模型训练中的核心区别是什么？",
+    "在Coze智能体开发中，如何利用DPO优化模型的回答偏好？",
+    "DPO训练阶段需要哪些类型的数据，与SFT的数据格式有何不同？",
+    "DPO如何帮助减少模型生成有害或不符合预期的内容？",
+    "在Workflows中集成DPO时，需要注意哪些关键参数设置？",
+    "DPO（Direct Preference Optimization）老师这个的作用"
+  ],
+  "answer": "DPO（Direct Preference Optimization）是一种直接优化模型偏好的训练方法，其作用是在SFT（监督微调）基础上进一步提升模型对用户意图的匹配度。SFT阶段通过问答数据训练模型掌握基本任务能力，但模型可能生成不符合用户偏好的回答。DPO通过引入偏好数据（如对比好回答与差回答），直接优化模型输出，使其更倾向于生成符合人类偏好的内容。在Coze、Agent或Workflows等产品中，DPO可用于调整智能体的回答风格、减少有害输出，并提升任务执行的准确性。具体操作时，需准备成对的偏好数据，并设置合适的超参数（如学习率、批次大小）以平衡训练效果与稳定性。",
+  "metadata": {
+    "original_question": "DPO（Direct Preference Optimization）老师这个的作用",
+    "row": 157,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

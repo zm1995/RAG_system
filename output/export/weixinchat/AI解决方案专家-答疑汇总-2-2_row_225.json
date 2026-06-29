@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_225",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在coze智能体中，如何通过user_prompt实现基于用户角色的动态权限控制？",
+    "对于workflows流程，如何根据用户身份动态调整知识库的访问范围？",
+    "在agent设计时，如何利用user_prompt区分管理员和普通用户的回答策略？",
+    "如何结合外部系统权限，在coze智能体中实现用户身份验证后的个性化响应？",
+    "在知识库查询中，如何通过user_prompt限制不同用户组看到不同的内容？",
+    "user_prompt里面权限管理怎么办？比如agent先判断提问者的身份，然后根据身份回答符合该用户身份的答案？"
+  ],
+  "answer": "权限管理需要结合原有产品系统的账号权限体系，通过user_prompt传递用户身份信息（如角色、部门、权限等级），在智能体或工作流中根据该信息动态控制回答内容或访问范围。具体实现时，可在prompt中定义条件逻辑，例如：如果用户角色为管理员，则提供完整数据；如果为普通用户，则仅展示摘要信息。prompt内容本身保持一致，但通过变量和条件分支实现差异化响应。",
+  "metadata": {
+    "original_question": "user_prompt里面权限管理怎么办？比如agent先判断提问者的身份，然后根据身份回答符合该用户身份的答案？",
+    "row": 225,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

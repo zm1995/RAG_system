@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_23",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze智能体开发中，SFT微调阶段除了全量参数微调，还有哪些常见的微调方法？",
+    "对于Agent工作流中的模型微调，SFT与LoRA在技术实现上有哪些关键区别？",
+    "在知识库相关的模型训练中，SFT微调通常如何优化参数以避免过拟合？",
+    "Coze平台中，SFT微调是否支持混合使用多种技术，比如结合知识蒸馏？",
+    "在智能体微调过程中，SFT阶段的数据预处理和训练策略有哪些最佳实践？",
+    "SFT用到的微调不是lora，那能简单说下这阶段的微调用了哪些技术吗？"
+  ],
+  "answer": "在GPT、Llama等模型的SFT（监督微调）阶段，通常采用全量参数微调技术，即对模型的所有参数进行更新。此外，常见的微调方法还包括LoRA（低秩适应）、Adapter（适配器微调）和Prefix Tuning（前缀微调）等，这些方法通过调整部分参数或添加额外模块来降低计算成本。在Coze、Agent或知识库相关产品的操作中，全量参数微调适用于需要全面调整模型行为的场景，而LoRA等技术则更适合资源受限或快速迭代的需求。",
+  "metadata": {
+    "original_question": "SFT用到的微调不是lora，那能简单说下这阶段的微调用了哪些技术吗？",
+    "row": 23,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

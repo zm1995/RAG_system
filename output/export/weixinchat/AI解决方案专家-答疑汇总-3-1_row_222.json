@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_222",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "扣子Agent发布为API后，程序员如何获取并理解API文档？",
+    "在扣子平台上，发布Agent为API时有哪些关键配置步骤？",
+    "扣子API发布后，如何确保Agent与公司产品的安全集成？",
+    "扣子Agent发布为API时，是否支持自定义请求参数和响应格式？",
+    "扣子API发布后，如何测试和调试Agent的接口功能？",
+    "扣子发布时API场景是怎样的，如何配置"
+  ],
+  "answer": "扣子Agent发布为API后，后续工作主要由程序员负责。程序员需要查阅Coze平台提供的API文档，了解接口规范、认证方式、请求与响应格式等详细信息，然后根据文档将发布的Agent通过代码集成到公司自己的产品中。配置发布API时，需在Coze平台设置API密钥、访问权限和端点地址，确保集成过程安全可靠。",
+  "metadata": {
+    "original_question": "扣子发布时API场景是怎样的，如何配置",
+    "row": 222,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

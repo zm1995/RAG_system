@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_177",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "black-forest-labs/FLUX.1-Fill-dev 模型在 Hugging Face 上体验后，如何通过 API 或脚本实现批量图像处理？",
+    "私有化部署 black-forest-labs/FLUX.1-Fill-dev 模型需要哪些硬件和软件环境？",
+    "black-forest-labs/FLUX.1-Fill-dev 模型生成的图像在商业用途中是否需要额外授权？",
+    "除了私有化部署，是否有其他方式（如云端服务）可以批量使用 black-forest-labs/FLUX.1-Fill-dev 模型？",
+    "black-forest-labs/FLUX.1-Fill-dev 模型在 Hugging Face 上的许可协议具体是什么？如何确认商用权限？",
+    "black-forest-labs/FLUX.1-Fill-dev 例如在huggingface上体验的这个，如果想批量改图，是不是要私有化部署，把模型下载到本地，然后运行？或者怎么用？生成的图片可以直接商用么？"
+  ],
+  "answer": "是的，Hugging Face 上的开源模型通常可以下载到本地进行私有化部署，用于公司内部或批量处理。但商用许可因模型而异，需查阅具体模型的许可协议（如 Apache 2.0、MIT 或自定义许可）。对于 black-forest-labs/FLUX.1-Fill-dev 模型，建议直接查看 Hugging Face 模型页面上的许可信息，或使用 GPT 等工具辅助解读。生成的图像是否可商用取决于模型许可，部分模型明确允许商用，但需遵守条款（如署名要求）。若不确定，建议咨询法律专业人士。",
+  "metadata": {
+    "original_question": "black-forest-labs/FLUX.1-Fill-dev 例如在huggingface上体验的这个，如果想批量改图，是不是要私有化部署，把模型下载到本地，然后运行？或者怎么用？生成的图片可以直接商用么？",
+    "row": 177,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

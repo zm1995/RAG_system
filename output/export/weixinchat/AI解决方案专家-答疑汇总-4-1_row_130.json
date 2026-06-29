@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_130",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze智能体中，如果删除插件描述，LLM是否仍能正确调用插件？",
+    "Agent中添加插件后，系统提示词中是否必须包含工具描述？",
+    "墨迹天气插件的工具名称与functionCall中的名称不一致，是否会影响调用？",
+    "在workflows中，如何确保LLM正确识别并调用已添加的插件？",
+    "知识库中的工具描述与插件参数规则有何关联？",
+    "这个demo里，我发现把这一段工具描述删掉，LLM照样会调用插件，而且看这边functionCall的工具名称也和墨迹天气的工具名称不一样呀"
+  ],
+  "answer": "在Coze智能体中，墨迹天气插件具有独立的参数规则。当在Agent中添加插件后，系统会自动将工具信息嵌入到提示词中，告知模型可用的工具及其调用方式。因此，即使删除系统提示词中的工具描述，LLM仍能通过内置的提示词信息正确调用插件。此外，functionCall中的工具名称可能与插件名称不同，这是因为插件内部定义了特定的调用标识，只要名称与插件配置一致，即可正常调用。",
+  "metadata": {
+    "original_question": "这个demo里，我发现把这一段工具描述删掉，LLM照样会调用插件，而且看这边functionCall的工具名称也和墨迹天气的工具名称不一样呀",
+    "row": 130,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

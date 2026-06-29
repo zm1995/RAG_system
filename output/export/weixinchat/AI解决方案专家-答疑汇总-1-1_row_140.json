@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_140",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze平台中，思维链（Chain of Thought）与prompt的四种类型（如指令型、示例型、格式型、逻辑型）有何具体关系？",
+    "如何区分思维链（Chain of Thought）与prompt中的逻辑型提示？它们在实际应用中是否可互换？",
+    "在智能体（Agent）开发中，思维链（Chain of Thought）是否被视为一种独立的prompt设计模式？",
+    "Coze的workflows中，思维链（Chain of Thought）如何与prompt的格式要求结合使用？",
+    "知识库与思维链（Chain of Thought）在prompt设计中的协同作用是什么？",
+    "思维链是属于prompt中的第四种，还是单独的一种"
+  ],
+  "answer": "思维链（Chain of Thought）在prompt分类中通常被视为第四种类型，即逻辑型提示的一种高级形式。它通过引导模型逐步推理来增强输出逻辑性，因此也可归入逻辑型（第三种）范畴。具体分类取决于prompt设计框架：若按功能划分，思维链属于逻辑型；若按结构划分，它可能被单独列为一种类型。在Coze、Agent等产品中，思维链常与格式要求结合，用于提升复杂任务的推理准确性。",
+  "metadata": {
+    "original_question": "思维链是属于prompt中的第四种，还是单独的一种",
+    "row": 140,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

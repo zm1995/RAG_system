@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_232",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在智能体开发中，in-context learning 与 fine-tuning 的主要区别是什么？",
+    "如何为 Coze 工作流中的 in-context learning 设计有效的 few-shot 样例？",
+    "in-context learning 在知识库查询场景中如何提升回答准确性？",
+    "在 workflows 中，in-context learning 的上下文窗口大小对性能有何影响？",
+    "使用 in-context learning 时，如何避免样例偏差导致模型输出不稳定？",
+    "老师您好，这种是 in-context learning 在发挥作用吗？"
+  ],
+  "answer": "您提到的现象确实属于 in-context learning 的一种应用形式，但通常不推荐直接使用当前场景下的样例。更常见的做法是提供一组典型且无偏的示例（即 few-shot 样例），以引导模型生成符合预期的输出。在 Coze 或智能体开发中，建议选择与目标任务高度相关、覆盖常见变体的样例，并确保样例数量适中（如 3-5 个），以平衡上下文长度与学习效果。",
+  "metadata": {
+    "original_question": "老师您好，这种是 in-context learning 在发挥作用吗？",
+    "row": 232,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

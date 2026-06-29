@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_162",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在使用coze的workflows进行文本处理时，如何确保markdown格式在输入和输出之间保持一致？",
+    "智能体在处理markdown格式文本时，为什么会出现转义字符（如反斜杠）被自动添加的情况？",
+    "在agent中，如何通过调整prompt来避免markdown格式在模型输出时被意外修改？",
+    "知识库中的markdown内容在导入后，为什么与原始格式存在差异？",
+    "在coze中，如何验证模型实际接收到的markdown输入与用户提供的格式完全一致？",
+    "markdown格式进行文本分割，为什么运行结果展示的输入markdown格式和模型实际输入的markdown格式不一致？"
+  ],
+  "answer": "该问题通常源于prompt设计不够精确。模型会严格遵循prompt中的格式要求进行输出，例如，如果prompt中要求输出反斜杠（\\），模型可能会将其转义为双反斜杠（\\\\）以符合语法规范。若期望输出与输入格式完全一致，需在prompt中明确指定格式规则，例如添加“请保持原始markdown格式不变，不要进行任何转义或修改”等指令。建议在prompt中详细描述输出要求，并通过测试验证一致性。",
+  "metadata": {
+    "original_question": "markdown格式进行文本分割，为什么运行结果展示的输入markdown格式和模型实际输入的markdown格式不一致？",
+    "row": 162,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

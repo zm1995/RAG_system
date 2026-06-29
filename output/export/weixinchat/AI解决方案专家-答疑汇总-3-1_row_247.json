@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_247",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "多Agent模式与单Agent模式在Coze平台上的主要区别是什么？",
+    "在Coze中，如何通过工作流实现类似多Agent的协作效果？",
+    "Coze未来是否会支持真正的多Agent模式，还是更推荐使用工作流组合？",
+    "多Agent模式在实际应用中存在哪些局限性，导致Coze不优先推广？",
+    "对于复杂任务，Coze建议使用单Agent还是多个工作流协同？",
+    "我看咱们得demo都是单agent模式，我们会学习多agent模式么"
+  ],
+  "answer": "目前Coze平台主要聚焦于单Agent模式，多Agent模式更多停留在概念阶段，实际应用价值有限。在Coze中，多个工作流之间的协作可以视为一种多Agent的实践方式，通过工作流编排实现任务分解与协同。因此，建议用户优先掌握单Agent模式及工作流协作，以应对实际需求。未来是否引入真正的多Agent模式，将根据技术发展和用户反馈决定。",
+  "metadata": {
+    "original_question": "我看咱们得demo都是单agent模式，我们会学习多agent模式么",
+    "row": 247,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

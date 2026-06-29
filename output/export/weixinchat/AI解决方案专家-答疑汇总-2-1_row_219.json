@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_219",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "DeepSeek R1中提到的蒸馏技术具体是如何实现的？",
+    "在智能体训练中，直接使用强化学习（RL）而不进行监督微调（SFT）有哪些优缺点？",
+    "训练奖励模型（RM）时，需要哪些关键步骤和数据？",
+    "蒸馏技术在其他AI模型（如Coze中的智能体）中如何应用？",
+    "强化学习（RL）在Workflows中如何与知识库结合使用？",
+    "DeepSeek发了R1，好像提到了蒸馏，和直接RL不STF。蒸馏之后会讲吗？直接用RL是创新吗？这种直接用RL，rm还是要训的吗？"
+  ],
+  "answer": "关于蒸馏技术，后续内容会进行详细讲解。直接使用强化学习（RL）进行训练时，仍然需要训练奖励模型（RM）。不进行监督微调（SFT）而直接采用RL的做法并非创新，因为已有多种类似方法被广泛实践。",
+  "metadata": {
+    "original_question": "DeepSeek发了R1，好像提到了蒸馏，和直接RL不STF。蒸馏之后会讲吗？直接用RL是创新吗？这种直接用RL，rm还是要训的吗？",
+    "row": 219,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

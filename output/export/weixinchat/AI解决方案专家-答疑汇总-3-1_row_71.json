@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_71",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "Reanker模型在计算相似度时，除了余弦相似度，还支持哪些其他度量方式？",
+    "在Coze平台中，Reanker模型的Embedding向量是如何生成的？",
+    "Reanker模型的相似度计算对智能体检索性能有何影响？",
+    "如何调整Reanker模型的相似度阈值以优化搜索结果？",
+    "Reanker模型与知识库中的向量检索机制有何关联？",
+    "Reanker模型计算相似度的具体方式是什么呀，Embedding是余弦相似度。"
+  ],
+  "answer": "Reanker模型计算相似度的主要方式是基于Embedding向量的余弦相似度。具体而言，模型将输入文本转换为高维向量表示（Embedding），然后通过计算两个向量之间的夹角余弦值来评估其相似性，取值范围为[-1, 1]，值越接近1表示相似度越高。在Coze、Agent或智能体等产品中，该机制常用于知识库检索或Workflows中的结果重排序，以提升匹配精度。如需其他相似度度量（如欧氏距离或点积），需根据具体场景配置模型参数。",
+  "metadata": {
+    "original_question": "Reanker模型计算相似度的具体方式是什么呀，Embedding是余弦相似度。",
+    "row": 71,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

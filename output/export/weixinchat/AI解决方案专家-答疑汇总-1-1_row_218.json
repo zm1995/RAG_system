@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_218",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "问1：在Coze的workflows中，如果前一个节点输出的是string类型，而后续节点需要array类型，应该如何转换？",
+    "问2：在智能体开发中，loop节点为什么要求输入变量必须是array类型？",
+    "问3：在知识库与workflows结合使用时，如何确保节点间的变量类型匹配？",
+    "问4：在Coze中，如果前一个节点输出的是object类型，后续节点能否直接引用？",
+    "问5：在agent工作流中，如何检查节点输出的变量类型以避免引用错误？",
+    "问2:可是选了string在下一个环节就选不到question这个变量，选arry<string>,下一环节才能选到question这个变量"
+  ],
+  "answer": "在Coze的workflows中，变量类型必须保持一致。如果前一个节点输出的是string类型（即一段文字），后续节点只能将其作为string类型引用。然而，loop节点需要array类型（数组）才能进行循环操作，因为array类型可以存储多条数据。因此，loop节点引用前一个节点的输出时，只能选择输出为array类型的节点。若前一个节点输出为string，需通过转换节点（如split或json解析）将其转换为array类型，才能被loop节点正确引用。",
+  "metadata": {
+    "original_question": "问2:可是选了string在下一个环节就选不到question这个变量，选arry<string>,下一环节才能选到question这个变量",
+    "row": 218,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

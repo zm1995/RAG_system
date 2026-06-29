@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_207",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze平台中，专家方法论以知识库形式存储时，如何通过Agent自动生成Workflow？",
+    "除了知识库，专家方法论还能以哪些形式在智能体系统中存在？",
+    "如何设计一个Agent，使其能够从知识库中提取专家方法论并自动生成Prompt？",
+    "在Workflows中，专家方法论的应用是否可能完全自动化，而不依赖人工干预？",
+    "专家方法论以知识库形式存在时，如何确保生成的Workflow和Prompt的准确性和有效性？",
+    "原问题：我在回看咱们知小助时看到专家方法论是以工作流和prompt存在，而不是知识库。是否有可能专家方法论以知识库存在，然后让一个agent自动生成workflow和prompt？多谢"
+  ],
+  "answer": "专家方法论和专家知识通常存储在知识库中。在知识库中，其主要应用方式是从中提取知识片段，并将其嵌入到Prompt中，从而提升回答的精准性和严谨性。此外，提取的知识片段还可用于为当前Agent设定新任务或生成新的Prompt。然而，目前尚未实现通过知识库自动生成Workflow的功能。",
+  "metadata": {
+    "original_question": "问题：我在回看咱们知小助时看到专家方法论是以工作流和prompt存在，而不是知识库。是否有可能专家方法论以知识库存在，然后让一个agent自动生成workflow和prompt？多谢",
+    "row": 207,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

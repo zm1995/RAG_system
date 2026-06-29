@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_14",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "除了GPT和Llama，像DeepSeek、Qwen这类模型在训练阶段上是否完全遵循相同的预训练、SFT和强化学习流程？",
+    "DeepSeek V3的训练阶段与GPT系列相比，有哪些具体的差异或创新点？",
+    "Qwen模型在训练过程中是否引入了独特的阶段或技术，使其区别于其他主流大语言模型？",
+    "在Coze或Agent开发中，理解不同模型（如GPT、Llama、DeepSeek）的训练阶段差异对工作流设计有何实际影响？",
+    "如果我想在知识库中集成DeepSeek或Qwen模型，是否需要根据其训练阶段调整数据预处理或微调策略？",
+    "我们第一节课讲了GPT与llama的训练阶段不同，那其他的模型比如deepseek、qwen有其他的训练阶段吗，如果没有的话和GPT与llama那个更相似？"
+  ],
+  "answer": "大多数主流大语言模型，如DeepSeek V3和Qwen，都遵循类似的训练阶段，包括预训练、监督微调（SFT）和强化学习（RL），这与GPT系列的三阶段流程基本一致。然而，每个模型在具体实现上存在差异，例如DeepSeek V3可能在强化学习阶段采用了不同的奖励模型或优化策略，而Qwen可能引入了额外的对齐技术或数据筛选步骤。因此，要准确比较，需要查阅各模型的官方技术报告或文档，以了解其独特的训练细节。",
+  "metadata": {
+    "original_question": "我们第一节课讲了GPT与llama的训练阶段不同，那其他的模型比如deepseek、qwen有其他的训练阶段吗，如果没有的话和GPT与llama那个更相似？",
+    "row": 14,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

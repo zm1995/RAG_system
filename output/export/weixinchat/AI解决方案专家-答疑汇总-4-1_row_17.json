@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_17",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Transformer预训练完成后，Embedding层的向量是否还会在后续微调或推理过程中发生变化？",
+    "位置编码在Transformer模型中是如何与Token Embedding结合的，它们是否也是训练后固定的？",
+    "如果Embedding向量是固定的，那么模型如何理解新出现的词汇或上下文中的语义变化？",
+    "在Coze或智能体产品中，使用预训练模型时，Embedding向量的固定性对知识库的检索效果有何影响？",
+    "除了Token Embedding和位置编码，Transformer模型中还有哪些组件在训练后是固定的？",
+    "在听《揭秘Transformer的真面目-1》，最后那张手绘图的有几个问题想确认：\n\n手绘图就是模拟基于TRANSFORMER架构，GPT3进行预训练的过程。 在预训练开始时候其实大模型是什么都不会的， 所以在EMBEDDING阶段，每个TOKENID所对应的12288维向量是随机数，但无法体现文字之间的”距离“和”逻辑关系“等。 所以后续一系列动作，其中就涉及训练EMBEDDING MODEL---这个MODEL里面就是神经网络，让y=wx+b中的W和B是可以产生总误差最小的参数。\n这里我有一个问题：经过厂商对大语言模型训练后，到我们现在使用的产品，这个embedding向量化是不是是已经静态固定形成最优的向量化了，形成TOKENID和向量之间的对应表？比如“人”的TOKEN是b*7655，TOKENID是0001，我们在CHATGPT输入“人”，它就直接找到12288维向量[2,3,4,5.5…] ? 位置编码是不是同理？@崔超"
+  ],
+  "answer": "是的，在预训练完成后，当前使用的模型中Token ID到Embedding向量的映射表（即Embedding矩阵）已经固定，其中的向量数值不再变化。这意味着对于每个Token ID，其对应的12288维向量是静态的，例如输入“人”时，模型会直接根据Token ID查找对应的固定向量。位置编码同理，在训练完成后其参数也是固定的，不再更新。这种固定性确保了模型在推理时的一致性和效率。",
+  "metadata": {
+    "original_question": "在听《揭秘Transformer的真面目-1》，最后那张手绘图的有几个问题想确认：\n\n手绘图就是模拟基于TRANSFORMER架构，GPT3进行预训练的过程。 在预训练开始时候其实大模型是什么都不会的， 所以在EMBEDDING阶段，每个TOKENID所对应的12288维向量是随机数，但无法体现文字之间的”距离“和”逻辑关系“等。 所以后续一系列动作，其中就涉及训练EMBEDDING MODEL---这个MODEL里面就是神经网络，让y=wx+b中的W和B是可以产生总误差最小的参数。\n这里我有一个问题：经过厂商对大语言模型训练后，到我们现在使用的产品，这个embedding向量化是不是是已经静态固定形成最优的向量化了，形成TOKENID和向量之间的对应表？比如“人”的TOKEN是b*7655，TOKENID是0001，我们在CHATGPT输入“人”，它就直接找到12288维向量[2,3,4,5.5…] ? 位置编码是不是同理？@崔超",
+    "row": 17,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

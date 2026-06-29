@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_158",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze中，如何设计一个基于知识库的问答Agent，以支持多轮对话和上下文理解？",
+    "Coze平台是否支持将多个Agent组合成一个工作流，以实现复杂任务的分步处理？",
+    "如何利用Coze的Workflows功能，将知识库查询与外部API调用集成到同一个Agent中？",
+    "在Coze中，如何为Agent配置角色和技能，使其能够根据用户输入动态调整回答策略？",
+    "Coze平台是否提供模板或最佳实践，用于快速构建特定领域的问答Agent？",
+    "在Coze中，如何实现一个基于知识库的问答助手，以回答用户提出的问题？"
+  ],
+  "answer": "您描述的需求本质上是一个基于知识库的问答助手，用于回答用户提出的问题。在Coze平台上，此类功能可以通过以下步骤实现：首先，创建并配置一个知识库，将相关文档或数据导入其中；然后，设计一个Agent，将其与知识库关联，并设置合适的角色和技能，例如定义回答风格和权限；最后，通过测试和优化，确保Agent能够准确响应用户查询。Coze平台提供了丰富的教程和示例，可参考之前的课程内容，直接构建此类应用。",
+  "metadata": {
+    "original_question": "哎呀 其实 我想问的问题比较多 最好能直接交流下 简单说就是做个Agent（如下角色与技能）Coze是否能做，在COZE怎么落地",
+    "row": 158,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

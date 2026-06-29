@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_40",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze的语音合成功能中，“输入instruct文本”字段的具体作用是什么？",
+    "如果我在“输入instruct文本”中填写了内容，但生成的语音与预期不符，可能是什么原因？",
+    "除了指定方言（如四川话），“输入instruct文本”还能接受哪些类型的指令？",
+    "在智能体或workflows中使用语音合成时，“输入instruct文本”是否会影响其他参数设置？",
+    "如何正确填写“输入instruct文本”以确保生成的语音符合要求？",
+    "老师，这个“输入instruct文本”是干什么的呢 不是指要生成的语音吗 我填写了，生成的语音和“输入instruct文本”里不一致"
+  ],
+  "answer": "“输入instruct文本”字段用于输入对语音生成的额外要求或指令，例如指定方言（如四川话）、语速、语调或情感风格等。它并非直接指定要生成的语音内容，而是对语音输出进行修饰或定制。如果生成的语音与您填写的指令不一致，请检查指令格式是否正确、是否与语音合成模型兼容，或确认指令是否超出了模型支持的范围。建议使用清晰、简洁的指令，并参考产品文档中的示例。",
+  "metadata": {
+    "original_question": "老师，这个“输入instruct文本”是干什么的呢\n不是指要生成的语音吗\n我填写了，生成的语音和“输入instruct文本”里不一致",
+    "row": 40,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

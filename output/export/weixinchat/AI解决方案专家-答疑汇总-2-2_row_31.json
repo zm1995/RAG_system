@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_31",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "DeepSeek的MoE架构中，专家网络是如何被动态选择的？",
+    "MoE模型在Transformer中的具体实现机制是什么？",
+    "DeepSeek的MoE模型如何通过专家路由机制降低计算成本？",
+    "MoE模型中的专家概念与智能体概念在技术实现上有何本质区别？",
+    "DeepSeek的MoE模型在训练和推理阶段如何平衡专家负载？",
+    "deepseek使用的，大型混合专家（MoE）模型，是不是可以理解为在 Transformer 里增加了类似现在商用AI里面智能体的概念，当计算出问题权重符合哪专家就让他去处理这样节省了算力？"
+  ],
+  "answer": "是的，您的理解基本正确。MoE（混合专家）模型的核心目标是通过动态选择专家网络来节省算力，但将专家概念类比为智能体并不完全准确。在技术实现上，MoE模型在Transformer中引入了一个门控网络（Router），该网络根据输入数据的特征计算权重，并选择最合适的专家子网络进行处理。这种机制类似于智能体中的任务分配，但专家网络是模型内部的固定组件，而非独立的智能体。两者在抽象层次和实现细节上存在本质区别：专家网络专注于特定子任务的计算，而智能体通常具备自主决策和交互能力。因此，MoE模型通过路由机制优化计算资源，但并非引入智能体概念。",
+  "metadata": {
+    "original_question": "deepseek使用的，大型混合专家（MoE）模型，是不是可以理解为在 Transformer 里增加了类似现在商用AI里面智能体的概念，当计算出问题权重符合哪专家就让他去处理这样节省了算力？",
+    "row": 31,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_95",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在公司内部使用可灵API时，需要完成哪些注册和认证步骤？",
+    "调用可灵API的代码实现中，有哪些关键参数需要配置？",
+    "可灵API的计费模式是怎样的，如何为账户充值？",
+    "企业调用可灵API时，是否需要申请特定的权限或密钥？",
+    "可灵API的调用频率和并发限制有哪些，如何优化调用策略？",
+    "崔老师 公司内部要调用可灵API的话是要怎么做的"
+  ],
+  "answer": "要调用可灵API，首先需要注册可灵开发者账号，完成企业认证后获取API密钥。然后，通过编写代码调用API接口，并在请求中携带密钥和必要参数。调用前需确保账户余额充足，可通过官方充值渠道进行充值。具体调用流程和参数配置请参考可灵API官方文档。",
+  "metadata": {
+    "original_question": "崔老师 公司内部要调用可灵API的话是要怎么做的",
+    "row": 95,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_117",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在神经网络中，linear层和softmax函数的参数设置有何不同？",
+    "softmax函数在Transformer模型中的具体应用位置和作用是什么？",
+    "linear层和softmax函数在计算过程中分别如何处理输入数据？",
+    "除了softmax，还有哪些常用的激活函数可以用于多分类任务的输出层？",
+    "在构建智能体模型时，如何选择使用linear层还是softmax函数？",
+    "leanr和softmax分别具体是干嘛的，有什么区别"
+  ],
+  "answer": "Linear层（全连接层）是神经网络中的一种基本结构，包含可学习的权重和偏置参数，用于对输入进行线性变换。Softmax函数则是一个固定的数学函数，没有可训练参数，其作用是将一组实数转换为概率分布，使得所有输出值之和为1，常用于多分类任务的输出层。在Transformer模型中，Softmax通常应用于最后的注意力机制或输出层，用于生成下一个词的概率分布。具体细节可参考Transformer相关课程内容。",
+  "metadata": {
+    "original_question": "leanr和softmax分别具体是干嘛的，有什么区别",
+    "row": 117,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

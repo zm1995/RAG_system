@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_30",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在ViT模型中，将图片分割成patch后，这些patch是如何被编码成向量并输入到Transformer中的？",
+    "ViT模型中的96层Transformer结构是如何逐步提取图片特征的？最后一层的输出向量具体代表什么？",
+    "除了使用linear层进行分类，ViT模型是否还有其他方式（如使用CLS token）来判断图片中的物体类别？",
+    "在ViT中，如果图片的灰度数据不能直接输入，那么对于彩色图片（RGB三通道），处理方式有何不同？",
+    "ViT模型在处理图片时，patch的大小选择对模型性能有何影响？如何确定最优的patch大小？",
+    "老师，多模态中图片的灰度数据0-225是不是作为天然向量，可以直接送入ViT中的Transfomer中\nViT中拿到做了96层后最后一个向量后，在如何通过最后这个向量判断图片里是一个什么物体？"
+  ],
+  "answer": "图片的灰度数据（0-255）通常不能直接送入ViT（Vision Transformer）模型，因为原始像素数量过多且分布分散，直接输入会导致计算复杂度过高。ViT的标准做法是将图片分割成固定大小的patch（例如16x16像素），每个patch通过线性投影（Linear Projection）转换为一个向量，这些向量作为序列输入到Transformer中。在ViT中，经过多层Transformer（如96层）处理后，通常取最后一个Transformer输出的[CLS] token对应的向量（或所有patch向量的平均）作为图片的全局表示。然后，通过一个线性分类层（Linear Layer）将该向量映射到类别空间，输出每个类别的概率，从而判断图片中的物体。线性层的作用类似于GPT-1中的分类任务，通过训练学习类别间的决策边界。此外，ViT也可以使用其他分类头（如MLP）来替代线性层，但基本原理相同。",
+  "metadata": {
+    "original_question": "老师，多模态中图片的灰度数据0-225是不是作为天然向量，可以直接送入ViT中的Transfomer中\nViT中拿到做了96层后最后一个向量后，在如何通过最后这个向量判断图片里是一个什么物体？",
+    "row": 30,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

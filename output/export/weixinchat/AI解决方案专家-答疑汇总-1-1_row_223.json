@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_223",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze工作流中，除了BOT_USER_INPUT和CONVERSATION_NAME，还有哪些常用的系统变量？",
+    "CONVERSATION_NAME变量在Coze工作流中具体用于什么场景？",
+    "如何在Coze工作流中自定义变量，并确保其与系统变量正确交互？",
+    "BOT_USER_INPUT变量在Coze工作流调试时，其值是如何被填充的？",
+    "Coze工作流中，系统变量和自定义变量的优先级或作用域有何区别？",
+    "老师，发现好多工作流，教研老师都会用到CONVERSATION_NAME ，BOT_USER_INPUT，这两个字符变量，这两个分别有什么作用吗？我看下来好像两个都差不多，BOT_USER_INPUT就是对话框输入，每次调试的时候都不太确认两者填入的信息有什么差异？"
+  ],
+  "answer": "BOT_USER_INPUT是Coze工作流中的系统变量，自动创建于每个工作流中，用于接收用户的原始输入内容。该变量无需手动定义，其值由用户对话框输入自动填充。CONVERSATION_NAME则是用户自定义的变量，用于标识或存储对话名称，需在工作流中手动创建和赋值。两者作用不同：BOT_USER_INPUT专注于传递用户输入，而CONVERSATION_NAME用于管理对话上下文。在调试时，BOT_USER_INPUT的值直接来自测试输入，而CONVERSATION_NAME需根据工作流逻辑手动设置或通过其他节点赋值。",
+  "metadata": {
+    "original_question": "老师，发现好多工作流，教研老师都会用到CONVERSATION_NAME ，BOT_USER_INPUT，这两个字符变量，这两个分别有什么作用吗？我看下来好像两个都差不多，BOT_USER_INPUT就是对话框输入，每次调试的时候都不太确认两者填入的信息有什么差异？",
+    "row": 223,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

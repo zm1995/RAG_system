@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_66",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在ViT模型中，为什么选择CLS token（第0个向量）而不是其他patch token来代表整张图片？",
+    "CLS token在ViT中是如何通过自注意力机制聚合全局信息的？",
+    "在Coze的workflows中，如何利用类似CLS token的机制来聚合多步操作的结果？",
+    "在智能体（Agent）设计中，是否也存在类似ViT中CLS token的“汇总节点”概念？",
+    "在知识库（Knowledge Base）的向量化表示中，如何选择代表整个文档的向量？",
+    "在看多模态那一课时有一个问题不理解：transform中经过96层的信息聚合后，当前段落最后一个token的向量可以用来代表整个段落的语言生成下一个token，这个基本理解了。在vit中为啥是第0个向量（非patch）经过n层的信息聚合后可以代表这张图片，这个向量和其他的patch的向量有啥区别"
+  ],
+  "answer": "在ViT（Vision Transformer）模型中，CLS token（即第0个向量）被专门设计用于图像分类任务。与从图像分块（patch）中提取的patch token不同，CLS token不偏向图像中的任何特定区域，因此能够更公平地聚合全局信息。通过自注意力机制，CLS token在每一层都与所有patch token进行交互，从而逐步整合整张图片的语义特征。最终，经过多层信息聚合后，CLS token的向量表示能够代表整张图片，用于分类任务（如识别图片中是否包含人、猫或狗）。相比之下，任意一个patch token仅代表其对应局部区域的信息，缺乏全局性。因此，CLS token是ViT中实现全局表示的标准选择。",
+  "metadata": {
+    "original_question": "在看多模态那一课时有一个问题不理解：transform中经过96层的信息聚合后，当前段落最后一个token的向量可以用来代表整个段落的语言生成下一个token，这个基本理解了。在vit中为啥是第0个向量（非patch）经过n层的信息聚合后可以代表这张图片，这个向量和其他的patch的向量有啥区别",
+    "row": 66,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

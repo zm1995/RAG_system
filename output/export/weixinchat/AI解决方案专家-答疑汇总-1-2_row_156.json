@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_156",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "自动驾驶端到端模型训练过程中常用的数据集有哪些？",
+    "端到端模型在自动驾驶中与传统模块化方法相比有哪些优缺点？",
+    "如何评估自动驾驶端到端模型的性能？",
+    "自动驾驶端到端模型训练时如何处理数据不平衡问题？",
+    "端到端模型在自动驾驶中的实时性要求如何满足？",
+    "自动驾驶端到端模型如何训练得到的,有参考文献么?"
+  ],
+  "answer": "自动驾驶端到端模型的训练通常基于大量驾驶数据，包括摄像头图像、激光雷达点云、GPS和IMU等传感器信息，通过深度学习网络（如卷积神经网络CNN或循环神经网络RNN）直接学习从感知输入到控制输出的映射。训练过程包括数据采集、预处理、模型设计、损失函数定义（如均方误差或交叉熵）、优化器选择（如Adam或SGD）以及迭代训练。参考文献方面，经典论文包括NVIDIA的《End to End Learning for Self-Driving Cars》（2016）和MIT的《DeepDriving: Learning Affordance for Direct Perception in Autonomous Driving》（2015），此外，可查阅arXiv上的相关综述文章，如《A Survey of End-to-End Driving: Architectures and Training Methods》。",
+  "metadata": {
+    "original_question": "自动驾驶端到端模型如何训练得到的,有参考文献么?",
+    "row": 156,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

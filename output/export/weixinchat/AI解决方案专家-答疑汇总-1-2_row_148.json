@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_148",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze智能体的Preference Data采集标注中，如果出现标注结果不一致，系统如何处理这些冲突数据？",
+    "对于Agent训练中的偏好数据标注，是否允许同一条Prompt-Response对由多人标注并产生不同结果？",
+    "在Workflows相关的偏好数据标注流程中，如何确保标注结果的一致性和准确性？",
+    "知识库训练数据的标注过程中，如果不同标注员对同一数据给出相反偏好，这会如何影响模型训练？",
+    "在Coze产品中，Preference Data标注是否存在质量控制机制来减少标注分歧？",
+    "在进行Perference Data采集标注的时候，是不是每一条Promat-Response都只会进行一次唯一标注？如果不是的话，会不会出现同一条数据会有不同的真人反馈结果？\n举个例子，是否会出现以下情况：\n同一条数据，分发给甲乙两个人进行标注，甲提交的结果是A>B，而乙提交的结果是B>A"
+  ],
+  "answer": "是的，这种情况确实会发生。不同的标注人员可能对同一条Prompt-Response对给出不同的偏好判断，例如甲认为A>B，而乙认为B>A。这种标注结果的不一致性在模型训练过程中是可以接受的，只要其在训练数据中的占比不高，就不会对RM（Reward Model）模型的能力产生显著影响。此外，标注流程通常采用分层结构，包括质量检查或二审环节，以尽量控制这种不一致情况的比例，从而确保数据质量。",
+  "metadata": {
+    "original_question": "在进行Perference Data采集标注的时候，是不是每一条Promat-Response都只会进行一次唯一标注？如果不是的话，会不会出现同一条数据会有不同的真人反馈结果？\n举个例子，是否会出现以下情况：\n同一条数据，分发给甲乙两个人进行标注，甲提交的结果是A>B，而乙提交的结果是B>A",
+    "row": 148,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

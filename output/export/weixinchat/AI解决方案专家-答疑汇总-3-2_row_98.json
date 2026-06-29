@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_98",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在GraphRAG中，用户查询到达后，系统如何执行初始检索步骤以定位相关叶子节点？",
+    "GraphRAG的检索过程是否涉及对知识图谱的遍历或索引查询？请详细说明其机制。",
+    "如何确保GraphRAG在检索叶子节点时能够准确匹配用户查询的意图？",
+    "GraphRAG中，用户查询与叶子节点之间的相关性是如何计算的？",
+    "在GraphRAG的工作流中，检索步骤之后通常跟随哪些处理环节？",
+    "根据昨晚讲的又看了下论文画的GraphRAG"
+  ],
+  "answer": "整体设计是合理的，但存在一个关键步骤的遗漏：当用户查询到达时，系统应首先执行一个检索过程，以定位与查询相关的叶子节点。具体细节需要参考论文中的描述，包括如何利用用户查询来检索相关叶子节点的机制。建议仔细阅读论文以获取准确信息。",
+  "metadata": {
+    "original_question": "根据昨晚讲的又看了下论文画的GraphRAG",
+    "row": 98,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

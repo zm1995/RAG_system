@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_98",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "如何通过配置知识库来限制机器人回答特定类型的问题？",
+    "在Coze中，除了修改prompt，还有哪些方法可以控制机器人的回答范围？",
+    "如何利用workflows设计一个过滤机制，阻止机器人回答与苹果维生素无关的问题？",
+    "在智能体设置中，如何通过角色定义来约束机器人的回答内容？",
+    "如何通过调整知识库的权限或标签，让机器人忽略某些特定问题？",
+    "想问一下刚才苹果里含有哪些维生素那个问题，怎么让机器人不回答这个问题，除了调prompt还有什么办法吗？"
+  ],
+  "answer": "可以的。您可以参考医疗分诊的demo，该demo通过精心设计的prompt限定了机器人的回答范围，使其不会回答无关问题。使用prompt是控制机器人回答内容的有效方法，完全能够满足需求。",
+  "metadata": {
+    "original_question": "想问一下刚才苹果里含有哪些维生素那个问题，怎么让机器人不回答这个问题，除了调prompt还有什么办法吗？",
+    "row": 98,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

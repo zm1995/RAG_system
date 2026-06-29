@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_139",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze智能体开发中，system prompt和user prompt的放置位置对模型输出效果有影响吗？",
+    "如何在工作流中合理分配system prompt和user prompt的内容？",
+    "如果用户输入为空，system prompt和user prompt是否可以互换使用？",
+    "在知识库集成场景下，system prompt和user prompt的区分是否仍然重要？",
+    "对于复杂任务，如何设计system prompt和user prompt以最大化模型性能？",
+    "那岂不是任何prompt都可以在user和system里面随便放？"
+  ],
+  "answer": "在大多数情况下，system prompt和user prompt的放置位置确实没有严格限制，但需要根据具体场景进行区分。当用户有实际输入内容时，user prompt应明确包含用户的问题或指令，而system prompt则用于设定模型的行为、角色或背景信息。在工作流中，如果用户输入为空或固定，两者可以灵活互换，但保持良好习惯（如将系统级指令放在system prompt中）有助于提升可维护性和一致性。建议根据任务复杂度、用户交互方式以及模型特性来合理分配，以确保输出效果稳定可靠。",
+  "metadata": {
+    "original_question": "那岂不是任何prompt都可以在user和system里面随便放？",
+    "row": 139,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

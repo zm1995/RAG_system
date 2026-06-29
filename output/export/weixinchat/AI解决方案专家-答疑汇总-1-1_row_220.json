@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_220",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在循环节点中，Item 和 Index 的具体作用是什么？它们如何影响循环体内部节点的执行？",
+    "为什么在循环体内部引用循环节点的输出时，Item 的类型是 string 而 Index 的类型是 number？",
+    "如果循环节点的输入是一个包含多个字符串的数组，循环体内部如何逐项处理这些字符串？",
+    "在 workflows 中，循环节点与语言模型节点如何协同工作？请举例说明数据传递过程。",
+    "当循环节点输出数组时，如何确保循环体内部节点正确引用数组中的每个元素？",
+    "老师，上一个环节，这个两个变量取的都是questions这个值，怎么到这个环节引用参数时，一个值的类型时string，一个值的类型时arry，是因为问题要一个一个问，所以把输入值变成string吗"
+  ],
+  "answer": "该节点是语言模型节点。语言模型节点通过设定变量来引入前面节点的数据。前面的节点是循环节点，该循环节点输出一个名为 'questions' 的数组，其中包含多个元素。当循环体执行时，它会根据 'questions' 数组中的元素数量进行相应次数的循环。在每次循环中，循环体内部节点会接收到两个参数：Item 和 Index。Item 代表从 'questions' 数组中按顺序取出的当前元素，其数据类型与数组元素类型一致（此处为 string）；Index 代表当前循环的轮次，从 0 开始计数，数据类型为 number。例如，当循环进行到第 3 轮时，Index 等于 2，Item 等于 'questions' 数组中的第 3 个元素。",
+  "metadata": {
+    "original_question": "老师，上一个环节，这个两个变量取的都是questions这个值，怎么到这个环节引用参数时，一个值的类型时string，一个值的类型时arry，是因为问题要一个一个问，所以把输入值变成string吗",
+    "row": 220,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

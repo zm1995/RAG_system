@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_183",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在支小助Demo中，如果使用zeroshot提示词，如何评估其对客户实际表现的影响？",
+    "对于支小助Demo中的问题改写和分析步骤，是否可以通过调整提示词结构来提升稳定性？",
+    "在支小助Demo中，哪些场景下必须使用few shot提示词来确保输出质量？",
+    "如何通过测试验证支小助Demo中zeroshot提示词在客户场景下的可靠性？",
+    "支小助Demo中，除了few shot，还有哪些方法可以增强zeroshot提示词的表现稳定性？",
+    "我看支小助Demo里面提示词都是zeroshot的，包括问题改写和分析，实际对客户会不会有表现不稳定的现象？"
+  ],
+  "answer": "并非所有提示词都需要采用few shot方式。许多处理属于中间步骤，这些步骤的容错空间较大，因此可以不准备样例。通常需要通过大量测试来把握模型的能力，对于模型自身能够很好完成的任务，无需使用few shot。在实际应用中，建议根据任务复杂度和模型表现，灵活选择提示词策略，并通过持续测试和优化来确保稳定性。",
+  "metadata": {
+    "original_question": "我看支小助Demo里面提示词都是zeroshot的，包括问题改写和分析，实际对客户会不会有表现不稳定的现象？",
+    "row": 183,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

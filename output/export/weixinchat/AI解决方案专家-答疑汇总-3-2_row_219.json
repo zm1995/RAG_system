@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_219",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze智能体开发中，如何利用BERT输出的向量进行情感分类？",
+    "当输入单个token时，Transformer模型如何优化计算以减少不必要的层聚合？",
+    "在Agent工作流中，LLM的embedding层与独立的embedding模型在训练目标上有何具体差异？",
+    "Coze知识库中，如何利用embedding模型实现文档相似度检索？",
+    "在Workflows中，如何设计一个基于BERT向量分类的节点来处理用户输入？",
+    "原问题：1.decoder的输出是下一个字的概率，bert架构输出是啥？\n2.输入1个字给LLM，它也要做96层信息聚合吗？感觉聚不动啊，就1个字。（即便是多头，也搞不到96层那么多吧）\n3.Transformer里的embedding和embedding模型是一回事吗？（昨天你回答是：1个是步骤，1个是模型，请再多说两句）\n@崔超  老师。"
+  ],
+  "answer": "1. BERT架构的输出通常是一组向量，这些向量可用于分类任务，例如判断一段文本的情感倾向（如正面或负面），这属于典型的语义分析应用。\n2. 理论上，即使只有一个token，Transformer模型也会执行96层的信息聚合。然而，在实际代码实现中，会通过优化减少不必要的计算，例如跳过冗余的注意力计算或层操作。\n3. 两个embedding概念作用类似，但不可互相替换。LLM中的embedding层主要负责将token转换为向量，其训练目标是辅助模型更准确地预测下一个token。而独立的embedding模型（如Word2Vec或BERT）的训练目标是使语义相似的文本获得更接近的向量表示，语义不相似的文本获得更远离的向量表示。",
+  "metadata": {
+    "original_question": "1.decoder的输出是下一个字的概率，bert架构输出是啥？\n2.输入1个字给LLM，它也要做96层信息聚合吗？感觉聚不动啊，就1个字。（即便是多头，也搞不到96层那么多吧）\n3.Transformer里的embedding和embedding模型是一回事吗？（昨天你回答是：1个是步骤，1个是模型，请再多说两句）\n@崔超  老师。",
+    "row": 219,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

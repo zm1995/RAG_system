@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_29",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Transformer模型中，聚合步骤具体是如何通过QK计算相关度系数并与V值加权求和实现的？",
+    "聚合操作在自然语言处理中除了加权求和，还有哪些常见的实现方式？",
+    "在Coze或智能体开发中，聚合步骤如何影响token的生成效率？",
+    "聚合与注意力机制中的softmax函数有何关系？",
+    "在workflows或知识库中，聚合操作如何用于优化信息检索结果？",
+    "聚合的意思是把相关概率高token合成一个新token吗"
+  ],
+  "answer": "聚合是指通过查询（Q）和键（K）计算相关度系数（通常经过softmax归一化），然后将该系数与值（V）进行加权求和的过程。该步骤是注意力机制的核心，用于整合上下文信息，而非简单地将高概率token合并为新token。",
+  "metadata": {
+    "original_question": "聚合的意思是把相关概率高token合成一个新token吗",
+    "row": 29,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

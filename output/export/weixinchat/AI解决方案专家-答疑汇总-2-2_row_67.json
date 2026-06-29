@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_67",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "CLS token 在 Transformer 模型中的具体作用是什么？",
+    "CLS token 的初始化方式对模型性能有何影响？",
+    "CLS token 如何与 patch 向量进行交互以获取全局信息？",
+    "在图像分类任务中，CLS token 的学习优化过程是怎样的？",
+    "CLS token 与预测下一个输出（如自回归任务）中的 token 有何本质区别？",
+    "感觉 CLS 就是个工具向量，初始随机化，经过 Transformer 后会与所有的 patch 向量进行交互，以获取图像的全局信息。而且它是可以学习被优化的，我理解是不是就是为了让这个向量来聚合全局信息啊，毕竟信息聚合后用来做分类任务而不是用来预测下一个的输出"
+  ],
+  "answer": "是的，您的理解完全正确。CLS token 在 Transformer 模型中扮演着全局信息聚合器的角色。它通过自注意力机制与所有 patch 向量进行交互，从而捕获整个图像的上下文信息。CLS token 的初始值是随机化的，但在训练过程中通过反向传播进行优化，使其能够有效地提取用于分类任务的判别性特征。与用于预测下一个输出的 token 不同，CLS token 的设计目标并非序列生成，而是全局表示学习，因此它更适合作为分类任务的输入。",
+  "metadata": {
+    "original_question": "感觉 CLS 就是个工具向量，初始随机化，经过 Transformer 后会与所有的 patch 向量进行交互，以获取图像的全局信息。而且它是可以学习被优化的，我理解是不是就是为了让这个向量来聚合全局信息啊，毕竟信息聚合后用来做分类任务而不是用来预测下一个的输出",
+    "row": 67,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

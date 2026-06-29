@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_74",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze智能体开发中，如果不使用Encoder，Decoder的输入来源会如何变化？",
+    "对于Agent工作流，Decoder在有无Encoder时的具体处理流程有何差异？",
+    "在知识库集成场景下，Decoder模块在缺少Encoder时如何保证输出质量？",
+    "Workflows中，Decoder的中间模块在无Encoder情况下是否完全冗余？",
+    "在智能体对话系统中，Decoder的注意力机制在有无Encoder时如何调整？",
+    "请问，有无Encoder的两种情况下，Decoder干的事情是不是不太一样？"
+  ],
+  "answer": "是的，Decoder的三个模块在有无Encoder的情况下存在显著差异。当没有Encoder时，Decoder会移除中间的交叉注意力模块，仅保留自注意力模块和前馈神经网络模块。这是因为交叉注意力模块负责接收Encoder输出的编码信息，用于对齐输入和输出序列；在无Encoder场景下，Decoder直接基于自身输入进行自回归生成，无需外部编码信息。因此，Decoder的结构和功能会根据是否使用Encoder进行相应调整，以确保模型在特定任务中的有效性和效率。",
+  "metadata": {
+    "original_question": "请问，有无Encoder的两种情况下，Decoder干的事情是不是不太一样？",
+    "row": 74,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

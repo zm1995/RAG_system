@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_213",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在coze中，如何确保workflows节点中的input值能正确传递到variable？",
+    "使用agent构建智能体时，变量更新失败通常由哪些原因导致？",
+    "在知识库与workflows结合的场景中，如何调试变量未更新的问题？",
+    "针对deepseek模型，编写prompt时有哪些技巧能提高变量赋值的准确性？",
+    "在coze的智能体开发中，如何避免因模型特性导致的变量更新延迟或失败？",
+    "老师，我在问诊助手案例改写了一个ai面试的场景，遇到一个问题帮忙看一下这个节点为什么没有把input输出的值更新到variable中呢？"
+  ],
+  "answer": "该问题可能由多种因素导致，并非必然出现。建议您多次运行测试以确认是否为偶发性故障。此外，当前使用的deepseek模型在处理此类任务时，其性能可能不足以稳定执行变量更新操作。针对deepseek模型，您需要优化prompt的编写方式，确保指令清晰、具体，避免模糊表述。例如，明确指定变量名称、更新条件及输出格式，以提高模型的理解和执行准确性。如果问题持续存在，请检查workflows节点配置是否正确，并考虑使用其他更擅长结构化任务的模型作为替代。",
+  "metadata": {
+    "original_question": "老师，我在问诊助手案例改写了一个ai面试的场景，遇到一个问题帮忙看一下这个节点为什么没有把input输出的值更新到variable中呢？",
+    "row": 213,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_61",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze工作流中，如何正确配置循环数组的输入参数？",
+    "使用智能体时，循环节点内的LLM节点如何引用当前循环的元素？",
+    "在Agent开发中，如果循环数组有多个元素，如何逐个处理并输出结果？",
+    "Coze工作流中，循环节点与LLM节点结合使用时，需要注意哪些配置细节？",
+    "在知识库查询后，如何将返回的多个结果通过循环节点逐一处理？",
+    "不会用老师，"
+  ],
+  "answer": "您的数组中包含15个元素，并且已成功传递给input作为循环数组。在循环体内部，您需要添加一个LLM节点来处理数据。具体操作是：在LLM节点的输入参数中，使用item变量来获取当前循环迭代所需的单个元素数据。这样，每次循环都会自动将数组中的一个元素传递给LLM节点进行处理。",
+  "metadata": {
+    "original_question": "不会用老师，",
+    "row": 61,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

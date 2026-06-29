@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_162",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "DeepSeek的论文中提到了哪些关键技术创新，使其在性能上优于GPT？",
+    "如何从DeepSeek的官方渠道获取其最新论文和技术报告？",
+    "DeepSeek与GPT在模型架构上有哪些主要差异？",
+    "在后续课程中，会具体讲解DeepSeek的哪些创新点？",
+    "除了论文，还有哪些资源可以深入了解DeepSeek的技术优势？",
+    "能分享下DeepSeek那几篇论文吗，想对比下DS比GPT强在哪里[呲牙]"
+  ],
+  "answer": "GPT近一年多来的最新版本未公开发布论文，因此难以直接进行技术对比。DeepSeek的论文可在其官方网站上获取，具体路径为访问DeepSeek官网并导航至“论文”或“研究”栏目。后续课程将详细讲解DeepSeek的创新点，包括但不限于模型架构优化、训练效率提升及推理性能改进等。建议关注官方发布以获取最新信息。",
+  "metadata": {
+    "original_question": "能分享下DeepSeek那几篇论文吗，想对比下DS比GPT强在哪里[呲牙]",
+    "row": 162,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

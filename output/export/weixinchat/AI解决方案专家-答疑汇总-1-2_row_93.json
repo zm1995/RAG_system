@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_93",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "问题1：除了模型选型，这个工作还涉及哪些具体环节？",
+    "问题2：如何通过分析场景表现不佳的原因来制定提升方案？",
+    "问题3：这个工作作为基础，对后续的智能体开发有什么影响？",
+    "问题4：在coze或workflows中，如何应用这种分析思路来优化性能？",
+    "问题5：知识库的构建是否也需要基于这种分析工作？",
+    "原问题：问题2：这是模型选型的思路对吧？"
+  ],
+  "answer": "该工作不仅包括模型选型，还涉及评估需要改进的方面、分析场景表现不佳的原因以及探索可能的提升方案。因此，它是许多后续任务的基础，为优化决策提供依据。",
+  "metadata": {
+    "original_question": "问题2：这是模型选型的思路对吧？",
+    "row": 93,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

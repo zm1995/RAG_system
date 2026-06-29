@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_69",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "Swin Transformer中的窗口注意力机制是如何在降低计算量的同时保持模型性能的？",
+    "在Swin Transformer中，shifted window机制如何解决窗口间信息隔离的问题？",
+    "Swin Transformer的多尺度设计与ViT的单一尺度相比，在计算量和信息提取上有什么具体差异？",
+    "Swin Transformer中窗口划分和重组的具体计算量是如何计算的？",
+    "Swin Transformer的掩码机制在窗口重组中起到什么作用，如何保证并行计算的效率？",
+    "各位谁知道，左边swin T不是只在小方格内部做聚合，非全局信息提取，使得计算量降级。但是左边图的patch不是变成更小的小块了，就算只在局部，从图中看，计算量似乎并没有减小哎？不是一个块变成一个向量去到transform里面进行运算吗？"
+  ],
+  "answer": "Swin Transformer通过窗口注意力机制将自注意力计算限制在局部窗口内，从而显著降低了计算复杂度。具体来说，每个窗口包含固定数量的patch（例如4×4=16个patch），每个patch仅与窗口内的其他patch进行注意力计算，计算量为窗口内patch数量的平方（如16×16=256），加上线性变换等操作，总计算量约为272。对于整个图像，若有16个窗口，总计算量为272×16=4352。相比之下，ViT在全局范围内进行注意力计算，若patch数量为16，计算量为16×16+16=272，但ViT的patch尺寸较大，导致信息粒度较粗。Swin Transformer通过多尺度设计（如不同层级的窗口大小）获取更细粒度的信息，虽然单层计算量可能增加，但整体上通过窗口限制避免了全局注意力的高计算开销。Shifted window机制通过窗口重组，使patch在不同层中与不同窗口内的patch交互，从而促进信息跨窗口流动，同时利用掩码确保注意力计算仅在有效patch间进行，并保持并行计算任务的尺寸统一。这种设计在降低计算量的同时，通过多尺度和窗口重组保持了模型对全局信息的捕获能力。",
+  "metadata": {
+    "original_question": "问题：各位谁知道，左边swin T不是只在小方格内部做聚合，非全局信息提取，使得计算量降级。但是左边图的patch不是变成更小的小块了，就算只在局部，从图中看，计算量似乎并没有减小哎？不是一个块变成一个向量去到transform里面进行运算吗？",
+    "row": 69,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

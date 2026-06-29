@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_173",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在COZE的企业办事助手agent中，调用树中的“调用LLM LLM-suggest”步骤具体执行什么操作？",
+    "COZE agent的调用树中，哪些步骤属于function calling，哪些是平台内置的流程？",
+    "如何查看COZE agent调用树中每个步骤的详细输入输出信息？",
+    "在COZE上设计agent时，如何区分function calling和普通LLM调用？",
+    "COZE企业办事助手agent的调用树中，知识库调用和LLM-suggest步骤在功能上有何不同？",
+    "COZE上企业办事助手这个agent的调用树最后一条都是“调用LLM LLM-suggest”,这个LLM-suggest是LLM提供的function吗？这一条是不是function calling?"
+  ],
+  "answer": "在COZE企业办事助手agent的调用树中，中间调用知识库的步骤属于function calling，而其他步骤（如“调用LLM LLM-suggest”）不属于function calling，它们是COZE平台内置的流程步骤。要确认每个步骤的具体性质，可以点击该步骤查看其详细的输入输出信息，从而区分其是function calling还是平台内置操作。",
+  "metadata": {
+    "original_question": "COZE上企业办事助手这个agent的调用树最后一条都是“调用LLM LLM-suggest”,这个LLM-suggest是LLM提供的function吗？这一条是不是function calling?",
+    "row": 173,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

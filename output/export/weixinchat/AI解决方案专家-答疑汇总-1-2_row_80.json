@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_80",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze平台中，如何将本地文档转换为大模型可读取的格式？",
+    "使用Workflows处理文件时，除了fileURL，还有哪些方式可以传递文件内容给大模型？",
+    "在智能体开发中，如何通过插件实现本地文件的上传与解析？",
+    "知识库中的文件如何被大模型直接调用，而不需要手动上传？",
+    "在调试AutoGPT类Workflows时，如何生成有效的文件链接供大模型访问？",
+    "崔老师好，请问一下，如何让本地文件转化成能让大模型获取到的文件呢？像autoGPT这类文件处理类的workflow调试时，fileURL需要提供文件链接.."
+  ],
+  "answer": "通常，处理本地文件的方式与AutoGPT类似：首先使用一个文件读取插件（如文本提取或文档解析插件）将文件内容提取为文本或结构化数据，然后将该内容传递给大模型（LLM）。在将Agent与对话界面集成后，用户可以直接在对话窗口中上传文件，系统会自动调用插件处理文件并供大模型使用。对于Workflows调试，若需要fileURL，可先将文件上传至云存储（如OSS或S3）获取公开链接，或使用平台内置的文件上传节点生成临时链接。",
+  "metadata": {
+    "original_question": "问题：崔老师好，请问一下，如何让本地文件转化成能让大模型获取到的文件呢？\n像autoGPT这类文件处理类的workflow调试时，fileURL需要提供文件链接..",
+    "row": 80,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

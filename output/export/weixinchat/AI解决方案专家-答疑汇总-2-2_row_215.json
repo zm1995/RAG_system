@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_215",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在coze中，不同模型的system prompt token上限具体是多少？",
+    "如何查看coze中当前使用的模型对system prompt的字数限制？",
+    "coze的system prompt字数上限是否受模型版本影响？",
+    "如果system prompt超过模型限制，coze会如何处理？",
+    "在coze中，system prompt的token上限与知识库的容量限制有何关联？",
+    "老师，coze system prompt的token最高限是300万吗"
+  ],
+  "answer": "Coze中system prompt的字数上限并非由Coze平台本身决定，而是取决于在Coze界面中选择的具体模型。每个模型都有其独立的字数或token限制，这些限制因模型而异。在Coze界面中，系统提示词（system prompt）的输入区域也存在字符数限制，但300万token的输入量对于大多数模型而言都远超其上限，因此实际使用时需参考所选模型的官方文档或Coze界面提示，以获取准确的限制值。",
+  "metadata": {
+    "original_question": "老师，coze system prompt的token最高限是300万吗",
+    "row": 215,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

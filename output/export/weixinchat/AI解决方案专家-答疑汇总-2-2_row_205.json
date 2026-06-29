@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_205",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "使用Coze平台开发AI产品时，是否需要具备编程基础？",
+    "在AI产品开发中，Coze平台与编程技能相比，哪个更重要？",
+    "企业招聘AI产品经理时，对Coze等低代码平台的操作能力有何要求？",
+    "Coze平台能否用于生产环境的AI产品部署，还是仅适用于原型开发？",
+    "除了Coze平台，还有哪些低代码工具可用于快速构建AI产品？",
+    "老师，大部分AI产品是利用类似coze平台就能制作？还是大部分需要编程+coze这样才能制作？那现在的岗位要求是能利用coze这类平台制作出产品就行吗？"
+  ],
+  "answer": "大部分AI产品并非完全依赖Coze这类平台制作，而是可以利用Coze快速构建原型（Demo）。当前岗位的核心要求并非掌握Coze平台的操作技能，而是对模型能力的深入理解、业务场景的结合能力、数据理解能力，以及产品的验收与管理能力。Coze本质上是一个Agent平台，其操作能力并非岗位的核心竞争力。",
+  "metadata": {
+    "original_question": "老师，大部分AI产品是利用类似coze平台就能制作？还是大部分需要编程+coze这样才能制作？那现在的岗位要求是能利用coze这类平台制作出产品就行吗？",
+    "row": 205,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

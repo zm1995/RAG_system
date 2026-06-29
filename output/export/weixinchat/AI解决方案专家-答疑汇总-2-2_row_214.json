@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_214",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze中，如何实现访客接待场景的语音播报功能？",
+    "Coze Agent能否直接集成到企业微信或钉钉中使用？",
+    "如何利用Coze的知识库存储公司员工信息以便查询？",
+    "Coze Workflows能否支持自动拨打电话并确认访客的流程？",
+    "Coze Agent发布为API后，如何与门卫室的硬件设备对接？",
+    "老师问一下想做这么一个小场景，公司门卫室接待，按部门和姓名查询电话，然后播打电话确认访客，有几个问题1：COZE中有语音打电话的插件吗 2 以什么形式发布，是直接发成APP吗"
+  ],
+  "answer": "关于拨打电话的插件，您可以在Coze的插件应用市场中搜索相关插件。如果市场中没有现成的插件，您也可以自行开发，例如通过编写Python代码来实现。开发完成的Coze Agent通常需要以API或SDK的形式发布，然后通过编写代码进行集成，以实现与现有系统的对接。",
+  "metadata": {
+    "original_question": "老师问一下想做这么一个小场景，公司门卫室接待，按部门和姓名查询电话，然后播打电话确认访客，有几个问题1：COZE中有语音打电话的插件吗 2 以什么形式发布，是直接发成APP吗",
+    "row": 214,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

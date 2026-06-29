@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_241",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在coze平台中，function calling和agent在实现智能体功能时各自扮演什么角色？",
+    "如何理解function calling作为模型能力与agent作为应用之间的依赖关系？",
+    "在workflows中，function calling和agent的调用方式有何不同？",
+    "知识库与function calling结合使用时，如何提升agent的响应准确性？",
+    "设计智能体时，function calling和agent的配置步骤有哪些关键区别？",
+    "function calling和agent感觉很像呢，它们之间啥区别呀"
+  ],
+  "answer": "Function calling是模型的一种底层能力，允许模型在生成回复时调用外部函数或API以获取实时数据或执行特定操作。Agent则是一个完整的AI应用，它利用包括function calling在内的多种模型能力（如推理、规划、记忆等）来实现自主任务执行。简而言之，function calling是构建agent时可能用到的一个工具，而agent是集成多种能力的最终产品。在coze等平台上，开发agent时通常需要配置function calling来扩展其功能，但agent本身包含更复杂的逻辑和交互设计。",
+  "metadata": {
+    "original_question": "function calling和agent感觉很像呢，它们之间啥区别呀",
+    "row": 241,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

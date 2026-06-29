@@ -1,0 +1,17 @@
+{
+  "id": "coze_knowledge/txt/2/豆包图像生成大模型插件",
+  "source": "coze_knowledge",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\coze_knowledge\\txt\\2\\豆包图像生成大模型插件.txt",
+  "questions": [
+    "豆包图像生成大模型插件包含哪两个工具，它们的主要功能区别是什么？",
+    "在使用gen_image工具时，如何通过提示词让生成的图片中包含特定文字？请举例说明。",
+    "gen_image工具中的req_schedule_conf参数有哪两个选项，它们分别对生成结果有什么影响？",
+    "seed_edit工具在调试时，为什么建议上传一张示例图？这对参数配置有什么帮助？",
+    "豆包图像生成大模型插件在工作流中的并发限制是多少？如果超过这个限制会有什么影响？"
+  ],
+  "answer": "豆包图像生成大模型插件\n豆包图像生成大模型插件用于根据输入的文本描述生成全新的图像或编辑指定的图像。\n豆包图像生成大模型插件包含 gen_image 工具、seed_edit 工具。不同工具的配置项不同，生成结果也不同。\n使用限制\n每次执行工作流时，豆包图像生成大模型插件节点的并发限制为单节点 4 次/秒。\ngen_image 工具\ngen_image 工具支持根据你输入的提示词生成图片。\n配置说明\n调用 gen_image 工具时，你需要提供提示词及指定 req_schedule_conf 配置。\n输入参数\n输入参数说明如下表所示：\n参数\\n\n\t\n说明\\n\n\n\nheight\\n\n\t\n设置图像生成后的高度。\\n\n取值范围：[256, 768]。\\n\n默认值：512。\\n\n\n\nprompt\\n\n\t\n设置用于生成图像的提示词 ，支持中英文。必填参数。\\n\n如果希望在图片中展示对应的文字，可以在提示词中使用双引号包裹文字，例如提示词为生成一张圣诞节海报，上面写着 “Merry Christmas”。\\n\n\n\nreq_schedule_conf\\n\n\t\n设置任务调度配置的类型，必填参数。\\n\ngeneral_v20_9B_pe：图文匹配度更好，结构表现更好。\\n\ngeneral_v20_9B_rephraser：美感更好，出图多样性更多。\\n\n\n\nwidth\\n\n\t\n设置图像生成后的宽度。\\n\n取值范围：[256, 768]。\\n\n默认值：512。\n参数\n说明\nheight\n设置图像生成后的高度。\n取值范围：[256, 768]。\n默认值：512。\nprompt\n设置用于生成图像的提示词 ，支持中英文。必填参数。\n如果希望在图片中展示对应的文字，可以在提示词中使用双引号包裹文字，例如提示词为生成一张圣诞节海报，上面写着 “Merry Christmas”。\nreq_schedule_conf\n设置任务调度配置的类型，必填参数。\ngeneral_v20_9B_pe：图文匹配度更好，结构表现更好。\ngeneral_v20_9B_rephraser：美感更好，出图多样性更多。\nwidth\n设置图像生成后的宽度。\n取值范围：[256, 768]。\n默认值：512。\n输出参数\n参数\\n\n\t\n说明\\n\n\n\nlog_id\\n\n\t\n日志 ID。\\n\n\n\nmsg\\n\n\t\n执行插件时的状态描述或错误提示信息。\\n\n\n\ncode\\n\n\t\n状态码。\\n\n\n\ndata.message\\n\n\t\n图片生成时的返回信息\\n\n\n\ndata.time_elapsed\\n\n\t\n图片生成所需的时间。\\n\n\n\ndata.code\\n\n\t\n图片生成时的状态码。\\n\n\n\ndata.data.image_urls\\n\n\t\n图片生成后的图片链接。\\n\n\n\ndata.data.pe_result\\n\n\t\n图片的描述信息。\n参数\n说明\nlog_id\n日志 ID。\nmsg\n执行插件时的状态描述或错误提示信息。\ncode\n状态码。\ndata.message\n图片生成时的返回信息\ndata.time_elapsed\n图片生成所需的时间。\ndata.code\n图片生成时的状态码。\ndata.data.image_urls\n图片生成后的图片链接。\ndata.data.pe_result\n图片的描述信息。\n示例\n调用 gen_image 工具生成一张女孩图片，输入提示词为一个中国年轻女孩,白色背景,黑色头发,长波 波头,正面脸,特写,工作室灯光,工作室,侧 光,化妆肖像,穿白色上衣，并指定 req_schedule_conf 为 general_v20_9B_pe。生成图片后，你可以单击输出结果中的链接查看图片。\n效果图如下\nseed_edit 工具\nseed_edit 工具支持根据提示词修改指定图片。\n配置说明\n调用 seed_edit 工具时，你需要上传原始图片并输入修改图片的提示词。\n输入参数\n输入参数说明如下表所示：\n参数\\n\n\t\n说明\\n\n\n\nimage_url\\n\n\t\n设置原始图片来源，必填参数。\\n\n支持上传图片或引用上游节点的输出参数。\\n\n说明\n在调试节点效果时，建议上传一张示例图，用于调整参数配置，并仅测试该节点，快速查看效果。\\n\n\\n\n\n\nprompt\\n\n\t\n设置用于编辑图像的提示词。\n参数\n说明\nimage_url\n设置原始图片来源，必填参数。\n支持上传图片或引用上游节点的输出参数。\n说明\n在调试节点效果时，建议上传一张示例图，用于调整参数配置，并仅测试该节点，快速查看效果。\n在调试节点效果时，建议上传一张示例图，用于调整参数配置，并仅测试该节点，快速查看效果。\nprompt\n设置用于编辑图像的提示词。\n输出参数\n参数\\n\n\t\n说明\\n\n\n\nlog_id\\n\n\t\n日志 ID。\\n\n\n\nmsg\\n\n\t\n执行插件时的状态描述或错误提示信息。\\n\n\n\ncode\\n\n\t\n状态码。\\n\n\n\ndata.data.vlm_result\\n\n\t\n图像编辑结果的描述。\\n\n\n\ndata.data.image_urls\\n\n\t\n图像编辑后的链接。\\n\n\n\ndata.message\\n\n\t\n图像生成时的相关信息。\\n\n\n\ndata.time_elapsed\\n\n\t\n编辑图像所花费的时长。\\n\n\n\ndata.code\\n\n\t\n编辑图像时的业务状态码。\n参数\n说明\nlog_id\n日志 ID。\nmsg\n执行插件时的状态描述或错误提示信息。\ncode\n状态码。\ndata.data.vlm_result\n图像编辑结果的描述。\ndata.data.image_urls\n图像编辑后的链接。\ndata.message\n图像生成时的相关信息。\ndata.time_elapsed\n编辑图像所花费的时长。\ndata.code\n编辑图像时的业务状态码。\n示例\n调用 seed_edit 工具编辑一张女孩图片，输入提示词为改成红色衣服，短发。生成图片后，你可以单击输出结果中的链接查看图片。\n效果如下：\n原始图片\\n\n\\n\n\\n\n\\n\n\\n\n\\n\n\\n\n编辑后的图片\\n\n\\n\n\\n\n\\n\n\\n\n\n原始图片\n编辑后的图片",
+  "metadata": {
+    "title": "豆包图像生成大模型插件",
+    "category": "2"
+  }
+}

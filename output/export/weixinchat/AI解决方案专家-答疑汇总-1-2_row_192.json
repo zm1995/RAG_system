@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_192",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze智能体开发中，如何利用DPO和PPO技术实现人类偏好对齐？",
+    "DPO和PPO在优化Agent行为时，对偏好数据的处理方式有何不同？",
+    "在Workflows中集成知识库时，如何通过偏好数据提升模型输出质量？",
+    "人类偏好对齐在智能体训练中具体指什么，与Coze平台的操作手册有何关联？",
+    "PPO和DPO在Coze产品中分别适用于哪些场景，如何选择？",
+    "原问题：这是GPT给的解释，所以DPO更偏向于人类的偏好么？我记得昨天说的PPO是人类标注的？"
+  ],
+  "answer": "人类偏好对齐是指通过偏好数据（例如A优于B的对比结果）来训练模型，使其输出更符合人类期望。DPO（直接偏好优化）和PPO（近端策略优化）均旨在实现这一目标，但方法不同：DPO直接利用偏好数据优化模型，而PPO通过人类标注的奖励信号进行强化学习。在Coze、Agent、智能体、Workflows及知识库等产品中，偏好数据常用于调整模型行为，例如在Workflows中通过知识库反馈优化输出，或在智能体训练中模拟人类偏好。两者均致力于让模型近似人类偏好，这是AI领域常见的对齐技术。",
+  "metadata": {
+    "original_question": "这是GPT给的解释，所以DPO更偏向于人类的偏好么\n我记得昨天说的PPO是人类标注的？",
+    "row": 192,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

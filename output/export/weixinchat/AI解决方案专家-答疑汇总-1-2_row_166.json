@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_166",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "请问在coze平台上，有哪些工具可以实现PDF文档的AI翻译与对照阅读功能？",
+    "在智能体（agent）开发中，如何集成AI翻译功能来处理PDF文件？",
+    "使用workflows时，能否设计一个自动翻译PDF并生成对照阅读结果的流程？",
+    "知识库中存储的PDF文档，如何通过AI工具实现多语言翻译和对照查看？",
+    "除了通义千问，还有哪些AI工具支持PDF翻译并保留原文格式进行对照阅读？",
+    "请问一下，老师昨天用AI翻译PDF对照阅读的工具是什么？"
+  ],
+  "answer": "通义千问是一款支持AI翻译PDF文档并实现对照阅读的工具。用户可通过该工具上传PDF文件，系统会自动识别文本内容并提供翻译结果，同时保留原文格式以便对照查看。如需在coze、agent、智能体、workflows或知识库等产品中实现类似功能，可参考通义千问的API集成或相关插件配置。",
+  "metadata": {
+    "original_question": "请问一下，老师昨天用AI翻译PDF对照阅读的工具是什么？",
+    "row": 166,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

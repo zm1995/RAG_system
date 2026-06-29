@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_96",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Decoder only架构中，解码后得到的向量与输入向量在信息聚合方面具体有哪些差异？",
+    "Decoder only模型中的三个输出向量与三个输入向量在语义表示上有何不同？",
+    "如何理解Decoder only解码后向量与输入向量之间的信息聚合过程？",
+    "在Transformer的Decoder only结构中，输出向量相比输入向量增加了哪些信息？",
+    "Decoder only解码后的向量与输入向量在维度或数值特性上是否发生变化？",
+    "原问题：Decoder only 解码后得到的三个向量和原来输入的三个向量区别是什么？"
+  ],
+  "answer": "Decoder only架构中，解码后得到的向量与原始输入向量的主要区别在于信息聚合。具体而言，解码过程通过自注意力机制和位置编码，将输入序列中的上下文信息进行整合，使得每个输出向量不仅包含对应位置的原始信息，还融入了序列中其他位置的相关信息。这种聚合增强了向量的语义表达能力，使其能够更好地捕捉序列中的依赖关系。关于更详细的机制，建议参考Transformer课程第二节中关于自注意力和信息流动的讲解。",
+  "metadata": {
+    "original_question": "Decoder only 解码后得到的三个向量和原来输入的三个向量区别是什么？",
+    "row": 96,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

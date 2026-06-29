@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_58",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在mac上部署f5tts时，除了cuda依赖外，还有哪些替代方案可以绕过GPU限制？",
+    "如果使用云GPU服务部署f5tts，有哪些推荐的平台和配置建议？",
+    "f5tts模型在本地部署时，是否支持CPU模式运行？性能如何？",
+    "对于mac用户，是否有其他类似的文本转语音模型可以本地部署且兼容性更好？",
+    "在coze或agent中集成f5tts时，如何通过workflows调用远程部署的模型？",
+    "问1：老师在泛娱乐那节讲到的f5tts，我想要部署到本地mac上运行，遇到个卡点他需要安装cuda，但是mac是A卡，这怎么部署呀？老师您知道么？或者哪位同学有部署成功的经验么？"
+  ],
+  "answer": "A卡（如Mac的AMD显卡）不支持CUDA，因此无法直接在本地部署f5tts。建议使用云GPU服务，例如按小时租用英伟达显卡的云服务器（如阿里云、腾讯云、AWS等），将模型部署到云端运行。这样既避免了硬件限制，又降低了成本。",
+  "metadata": {
+    "original_question": "问1：老师在泛娱乐那节讲到的f5tts，我想要部署到本地mac上运行，遇到个卡点他需要安装cuda，但是mac是A卡，这怎么部署呀？老师您知道么？或者哪位同学有部署成功的经验么？",
+    "row": 58,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

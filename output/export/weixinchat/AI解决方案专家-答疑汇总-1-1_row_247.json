@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_247",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在构建基于NeRF的3D人体模型时，有哪些开源框架或工具可以用于多视角图像生成？",
+    "除了NeRF，还有哪些技术或模型可以实现从多视角图像生成3D人体模型？",
+    "对于多视角图像生成3D人体模型，是否有现成的API服务可以直接调用？",
+    "在Coze或Agent平台上，如何集成NeRF技术以实现3D场景或人体模型的生成？",
+    "使用NeRF技术生成3D人体模型时，如何优化训练速度和模型精度？",
+    "老师想问一下您对神经辐射场的NeRf的构建有什么模型或工具推荐吗，一个多视角的图像生成针对人的话模型有什么开源或者api推荐吗"
+  ],
+  "answer": "NeRF（神经辐射场）是一种用于3D场景重建的技术，通常不直接作为独立的模型或API提供，而是被集成到特定的模型中。例如，Google的多个项目（如DreamFusion、Mip-NeRF）都利用了NeRF技术，但每个模型的输出目标不同，可能生成3D场景或可旋转视角的视频。如果您希望从单张图像生成3D模型，可以尝试Wonder3D（https://www.xxlong.site/Wonder3D/），它提供了较好的效果。对于多视角图像生成3D人体模型，建议关注基于NeRF的变体模型，如HumanNeRF或Neural Body，这些模型专门针对人体重建进行了优化。此外，一些平台如Coze或Agent可能支持通过API调用相关模型，但具体集成方式需参考平台文档。",
+  "metadata": {
+    "original_question": "老师想问一下您对神经辐射场的NeRf的构建有什么模型或工具推荐吗，一个多视角的图像生成针对人的话模型有什么开源或者api推荐吗",
+    "row": 247,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

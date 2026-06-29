@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_139",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "老师，在coze中设置system prompt时，窗口宽度具体指什么？",
+    "请问agent的窗口宽度参数在哪里调整？",
+    "workflows中的窗口宽度设置对模型输出有什么影响？",
+    "知识库的窗口宽度和模型的窗口宽度是同一个概念吗？",
+    "智能体的窗口宽度默认值是多少，可以修改吗？",
+    "老师，这个窗口指的的哪个窗口？system的？"
+  ],
+  "answer": "在模型配置中，窗口宽度指的是模型一次能够处理的最大上下文长度，通常以token数量衡量。该参数决定了模型在生成回复时能够参考的历史对话或输入文本的范围。在Coze、Agent、智能体、Workflows或知识库等产品中，窗口宽度是一个全局性设置，适用于所有模型调用，并非特指某个具体界面窗口。用户可以在模型配置页面找到并调整此参数，但需注意不同模型可能有不同的默认值和上限。",
+  "metadata": {
+    "original_question": "老师，这个窗口指的的哪个窗口？system的？",
+    "row": 139,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

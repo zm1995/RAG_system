@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_61",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze中，如何利用现有插件实现PPT自动转课件，包括字幕生成、配音和翻页同步？",
+    "Coze平台是否有支持PPT内容提取并自动生成配音的插件或工作流？",
+    "使用Coze制作课件时，如何将PPT翻页与配音进行时间轴对齐？",
+    "Coze的智能体或知识库能否辅助处理PPT转课件的字幕生成和配音合成？",
+    "在Coze workflows中，如何设计一个自动化流程，将PPT转换为带字幕和配音的课件？",
+    "如果我想把ppt转成课件，也就是需要根据ppt，自动生成字幕，然后按照自动配音，最后把ppt翻页和配音组合起来，生成一个课件；这个功能，共coze测试的时候，有没有合适的插件推荐呀"
+  ],
+  "answer": "目前Coze平台尚未提供直接读取PPT内容并自动生成字幕和配音的专用插件。不过，团队近期正在探索类似场景的解决方案，并尝试使用一些工具构建演示原型。建议关注后续更新，或考虑结合Coze的工作流（Workflows）与外部API（如语音合成和字幕生成服务）自定义实现该功能。具体进展可咨询相关教研同事，预计本周内可能完成初步demo。",
+  "metadata": {
+    "original_question": "如果我想把ppt转成课件，也就是需要根据ppt，自动生成字幕，然后按照自动配音，最后把ppt翻页和配音组合起来，生成一个课件；这个功能，共coze测试的时候，有没有合适的插件推荐呀",
+    "row": 61,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

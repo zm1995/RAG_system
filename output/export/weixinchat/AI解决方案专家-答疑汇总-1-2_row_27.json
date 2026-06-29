@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_27",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "如何将需求从prompt迁移到工作流中？",
+    "工作流在海外版中如何帮助缓解额度限制？",
+    "使用工作流与直接在prompt中写要求相比，有哪些优势？",
+    "在coze中，工作流的具体配置步骤是什么？",
+    "工作流运行时的额度限制机制是怎样的？",
+    "问题：可能是由于我的要求直接放在prompt里了，没弄工作流，我用工作流试试"
+  ],
+  "answer": "是的，在海外版中，建议使用工作流来单独运行任务。工作流能够有效缓解额度限制问题，因为它将任务拆分为独立的执行单元，从而优化资源分配和额度使用。相比直接在prompt中写入要求，工作流提供了更灵活和可控的执行方式，有助于提升整体效率。",
+  "metadata": {
+    "original_question": "问题：可能是由于我的要求直接放在prompt里了，没弄工作流，我用工作流试试",
+    "row": 27,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

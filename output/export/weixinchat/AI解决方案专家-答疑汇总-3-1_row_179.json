@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_179",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "这个提示信息具体指的是什么功能？",
+    "Agent在调用插件时，最多可以调用几次？",
+    "如果Agent调用插件超过5次会怎样？",
+    "如何设置Agent调用插件的次数限制？",
+    "Agent调用插件的次数限制是否适用于所有插件？",
+    "老师 这个是啥意思"
+  ],
+  "answer": "该提示信息表示，在Agent（智能体）调用插件的过程中，系统设定了最大调用次数为5次。这意味着Agent在执行任务时，最多可以连续调用插件5次，超过此限制将无法继续调用。此限制旨在防止无限循环或资源过度消耗，确保系统运行的稳定性和效率。",
+  "metadata": {
+    "original_question": "老师 这个是啥意思",
+    "row": 179,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

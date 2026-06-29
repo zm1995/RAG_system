@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_152",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze中使用code runner插件处理文件时，为什么必须先将文件下载到本地路径，而不是直接通过URL读取？",
+    "code runner插件中指定的文件存储路径'/mnt/data/{{file_name}}'是Coze的静态资源服务器吗？如果不是，它是什么？",
+    "如果我想在Coze的workflows中直接通过URL处理文件，而不使用code runner插件，有哪些替代方案？",
+    "在Coze的智能体开发中，如何确保code runner插件能够正确下载并访问外部文件？",
+    "Coze的code runner插件支持哪些文件格式？文件下载到本地路径后，如何通过Python代码进行读取和处理？",
+    "老师我想请教一下autoGPT文件处理demo的问题，这里去探查文件，为什么要先把文件存在这个路径下\"/mnt/data/{{file_name}}\"，再去读取，不能直接通过url去读取文件吗，然后这个路径是coze的静态资源服务器嘛？"
+  ],
+  "answer": "答：\n该问题涉及Coze平台中code runner插件的文件处理机制。根据插件文档，code runner插件要求用户提供一个文件链接，插件会自动将该链接对应的文件下载到指定的本地路径（例如'/mnt/data/{{file_name}}'）。这一设计是为了确保Python代码能够稳定、高效地访问文件内容，因为直接通过URL读取文件可能受到网络延迟、权限限制或文件大小等因素的影响。需要注意的是，'/mnt/data/{{file_name}}'并非Coze的静态资源服务器，而是插件内部用于临时存储文件的本地目录。因此，用户需要先提供文件链接，插件完成下载后，Python代码即可从该目录中读取文件进行后续处理。",
+  "metadata": {
+    "original_question": "老师我想请教一下autoGPT文件处理demo的问题，这里去探查文件，为什么要先把文件存在这个路径下\"/mnt/data/{{file_name}}\"，再去读取，不能直接通过url去读取文件吗，然后这个路径是coze的静态资源服务器嘛？",
+    "row": 152,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

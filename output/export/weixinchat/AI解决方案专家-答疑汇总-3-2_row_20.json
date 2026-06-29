@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_20",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze平台中，智能体的tokenizer处理流程是否完全由大模型内部完成，还是需要外部组件参与？",
+    "大模型中的embedding层和linear层是否属于模型的核心部分，tokenizer是否被视为独立的外部工具？",
+    "在workflows中，用户输入的文本如何通过tokenizer转换为模型可处理的格式，这一过程是否依赖外部库？",
+    "知识库中的文本数据在输入大模型前，是否需要经过外部tokenizer预处理，还是由模型自动处理？",
+    "大模型输出文本时，从向量到文字的转换是否由模型内部的tokenizer完成，还是需要调用外部解码器？",
+    "大模型里的autotokenizer是不是外部的？外部的tokenizer处理成token才丢进embedding，大模型才开始干活，大模型实际内容是从embedding到linear？后面还要跟一个tokenizer把向量转成文字也是外部的，不包括在大模型本身的？"
+  ],
+  "answer": "tokenizer通常被视为大模型工作流程的一部分，而非完全独立的外部组件。从用户输入prompt开始，大模型即启动处理流程，其中tokenizer作为第一个模块负责将文本转换为token序列。这些token随后进入embedding层生成向量表示，再经过多层变换（如linear层）进行推理，最终由输出端的tokenizer将向量解码为可读文本。整个过程均在大模型框架内完成，tokenizer是模型内部集成的模块，而非外部工具。因此，讨论tokenizer是否外部意义不大，关键在于理解它是模型处理链中的一环。",
+  "metadata": {
+    "original_question": "大模型里的autotokenizer是不是外部的？外部的tokenizer处理成token才丢进embedding，大模型才开始干活，大模型实际内容是从embedding到linear？后面还要跟一个tokenizer把向量转成文字也是外部的，不包括在大模型本身的？",
+    "row": 20,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

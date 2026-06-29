@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_25",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在RL强化学习中，调整RM、SFT和Pre-train的误差比例具体是如何影响模型表现的？",
+    "RL强化学习的目标是最大化RM打分，这与传统意义上的“赢率”有何本质区别？",
+    "除了调整误差比例，RL强化学习过程中还有哪些关键参数需要优化？",
+    "在Coze或智能体开发中，RL强化学习如何应用于提升Agent的决策能力？",
+    "RL强化学习中的RM打分机制与知识库中的反馈循环有何相似之处？",
+    "老师我这么理解对吗：RL强化学习，就是一个反复调参数（控制RM SFT Pre-train的误差比例）寻找最优赢率的过程"
+  ],
+  "answer": "您的理解中“寻找最优赢率”这一表述不够准确。在RL（强化学习）过程中，核心目标是最大化RM（奖励模型）的打分，而非直接追求赢率。RL通过反复调整参数（如控制RM、SFT和Pre-train的误差比例），优化模型在特定任务上的表现，使其更符合奖励模型的评价标准。赢率通常指在对抗或竞争场景中的胜率，与RL中基于奖励信号的优化目标无直接关联。因此，建议将“赢率”替换为“RM打分”或“奖励最大化”，以更精确地描述RL的优化方向。",
+  "metadata": {
+    "original_question": "老师我这么理解对吗：RL强化学习，就是一个反复调参数（控制RM SFT Pre-train的误差比例）寻找最优赢率的过程",
+    "row": 25,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

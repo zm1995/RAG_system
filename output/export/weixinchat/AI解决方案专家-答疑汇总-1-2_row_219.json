@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_219",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在收集用于微调模型的数据时，除了Python爬虫，还有哪些编程语言或工具可以推荐？",
+    "如何高效地使用爬虫工具从网页中提取结构化的对话数据用于模型训练？",
+    "针对图像数据的收集，有哪些专门的爬虫框架或库可以自动化下载并处理图片？",
+    "在构建知识库时，如何利用爬虫技术从多个来源整合文本资料并保证数据质量？",
+    "对于非技术用户，有没有无需编程的爬虫工具或平台可以用于收集微调所需的数据？",
+    "问一下如果要收集微调用的对话，知识，或者图像等资料，用什么爬虫工具比较合适？"
+  ],
+  "answer": "针对微调模型所需的数据收集，Python是主流且灵活的选择，常用库包括Scrapy（用于大规模网页爬取）、BeautifulSoup（用于解析HTML）、Selenium（用于处理动态内容）以及Requests（用于简单HTTP请求）。对于图像数据，可结合Pillow或OpenCV进行下载和处理。若需无代码方案，可考虑使用Octoparse或ParseHub等可视化爬虫工具，但定制化能力有限。建议根据数据类型（对话、知识、图像）和规模选择合适工具，并注意遵守目标网站的robots.txt协议及法律法规。",
+  "metadata": {
+    "original_question": "问一下如果要收集微调用的对话，知识，或者图像等资料，用什么爬虫工具比较合适？",
+    "row": 219,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

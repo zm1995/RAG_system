@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_72",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "o1在运行过程中是否涉及多个智能体（agent）的协同工作？",
+    "o1是否采用了多个大模型级联的架构来提升性能？",
+    "o1的底层实现是否依赖于多个agent或模型的并行处理？",
+    "o1是否通过多个agent或模型的组合来增强其功能？",
+    "o1是否使用了多个大模型或agent的集成策略来优化输出？",
+    "o1是不是跑了多个agent，或者多个大模型级agent"
+  ],
+  "answer": "关于o1的具体实现细节，目前没有公开的明确信息。但可以确定的是，o1在产品层面进行了大量的工程优化，其性能提升不仅仅依赖于模型本身的能力，还包括了系统架构、数据处理、任务调度等多方面的工程处理。因此，o1可能涉及多个agent或大模型的协同工作，但具体实现方式需以官方披露为准。",
+  "metadata": {
+    "original_question": "o1是不是跑了多个agent，或者多个大模型级agent",
+    "row": 72,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

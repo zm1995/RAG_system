@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_150",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在知识库中，outputlist 和 output 分别适用于哪些具体场景？",
+    "如何确保知识库输出时，图片与文本答案对应正确？",
+    "能否通过配置让 AI 从知识库中仅输出 Excel 的指定列？",
+    "知识库检索结果中，outputlist 的多个结果是如何排序的？",
+    "当知识库输出结果不准确时，有哪些调试方法？",
+    "老师我有点疑惑，那个知识库的输出有outputlist 和 output 其实两个有什么区别？因为我尝试了一下有时发现回答是正确的但是图片是发到是别的答案。我在想我可不可以让AI指定输出excel里哪一列呢"
+  ],
+  "answer": "在知识库中，output 用于输出单个检索结果，而 outputlist 用于输出多个检索结果。当知识库检索到多个相关条目时，outputlist 会包含这些结果，而 output 仅返回第一个结果。为确保图片与文本答案对应正确，建议在知识库中为每个条目明确关联图片，并检查检索逻辑是否按预期匹配。若需让 AI 输出 Excel 的指定列，可以通过配置知识库的查询参数或使用自定义工作流来实现，例如在 workflows 中设置筛选条件，仅提取目标列的数据。",
+  "metadata": {
+    "original_question": "老师我有点疑惑，那个知识库的输出有outputlist 和 output 其实两个有什么区别？因为我尝试了一下有时发现回答是正确的但是图片是发到是别的答案。我在想我可不可以让AI指定输出excel里哪一列呢",
+    "row": 150,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

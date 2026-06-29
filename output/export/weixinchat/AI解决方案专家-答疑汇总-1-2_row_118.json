@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_118",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "问1：在骑手招聘demo中，工作流具体是如何触发并执行代码的？",
+    "问2：除了骑手招聘demo，还有哪些示例展示了工作流与LLM结合的应用？",
+    "问3：在实现类似功能时，如何简化代码读取文件的过程？",
+    "问4：工作流中LLM编写代码的步骤有哪些关键注意事项？",
+    "问5：能否提供其他涉及工作流和代码生成的demo案例作为参考？",
+    "问2：能说具体那个demo用到吗？我重点参考下"
+  ],
+  "answer": "答：在骑手招聘的demo中，当用户询问某个地点附近是否有站点时，系统会启动一个工作流。该工作流中，LLM根据需求编写代码，代码需要执行更复杂的操作，包括读取一个文件。对于您的场景，实现方式可以进一步简化，无需如此复杂的代码逻辑。",
+  "metadata": {
+    "original_question": "问2：能说具体那个demo用到吗？我重点参考下",
+    "row": 118,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

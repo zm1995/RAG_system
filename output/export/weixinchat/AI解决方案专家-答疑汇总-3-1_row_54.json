@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_54",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze平台中，工作流内的System Prompt与Agent外层的System Prompt在作用范围上有何不同？",
+    "如果Agent中配置了多个工作流，每个工作流都包含System Prompt，当用户输入触发单个工作流时，模型是否会同时处理所有工作流的System Prompt？",
+    "工作流中的大模型节点是否继承Agent外层的System Prompt设置？",
+    "在Coze的Agent设计中，如何确保工作流内节点的System Prompt与Agent外层System Prompt不冲突？",
+    "当Agent触发多个工作流时，工作流内节点的System Prompt是独立生效还是合并处理？",
+    "老师，工作流里的system prompt和Agent里最外面的system prompt有区别吗，是不是都是和user prompt合并在一起作为上下文？\n\n\n那比如说，我一个Agent里加了三个工作流（里面都写了system prompt），那当我在user prompt里问了一个问题之后只触发了其中一个工作流，实际上模型是一次性把所有的system prompt都一起做了in-context-thinking，还是只用了其中一个工作流的system prompt？"
+  ],
+  "answer": "在Coze平台中，工作流内的System Prompt与Agent外层的System Prompt在作用范围上存在明确区别。Agent外层的System Prompt主要用于定义Agent的整体行为、角色和对话策略，而工作流内的System Prompt则针对特定工作流中的大模型节点进行设置。每个工作流中的大模型节点都有独立的System Prompt和User Prompt，这些节点在运行时是单独执行的，需要重新设定提示词，与之前的工作流或Agent外层设置无关。因此，Agent外层的System Prompt对工作流内的大模型节点不起作用。当用户输入触发单个工作流时，模型仅使用该工作流内节点的System Prompt，不会同时处理其他工作流的System Prompt。",
+  "metadata": {
+    "original_question": "老师，工作流里的system prompt和Agent里最外面的system prompt有区别吗，是不是都是和user prompt合并在一起作为上下文？\n\n\n那比如说，我一个Agent里加了三个工作流（里面都写了system prompt），那当我在user prompt里问了一个问题之后只触发了其中一个工作流，实际上模型是一次性把所有的system prompt都一起做了in-context-thinking，还是只用了其中一个工作流的system prompt？",
+    "row": 54,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

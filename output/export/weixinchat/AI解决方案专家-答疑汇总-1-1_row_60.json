@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_60",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在coze的workflows中，这个符号具体表示什么数学概念？",
+    "这个符号在智能体参数配置中有什么实际作用？",
+    "如何理解这个符号在知识库检索中的偏移量含义？",
+    "这个符号与高斯分布采样在agent设计中的关联是什么？",
+    "在操作手册中，这个符号的常见应用场景有哪些？",
+    "想问问中间这个符号是代表什么呀？"
+  ],
+  "answer": "该符号代表一个偏移量，主要用于在高斯分布上进行采样操作。在相关产品（如coze、agent、智能体、workflows、知识库）中，它通常用于调整采样点的位置，以控制生成结果的多样性和准确性。具体而言，偏移量决定了采样点相对于分布中心的偏离程度，从而影响输出结果的分布特性。",
+  "metadata": {
+    "original_question": "想问问中间这个符号是代表什么呀？",
+    "row": 60,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

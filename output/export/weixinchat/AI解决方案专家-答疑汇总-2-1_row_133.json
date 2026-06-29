@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_133",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在coze智能体中，embedding技术是如何应用于知识库的构建与检索的？",
+    "agent中的embedding向量化处理与workflows中的数据处理流程有何关联？",
+    "智能体在生成回复时，embedding如何帮助提升对用户意图的理解准确性？",
+    "在workflows中，embedding的维度选择对任务执行效率有何影响？",
+    "知识库中的embedding更新机制如何确保信息的时效性和准确性？",
+    "老师 我注意到在 stable diffusion 里也有embedding，主要是用在反向提示词中，那它的原理是不是将多个坏图整合在一起转换成向量提取特征，然后使得大模型生图时尽可能的减少这些坏图特征的产生？"
+  ],
+  "answer": "在Stable Diffusion中，embedding并非简单地将多个坏图整合成向量以提取特征。其核心原理涉及潜在空间（latent space）的概念，即通过编码器将图像映射到低维潜在表示，再通过解码器生成新图像。反向提示词中的embedding用于引导模型避免生成特定特征，但这一过程依赖于对潜在空间中特征向量的精确操控，而非直接整合坏图。建议您提前查阅潜在空间的相关资料，后续课程将详细讲解其工作机制。",
+  "metadata": {
+    "original_question": "老师 我注意到在 stable diffusion 里也有embedding，主要是用在反向提示词中，那它的原理是不是将多个坏图整合在一起转换成向量提取特征，然后使得大模型生图时尽可能的减少这些坏图特征的产生？",
+    "row": 133,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

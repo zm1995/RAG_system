@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_151",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Llama模型的训练流程中，Rejection Sampling步骤具体如何利用Reward Model筛选高质量回答？",
+    "Llama模型的DPO（Direct Preference Optimization）步骤与传统的SFT（Supervised Fine-Tuning）在训练目标上有何本质区别？",
+    "在Llama模型的训练中，Rejection Sampling步骤是否会对模型参数进行更新？请解释其作用。",
+    "Llama模型的DPO步骤如何通过偏好数据优化模型，而不需要显式的奖励模型？",
+    "在Llama模型的训练流程中，SFT步骤之后为什么还需要DPO步骤？两者如何协同工作？",
+    "Llama \n1、Pretrain \n2、Reward Model \n3、Rejection Sampling \n4、SFT（Supervised Fine-Tuning） \n5、DPO（Direct Preference Optimization）\n老师 ，这个步骤的3和5可以讲一下吗"
+  ],
+  "answer": "首先，关于步骤3（Rejection Sampling），这是一个数据处理步骤，不涉及对模型进行任何训练操作。该步骤的具体内容是：针对数十万个问题，每个问题生成20个回答，然后需要从每个问题的20个回答中挑选出3个最优回答。挑选方式是利用Reward Model对20个不同回答进行评分，选取评分最高的3个回答。这一过程旨在筛选出高质量的回答，为后续训练提供优质数据。\n\n其次，关于步骤5（DPO，Direct Preference Optimization），这是一种直接优化模型偏好的训练方法。与传统的SFT（Supervised Fine-Tuning）不同，DPO不需要显式的奖励模型，而是直接利用偏好数据（如人类对回答的偏好排序）来调整模型参数，使模型更倾向于生成符合偏好的回答。DPO通过对比正负样本（如优选回答和次优回答）来优化模型，从而提升模型在特定任务上的表现。\n\n关于SFT的作用：预训练模型通常不具备执行特定任务的能力。SFT阶段通过使用一问一答格式的数据（如问题与标准答案对），训练模型学会执行各种任务，尤其是问答任务。SFT使模型从通用语言模型转变为能够针对具体指令生成合理回答的模型。",
+  "metadata": {
+    "original_question": "Llama \n1、Pretrain \n2、Reward Model \n3、Rejection Sampling \n4、SFT（Supervised Fine-Tuning） \n5、DPO（Direct Preference Optimization）\n老师 ，这个步骤的3和5可以讲一下吗",
+    "row": 151,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_145",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze智能体开发中，如何选择DPO和PPO策略来优化模型表现？",
+    "Llama3使用DPO策略时，其prompt生成方式如何影响训练数据的构建？",
+    "在Agent工作流中，DPO和PPO策略对模型收敛速度有何不同影响？",
+    "知识库中的偏好数据如何用于DPO策略，以提升智能体的响应质量？",
+    "Coze平台中，workflows如何集成PPO策略来优化多轮对话的奖励模型？",
+    "我理解了一下为什么当时GPT和llama3会分别采用DPO和PPO策略：llama3因为采用了prompt生成的方式，从而有大量的prompt数据，因此可以绕过GPT的RW的强化学习阶段，直接采用偏好数据来进行策略优化。是这样吗？"
+  ],
+  "answer": "选择DPO或PPO策略并非由单一因素决定，而是综合考量多个维度后的结果。具体包括：时间周期与发布压力、最近几次训练的实验数据表现、团队人力资源配置、以及模型架构与数据特点等。例如，Llama3采用DPO策略，部分原因在于其通过prompt生成方式积累了大量偏好数据，从而能够绕过传统奖励模型（RW）的强化学习阶段，直接利用偏好数据进行策略优化。但这一选择仍需结合其他实际因素进行权衡。",
+  "metadata": {
+    "original_question": "我理解了一下为什么当时GPT和llama3会分别采用DPO和PPO策略：llama3因为采用了prompt生成的方式，从而有大量的prompt数据，因此可以绕过GPT的RW的强化学习阶段，直接采用偏好数据来进行策略优化。是这样吗？",
+    "row": 145,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_37",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "知识库支持哪些文件格式的导入？",
+    "如何将外部文档内容动态整合到智能体的prompt中？",
+    "知识库在智能体工作流中扮演什么角色？",
+    "知识库的更新频率对prompt效果有何影响？",
+    "能否通过API动态向知识库添加内容？",
+    "好的，这个格式没办法转换是吧？"
+  ],
+  "answer": "知识库的运用非常灵活，其核心在于将您希望动态嵌入到prompt中的文字知识进行管理。只要对prompt的生成有帮助，任何文字内容都可以纳入知识库，并在需要时动态调用。因此，格式转换通常不是问题，关键在于内容的适配性。",
+  "metadata": {
+    "original_question": "好的，这个格式没办法转换是吧？",
+    "row": 37,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

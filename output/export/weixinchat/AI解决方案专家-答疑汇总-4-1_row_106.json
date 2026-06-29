@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_106",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在RAG流程中，如果使用不同的embedding模型，是否会影响最终检索结果的准确性？",
+    "除了ES关键词匹配，还有哪些常见的检索方法可以替代向量数据库进行知识检索？",
+    "在知识库构建中，chunk切分的大小和策略如何影响后续的检索效果？",
+    "RAG流程中，是否可以在同一个应用里同时使用多个不同的embedding模型？",
+    "如果使用普通数据库（如MySQL）存储知识切片，如何实现高效的检索？",
+    "1. Embedding之后的向量长度跟大模型本来的向量长度可以不一样吗？记得上课时候讲RAG说可以设置更长之类的。如果长度不一样，token化和向量化的时候用的跟大模型一样的字典表和向量化表吗？（突然想到，因为有token化和向量化且字典表不同，是不是一个过程中只能用一个大模型？）\n2. chunk切分的时候用的是embedding模型？是不是有时候也可以不用embedding模型，就直接es关键字匹配不理解语义，这样chunk的时候还是embedding模型吗？"
+  ],
+  "answer": "1. RAG所需的embedding模型与LLM内部的embedding模型是完全独立的，两者之间没有直接关系。LLM内部的embedding通常将文本转换为数千维甚至上万维的向量，而RAG过程中的embedding向量维度一般较低，常见为几百维，最多上千维。回顾RAG流程图可知，整个RAG过程中LLM并未直接参与，仅在最后阶段将知识切片整合到prompt中。因此，RAG流程与LLM的embedding无关。\n\n2. 在知识切片过程中，通常不会使用embedding模型进行切分。切分完成后，每个知识切片通过embedding模型转换为向量。直接使用ES（Elasticsearch）进行关键词匹配也是一种常用方法，其目的是检索到有用的资料并整合到prompt中。检索方式的选择应以效果为导向，但若采用ES关键词匹配，则不属于向量数据库的语义检索范畴，此时使用普通数据库即可满足需求。",
+  "metadata": {
+    "original_question": "1. Embedding之后的向量长度跟大模型本来的向量长度可以不一样吗？记得上课时候讲RAG说可以设置更长之类的。如果长度不一样，token化和向量化的时候用的跟大模型一样的字典表和向量化表吗？（突然想到，因为有token化和向量化且字典表不同，是不是一个过程中只能用一个大模型？）\n2. chunk切分的时候用的是embedding模型？是不是有时候也可以不用embedding模型，就直接es关键字匹配不理解语义，这样chunk的时候还是embedding模型吗？",
+    "row": 106,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

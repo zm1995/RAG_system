@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_140",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze平台中，如何通过Workflows实现LLM对电脑或手机的操作？",
+    "LLM调用工具完成操作与Fine Tuning在实现原理上有何本质区别？",
+    "在智能体开发中，如何设计工具接口让LLM能够间接控制外部设备？",
+    "知识库在LLM操作电脑或手机的场景中扮演什么角色？",
+    "Coze中是否支持通过Agent直接执行系统级操作，还是仅能输出指令？",
+    "崔老师，之前有说如果要LLM去操作电脑或手机需要做Fine Tuning，但是后面应用课的时候有说到LLM是不会有手的，都是需要写些工具来给LLM调用完成，这两个冲突嘛"
+  ],
+  "answer": "这两个观点并不冲突。LLM本身不具备直接操作物理设备（如电脑或手机）的能力，它只能输出文字指令。Fine Tuning可以优化LLM对特定任务的理解和指令生成能力，但最终执行操作仍需通过外部工具（如API、脚本或Workflows）来实现。在Coze等平台中，通常通过设计工具接口，让LLM调用这些工具来间接完成操作，而非直接控制设备。",
+  "metadata": {
+    "original_question": "崔老师，之前有说如果要LLM去操作电脑或手机需要做Fine Tuning，但是后面应用课的时候有说到LLM是不会有手的，都是需要写些工具来给LLM调用完成，这两个冲突嘛",
+    "row": 140,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

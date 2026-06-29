@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_138",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在国内版Coze中使用高德地图插件时，如何配置LLM节点来获取最短路径？",
+    "Coze工作流中集成高德地图插件后，如何通过LLM节点优化路线规划结果？",
+    "在Coze智能体中调用高德地图插件时，遇到路径计算不准确的问题应如何调试？",
+    "如何利用Coze的workflows功能结合高德地图插件实现多路线比较？",
+    "在Coze知识库中存储高德地图路线数据后，如何通过LLM节点提取最短路径？",
+    "发现以下这个问题要怎么解决？我在国内coze，用的是高德地图插件"
+  ],
+  "answer": "针对在国内版Coze中使用高德地图插件时获取最短路径的问题，建议通过配置一个LLM节点来完成路线规划。具体步骤包括：在Coze工作流中插入LLM节点，设置输入参数为起点和终点坐标，调用高德地图API获取路线数据，然后利用LLM节点解析返回的JSON结果，筛选出距离最短的路线。确保LLM节点的提示词明确要求输出最短路径，并处理可能的异常情况，如无可用路线或数据格式错误。",
+  "metadata": {
+    "original_question": "发现以下这个问题要怎么解决？我在国内coze，用的是高德地图插件",
+    "row": 138,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

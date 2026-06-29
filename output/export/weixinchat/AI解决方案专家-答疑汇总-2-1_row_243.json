@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_243",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在coze或智能体开发中，prompt-tuning和in-context learning在效果上是否存在本质差异？",
+    "如果in-context learning未能解决特定任务，除了数据不恰当外，还有哪些可能的原因？",
+    "在workflows或知识库场景中，如何选择使用prompt-tuning还是in-context learning？",
+    "prompt-tuning和in-context learning在资源消耗和部署复杂度上有何不同？",
+    "对于agent应用，in-context learning是否完全取代了prompt-tuning的地位？",
+    "那prompt-tuning能解决的问题，是不是可以通过in-context learning解决呢？如果没解决掉是不是可以认为是用户给的in-context learning数据不恰当？"
+  ],
+  "answer": "实际上，随着in-context learning技术的不断成熟和易用性提升，其在许多场景下已逐渐取代prompt-tuning。如果in-context learning未能解决特定问题，数据不恰当确实是常见原因之一，但也可能涉及任务复杂度、模型能力或提示设计等因素。因此，在coze、agent、智能体等产品中，建议根据具体任务需求和数据特点，灵活选择或结合使用这两种方法。",
+  "metadata": {
+    "original_question": "那prompt-tuning能解决的问题，是不是可以通过in-context learning解决呢？如果没解决掉是不是可以认为是用户给的in-context learning数据不恰当？",
+    "row": 243,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

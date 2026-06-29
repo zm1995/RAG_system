@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_101",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在coze中，有哪些plugin可以辅助生成网页内容？",
+    "如何为coze的网页生成需求自定义开发一个plugin？",
+    "coze的Agent对话窗口能否直接输出包含音频和图片的网页？",
+    "coze workflows中是否支持集成第三方plugin来生成网页？",
+    "在coze知识库中，如何管理用于网页生成的plugin资源？",
+    "coze生成网页能不能推荐个plugin"
+  ],
+  "answer": "目前，coze平台尚未提供专门用于直接生成网页的plugin。针对此类需求，建议用户自行开发一个自定义plugin，或者利用coze的Agent对话窗口，通过配置让bot输出音频和图片等多媒体内容，以间接实现网页生成效果。如需进一步了解plugin开发或Agent配置，请参考coze官方文档中的相关指南。",
+  "metadata": {
+    "original_question": "coze生成网页能不能推荐个plugin",
+    "row": 101,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

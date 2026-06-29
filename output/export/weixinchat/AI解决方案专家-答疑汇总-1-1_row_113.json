@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_113",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "除了coze和dify，还有哪些免费或开源的智能体开发平台？",
+    "字节跳动在海外市场是否提供类似coze的智能体平台服务？",
+    "如何选择适合企业使用的智能体开发平台，考虑因素有哪些？",
+    "在海外部署智能体时，推荐使用哪些云服务和大语言模型组合？",
+    "coze平台与dify平台在功能上有哪些主要区别？",
+    "有没有跟coze一样免费的这种平台。另外字节或者tiktok这个生态有没有自己的云服务器和大语言模型？"
+  ],
+  "answer": "1. 与coze类似的免费或开源平台中，dify是较为常用的选择，它支持开源部署，用户可自行搭建。此外，还有如Rasa、Botpress等开源框架，以及Microsoft Power Virtual Agents等提供免费层的商业平台。2. 字节跳动在海外市场目前未推出类似coze的智能体平台或云服务。在海外环境中，通常采用GPT等海外大语言模型，并搭配微软Azure或亚马逊AWS等云服务进行部署。",
+  "metadata": {
+    "original_question": "有没有跟coze一样免费的这种平台。另外字节或者tiktok这个生态有没有自己的云服务器和大语言模型？",
+    "row": 113,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_14",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "问题二：工作流会更稳定，但是function call是否有什么其他我不知道优势，我想知道这个",
+    "问题三：在什么场景下function call仍然比工作流更适用？",
+    "问题四：function call与工作流在性能表现上有哪些具体差异？",
+    "问题五：如何评估在智能体开发中选择function call还是工作流？",
+    "问题六：function call在复杂任务处理中存在哪些局限性？",
+    "问题七：未来function call在coze平台中是否会被工作流完全取代？"
+  ],
+  "answer": "目前function call的使用频率确实在逐渐降低，主要原因是其优势相对于工作流而言不够显著。function call的主要优势在于实现简单、调用直接，适合处理单一、简单的功能调用场景。然而，工作流在稳定性、可维护性、错误处理以及复杂逻辑编排方面具有明显优势。具体来说，工作流支持可视化编排、条件分支、循环、并行执行等高级功能，能够更好地应对多步骤、多条件的复杂任务。function call则更适合作为工作流中的单个节点，用于执行特定的原子操作。在实际开发中，建议根据任务复杂度选择：简单功能调用可使用function call，复杂业务流程则优先考虑工作流。",
+  "metadata": {
+    "original_question": "问题二：工作流会更稳定，但是function call是否有什么其他我不知道优势，我想知道这个",
+    "row": 14,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

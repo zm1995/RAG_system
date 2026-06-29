@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_110",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "如何利用Coze平台快速搭建一个微信私人秘书助手？",
+    "在Coze中创建Agent并集成到微信的具体步骤是什么？",
+    "学习Coze的哪些课程可以掌握开发微信私人秘书的高级功能？",
+    "Coze平台支持哪些方式将Agent发布到微信？",
+    "开发微信私人秘书时，Coze的Workflows和知识库如何辅助实现复杂功能？",
+    "我现在就想做微信私人秘书助力，这个要等到什么时候的课程我才会做啊"
+  ],
+  "answer": "对于简单的微信私人秘书助手，您可以通过注册Coze平台并创建一个Agent，大约30分钟内即可完成基本配置，随后将其发布到微信。若需实现更复杂的功能，建议您系统学习Coze平台的应用开发课程，特别是完成前4节应用结束课后，即可掌握相关技能。",
+  "metadata": {
+    "original_question": "我现在就想做微信私人秘书助力，这个要等到什么时候的课程我才会做啊",
+    "row": 110,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

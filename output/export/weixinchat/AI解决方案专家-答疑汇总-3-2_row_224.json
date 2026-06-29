@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_224",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在GPT-3的预训练阶段，Transformer架构如何具体用于确定token表、位置表和Decoder中的参数值？",
+    "GPT-3在实际推理时，输入prompt后，模型如何利用已确定的参数值计算下一个token？",
+    "GPT-3的预训练和微调阶段中，参数值的确定是否完全依赖神经网络和机器学习方法？",
+    "在GPT-3的推理过程中，token表和位置表的参数值是否保持不变，仅通过数学计算输出结果？",
+    "GPT-3的Transformer架构在训练和推理阶段，参数值的确定和计算过程有何异同？",
+    "崔老师：问题1：是不是在模型训练的时候（例如GTP3）,其pretrain、SFT等阶段就是按照Transformer的架构来训练确定token表中6亿多、位置表中2500万、Decoder中1000多亿的参数值，而确定方法就是采用神经网络+机器学习（上节课的内容）；\n问题2：然后在外面实际使用GTP3时，输入一段文字作为prompt，这个时候模型也是按照Transformer的架构来输出next token，这个时候，token表中6亿多、位置表中2500万、Decoder中1000多亿的参数值是已经确认了的，相对于，模型是在做一个确定的数学计算后，输出了一个确定的字"
+  ],
+  "answer": "1、是的，您的理解完全正确。在GPT-3的预训练（pretrain）和监督微调（SFT）阶段，模型确实基于Transformer架构，通过神经网络和机器学习方法（如反向传播和梯度下降）来训练并确定token表中约6亿个参数、位置表中约2500万个参数以及Decoder中约1000亿个参数的值。\n2、是的，您的理解完全正确。在实际使用GPT-3时，输入一段文本作为prompt，模型同样基于Transformer架构进行推理，以输出下一个token。此时，token表、位置表和Decoder中的参数值已经固定，模型通过确定的数学计算（如矩阵乘法和注意力机制）输出一个确定的token。",
+  "metadata": {
+    "original_question": "崔老师：问题1：是不是在模型训练的时候（例如GTP3）,其pretrain、SFT等阶段就是按照Transformer的架构来训练确定token表中6亿多、位置表中2500万、Decoder中1000多亿的参数值，而确定方法就是采用神经网络+机器学习（上节课的内容）；\n问题2：然后在外面实际使用GTP3时，输入一段文字作为prompt，这个时候模型也是按照Transformer的架构来输出next token，这个时候，token表中6亿多、位置表中2500万、Decoder中1000多亿的参数值是已经确认了的，相对于，模型是在做一个确定的数学计算后，输出了一个确定的字",
+    "row": 224,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

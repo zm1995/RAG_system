@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_198",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在coze平台中，使用预训练的embedding模型时，相同的输入文本是否每次都会生成相同的向量表示？",
+    "智能体训练完成后，如果输入相同的token序列，其输出的embedding向量是否会因为随机种子设置不同而发生变化？",
+    "在workflows中调用embedding模型时，对于相同的输入数据，模型输出的向量是否具有确定性？",
+    "知识库中存储的embedding向量，如果重新对同一段文本进行编码，得到的结果是否与之前完全一致？",
+    "在agent开发中，embedding模型训练结束后，其参数是否固定，从而保证相同输入产生相同输出？",
+    "崔老师，embedding 模型训练结束后，用户输入相同的token后输出的向量也是相同的么，还是随机的，或者说训练结束后相同的输入经过神经网络输出的向量也是相同的么"
+  ],
+  "answer": "在embedding模型训练完成后，其参数（包括embedding矩阵）会固定下来。当输入一个token时，模型会通过tokenID直接查询embedding矩阵，获取对应行的向量（例如12288个数值）。因此，对于相同的输入，模型输出的embedding向量是完全一致的，不存在随机性。这一特性确保了模型在推理阶段的可重复性和稳定性。",
+  "metadata": {
+    "original_question": "崔老师，embedding 模型训练结束后，用户输入相同的token后输出的向量也是相同的么，还是随机的，或者说训练结束后相同的输入经过神经网络输出的向量也是相同的么",
+    "row": 198,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

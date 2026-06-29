@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_158",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze智能体开发中，RAG流程通常如何实现意图识别？",
+    "除了function call方式，还有哪些常见方法触发RAG检索？",
+    "在workflows中，如何设计RAG的调用逻辑以避免不必要的检索？",
+    "知识库与RAG结合时，系统prompt对检索结果的影响有哪些？",
+    "如何优化RAG流程中的意图分类，以提高检索准确性？",
+    "RAG流程是：用户提问和系统promt先一起给LLM来判断是否用RAG，类似functioncall一样返回一个调用请求，后端程序根据此请求做相应的RAG吗？"
+  ],
+  "answer": "您描述的方式是一种实现路径，但在实际应用中并不常见。更普遍的做法是：首先进行意图识别，根据用户问题的分类结果直接决定是否触发RAG检索，而无需依赖function call机制。具体而言，系统会先通过预定义的分类模型或规则对用户输入进行意图判断，若判定需要检索知识库，则直接调用RAG流程；否则，由LLM直接生成回答。这种方式效率更高，且减少了不必要的LLM调用。",
+  "metadata": {
+    "original_question": "RAG流程是：用户提问和系统promt先一起给LLM来判断是否用RAG，类似functioncall一样返回一个调用请求，后端程序根据此请求做相应的RAG吗？",
+    "row": 158,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

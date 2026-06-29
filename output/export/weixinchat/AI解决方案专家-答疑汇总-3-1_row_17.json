@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_17",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在RAG流程中，问题向量化后，Agent是否还需要接收原始问题？",
+    "RAG在向量数据库中匹配近似向量后，结果是如何返回给Application的？",
+    "图中红框标注的时序步骤中，Application如何协调RAG和Agent之间的数据流转？",
+    "如果RAG直接匹配向量并返回结果，为什么还需要Agent参与后续处理？",
+    "在Coze智能体工作流中，Application、RAG和Agent三者之间的交互顺序是怎样的？",
+    "老师，问题向量化后，RAG还将问题返还给agent么？  不应该是问题向量化后，直接由RAG在db内直接匹配近似向量么就可以了么？ \n我图中红框圈选的这2步时序操作，起什么作用了呢？"
+  ],
+  "answer": "该图表明Application负责控制整个流程的调度。无论调用RAG还是Agent，所有返回值都会先返回给Application，由Application进行统一管理和分发。具体来说，问题向量化后，RAG在向量数据库中匹配近似向量，并将匹配结果返回给Application；随后，Application根据业务逻辑决定是否将结果或原始问题传递给Agent进行进一步处理。图中红框圈选的时序步骤展示了Application作为中枢协调器的角色，确保数据流转的完整性和可控性。",
+  "metadata": {
+    "original_question": "老师，问题向量化后，RAG还将问题返还给agent么？  不应该是问题向量化后，直接由RAG在db内直接匹配近似向量么就可以了么？ \n我图中红框圈选的这2步时序操作，起什么作用了呢？",
+    "row": 17,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_216",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在coze中，如何将input节点的输入类型从固定字符串改为动态变量？",
+    "在智能体工作流中，如何配置input节点以引用其他节点的输出数据？",
+    "在workflows中，如何设置input参数使其能够接收来自上游节点的变量值？",
+    "在知识库相关的操作中，如何将input字段绑定到变量而非静态文本？",
+    "在agent开发中，如何通过连线实现input节点动态引用前序节点的数据？",
+    "老师，input这里如何设置成是变量的，而不是str"
+  ],
+  "answer": "在Coze、智能体或Workflows等产品中，要将input节点的输入类型从固定字符串（str）改为动态变量，需执行以下步骤：首先，确保当前节点与上游节点之间已建立连线（即数据流连接）。然后，在input节点的配置界面中，选择“引用变量”或类似选项，从下拉列表中选择上游节点输出的具体数据字段。这样，input节点即可动态引用前序节点的计算结果，而非使用静态文本。",
+  "metadata": {
+    "original_question": "老师，input这里如何设置成是变量的，而不是str",
+    "row": 216,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

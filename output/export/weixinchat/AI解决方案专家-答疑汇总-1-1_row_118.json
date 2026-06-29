@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_118",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "问1：在LDM模型中，QKV计算和卷积操作的执行顺序是怎样的？",
+    "问2：为什么在大型LDM模型中，UNet的某些层会省略QKV计算？",
+    "问3：LDM模型中的UNet结构如何根据图片尺寸调整计算策略？",
+    "问4：在Coze或Agent相关的智能体设计中，如何借鉴LDM的优化思路来减少计算量？",
+    "问5：LDM模型中的QKV计算与卷积操作在功能上有什么区别？",
+    "问3：千问和GPT给我的说法也都不一样"
+  ],
+  "answer": "在LDM（Latent Diffusion Model）中，QKV计算和卷积操作的执行顺序取决于具体实现，通常需要查阅相关文档或代码。经典的LDM模型会先进行QKV计算，再进行卷积操作。然而，随着模型规模的扩大，UNet结构中的某些层（尤其是处理大尺寸图片的层）可能会省略QKV计算，以减少不必要的计算开销。这种设计优化了计算效率，因为大尺寸图片的QKV计算成本较高。在Coze、Agent或智能体等产品的操作手册中，类似的计算优化策略（如选择性应用复杂操作）可以借鉴，以提升系统性能。QKV计算主要用于注意力机制，捕捉特征间的依赖关系，而卷积操作则侧重于局部特征提取，两者在功能上互补。",
+  "metadata": {
+    "original_question": "问3：千问和GPT给我的说法也都不一样",
+    "row": 118,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_143",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "问1：在Coze中，如何配置知识库以实现RAG的文档切片功能？",
+    "问2：Agent使用RAG时，切片策略对回答质量有何影响？",
+    "问3：Workflows中集成RAG时，文档预处理步骤包括哪些？",
+    "问4：智能体在调用知识库时，如何优化切片参数以提升检索效率？",
+    "问5：Coze平台是否有内置工具支持RAG切片的自动化测试？",
+    "问2：好的，有录播课视频有这部分内容吗，上次直播的没有从头到尾讲RAG，主要讲了切片"
+  ],
+  "answer": "RAG的核心在于对知识切片进行有效处理，以准备文档数据。具体操作应从文档切片这一初始步骤开始，确保数据被合理分割并索引，从而支持后续的检索与生成流程。",
+  "metadata": {
+    "original_question": "问2：好的，有录播课视频有这部分内容吗，上次直播的没有从头到尾讲RAG，主要讲了切片",
+    "row": 143,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

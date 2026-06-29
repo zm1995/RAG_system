@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_150",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "问1：在Transformer模型中，窗口长度（window length）与max_sequence_length有何区别？",
+    "问2：窗口长度如何影响自注意力机制的计算次数？",
+    "问3：max_sequence_length是否决定了Transformer模型中矩阵的维度？",
+    "问4：在自注意力计算中，窗口长度与矩阵尺寸之间是否存在直接关系？",
+    "问5：如何理解窗口长度在Transformer模型中的作用，以及它与max_sequence_length的关联？",
+    "问4：窗口长度是不是 max_sequen_length，和这个参数有关的"
+  ],
+  "answer": "答4：在Transformer模型中，窗口长度（window length）与max_sequence_length是两个不同的概念。窗口长度决定了自注意力机制中每次计算所覆盖的序列范围，即计算次数，但每次自注意力计算中的矩阵尺寸（如Q、K、V矩阵的维度）与窗口长度无关。矩阵尺寸通常由模型的隐藏层维度（hidden size）决定，而非窗口长度。因此，窗口长度影响的是计算的范围和次数，而非矩阵的尺寸。",
+  "metadata": {
+    "original_question": "问4：窗口长度是不是 max_sequen_length，和这个参数有关的",
+    "row": 150,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_177",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze中，如何通过Prompt有效限制Agent的输出范围？",
+    "编写Agent的Prompt时，有哪些技巧可以避免生成不期望的内容？",
+    "在智能体开发中，如何设置规则来禁止输出特定类型的信息？",
+    "Workflows中，如何通过配置控制Agent的输出内容？",
+    "知识库与Agent结合时，如何确保Agent只输出知识库内的内容？",
+    "有没有同学或老师可以帮助解答下疑问"
+  ],
+  "answer": "在配置Agent或智能体时，若需限制其输出内容，应在Prompt中明确指定禁止输出的具体内容。例如，使用“不要输出xxxxxx内容”的明确指令。此外，可结合Workflows中的条件判断或知识库的权限设置，进一步细化输出控制。建议在Prompt中采用否定式指令（如“避免”、“禁止”）并辅以示例，以提升Agent对限制的理解准确性。",
+  "metadata": {
+    "original_question": "有没有同学或老师可以帮助解答下疑问",
+    "row": 177,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

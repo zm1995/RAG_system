@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_0",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在使用GPT-2或GPT-3进行推理任务时，如果few-shot示例调整后模型正确率仍不理想，是否还有其他优化策略？",
+    "对于大型语言模型，few-shot学习与微调（fine-tuning）在提升推理任务准确率方面有何本质区别？",
+    "在Coze或Agent等产品中，如何通过优化workflows或知识库来提升模型的few-shot推理效果？",
+    "如果模型在few-shot推理中表现不佳，是否意味着预训练模型本身存在缺陷？如何评估预训练质量？",
+    "在智能体开发中，除了调整few-shot示例，还有哪些方法可以改善模型对复杂推理任务的响应准确性？",
+    "假如，给模型few-shot来让他做推理任务，并且模型的推理结果正确率很低，那么就得回去调transformer的参数么？这整个过程其实还是一个验证pretrain模型是否足够优秀的一个调参阶段？"
+  ],
+  "answer": "对于GPT-2、GPT-3等大型语言模型，在推理任务中即使模型输出正确率较低，通常也不会回退调整模型参数。当时的模型设计理念认为，通过优化few-shot示例（即提供更精准、更相关的样例）即可显著提升模型输出质量，无需修改底层参数。这一策略基于预训练模型的强大泛化能力，强调通过提示工程（prompt engineering）而非参数调整来适应特定任务。",
+  "metadata": {
+    "original_question": "假如，给模型few-shot来让他做推理任务，并且模型的推理结果正确率很低，那么就得回去调transformer的参数么？这整个过程其实还是一个验证pretrain模型是否足够优秀的一个调参阶段？",
+    "row": 0,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

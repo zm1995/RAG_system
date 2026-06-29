@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_163",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze中，处理经纬度数据时，除了浮点数，还有哪些数据类型可以推荐使用？",
+    "在Coze的workflows中，如何选择变量类型以避免精度丢失问题？",
+    "Coze教程中是否详细讲解了不同变量类型（如string、number、boolean）的适用场景？",
+    "在智能体开发中，使用number类型时，如何确保数据精度不丢失？",
+    "Coze知识库中，存储数值型数据（如坐标、金额）时，推荐使用哪种变量类型？",
+    "崔老师我想问右下角这里为什么不用浮点数number，经纬度毕竟是数字。问了GPT说number可能会导致小数位数多的时候精度丢失。那么什么时候该用number呢。我现在只看了五十三分钟的coze教程，还没有看周一的直播课，课里有分类讲Variable type都能怎么选吗？"
+  ],
+  "answer": "在Coze中，变量类型的选择应优先考虑使用string（字符串），因为它是兼容性最强、最不易出错的类型。除非有明确且必要的理由（如需要进行数学运算），否则不建议使用number（数字）类型。对于经纬度等数值数据，使用string可以避免浮点数精度丢失的问题。在Coze的教程和直播课中，会详细讲解不同变量类型的适用场景，建议您后续关注相关内容。",
+  "metadata": {
+    "original_question": "崔老师我想问右下角这里为什么不用浮点数number，经纬度毕竟是数字。问了GPT说number可能会导致小数位数多的时候精度丢失。那么什么时候该用number呢。我现在只看了五十三分钟的coze教程，还没有看周一的直播课，课里有分类讲Variable type都能怎么选吗？",
+    "row": 163,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

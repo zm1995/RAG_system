@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_131",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在预训练大模型时，embedding层的初始化方式有哪些常见选择？",
+    "为什么大模型预训练中通常不直接使用预训练好的embedding模型？",
+    "大模型预训练时，embedding层的参数是固定不变还是随训练更新？",
+    "如果使用自研的embedding模型嵌入大模型，其参数是否需要调整？",
+    "大模型预训练中，embedding层的随机初始化对模型性能有何影响？",
+    "老师，我问一下，就是每家的大模型在最开始做pre training的时候，他的那个embedding模型先随机初始化再训练参数，还是说找一个开源的embedding模型或者先自研一个模型嵌入到transformer里面固定参数不变？"
+  ],
+  "answer": "在大模型预训练过程中，embedding层通常采用随机初始化的方式，随后与整个大语言模型（LLM）一起进行联合训练。这种场景下，无论是使用开源的预训练embedding模型，还是自研的embedding模型，都无法直接拿来使用并固定参数，因为其参数需要与模型的其他部分协同优化，以适应整体训练目标。因此，embedding层的参数会随着训练过程动态更新，而非保持不变。",
+  "metadata": {
+    "original_question": "老师，我问一下，就是每家的大模型在最开始做pre training的时候，他的那个embedding模型先随机初始化再训练参数，还是说找一个开源的embedding模型或者先自研一个模型嵌入到transformer里面固定参数不变？",
+    "row": 131,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

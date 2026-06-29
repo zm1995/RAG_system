@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_69",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在缺乏PPO算法的情况下，仅依赖Reward Model对SFT模型进行优化时，如何设计损失函数来有效利用Reward Model的评分？",
+    "除了Llama模型，还有哪些实际案例展示了仅使用Reward Model优化SFT模型的效果？",
+    "如果Reward Model的评分存在噪声或偏差，直接用于SFT模型优化会带来哪些风险？如何缓解这些问题？",
+    "在SFT模型优化中，使用Reward Model评分与使用PPO算法相比，在训练稳定性和最终性能上有什么主要差异？",
+    "能否结合Reward Model评分和SFT模型的其他评估指标（如困惑度）来设计更鲁棒的优化策略？请给出具体思路。",
+    "如果没有PPO的能力，但是有了Reward Model，能不能直接用Reward Model来对SFT训练出来的模型做优化呢？比如对SFT两组答案进行打分后，给得分低的答案设置较高损失"
+  ],
+  "answer": "是的，即使没有PPO（近端策略优化）算法，仅使用Reward Model（奖励模型）也可以对SFT（监督微调）训练出的模型进行优化。例如，Llama模型就采用了类似的方法，并取得了不错的效果。其核心逻辑是：只要能够对模型输出进行有效评分，就可以利用这些评分来指导模型优化。具体操作上，可以对SFT模型生成的多组答案进行打分，然后对得分较低的答案赋予较高的损失权重，从而引导模型学习更优的输出。这种方法在实践中有广泛的应用前景，是当前模型优化的重要思路之一。",
+  "metadata": {
+    "original_question": "如果没有PPO的能力，但是有了Reward Model，能不能直接用Reward Model来对SFT训练出来的模型做优化呢？比如对SFT两组答案进行打分后，给得分低的答案设置较高损失",
+    "row": 69,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

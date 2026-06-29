@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_223",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在流程配置中，LibraryBlock id 和 uuid 分别代表什么含义？",
+    "如何获取知识库的 id 和 uuid 以用于流程配置？",
+    "知识库的 id 和 uuid 在智能体引用中起到什么作用？",
+    "流程配置中，uuid 的唯一性是如何保证的？",
+    "如果知识库 id 或 uuid 配置错误，会有什么影响？",
+    "流程配置时这里的id和uuid是知识库的id和uuid吗，如果是如何获得知识库的id和uuid"
+  ],
+  "answer": "在流程配置中，LibraryBlock id 代表知识库的唯一标识符（ID），而 uuid 是当前智能体内部生成的唯一标识符，用于确保在模型中引用的知识库具有唯一性。获取知识库的 id 和 uuid 的方法如下：知识库的 id 通常可以在知识库管理页面或通过 API 接口获取；uuid 则由系统在创建智能体时自动生成，无需手动获取。这两个标识符在流程配置中主要用于引用知识库，确保引用的准确性和唯一性，避免冲突。如果配置错误，可能导致知识库引用失败或模型行为异常，因此建议在配置前确认标识符的正确性。",
+  "metadata": {
+    "original_question": "流程配置时这里的id和uuid是知识库的id和uuid吗，如果是如何获得知识库的id和uuid",
+    "row": 223,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

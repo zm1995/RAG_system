@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_27",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "思维链技术在DeepSeek模型中的具体应用方式是什么？",
+    "DeepSeek在算法和工程上的创新主要体现在哪些方面？",
+    "大语言模型的总结和检索能力与思维链技术有何关联？",
+    "DeepSeek与其他国内大模型在底层效率优化上有哪些不同？",
+    "如何评估DeepSeek在思维链之外的独特优势？",
+    "刚刚讲的思维链，关于Deepseep牛逼之处之一也是思维链牛逼？以及大语言模型厉害能力在于总结和检索？Deepseek和国内其他大模型有啥本质区别？"
+  ],
+  "answer": "思维链技术并非DeepSeek独有的核心优势，它是一项较为成熟且普遍应用的技术。DeepSeek的卓越之处主要体现在算法创新、工程优化以及底层效率提升等多个方面，这些领域的突破比思维链技术更为关键。大语言模型的总结和检索能力是其基础功能，与思维链技术无直接关联。DeepSeek与其他国内大模型并无本质区别，其优势在于综合性能表现更优，而非技术路线的根本差异。",
+  "metadata": {
+    "original_question": "刚刚讲的思维链，关于Deepseep牛逼之处之一也是思维链牛逼？以及大语言模型厉害能力在于总结和检索？Deepseek和国内其他大模型有啥本质区别？",
+    "row": 27,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_109",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "如何利用大模型提升软件测试的自动化效率？",
+    "大模型在代码审查中有哪些具体应用场景？",
+    "学习大模型辅助代码开发需要掌握哪些基础知识？",
+    "有哪些适合初学者的AI代码工具推荐？",
+    "如何系统性地学习大模型在软件开发全流程中的应用？",
+    "想问下如何学习大模型用于软件测试、代码审查，以及 大模型用于 代码开发 哦哦，有啥可以推荐的学习资料不"
+  ],
+  "answer": "建议直接使用现有的AI代码工具，例如Cursor、GitHub Copilot等，这些工具已集成大模型能力，可辅助软件测试、代码审查和代码开发。对于学习资料，推荐以下资源：1. 官方文档：Cursor和GitHub Copilot的使用指南；2. 在线课程：Coursera或Udemy上的AI辅助编程课程；3. 实践项目：通过实际编写测试用例和代码审查来积累经验。从Cursor开始使用，逐步探索其他工具，能快速上手并提升效率。",
+  "metadata": {
+    "original_question": "想问下如何学习大模型用于软件测试、代码审查，以及 大模型用于 代码开发\n哦哦，有啥可以推荐的学习资料不",
+    "row": 109,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

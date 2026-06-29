@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_155",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze平台中，使用DeepSeek R1模型时，哪些具体功能或操作会导致红点提示？",
+    "Coze提示DS对知识和表格效果不佳，是否与模型版本或配置有关？如何避免？",
+    "除了DeepSeek R1，Coze中还有哪些模型对知识和表格支持有限？",
+    "在Coze中切换模型后出现红点，是否意味着工作流或智能体功能受限？如何排查？",
+    "Coze平台中，针对知识和表格处理，推荐使用哪些模型以获得最佳效果？",
+    "请问 为啥coze提示DS对知识和表格效果不佳？切换模型后确实出现了这么多红点？"
+  ],
+  "answer": "在Coze平台中，DeepSeek R1模型确实对知识和表格的支持有限，这是其模型特性所致。在开发AI应用时，建议优先使用DeepSeek V3等通用模型，这些模型对知识和表格的处理能力更强，兼容性更好。切换模型后出现的红点提示，通常表示当前模型不支持某些功能或操作，属于正常现象，不影响整体应用运行。如需避免此类提示，请选择支持度更高的模型，并参考Coze官方文档中的模型兼容性说明。",
+  "metadata": {
+    "original_question": "请问 为啥coze提示DS对知识和表格效果不佳？切换模型后确实出现了这么多红点？",
+    "row": 155,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

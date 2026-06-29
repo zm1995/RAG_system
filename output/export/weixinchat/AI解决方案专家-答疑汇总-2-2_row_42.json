@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_42",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在抖音等短视频平台上，关于DeepSeek的应用教程和案例，如何辨别其真实性和实用性？",
+    "DeepSeek相比其他大语言模型（如Qwen、Llama）在技术上有哪些具体差异？",
+    "DeepSeek的成本下降对中小企业和个人开发者使用AI应用有哪些实际影响？",
+    "除了短视频中展示的案例，DeepSeek在哪些实际业务场景中能发挥独特优势？",
+    "如何评估DeepSeek在模型性能上的进步，以及它对现有AI应用生态的推动作用？",
+    "最近DeepSeep 应用在抖音 短视频 里各种应用被炒的很火热，一些视频内容好多，@崔超 老师怎么看这个这些内容呢。感觉他们怎么一下都那么超前了。好像大家突然一下都会应用了。有没有水分"
+  ],
+  "answer": "抖音上关于DeepSeek的讲解内容，很多本质上与其他模型（如Qwen、Llama）的讲解相似，只是将模型名称替换为DeepSeek。DeepSeek并未在模型能力上带来显著的性能提升，因此基于该模型能力所能实现的应用类型没有发生根本性变化。然而，DeepSeek在成本方面确实实现了明显下降，这为应用部署提供了更经济的选择。",
+  "metadata": {
+    "original_question": "最近DeepSeep 应用在抖音 短视频 里各种应用被炒的很火热，一些视频内容好多，@崔超 老师怎么看这个这些内容呢。感觉他们怎么一下都那么超前了。好像大家突然一下都会应用了。有没有水分",
+    "row": 42,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

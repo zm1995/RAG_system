@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_48",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze平台中，如何区分虚拟工具和真实可用的插件？",
+    "如果我想在智能体中使用真实工具，应该怎样配置工作流？",
+    "在知识库中引用工具时，如何确保工具是实际可调用的？",
+    "在Agent开发中，删除虚拟工具描述后，添加插件的具体步骤是什么？",
+    "在Workflows中，如何验证一个工具是否真正提供了功能？",
+    "我在想是不是prompt中的这两个工具不能用？ 如果要想生成真的答复，是不是要调用什么插件？"
+  ],
+  "answer": "这两个工具是虚拟工具，不具备实际功能。要生成真实答复，需要删除prompt中这两段虚拟工具的描述，然后添加相应的插件。插件是真正提供功能的组件，添加后即可实现工具的实际调用。",
+  "metadata": {
+    "original_question": "我在想是不是prompt中的这两个工具不能用？ 如果要想生成真的答复，是不是要调用什么插件？",
+    "row": 48,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

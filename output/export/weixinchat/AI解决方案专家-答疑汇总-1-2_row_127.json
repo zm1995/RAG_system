@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_127",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "GPT和Llama在训练数据来源上的主要区别是什么？",
+    "Llama模型在SFT阶段如何利用机器生成数据？",
+    "为什么越来越多的公司倾向于使用机器生成数据来训练模型？",
+    "GPT和Llama在训练流程中，SFT阶段的具体操作有何不同？",
+    "在模型训练中，人工编写数据与机器生成数据各有哪些优缺点？",
+    "GPT和Llama的训练不同是GPT是人工写出来的，Llama是先用标签数据训练了一个模型，然后用这个模型再生成的答案（SFT Data)循环训练吗？"
+  ],
+  "answer": "是的，GPT模型在SFT（监督微调）阶段，其优质回答数据主要由人工编写。而Llama模型在SFT阶段，数据则通过机器生成，并利用奖励模型（Reward Model）进行过滤筛选。目前，越来越多的公司倾向于采用这种机器生成数据的方式进行模型训练，以提高效率和扩展数据规模。",
+  "metadata": {
+    "original_question": "GPT 和Llama两个的训练不同是 GPT是人工写出来的，Llama 是先用标签数据训练了一个模型，然后用这个模型再生成的答案（SFT Data)巡还训练吗？",
+    "row": 127,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

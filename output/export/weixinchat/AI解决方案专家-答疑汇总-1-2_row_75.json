@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_75",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze智能体开发中，AdapterDrop技术如何通过动态移除机制提升模型微调效率？",
+    "AdapterDrop在Workflows中如何实现自适应层跳过，以优化资源利用？",
+    "能否详细解释AdapterDrop中基于参数重要性动态跳过层的原理？",
+    "在知识库集成场景下，AdapterDrop如何帮助减少冗余计算并保持模型性能？",
+    "AdapterDrop与标准Adapter方法相比，在动态移除策略上有哪些关键差异？",
+    "崔老师，能否帮忙介绍一下，AdapterDrop是如何实现动态高效移除Adapter的吗？感谢"
+  ],
+  "answer": "AdapterDrop是一种动态高效移除Adapter的技术，其核心原理是基于参数重要性评估，自动跳过那些对模型输出影响较小的层。具体来说，在模型微调过程中，某些层的Adapter参数数值极小，导致输入经过这些层后输出与输入几乎无差异，因此这些层可以被安全地跳过，而不会显著影响最终结果。这种机制主要得益于模型层数较多，而微调时使用的数据量相对有限，因此并非所有层都需要参与计算。通过动态跳过不重要的层，AdapterDrop能够有效减少计算开销和内存占用，同时保持模型性能。在Coze、Agent、Workflows或知识库等产品中，该技术可应用于优化资源利用，提升微调效率。",
+  "metadata": {
+    "original_question": "崔老师，能否帮忙介绍一下，AdapterDrop是如何实现动态高效移除Adapter的吗？感谢",
+    "row": 75,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_54",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze平台中，使用AutoGPT插件时，代码运行器插件要求的文件路径具体指什么？",
+    "如何正确设置AutoGPT项目中Python代码的存放路径，以确保与Coze的代码运行器插件兼容？",
+    "Coze的代码运行器插件对文件路径的定义有哪些规范或限制？",
+    "在AutoGPT项目中，如果文件路径设置错误，会导致哪些常见问题？",
+    "除了代码运行器插件，Coze中还有哪些插件或功能涉及文件路径的定义？",
+    "老师在AUTOGPT项目里，定义的文件路径是文件在COZE上的存放路径吗？"
+  ],
+  "answer": "在Coze平台中，使用AutoGPT项目时，定义的文件路径指的是Python代码的存放路径。这一规范来源于代码运行器插件的官方介绍，因此建议在编写prompt和代码时，严格遵循该路径定义，以确保插件能够正确识别和执行代码。",
+  "metadata": {
+    "original_question": "老师在AUTOGPT项目里，定义的文件路径是文件在COZE上的存放路径吗？",
+    "row": 54,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

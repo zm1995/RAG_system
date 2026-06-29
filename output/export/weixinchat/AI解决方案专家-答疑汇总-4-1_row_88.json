@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_88",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在预训练阶段，大语言模型的词汇表大小（Token数量）是如何确定的？",
+    "除了GPT-3，其他大语言模型（如BERT、LLaMA）的Token数量是否也在训练前固定？",
+    "Token数量固定后，在模型微调或推理阶段能否动态调整？",
+    "大语言模型的Token数量对模型性能和训练效率有何影响？",
+    "算法工程师在设计Token词汇表时，通常会考虑哪些因素？",
+    "一个大语言模式，比如GPT3，总共有多少个Token，是在预训练之前算法工程师就会确定下来是吗？"
+  ],
+  "answer": "是的，大语言模型的Token数量（即词汇表大小）在预训练之前由算法工程师确定，并在整个训练过程中保持不变。例如，GPT-3的词汇表包含约5万种Token，这一数值在模型训练开始前就已设定，后续无法修改。Token数量的确定通常基于语言覆盖范围、计算资源限制和模型设计目标等因素。",
+  "metadata": {
+    "original_question": "一个大语言模式，比如GPT3，总共有多少个Token，是在预训练之前算法工程师就会确定下来是吗？",
+    "row": 88,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

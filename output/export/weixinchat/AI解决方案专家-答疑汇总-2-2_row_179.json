@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_179",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze中，如何设置Agent优先分析知识库中的特定图片而非随机选择？",
+    "上传到Coze知识库的图片，Agent在分析时能否指定分析顺序或全部分析？",
+    "Coze Agent分析知识库图片时，如何避免只分析单张图片而忽略其他？",
+    "在Coze中，如何区分图片是作为参考资料还是任务输入，以优化Agent的分析行为？",
+    "Coze知识库中的图片，如何通过Workflows或Agent配置实现批量分析？",
+    "老师，我想问下我上传到coze插件知识库的10几张图，怎么能够让agent去给我全部分析呢？我在测试框提问的时候，它每次就随机选了一张图回答"
+  ],
+  "answer": "若希望Agent立即分析所有图片，建议直接在对话窗口上传图片，而非上传至知识库。需明确区分图片用途：若图片属于本次任务的分析对象，应在对话窗口上传；若作为长期参考资料，则上传至知识库。在知识库中，Agent默认随机选择图片分析，无法保证全部分析。如需全部分析，可考虑通过Workflows设计流程，或调整Agent配置，指定分析规则。",
+  "metadata": {
+    "original_question": "老师，我想问下我上传到coze插件知识库的10几张图，怎么能够让agent去给我全部分析呢？我在测试框提问的时候，它每次就随机选了一张图回答",
+    "row": 179,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

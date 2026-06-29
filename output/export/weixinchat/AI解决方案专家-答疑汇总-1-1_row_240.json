@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_240",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "老师，coze是否支持接入其他大模型的API密钥，比如Claude或文心一言？",
+    "在coze中，能否通过自定义配置来使用第三方模型，而不用平台内置的模型？",
+    "老师，如果我想用自己购买的GPT-4 API，coze平台允许绑定吗？",
+    "coze的workflows或智能体功能中，能否调用外部模型服务，比如通过API网关？",
+    "老师，coze是否提供类似“自带模型”的选项，让用户上传或链接自己的模型？",
+    "老师，coze可以使用自己的chatgpt key么，不用coze的？"
+  ],
+  "answer": "答：目前coze平台不支持用户使用自己的ChatGPT API密钥或其他第三方模型密钥。平台已将模型服务封装集成，用户只能使用coze内置的模型，如需更多功能或更高配额，需购买coze的专业版订阅。",
+  "metadata": {
+    "original_question": "老师，coze可以使用自己的chatgpt key么，不用coze的？",
+    "row": 240,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

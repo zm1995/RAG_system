@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_73",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "如果不会编程，如何利用coze或dify实现工作流自动化？",
+    "coze平台上的大模型与官方版本在功能上是否存在差异？",
+    "在coze中，如何批量运行评测数据以获取结果？",
+    "coze支持的大模型种类有限，如何覆盖所有需要评测的模型？",
+    "除了coze和dify，还有哪些工具可以用于搭建工作流进行模型评测？",
+    "如果不会python怎么办呢 可能考虑用coze或dify搭建工作流去实现嘛，但我印象中课堂上说过coze的大模型和实际官网有偏差；且coze中涉及到的大模型种类也不能完全覆盖要测评的大模型，这种可以怎么办呀"
+  ],
+  "answer": "使用coze进行模型评测是可行的，核心在于实现评测数据的批量运行，从而获取结果。coze上的模型与在其他平台使用的模型本质相同，不存在差异。课程中提到的区别并非模型本身，而是coze平台提供的周边插件和工具与其他环境有所不同。因此，您可以放心使用coze进行评测，只需关注如何设计工作流以批量处理数据即可。",
+  "metadata": {
+    "original_question": "如果不会python怎么办呢 可能考虑用coze或dify搭建工作流去实现嘛，但我印象中课堂上说过coze的大模型和实际官网有偏差；且coze中涉及到的大模型种类也不能完全覆盖要测评的大模型，这种可以怎么办呀",
+    "row": 73,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

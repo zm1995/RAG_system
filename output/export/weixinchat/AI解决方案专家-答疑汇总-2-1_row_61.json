@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_61",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze平台中，PPO和DPO微调方法分别适用于哪些类型的智能体训练场景？",
+    "如何结合Workflows功能，在知识库中同时应用PPO和DPO优化模型性能？",
+    "PPO和DPO在Agent开发中的主要区别是什么，如何根据任务需求选择？",
+    "在Coze中，使用PPO、DPO或两者结合时，对模型训练数据有什么具体要求？",
+    "PPO和DPO同时使用是否会增加模型训练复杂度，Coze平台如何支持这种混合优化？",
+    "模型学习ppo，dpo，ppo和dpo同时使用，请问这3种情况分别应用在什么场景？"
+  ],
+  "answer": "PPO（Proximal Policy Optimization）和DPO（Direct Preference Optimization）是两种不同的模型微调技术，其应用场景取决于具体的业务需求和优化目标。PPO通常适用于需要稳定策略更新的场景，例如在强化学习任务中，通过限制策略更新幅度来避免性能崩溃；而DPO则更适用于基于偏好数据的直接优化，例如在对话系统或推荐系统中，通过用户反馈直接调整模型行为。同时使用PPO和DPO可以结合两者的优势，适用于复杂任务，如需要同时考虑策略稳定性和偏好对齐的场景。在Coze平台中，用户可以根据智能体或Workflows的具体需求，灵活选择或组合这些方法，以优化模型在知识库或Agent中的表现。",
+  "metadata": {
+    "original_question": "模型学习ppo，dpo，ppo和dpo同时使用，请问这3种情况分别应用在什么场景？",
+    "row": 61,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

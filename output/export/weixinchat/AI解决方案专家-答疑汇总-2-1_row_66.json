@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_66",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze平台上训练模型需要具备哪些编程基础？",
+    "使用智能体进行模型微调时，推荐使用哪些工具或库？",
+    "在workflows中集成模型训练流程，是否需要额外安装依赖？",
+    "知识库与模型训练结合时，如何配置环境以支持Hugging Face？",
+    "对于非工程师用户，Coze是否提供无代码的模型训练方案？",
+    "现在有环境训练模型吗？要装什么软件吗？"
+  ],
+  "answer": "对于具备编程能力的工程师，建议首先学习Hugging Face库的使用。通过命令行加载相关库和模型，进行模型运行或微调操作。Hugging Face是当前主流的工具，支持模型加载、训练和微调。若使用Coze平台，可结合其智能体或workflows功能，但需确保环境已安装Python及Hugging Face相关依赖。对于非工程师用户，Coze提供无代码界面，但模型训练功能可能受限，建议参考官方文档获取具体指导。",
+  "metadata": {
+    "original_question": "现在有环境训练模型吗？要装什么软件吗？",
+    "row": 66,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

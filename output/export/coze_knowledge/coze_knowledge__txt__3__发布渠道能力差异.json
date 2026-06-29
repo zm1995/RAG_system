@@ -1,0 +1,17 @@
+{
+  "id": "coze_knowledge/txt/3/发布渠道能力差异",
+  "source": "coze_knowledge",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\coze_knowledge\\txt\\3\\发布渠道能力差异.txt",
+  "questions": [
+    "在Coze的发布渠道中，哪些渠道支持问答节点，并且哪些渠道不支持卡片效果？",
+    "如果需要在智能体应用中实现语音输入功能，哪些发布渠道支持该功能，哪些不支持？",
+    "在Coze的发布渠道中，哪些渠道支持触发器功能，哪些渠道不支持？",
+    "对于需要流式输出功能的智能体应用，应该选择哪些发布渠道？",
+    "在Coze的发布渠道中，哪些渠道支持接收文件功能，哪些渠道不支持？"
+  ],
+  "answer": "发布渠道能力差异\n本文介绍扣子发布渠道支持的工作流节点的差异和能力差异，在发布智能体和应用时，请根据实际需求选择合适的发布渠道。\n工作流节点\n多数工作流节点在各发布渠道均支持，仅个别节点在不同发布渠道的支持情况有差异，具体如下表所示。\n节点\\n\n\t\nChat SDK\\n\n\t\nAPI\\n\n\t\n微信/抖音小程序\\n\n\t\n通讯或社交平台\\n\n微信、飞书、多维表格、掘金\\n\n\n\n问答节点\\n\n\t\n应用\\n\n\t\n✅\\n\n仅对话流支持问答节点。\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n不支持卡片效果。\\n\n\n\n智能体\\n\n\t\n❌\\n\n\t\n✅\\n\n\t\n✅\\n\n不支持卡片效果。\\n\n\t\n✅\\n\n不支持卡片效果。\\n\n\n\n输入节点\\n\n\t\n应用\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n❌\\n\n\n\n智能体\\n\n\t\n❌\\n\n\t\n✅\\n\n\t\n❌\\n\n\t\n❌\n节点\nChat SDK\nAPI\n微信/抖音小程序\n通讯或社交平台\n微信、飞书、多维表格、掘金\n问答节点\n应用\n✅\n仅对话流支持问答节点。\n✅\n✅\n✅\n不支持卡片效果。\n智能体\n❌\n✅\n✅\n不支持卡片效果。\n✅\n不支持卡片效果。\n输入节点\n应用\n✅\n✅\n✅\n❌\n智能体\n❌\n✅\n❌\n❌\n功能点\n不同渠道的能力差异如下表所示。\n功能点\\n\n\t\n微信\\n\n\t\n飞书\\n\n\t\n多维表格\\n\n\t\n掘金\\n\n\t\n小程序\\n\n\t\nChat SDK\\n\n\t\nAPI\\n\n\n\n接收图片\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\n\n输出图片\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\n\n接收文件\\n\n\t\n❌\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\\n\n\n\n语音输入\\n\n\t\n✅\\n\n微信客服不支持语音输入。\\n\n\t\n✅\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n✅\\n\n\n\n语音输出 TTS\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n✅\\n\n\n\n开场白\\n\n\t\n✅\\n\n微信客服不支持开场白。\\n\n\t\n✅\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n✅\\n\n\\n\n\t\n✅\\n\n\t\n✅\\n\n\n\n用户问题建议\\n\n\t\n❌\\n\n\t\n✅\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n✅\\n\n仅支持展示全部预设问题，不支持展示部分预设问题。\\n\n\t\n✅\\n\n\t\n✅\\n\n\n\n触发器\\n\n\t\n❌\\n\n\t\n✅\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\n\n快捷指令\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n✅\\n\n\n\n流式输出\\n\n\t\n❌\\n\n\t\n✅\\n\n\t\n❌\\n\n\t\n❌\\n\n\t\n✅\\n\n\t\n✅\\n\n\t\n✅\n功能点\n微信\n飞书\n多维表格\n掘金\n小程序\nChat SDK\nAPI\n接收图片\n✅\n✅\n✅\n✅\n✅\n✅\n✅\n输出图片\n✅\n✅\n✅\n✅\n✅\n✅\n✅\n接收文件\n❌\n✅\n✅\n✅\n✅\n✅\n✅\n语音输入\n✅\n微信客服不支持语音输入。\n✅\n❌\n❌\n❌\n❌\n✅\n语音输出 TTS\n❌\n❌\n❌\n❌\n❌\n❌\n✅\n开场白\n✅\n微信客服不支持开场白。\n✅\n❌\n❌\n✅\n✅\n✅\n用户问题建议\n❌\n✅\n❌\n❌\n✅\n仅支持展示全部预设问题，不支持展示部分预设问题。\n✅\n✅\n触发器\n❌\n✅\n❌\n❌\n❌\n❌\n❌\n快捷指令\n❌\n❌\n❌\n❌\n❌\n❌\n✅\n流式输出\n❌\n✅\n❌\n❌\n✅\n✅\n✅",
+  "metadata": {
+    "title": "发布渠道能力差异",
+    "category": "3"
+  }
+}

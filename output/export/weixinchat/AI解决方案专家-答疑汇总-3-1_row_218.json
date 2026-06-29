@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_218",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在企业AI转型中，Java开发者通常需要学习哪些新技能来适应AI工作流？",
+    "对于企业现有的Java系统，如何与AI模型（如大语言模型）进行集成？",
+    "在AI项目中，Java和Python在性能上有什么主要差异，如何选择？",
+    "企业AI转型时，Java团队如何快速搭建基于Python的AI基础设施？",
+    "除了模型调用，Java在AI系统中还能承担哪些关键角色？",
+    "现在大部分的企业里面转型AI的话，java一般转型后还是用java操控大模型还是会改用python，大部分是怎么做的？"
+  ],
+  "answer": "在企业AI转型过程中，技术栈的选择取决于具体任务。对于与模型紧密相关的部分，如数据处理、模型训练、提示词组装和模型调用，Python因其丰富的AI库（如TensorFlow、PyTorch、LangChain）和社区支持而成为主流选择。然而，对于周边系统，如数据管理平台、用户界面、业务逻辑处理等，Java凭借其稳定性、成熟的企业级框架（如Spring Boot）和广泛的生态系统，仍然被广泛使用。因此，大多数企业采用混合架构：核心AI工作流使用Python，而外围系统和服务则继续使用Java，以实现高效集成和性能优化。",
+  "metadata": {
+    "original_question": "现在大部分的企业里面转型AI的话，java一般转型后还是用java操控大模型还是会改用python，大部分是怎么做的？",
+    "row": 218,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_93",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze中，如何将结构化的训练计划（如表格）有效地整合到Agent的prompt中，以避免仅用文字描述导致信息丢失？",
+    "除了将案例放入prompt，还有哪些方法可以在Agent中引用或加载外部数据（如Excel表格）作为参考？",
+    "如果Agent需要根据用户输入动态生成Excel表格，应该使用Coze的哪些功能或工具来实现？",
+    "在Coze workflows中，如何设计一个流程来收集用户信息并自动填充到知识库或表格中？",
+    "对于包含复杂格式（如表格、图表）的参考数据，在Coze智能体中有哪些最佳实践来保持其直观性和可用性？",
+    "那我这些用于参考的训练计划应该放在哪里呢，只能像之前讲过销售那个agent那样，当作优秀案例放在prompt里面嘛，但是prompt里面又没办法放表格感觉我只能拆成文字描述，这样就没有表格直观"
+  ],
+  "answer": "在收集新信息时，重点在于确保Agent能够有效获取数据，这与表格的具体格式无关。关键在于设计信息收集机制，使Agent能够准确捕获所需信息。收集完成后，需要将数据填充到Excel表格中。实现这一目标有两种主要方式：一是使用Coze平台提供的插件功能，二是通过编写Python代码来操作Excel文件。这两种方法均能生成结构化的表格，从而保持数据的直观性和可读性。",
+  "metadata": {
+    "original_question": "那我这些用于参考的训练计划应该放在哪里呢，只能像之前讲过销售那个agent那样，当作优秀案例放在prompt里面嘛，但是prompt里面又没办法放表格感觉我只能拆成文字描述，这样就没有表格直观",
+    "row": 93,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

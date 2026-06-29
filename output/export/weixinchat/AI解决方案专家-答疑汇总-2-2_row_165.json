@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_165",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Latent Diffusion Model中，Text向量输入到U-net不同层的QKV时，其维度是如何调整的？",
+    "Latent Diffusion Model的架构图中，Text向量与U-net各层特征图的拼接操作具体是如何实现的？",
+    "在Latent Diffusion Model中，条件Text向量的维度变化是否会影响模型生成图像的质量？",
+    "Latent Diffusion Model中，Text向量通过交叉注意力机制输入到U-net时，其维度与U-net内部特征维度如何匹配？",
+    "Latent Diffusion Model中，除了Text向量，还有哪些条件信息会输入到U-net的QKV中，它们的维度如何处理？",
+    "原问题：Latent diffusion Model 中的输入到U-net各层QKV的条件Text向量应该是不同维数的吧？维数是怎么变化的，图中好像没有体现这一点"
+  ],
+  "answer": "在Latent Diffusion Model中，条件Text向量通过交叉注意力机制输入到U-net的各层。Text向量的维度在不同层中可能不同，具体变化取决于模型设计。通常，Text向量首先通过一个线性层或嵌入层映射到与U-net各层特征图相匹配的维度。在架构图中，这种维度变化可能通过标注“concat”或“cross-attention”等操作来体现，但有时未明确显示。实际实现中，Text向量的维度会通过调整使其与U-net各层QKV的输入维度一致，以确保拼接或注意力计算的有效性。",
+  "metadata": {
+    "original_question": "Latent diffusion Model 中的输入到U-net各层QKV的条件Text向量应该是不同维数的吧？维数是怎么变化的，图中好像没有体现这一点",
+    "row": 165,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_10",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在LLM训练中，如何从用户输入的prompt逐步生成下一个token？",
+    "Transformer模型在LLM中是如何处理输入序列并预测下一个字的？",
+    "LLM训练时，为什么需要基于完整的prompt而不是单个字来预测后续内容？",
+    "在Coze或智能体开发中，如何利用LLM的生成机制设计有效的workflows？",
+    "知识库在LLM训练或推理中扮演什么角色，如何影响token预测？",
+    "老师，我今天听了神经网络的课程。想按照学习的东西推一下LLM的训练过程。但是我不太明白例子中从“我”的特征为啥要推出“今”的概率，不过我也不知道我这样想的对不对"
+  ],
+  "answer": "在LLM的训练和推理过程中，模型通常不会仅基于单个字（如“我”）来预测下一个字（如“今”）。实际应用中，用户会输入一个完整的问题或任务，即prompt。LLM基于这个prompt的上下文信息，通过Transformer架构中的自注意力机制，计算每个token的概率分布，从而生成下一个token。建议您先完成Transformer基础课程的学习，以深入理解序列建模和概率预测的原理。",
+  "metadata": {
+    "original_question": "老师，我今天听了神经网络的课程。想按照学习的东西推一下LLM的训练过程。但是我不太明白例子中从“我”的特征为啥要推出“今”的概率，不过我也不知道我这样想的对不对",
+    "row": 10,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

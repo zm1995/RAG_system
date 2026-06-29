@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_12",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "Transformer Blocks 中的“多头注意力”和“前馈网络”具体是如何协同工作的？",
+    "在 Coze 的智能体模型中，Transformer Blocks 的层数（如96层）对模型性能有何影响？",
+    "除了多头注意力和前馈网络，Transformer Blocks 是否还包含其他组件（如层归一化或残差连接）？",
+    "在 workflows 或知识库中，如何配置 Transformer Blocks 的参数以优化任务效果？",
+    "Transformer Blocks 的层数（如96层）与模型的计算资源消耗之间有何关系？",
+    "老师好，看到示意动图里有个概念：Transformer Blocks，请问是咱们说的那个96层吗，我看解释这里里包含多头和前馈"
+  ],
+  "answer": "是的，一个 Transformer Block 即对应我们所说的一层。每个 Block 内部包含两个核心组件：多头注意力机制（Multi-Head Attention）和前馈神经网络（Feed Forward Network）。其中，多头注意力机制负责捕捉输入序列中不同位置之间的依赖关系，而前馈网络则对每个位置的表示进行非线性变换。这种结构设计使得模型能够有效学习复杂的语义特征。",
+  "metadata": {
+    "original_question": "老师好，看到示意动图里有个概念：Transformer Blocks，请问是咱们说的那个96层吗，我看解释这里里包含多头和前馈",
+    "row": 12,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

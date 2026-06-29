@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_188",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze的Workflows中，下拉菜单的number和integer类型对数字输入有何不同限制？",
+    "使用智能体时，选择number或integer类型会影响数据处理的精度吗？",
+    "在知识库中定义字段类型时，number和integer分别适用于哪些场景？",
+    "Coze中number和integer类型在表单验证时如何区分整数和小数？",
+    "在Agent配置中，number和integer类型对后续计算或逻辑判断有何影响？",
+    "这个下拉菜单里的number和integer对于数字的类型有什么区别呢，看似都是数值"
+  ],
+  "answer": "在Coze及相关产品中，integer类型仅接受整数（如1、2、3），不允许包含小数部分；而number类型则支持整数和小数（如1.5、2.0），允许带有小数位。选择时需根据实际需求：若需精确整数运算或限制小数输入，应使用integer；若允许小数或需要浮点数计算，则使用number。",
+  "metadata": {
+    "original_question": "这个下拉菜单里的number和integer对于数字的类型有什么区别呢，看似都是数值",
+    "row": 188,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

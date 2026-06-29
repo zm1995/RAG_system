@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_236",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "当上传的Excel文件过大时，如何通过Coze工作流实现分批处理并逐步传递给LLM？",
+    "在智能体应用中，如果Excel数据量超出LLM上下文限制，有哪些策略可以分段加载数据？",
+    "使用知识库处理大型Excel文件时，如何配置自动分块机制以避免一次性传输过多内容？",
+    "在Workflows中，如何设计一个流程来分批次读取Excel的特定列或行，并逐批提交给LLM处理？",
+    "对于Coze平台上的Agent，如果用户上传的Excel文件解析后文本过长，有哪些内置工具或方法可以控制每次传递给LLM的数据量？",
+    "如果用户上传的excel文档太大，解析出来的文字太多，导致无法一次性传递给LLM，我想分批次传递，这个有什么方法没有呢"
+  ],
+  "answer": "针对大型Excel文件解析后文本过长的问题，推荐采用分批次处理策略。具体方法包括：1）利用AutoGPT等框架中的代码生成能力，让大模型编写Python脚本，通过pandas库的`read_excel`函数指定`sheet_name`参数读取特定工作表，或使用`skiprows`和`nrows`参数控制读取的行范围；2）在Coze工作流中，可设计循环节点，每次从Excel中提取固定行数的数据（如每次100行），并逐批传递给LLM处理；3）对于知识库，可配置自动分块功能，设置每块的最大字符数（如2000字符），确保单次传输不超限；4）在Workflows中，使用条件判断和迭代器，结合文件读取节点，实现按列或按行分批加载。这些方法均能有效避免一次性传输过多数据，确保LLM稳定运行。",
+  "metadata": {
+    "original_question": "如果用户上传的excel文档太大，解析出来的文字太多，导致无法一次性传递给LLM，我想分批次传递，这个有什么方法没有呢",
+    "row": 236,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

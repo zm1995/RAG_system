@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_75",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在 workflows 中，如果某个节点的输出是 JSON 数组，那么输入变量类型应该选择 array 还是 object？",
+    "在 coze 智能体开发中，如何判断一个变量应该使用 object 类型而不是 string 或 number？",
+    "当知识库返回的数据结构不确定时，在 agent 中应如何设置变量类型以兼容多种可能？",
+    "在 workflows 中，object 类型的变量是否支持嵌套结构，比如包含多层 JSON 对象？",
+    "在 coze 中，如果上一节点输出的是 XML 格式数据，输入变量类型是否仍应选择 object？",
+    "老师，变量类型objcet是指这个变量是一个数据集合吗？当上一节点的输出是一个集合json格式输出的时候，这个节点的输入变量格式就是object的吗？"
+  ],
+  "answer": "在 workflows 或智能体开发中，object 类型通常用于处理结构不确定的数据，例如 JSON 格式的输出。当上一节点的输出是 JSON 对象，但具体包含哪些字段及其类型在运行前无法确定时，应使用 object 类型来接收该数据。object 类型可以灵活地容纳任意结构的 JSON 数据，包括嵌套对象。需要注意的是，如果输出是 JSON 数组，则应选择 array 类型；如果输出是 XML 等其他格式，object 类型可能不适用，需根据具体平台支持情况选择相应类型。",
+  "metadata": {
+    "original_question": "老师，变量类型objcet是指这个变量是一个数据集合吗？当上一节点的输出是一个集合json格式输出的时候，这个节点的输入变量格式就是object的吗？",
+    "row": 75,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

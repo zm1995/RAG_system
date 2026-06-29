@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_124",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze智能体开发中，为什么推荐使用自然对数e作为底数？",
+    "自然对数e在Workflows流程设计中有哪些实际应用场景？",
+    "除了e，在知识库的数学计算中还有哪些常用底数？",
+    "如何理解自然对数e在Agent算法中的优势？",
+    "在Coze操作手册中，e的数值是如何定义的？",
+    "崔老师，请问一下为什么是2.7为底，那这个e 代表的是什么呀"
+  ],
+  "answer": "自然对数e是一个数学常数，约等于2.71828，在数学、物理、工程等领域有广泛应用。在Coze、Agent、智能体、Workflows、知识库等产品中，使用e作为底数主要基于其独特的数学特性，如导数等于自身、简化复杂计算等，这有助于优化算法效率和模型性能。e本身没有特殊含义，但因其在微积分和指数增长模型中的便利性而被广泛采用。如需深入了解，可查阅相关数学资料或产品文档。",
+  "metadata": {
+    "original_question": "崔老师，请问一下为什么是2.7为底，那这个e 代表的是什么呀",
+    "row": 124,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

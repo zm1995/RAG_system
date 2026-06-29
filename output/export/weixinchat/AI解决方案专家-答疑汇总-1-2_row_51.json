@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_51",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "Coze团队子账号的有效期是多久？",
+    "如果课程延期，Coze子账号的使用权限能否自动延长？",
+    "Coze子账号到期后，如何申请续期？",
+    "Coze子账号的使用期限与课程周期有何关联？",
+    "Coze子账号的申请是否有次数限制？",
+    "您好，崔老师。请问咱们团队那个Coze帐号使用可以用多久。麻烦您确认一下"
+  ],
+  "answer": "Coze团队子账号的有效期通常为3个月，与当前课程周期保持一致。若学员未能完成课程并需参加下一期学习，需重新申请子账号。我们预留了部分账号资源，有实际需求的学员可再次申请3个月的使用权限。在资源允许的情况下，我们会尽量为学员延续账号使用时间。",
+  "metadata": {
+    "original_question": "问题：您好，崔老师。请问咱们团队那个Coze帐号使用可以用多久。麻烦您确认一下",
+    "row": 51,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

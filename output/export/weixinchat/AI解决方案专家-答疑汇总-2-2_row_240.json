@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_240",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze平台中，插件是如何实现与外部工具自动对接的，而不需要用户编写代码？",
+    "如果我想在Coze上使用自定义工具，是否还需要编写代码来处理function calling的逻辑？",
+    "Coze平台内置的function calling机制是否支持所有类型的API工具，还是有限制？",
+    "在Coze中，用户选择工具后，平台是如何确保工具调用的参数正确填充的？",
+    "除了Coze，其他智能体平台（如Agent框架）是否也内置了类似的function calling自动对接功能？",
+    "老师昨天讲到function calling，大模型其实只有输出文本能力（自主解析需要调用工具的结构化数据并填槽），那真正跟工具对接这段是不是需要写代码实现，像Coze平台这种是不是已经内置了这种代码逻辑，我们选好工具他就自己去调？"
+  ],
+  "answer": "是的，function calling中与工具对接的部分通常需要编写代码来实现。但在Coze平台上，这一过程已被内置处理。Coze通过插件机制自动完成了工具对接的逻辑，用户只需选择所需工具，平台便会自动处理工具调用、参数填充和结果返回等操作，无需用户额外编写代码。",
+  "metadata": {
+    "original_question": "老师昨天讲到function calling，大模型其实只有输出文本能力（自主解析需要调用工具的结构化数据并填槽），那真正跟工具对接这段是不是需要写代码实现，像Coze平台这种是不是已经内置了这种代码逻辑，我们选好工具他就自己去调？",
+    "row": 240,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

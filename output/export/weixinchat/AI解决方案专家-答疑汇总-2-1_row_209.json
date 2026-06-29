@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_209",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在RNN的Encoder-Decoder结构中，固定向量作为中间表示时，其信息容量如何影响长序列的编码效果？",
+    "除了信息丢失，固定向量在Encoder-Decoder模型中还会导致哪些性能问题？",
+    "如何通过改进Encoder-Decoder架构来缓解固定向量带来的信息瓶颈？",
+    "在Coze或智能体开发中，使用固定向量作为中间表示是否会影响长文本处理的效果？",
+    "固定向量在Encoder-Decoder中的信息丢失问题，与注意力机制相比有何不同？",
+    "以RNN为核心的Encoder-Decoder有一个问题是信息丢失，是因为Encoder与Decoder之间是固定向量。我不理解为什么对于固定向量，存的信息越多，丢失信息越严重。"
+  ],
+  "answer": "固定向量的信息容量是有限的，它只能承载一定量的信息。当输入序列较长或包含大量信息时，固定向量无法完整地表示所有输入信息，导致部分信息在编码过程中被丢弃或压缩，从而造成信息丢失。这是因为固定向量的维度是预先设定的，无法根据输入序列的长度或复杂度动态调整，因此信息量越大，丢失的信息就越严重。",
+  "metadata": {
+    "original_question": "以RNN 为核心的Encoder Decoder 有一个问题是信息丢失, 是因为Ecoder 与Decoder 之间是固定向量.\n我不是很理解,为什么对于固定向量, 存的信息越多, 丢失信息越严重.",
+    "row": 209,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

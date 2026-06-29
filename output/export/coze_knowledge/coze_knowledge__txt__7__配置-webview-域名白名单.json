@@ -1,0 +1,17 @@
+{
+  "id": "coze_knowledge/txt/7/配置-webview-域名白名单",
+  "source": "coze_knowledge",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\coze_knowledge\\txt\\7\\配置-webview-域名白名单.txt",
+  "questions": [
+    "如何在抖音小程序中配置webview域名白名单？",
+    "微信小程序中webview域名白名单的设置路径是什么？",
+    "配置webview域名白名单时，需要准备哪些文件？",
+    "webview域名白名单的作用是什么？",
+    "如果未配置webview域名白名单，小程序中嵌入的网页会有什么影响？"
+  ],
+  "answer": "配置 webview 域名白名单\n本文为你简述 webview 域名白名单的配置方式。\n抖音小程序端\n访问小程序开发者平台，进入对应的小程序管理后台， 单击开发设置 -> webview 域名，即可下载、配置校验文件和 webview 域名。\n微信小程序端\n设置路径：开发管理 -> 开发设置 -> 开发 -> 业务域名，配置 webview 域名白名单。",
+  "metadata": {
+    "title": "配置-webview-域名白名单",
+    "category": "7"
+  }
+}

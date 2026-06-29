@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_40",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "老师，在数据分析领域，有哪些AI工具能根据自然语言自动生成SQL查询？",
+    "除了ChatExcel，还有哪些国内外的AI产品支持自然语言转SQL？",
+    "目前市场上，哪些AI产品在自然语言生成SQL方面表现成熟？",
+    "老师，能否推荐一些用于数据库查询的自然语言转SQL的AI工具？",
+    "在数据分析中，如何利用AI产品实现从自然语言到SQL的自动转换？",
+    "老师，根据用户输入的自然语言自动生成sql语句或者在数据分析方面哪些AI产品做的是比较好的？"
+  ],
+  "answer": "答：后续课程中会介绍一个名为ChatExcel的工具，它在自然语言转SQL方面表现不错。对于数据库查询，海外有一些成熟的产品，例如Text-to-SQL领域的工具，而国内公司目前大多处于产品研发阶段，尚未正式推出。具体产品名称暂时无法完全回忆，但后续课程会详细讲解相关工具和方法。",
+  "metadata": {
+    "original_question": "老师，根据用户输入的自然语言自动生成sql语句或者在数据分析方面哪些AI产品做的是比较好的？",
+    "row": 40,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

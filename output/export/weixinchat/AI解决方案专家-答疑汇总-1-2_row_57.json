@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_57",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "老师，国内版Coze发布的API能否直接集成到微信小程序中？",
+    "如果海外Coze的API需要科学上网，有没有其他方式可以在微信小程序中稳定调用？",
+    "Coze API集成到微信小程序时，常见的网络限制问题有哪些？",
+    "使用跳板服务器中转海外Coze API时，需要注意哪些安全或性能问题？",
+    "Coze API在微信小程序中的调用延迟通常受哪些因素影响？",
+    "老师，海外coze发布的api链接到微信小程序，有无法链接的问题吗？"
+  ],
+  "answer": "海外版Coze发布的API无法直接集成到微信小程序中，因为海外版API的访问需要科学上网环境，而微信小程序运行在微信的封闭网络环境中，无法直接访问需要科学上网的海外服务。若要实现集成，可以考虑使用跳板服务器作为中转，将海外API请求通过服务器转发，但需注意跳板服务器的网络稳定性和合规性。国内版Coze发布的API则可以直接集成到微信小程序中，无需额外配置。",
+  "metadata": {
+    "original_question": "老师，海外coze发布的api链接到微信小程序，有无法链接的问题吗？",
+    "row": 57,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

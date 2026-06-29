@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_32",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze工作流中，如何从循环结果中筛选出评分最高的输出？",
+    "使用智能体时，循环节点后输出参数报错‘变量不存在’该如何解决？",
+    "在Agent开发中，如何配置循环后的输出以返回最高分的回复？",
+    "Workflows中循环结束后，怎样设置输出节点来获取最佳结果？",
+    "知识库查询后，如何通过循环比较并输出得分最高的答案？",
+    "循环后怎么设置输出打分最高的那个回复呀？输出参数这里提示变量不存在"
+  ],
+  "answer": "在Coze工作流中，循环节点后输出评分最高的回复，需确保循环内正确存储每次迭代的评分结果。首先，在循环节点内使用变量（如`max_score`和`best_reply`）记录当前最高分及对应回复，每次迭代时比较新评分并更新变量。循环结束后，通过输出节点引用这些变量。若输出参数提示‘变量不存在’，请检查：1）变量是否在循环节点内正确声明并赋值；2）输出节点的变量引用路径是否与循环内定义的变量名一致；3）工作流中变量作用域是否允许跨节点访问。建议在循环节点前初始化变量，并在循环结束后使用`输出`节点直接引用`best_reply`变量。例如，在循环节点内设置`max_score = max(max_score, current_score)`和`best_reply = current_reply if current_score > max_score else best_reply`，然后在输出节点中配置`{{best_reply}}`。",
+  "metadata": {
+    "original_question": "循环后怎么设置输出打分最高的那个回复呀？输出参数这里提示变量不存在",
+    "row": 32,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

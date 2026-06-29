@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_113",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze平台中，如何通过API或内置工具实现强化学习（RL）的训练流程？",
+    "对于智能体（Agent）的训练，SFT（监督微调）和PPO（近端策略优化）在Workflows中如何集成？",
+    "Coze知识库是否支持直接调用外部训练框架（如PyTorch或TensorFlow）来执行RM（奖励模型）训练？",
+    "在Coze中，用户能否通过可视化界面配置SFT和PPO的训练参数，而无需编写代码？",
+    "Coze的API是否提供了专门用于模型训练（如RM、SFT、PPO）的端点或工具？",
+    "RM、SFT、PPO的训练过程是如何实现的，通过api调用还是有其他工具呢"
+  ],
+  "answer": "在Coze及相关产品（如智能体、Workflows、知识库）中，RM（奖励模型）、SFT（监督微调）和PPO（近端策略优化）的训练过程通常通过编写代码并结合AI训练框架（如PyTorch、TensorFlow或Hugging Face Transformers）来实现。这些训练不直接通过Coze的API调用完成，而是需要用户利用外部工具或框架在本地或云端环境中执行。Coze平台主要提供模型部署和推理接口，而非训练功能。因此，用户需自行搭建训练流程，并通过API将训练后的模型集成到Coze中。",
+  "metadata": {
+    "original_question": "RM、SFT、PPO的训练过程是如何实现的，通过api调用还是有其他工具呢",
+    "row": 113,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

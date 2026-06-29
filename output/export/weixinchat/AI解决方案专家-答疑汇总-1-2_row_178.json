@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_178",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在强化学习框架中，PPO和DPO分别如何利用奖励信号来优化语言模型？",
+    "PPO和DPO在训练目标上有什么本质区别？",
+    "如何从算法原理上解释PPO和DPO对模型参数调整的不同影响？",
+    "在Coze或智能体开发中，PPO和DPO的应用场景有哪些差异？",
+    "PPO和DPO在处理人类反馈时，各自的优缺点是什么？",
+    "PPO和DPO的要点是什么啊"
+  ],
+  "answer": "PPO（Proximal Policy Optimization）的核心要点在于：以奖励模型（RM）作为评判标准，每次生成一条回复后，依据RM给出的评分来调整策略，目标是最大化从RM获得的分数，进而通过策略梯度方法更新语言模型（LLM）的参数。DPO（Direct Preference Optimization）的核心要点在于：监督微调（SFT）仅能教导模型识别好的回答，而DPO不仅能指导模型学习什么是好的回答，还能明确告知模型哪些回答是人类认为不好的，从而直接优化模型偏好。",
+  "metadata": {
+    "original_question": "PPO和DPO的要点是什么啊",
+    "row": 178,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

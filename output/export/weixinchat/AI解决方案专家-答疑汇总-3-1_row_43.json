@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_43",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "老师，这个功能是否等同于function call？",
+    "请问，function call的实现方式是否与您展示的Agent示例一致？",
+    "老师，如何判断当前配置是否实现了function call的效果？",
+    "在coze中，function call的具体应用场景有哪些？",
+    "老师，能否详细解释一下function call与普通API调用的区别？",
+    "老师，这样是不是function call的功能"
+  ],
+  "answer": "左侧无需手动编写JSON格式的配置。您可以参考我提供的生成故事音频图片的Agent示例，其中已包含function call的实现方式。该示例展示了如何通过配置实现函数调用功能，无需额外编写复杂的JSON结构。",
+  "metadata": {
+    "original_question": "老师，这样是不是function call的功能",
+    "row": 43,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

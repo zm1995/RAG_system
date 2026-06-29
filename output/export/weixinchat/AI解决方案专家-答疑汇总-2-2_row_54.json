@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_54",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze中，如何正确配置Agent以读取文档内容？",
+    "使用DocReader插件时，常见的失败原因有哪些？如何排查？",
+    "除了DocReader插件，Coze中还有哪些方式可以让Agent读取文档？",
+    "如何通过工作流实现Agent对文档的读取和处理？",
+    "在Coze中，Agent读取文档时，对文档格式有什么要求？",
+    "老师，请问如何让coze上设置的agent可以读取文档？配置了docreader插件也一直不成功"
+  ],
+  "answer": "通常，我们会创建一个工作流，将文档读取和处理操作集中放置在该工作流中。具体步骤包括：首先，在工作流中添加文档读取节点（如DocReader插件），配置正确的文档路径或上传方式；其次，确保Agent的权限设置允许访问文档；最后，测试工作流以验证文档读取功能是否正常。如果配置DocReader插件后仍不成功，请检查插件版本是否兼容、文档格式是否支持（如PDF、TXT等），以及网络连接是否稳定。",
+  "metadata": {
+    "original_question": "老师，请问如何让coze上设置的agent可以读取文档？配置了docreader插件也一直不成功",
+    "row": 54,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

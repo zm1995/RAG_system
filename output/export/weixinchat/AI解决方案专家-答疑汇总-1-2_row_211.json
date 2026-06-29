@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_211",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "使用Dify平台创建的智能体，能否完全脱离Dify环境独立运行？",
+    "Dify开发的Agent是否支持导出为可移植的格式，以便在其他系统中部署？",
+    "在Dify中构建的workflows，能否部署到非Dify的服务器上？",
+    "Dify平台私有化部署后，其生成的Agent是否受限于Dify自身的版本更新？",
+    "通过Dify知识库构建的问答系统，能否与外部应用集成并部署到自有环境？",
+    "dify这个开发出来的agent也不能部署到自己环境吧"
+  ],
+  "answer": "Dify平台本身支持完整的私有化部署，因此通过Dify创建的Agent、Workflows以及知识库等组件，均可以部署在用户自己的服务器环境中。具体而言，用户可以将Dify平台整体部署到私有服务器，从而使得所有基于该平台开发的智能体、工作流和知识库应用都运行在用户自有的基础设施上，无需依赖外部服务。需要注意的是，这些组件通常依赖于Dify平台的运行时环境，因此若需独立于Dify运行，可能需要额外的导出或适配工作。",
+  "metadata": {
+    "original_question": "dify这个开发出来的agent也不能部署到自己环境吧",
+    "row": 211,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

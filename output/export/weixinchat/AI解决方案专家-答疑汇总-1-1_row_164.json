@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_164",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "崔老师，如果使用coze工具开发RAG和agent，有哪些关键步骤和注意事项？",
+    "在coze平台上，如何高效地搭建和调试workflows以实现复杂的agent逻辑？",
+    "对于知识库的构建，coze提供了哪些功能，如何优化知识库的检索效果？",
+    "除了coze，还有哪些低代码或无代码平台适合开发RAG和agent，它们各有什么优缺点？",
+    "在coze中，如何将多个agent集成到一个工作流中，并确保它们协同工作？",
+    "崔老师，如果开发RAG和agent不用类似coze工具，需要如何选择IDE开发环境？如何搭建呢？"
+  ],
+  "answer": "答：若选择不使用类似Coze的在线平台进行开发，则需采用编程方式实现，通常推荐使用Python作为主要开发语言。在选择IDE开发环境时，建议考虑PyCharm、Visual Studio Code或Jupyter Notebook等工具。搭建步骤包括：安装Python环境（建议使用Anaconda管理依赖），配置虚拟环境，安装必要的库（如LangChain、ChromaDB、OpenAI API等），并编写代码实现RAG（检索增强生成）和agent（智能体）的核心逻辑。具体而言，RAG需集成文档检索与生成模型，agent需设计决策与执行流程。建议参考官方文档和开源项目（如LangChain示例）进行实践。",
+  "metadata": {
+    "original_question": "崔老师，如果开发RAG和agent不用类似coze工具，需要如何选择IDE开发环境？如何搭建呢？",
+    "row": 164,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

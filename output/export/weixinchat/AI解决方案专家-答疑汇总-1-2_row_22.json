@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_22",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze中，工作流内部的循环体Agent和外部对话Agent在任务执行机制上有何本质区别？",
+    "Coze工作流中的节点提示词（系统提示词和用户提示词）如何影响Agent的行为？",
+    "如果Coze工作流中不使用外部Agent的prompt，仅依赖节点提示词，模型如何确保任务完成？",
+    "在Coze中，外部Agent的prompt是否会影响工作流内部节点的执行逻辑？",
+    "Coze工作流中的代码节点如何与Agent协作完成复杂任务？",
+    "问题：老师，话说像coze工作流里写的那个循环体是Agent，外面和模型chat的bot也是Agent。那外面这个对话的Agent是不是相当于主prompt已经预置了，自己就会循环检验是否完成任务，如果答案不对也会反思修正？只是过程不展示出来？@崔超"
+  ],
+  "answer": "在Coze平台上，外部Agent的prompt通常用于定义对话风格、全局要求等宏观设置，而工作流内部则承载了核心任务逻辑。工作流中的每个节点都包含系统提示词和用户提示词，这些提示词直接指导模型执行具体步骤。当使用代码节点处理任务时，往往不需要外部Agent的prompt，而是依赖节点内的提示词按步骤执行任务，不涉及与用户的闲谈。外部Agent不会自动循环检验任务完成情况或进行反思修正，其行为主要由工作流中的节点逻辑控制。",
+  "metadata": {
+    "original_question": "问题：老师，话说像coze工作流里写的那个循环体是Agent，外面和模型chat的bot也是Agent。那外面这个对话的Agent是不是相当于主prompt已经预置了，自己就会循环检验是否完成任务，如果答案不对也会反思修正？只是过程不展示出来？@崔超",
+    "row": 22,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

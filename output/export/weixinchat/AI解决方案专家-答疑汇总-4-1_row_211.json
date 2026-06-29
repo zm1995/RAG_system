@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_211",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Agent运行过程中，如何系统性地排查插件输出异常的问题？",
+    "当Agent的prompt内容超出字数限制时，有哪些具体的调整方法？",
+    "如何判断Agent运行失败是由于模型能力不足还是插件配置错误？",
+    "在调试Agent时，固定插件输出后更换模型的具体操作步骤是什么？",
+    "Agent运行中，如何验证插件输出内容是否正确传递到prompt中？",
+    "为什么会找不到呢？"
+  ],
+  "answer": "当Agent运行出现问题时，应按照以下步骤进行系统化排查与调试：第一步，检查插件是否运行正常，确认插件的输入和输出是否符合预期。第二步，验证插件输出的内容是否成功传递到prompt中，同时检查输出内容是否过长，是否超出了prompt的字数限制。第三步，如果前两步均正常，则固定插件的输出，更换不同的模型进行测试，以判断问题是否由模型性能不足导致。",
+  "metadata": {
+    "original_question": "为什么会找不到呢？",
+    "row": 211,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

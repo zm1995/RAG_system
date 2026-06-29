@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_155",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze智能体开发中，Transformer的自回归机制如何影响对话生成的训练与推理流程？",
+    "对于基于Agent的workflows，Seq2Seq模型在训练和推理阶段的主要区别是什么？",
+    "在知识库问答系统中，自回归模型与Seq2Seq模型在处理长文本时有何性能差异？",
+    "如何优化Transformer的自回归推理过程以提升Coze智能体的响应速度？",
+    "在构建多轮对话的Agent时，Seq2Seq架构与自回归架构在训练数据准备上有何不同要求？",
+    "可以麻烦解释下 Transformer的 自回归 和 Seq2Seq 这两种方式在训练和推理时的异同吗？"
+  ],
+  "answer": "在经典的Transformer架构中，自回归和Seq2Seq两种方式在训练和推理时存在显著差异。自回归方式（如GPT模型）仅使用解码器，训练时通过掩码机制逐步预测下一个token，推理时则逐词生成，依赖先前输出。Seq2Seq方式（如原始Transformer）包含编码器和解码器，训练时编码器处理输入序列，解码器基于编码器输出和先前目标序列进行预测；推理时编码器一次性处理输入，解码器逐步生成输出。对于Coze、Agent、智能体、workflows或知识库等产品，理解这些差异有助于优化模型选择与部署策略。例如，在对话系统中，自回归模型更适合生成连贯文本，而Seq2Seq模型在翻译等任务中表现更佳。",
+  "metadata": {
+    "original_question": "可以麻烦解释下 Transformer的 自回归 和 Seq2Seq 这两种方式在训练和推理时的异同吗？",
+    "row": 155,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

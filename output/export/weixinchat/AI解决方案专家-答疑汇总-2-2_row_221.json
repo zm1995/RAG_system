@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_221",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze中，工作流和对话流的主要区别是什么？如何根据需求选择合适的流类型？",
+    "Coze升级后，工作流的默认输入变量发生了变化，具体有哪些变化？如何手动添加用户输入的prompt？",
+    "在Coze工作流中，如果默认没有用户输入的prompt，如何通过配置实现类似功能？",
+    "Coze的对话流相比工作流，在初始输入变量设置上有哪些不同？能否举例说明？",
+    "Coze工作流中，如何将默认的可编辑input替换为用户输入的prompt？需要修改哪些设置？",
+    "coze教学课里，工作流起始点默认有用户输入的prompt，但我个人这里没有这个诶，就是默认一个可编辑的input"
+  ],
+  "answer": "Coze平台已进行升级，目前提供工作流和对话流两种模式，用户可根据需求在两者之间切换。这两种流类型的初始默认输入变量存在差异：工作流默认提供一个可编辑的输入变量（input），而对话流则默认包含用户输入的prompt。若您在使用工作流时未看到用户输入的prompt，这是正常现象，因为工作流默认不包含该变量。如需在工作流中使用用户输入的prompt，您可以通过手动添加输入变量或切换至对话流来实现。",
+  "metadata": {
+    "original_question": "coze教学课里，工作流起始点默认有用户输入的prompt，但我个人这里没有这个诶，就是默认一个可编辑的input",
+    "row": 221,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

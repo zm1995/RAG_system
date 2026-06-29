@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_220",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在GPT模型中，同一个汉字在不同上下文中的embedding向量是否相同？",
+    "GPT的token词典在训练完成后是否还会更新？",
+    "如果两个不同的数据集包含相同的词汇，GPT模型如何保证其token表示的一致性？",
+    "在GPT预训练过程中，token的embedding向量是如何随着训练数据变化的？",
+    "GPT模型的token词典大小（如50257）是固定的吗？训练过程中能否新增或删除token？",
+    "崔老师，GPT通过“人类简史”的预训练，得到“人”的Token和向量，然后在另一批数据集比如“人民战争的汪洋大海”中又得到“人”的Token和向量。那么，①“人”字的这两次Token和向量，前后都是一样的吗？也就是说，不同数据集中相同的字，②Token是否是一致？③根据不同上下文embeded后的向量值是否还保持一致？④GPT的Token词典中50257个条目一旦生成就固定不变了吗？谢谢！"
+  ],
+  "answer": "在GPT模型中，同一个汉字（如“人”）在不同训练数据中对应的token和embedding向量是相同的。这是因为GPT使用固定的token词典，每个token（包括汉字）在词典中具有唯一的索引和初始向量表示。在模型训练过程中，这些embedding向量会随着训练数据的迭代而不断更新优化，但一旦训练完成，整个token词典及其对应的embedding向量就固定不变了。因此，无论“人”字出现在“人类简史”还是“人民战争的汪洋大海”中，其token ID和最终的embedding向量都是一致的。需要注意的是，虽然token的embedding向量固定，但模型在处理不同上下文时，通过注意力机制等会生成不同的上下文表示，但这与token本身的embedding向量不同。",
+  "metadata": {
+    "original_question": "崔老师，GPT通过“人类简史”的预训练，得到“人”的Token和向量，然后在另一批数据集比如“人民战争的汪洋大海”中又得到“人”的Token和向量。那么，①“人”字的这两次Token和向量，前后都是一样的吗？也就是说，不同数据集中相同的字，②Token是否是一致？③根据不同上下文embeded后的向量值是否还保持一致？④GPT的Token词典中50257个条目一旦生成就固定不变了吗？谢谢！",
+    "row": 220,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_229",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "老师，请帮我确认一下，我这样理解是否正确？",
+    "请问我理解的内容有没有遗漏或错误？",
+    "老师，能帮我检查一下我的理解是否全面吗？",
+    "麻烦您看看，我理解的部分是否有需要修正的地方？",
+    "老师，请帮我核实一下，我的理解是否准确无误？",
+    "老师，麻烦帮我看下 我理解的对吗？"
+  ],
+  "answer": "您的理解基本正确，但请注意第一行中的数字5027缺少一位数字，请补充完整。",
+  "metadata": {
+    "original_question": "老师，麻烦帮我看下 我理解的对吗？",
+    "row": 229,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

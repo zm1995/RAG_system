@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_126",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在 Coze 智能体训练中，标签的具体定义是什么？",
+    "如何理解标签在 workflows 流程优化中的作用？",
+    "标签数据与知识库中的标注信息有何区别？",
+    "在 agent 开发中，标签是否等同于人工标注的正确答案？",
+    "标签在模型微调时如何影响输出质量？",
+    "标签就指的是 GPT 标 A>B>C=D, Llama A>B （ edit -chose- rejected) 吗？"
+  ],
+  "answer": "标签在智能体及相关产品（如 Coze、agent、workflows、知识库）的上下文中，通常指代人工标注的正确答案或优选数据。例如，在排序数据中，标签可以表示为 A>B>C=D 或 Llama A>B 等形式，其中 edit-chose-rejected 表示编辑选择的偏好。标签的核心含义是：由人类专家提供的优质回答或正确判断，作为机器学习的参考标准。简而言之，标签就是人类认为正确的答案，用于指导模型训练和优化。",
+  "metadata": {
+    "original_question": "标签就指的是 GPT 标 A>B>C=D, Llama A>B （ edit -chose- rejected) 吗？",
+    "row": 126,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

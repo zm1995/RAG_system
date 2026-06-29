@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_181",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Agent工作流中，如何将中间步骤的结果实时显示在对话界面？",
+    "工作流执行完毕后，如何将特定节点的输出内容传递给用户？",
+    "在Coze平台中，如何配置工作流以将最终结果自动发送到对话窗口？",
+    "Agent工作流的结果输出到对话时，能否自定义输出格式或内容？",
+    "如果工作流中有多个分支，如何确保所有分支的结果都能汇总输出到对话中？",
+    "老师，你好，我在Agent工作流中的执行结果怎么输出到对话中"
+  ],
+  "answer": "在Agent工作流中，要将执行结果输出到对话，您需要在Agent旁边的Prompt中明确指定输出要求。例如，可以写入“工作流结束之后，将结果完整输出给用户”等指令。系统会根据Prompt中的描述，自动将工作流的最终结果呈现到对话界面。建议在Prompt中清晰说明输出格式和内容，以确保结果符合预期。",
+  "metadata": {
+    "original_question": "老师，你好，我在Agent工作流中的执行结果怎么输出到对话中",
+    "row": 181,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

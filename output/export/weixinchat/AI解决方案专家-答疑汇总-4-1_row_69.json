@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_69",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在训练用于过滤Common Crawl的神经网络时，正负样本的具体来源是什么？",
+    "如何确保用于训练过滤模型的样本数据具有代表性？",
+    "训练过程中，正负样本的比例对模型性能有何影响？",
+    "除了Common Crawl，还有哪些数据集可用于训练类似的过滤模型？",
+    "训练完成后，如何评估过滤模型对数据分类的准确性？",
+    "在讲GPT3的时候提到了训练一个神经网络来对数据集Common Crawl进行过滤。请问这个神经网络训练时使用的数据集是什么样的？"
+  ],
+  "answer": "训练用于过滤Common Crawl的神经网络时，所使用的数据集由正负样本构成。正样本来源于高质量数据集A，负样本来源于低质量数据集B。训练目标是使模型能够区分数据属于A类（正样本）还是B类（负样本）。通过大量正负样本的训练，模型学会对任意输入数据输出其属于正样本或负样本的分类结果。",
+  "metadata": {
+    "original_question": "在讲GPT3的时候提到了训练一个神经网络来对数据集Common Crawl进行过滤。请问这个神经网络训练时使用的数据集是什么样的？",
+    "row": 69,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

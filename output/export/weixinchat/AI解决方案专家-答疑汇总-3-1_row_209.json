@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_209",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze平台中，如何自定义智能体的损失函数以优化模型性能？",
+    "使用Workflows进行模型微调时，能否自定义损失函数？具体步骤是什么？",
+    "在Agent开发中，如何通过修改知识库的配置来间接影响损失函数的选择？",
+    "Coze的智能体训练过程中，是否支持用户自定义损失函数？如果不支持，有哪些替代方案？",
+    "在Coze中微调模型时，如何利用内置工具或API实现类似自定义损失函数的效果？",
+    "我想微调大模型用torch的Trainer框架 我可以怎么自定义loss函数呢"
+  ],
+  "answer": "在Coze平台中，微调模型通常推荐使用Hugging Face框架，因为它提供了便捷的接口和预置的损失函数。如果您需要自定义损失函数，建议首先查阅Hugging Face官方文档，了解如何通过继承Trainer类并重写compute_loss方法来实现。具体步骤包括：1. 定义自定义损失函数类；2. 在Trainer子类中重写compute_loss方法；3. 在训练配置中指定该自定义Trainer。此外，您也可以参考相关模型微调的最佳实践，以确定适合您任务的损失函数类型。",
+  "metadata": {
+    "original_question": "我想微调大模型用torch的Trainer框架 我可以怎么自定义loss函数呢",
+    "row": 209,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

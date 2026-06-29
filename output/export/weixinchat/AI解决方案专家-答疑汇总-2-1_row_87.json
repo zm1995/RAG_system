@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_87",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze智能体开发中，SFT（有监督微调）和Reward Model（奖励模型）的训练数据来源有何不同？",
+    "SFT阶段和Reward Model训练阶段在Coze工作流中是如何衔接的？",
+    "在Coze知识库应用中，SFT训练完成后，模型如何利用Reward Model进行自我优化？",
+    "Coze智能体训练过程中，SFT和Reward Model是否共享同一套人工标注数据？",
+    "在Coze workflows中，SFT阶段结束后，模型如何通过Reward Model的反馈进行迭代训练？",
+    "sft阶段是有监督的微调,训练数据是人工标注过的正确数据,reward model 是打分模型,目的是为了评估一条输出结果是否优质,进行打分.使用的训练数据同样是来自人工标注的数据.那么sft的训练阶段是不是同时也就把reward model的模型一下训练了?后续的流程是模型根据问题产生一个自己的输出,输出结果通过reward model的评估来怕判断该条回答是否优质,然后将结果反馈给模型本身,这样自己训练自己?"
+  ],
+  "answer": "SFT（有监督微调）阶段和Reward Model（奖励模型）的训练数据是两批完全不同的数据，均来自人工标注，但标注标准和用途不同。SFT使用人工标注的正确数据来训练模型生成符合预期的输出；Reward Model则使用人工标注的评分数据来训练模型评估输出质量。后续流程中，模型根据问题生成输出，Reward Model对该输出进行评分，并将评分结果反馈给模型，模型据此进行自我优化训练，形成迭代循环。",
+  "metadata": {
+    "original_question": "sft阶段是有监督的微调,训练数据是人工标注过的正确数据,reward model 是打分模型,目的是为了评估一条输出结果是否优质,进行打分.使用的训练数据同样是来自人工标注的数据.那么sft的训练阶段是不是同时也就把reward model的模型一下训练了?后续的流程是模型根据问题产生一个自己的输出,输出结果通过reward model的评估来怕判断该条回答是否优质,然后将结果反馈给模型本身,这样自己训练自己?",
+    "row": 87,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

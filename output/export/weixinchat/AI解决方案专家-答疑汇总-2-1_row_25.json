@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_25",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "神经网络中的预训练（pretrain）、微调（SFT）和强化学习（PPO）在智能体开发中分别对应什么阶段？",
+    "在Coze平台中，Prompt设计如何影响智能体的输出质量？",
+    "知识库在智能体中的作用是否类似于人类长期记忆？如何配置？",
+    "Workflows如何帮助实现多步骤任务处理，与单一Prompt调用有何区别？",
+    "智能体的学习过程（如SFT）与用户直接提问（Prompt）在操作手册中如何区分？",
+    "我理解神经网络就像人脑，可以学习思考处理问题。pretran、sft、ppo这些是接受知识和教育，Prompt是我们提的问题，需要他做出处理？"
+  ],
+  "answer": "您的理解基本正确。在神经网络和智能体开发中，预训练（pretrain）相当于基础知识的获取阶段，使模型具备广泛的语言理解能力；监督微调（SFT）类似于针对特定任务的专业训练，让模型学会遵循指令；强化学习（PPO）则通过奖励机制优化模型行为，使其输出更符合预期。而Prompt（提示词）是用户向模型提出的具体问题或任务指令，模型需要根据其训练获得的知识和能力进行处理并生成响应。在Coze等平台中，这些概念对应智能体配置的不同环节，例如知识库可视为长期记忆存储，Workflows用于编排多步骤任务流程。",
+  "metadata": {
+    "original_question": "我理解神经网络就像人脑，可以学习思考处理问题。pretran、sft、ppo这些是接受知识和教育，Prompt是我们提的问题，需要他做出处理？",
+    "row": 25,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

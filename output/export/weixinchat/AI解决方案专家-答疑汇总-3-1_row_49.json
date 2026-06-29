@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_49",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze工作流中，如何确保音频文件能够正确输出给用户？",
+    "工作流输出音频时，Agent需要遵循哪些配置原则？",
+    "如何避免Agent在输出工作流结果时对音频内容进行不必要的修改？",
+    "Coze工作流中音频输出的常见问题及解决方法有哪些？",
+    "在构建故事合成语音工作流时，如何设置输出节点以确保音频完整传递？",
+    "原问题：https://www.coze.cn/work_flow?bot_id=7476029437671358474&space_id=7433704316877520906&workflow_id=7476032481130856489 @崔超 崔老师，我自己搭了个故事合成语音的工作流，不过音频就是没办法直接输出，您方便看看该怎么优化吗"
+  ],
+  "answer": "建议在工作流内部将所有输出内容（包括音频）预先组织完整，并确保工作流返回的结果已包含最终输出。同时，配置Agent时需明确要求其将工作流返回的结果原样输出给用户，避免Agent对结果进行任何额外的改编或改造。",
+  "metadata": {
+    "original_question": "https://www.coze.cn/work_flow?bot_id=7476029437671358474&space_id=7433704316877520906&workflow_id=7476032481130856489\n@崔超 崔老师，我自己搭了个故事合成语音的工作流，不过音频就是没办法直接输出，您方便看看该怎么优化吗",
+    "row": 49,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_149",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在coze或智能体开发中，embedding层的参数是如何通过训练调整的？",
+    "如果embedding过程不参与训练，对agent的语义理解能力会有什么影响？",
+    "在workflows中，embedding模块的初始化权重通常如何设置？",
+    "知识库的向量化过程中，embedding模型是否需要针对特定领域进行微调？",
+    "在训练智能体时，embedding层的梯度更新机制是怎样的？",
+    "老师，token向量化的embedding过程，也需要训练吗？既然是独立模块，是不是固定规则直接生成的？"
+  ],
+  "answer": "固定规则直接生成是指使用预定义的规则或静态映射来生成向量，而不涉及参数学习。实际上，embedding过程通常需要与整个模型一起训练，因为embedding层的参数（如词向量矩阵）会通过反向传播进行优化，以最小化最终任务的损失函数（如概率预测的交叉熵）。调整这些参数有助于模型更准确地捕捉语义关系，从而提升整体性能。联合训练能确保embedding表示与下游任务目标对齐，效果优于固定规则生成。",
+  "metadata": {
+    "original_question": "老师，token向量化的embedding过程，也需要训练吗？既然是独立模块，是不是固定规则直接生成的？",
+    "row": 149,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

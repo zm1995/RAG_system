@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_249",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Coze平台中，原始输出和最终输出在数据处理流程上有何不同？",
+    "如何配置Coze工作流的输出格式，以确保最终输出符合预期？",
+    "原始输出和最终输出在智能体应用中分别扮演什么角色？",
+    "Coze知识库的查询结果属于原始输出还是最终输出？请解释。",
+    "在Coze workflows中，如何通过节点设置控制最终输出的格式？",
+    "老师，原始输出和最终输出有什么区别？"
+  ],
+  "answer": "最终输出是在原始输出的基础上，根据用户配置的输出格式进行调整后的结果。原始输出通常为纯文本格式，而最终输出会依据您在Coze平台中设置的输出格式（如JSON、Markdown、表格等）进行相应的格式转换。例如，若您将输出格式设置为JSON，则最终输出会将原始文本转换为结构化的JSON数据。这种调整确保了输出内容与下游应用或系统的兼容性。",
+  "metadata": {
+    "original_question": "老师，原始输出和最终输出有什么区别？",
+    "row": 249,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

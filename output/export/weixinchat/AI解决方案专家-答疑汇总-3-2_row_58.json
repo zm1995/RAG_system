@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_58",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在coze的智能体应用中，向量检索时余弦相似度主要衡量文本的语义相似度还是字面重合度？",
+    "使用workflows构建知识库检索流程时，为什么在向量检索后通常还需要引入reranker模型？",
+    "在agent系统中，如果仅依赖embedding模型的余弦相似度进行检索，可能会遇到哪些问题？",
+    "在coze知识库中，reranker模型是如何对向量检索结果进行重排序的？",
+    "在智能体开发中，如何结合embedding模型和reranker模型优化知识检索的准确性？",
+    "embedding模型在检索的时候余弦相似度高的其实就是文字重合度最高的吗？然后需要reranker模型根据语义再进行重排序？"
+  ],
+  "answer": "余弦相似度高通常表示文本在语义上具有较高的相似性，而非单纯的字面重合度。在向量检索过程中，系统会通过计算余弦相似度从知识库中召回top k个候选的知识切片。随后，引入reranker模型对这些候选结果进行基于语义的重新排序，以进一步提升检索结果的准确性和相关性。",
+  "metadata": {
+    "original_question": "embedding模型在检索的时候余弦相似度高的其实就是文字重合度最高的吗？然后需要reranker模型根据语义再进行重排序？",
+    "row": 58,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

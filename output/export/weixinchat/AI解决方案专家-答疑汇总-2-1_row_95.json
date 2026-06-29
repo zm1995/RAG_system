@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_95",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在更新RM模型时，除了使用排序数据，是否还需要其他类型的标注数据？",
+    "RM模型更新的频率是如何确定的？是否与智能体的迭代周期相关？",
+    "在Coze平台中，RM模型的更新是否会影响已部署的workflows或知识库的性能？",
+    "如果排序数据由人工标注，那么如何确保标注的一致性和准确性？",
+    "RM模型更新后，是否需要重新评估智能体的对话质量？",
+    "会更新RM模型，更新RM模型的时候也不需要新的标注数据吗？"
+  ],
+  "answer": "RM模型会进行更新。更新时，使用的是针对一个问题的四个答案（由LLM生成）的排序数据，该排序由人工完成。这些排序数据是更新RM模型所需的唯一标注数据，不需要额外的其他标注数据。",
+  "metadata": {
+    "original_question": "会更新RM模型，更新RM模型的时候也不需要新的标注数据吗？",
+    "row": 95,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

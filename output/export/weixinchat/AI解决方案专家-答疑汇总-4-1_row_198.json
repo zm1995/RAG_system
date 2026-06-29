@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_198",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze工作流中，如何正确配置PubMed检索节点与LLM提取链接节点的连接顺序？",
+    "当工作流中LLM提取链接节点出现'ref block output format error'错误时，可能的原因有哪些？",
+    "在Coze工作流中，批处理模式适用于哪些类型的节点？如何判断节点应使用单次运行还是批处理？",
+    "如何设计一个Coze工作流，实现从PubMed检索结果中提取文章URL，并批量获取文章详细信息？",
+    "在Coze工作流中，如何调试和解决节点输出格式错误，例如'not found [blockID]'？",
+    "目的： pubmed检索后跟一个LLM提取所有文章URL，后续再通过一个批处理对每个URL进行网页读取，输出文章标题、摘要、发表杂志、发表时间、原文链接等信息；\nPubmed与批处理节点中间插入了一个提取链接地址的大模型，再模型运行方式上选择了批处理。\n问题一： 这样串联对吗？\n问题二：试运行workflow的时候提示提取链接地址节点错误：ref block output format error, not found [blockID] \n@崔超"
+  ],
+  "answer": "在Coze工作流中，PubMed检索节点与LLM提取链接节点的串联是正确的。但需要注意的是，LLM提取链接节点不应设置为批处理模式，而应使用单次运行。这是因为PubMed检索节点通常只执行一次检索，返回一组结果，因此后续的解析节点也只需单次运行即可。您遇到的错误提示'ref block output format error, not found [blockID]'，通常是由于节点配置不当或输出格式不匹配导致的。建议检查LLM提取链接节点的输入输出配置，确保其与前后节点的数据格式一致，并将该节点的运行模式改为单次运行。",
+  "metadata": {
+    "original_question": "目的： pubmed检索后跟一个LLM提取所有文章URL，后续再通过一个批处理对每个URL进行网页读取，输出文章标题、摘要、发表杂志、发表时间、原文链接等信息；\nPubmed与批处理节点中间插入了一个提取链接地址的大模型，再模型运行方式上选择了批处理。\n问题一： 这样串联对吗？\n问题二：试运行workflow的时候提示提取链接地址节点错误：ref block output format error, not found [blockID] \n@崔超",
+    "row": 198,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

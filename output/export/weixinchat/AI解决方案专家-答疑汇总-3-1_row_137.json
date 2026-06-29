@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_137",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "Manus 与 Coze 平台上的 Agent 在技术实现上有哪些核心差异？",
+    "如何利用 Workflows 构建类似 Manus 的多步骤自动执行 Agent？",
+    "Manus 的自动任务执行能力在知识库集成方面有哪些具体应用场景？",
+    "在 Agent 开发中，如何平衡工程实现与产品体验，避免过度宣传？",
+    "除了 Manus，还有哪些成熟的 Agent 产品值得学习参考？",
+    "什么时候给我们上一节manus的解析课啊，直接首个AI agent应用，惊呆了。不再是一问一答了，开始自动干活了[捂脸]"
+  ],
+  "answer": "Manus 本质上是一个集成了多种功能的 Agent 系统，与我们正在学习的 Agent 概念一致。它在工程实现和产品设计上表现良好，但部分自媒体宣传存在夸大成分。Agent 技术在过去一年多里持续朝着自动化、多步骤执行的方向发展，市场上已涌现出多个成熟的 Agent 产品，例如 Coze 平台上的智能体、Workflows 自动化流程等。这些产品均能实现从简单问答到复杂任务自动执行的跨越。未来，类似 Manus 的 Agent 产品将越来越多，这是行业发展的必然趋势。建议用户关注实际技术细节和产品文档，避免被过度宣传误导。",
+  "metadata": {
+    "original_question": "什么时候给我们上一节manus的解析课啊，直接首个AI agent应用，惊呆了。不再是一问一答了，开始自动干活了[捂脸]",
+    "row": 137,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

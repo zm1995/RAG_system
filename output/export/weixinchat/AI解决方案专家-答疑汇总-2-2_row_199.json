@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_199",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在打车计费案例中，知识库和工作流在触发function call的机制上有什么区别？",
+    "Coze中配置的大模型，是否会影响工作流内部节点的执行逻辑？",
+    "如何通过配置和prompt控制工作流是否默认调用function call？",
+    "在Coze的智能体设计中，知识库、工作流和function call三者之间的调用关系是怎样的？",
+    "如果工作流内部需要调用大模型，应该如何设置？是否与Agent选择的大模型一致？",
+    "打车计费案例中，直接调用知识库，就不会进行function call，而用工作流，就默认调用function call，这样理解对么？此外，此时coze 里选择的大模型，作用在工作流之外的环节，还是工作流之内的环节也使用的是它？"
+  ],
+  "answer": "在打车计费案例中，调用知识库和调用工作流都属于function call的范畴。是否默认调用function call，取决于具体的配置和prompt设置，而非直接由调用知识库或工作流决定。此外，Agent选择的大模型在工作流内部不起作用，工作流内部的大模型调用需要单独配置。",
+  "metadata": {
+    "original_question": "打车计费案例中，直接调用知识库，就不会进行function call，而用工作流，就默认调用function call，这样理解对么？此外，此时coze 里选择的大模型，作用在工作流之外的环节，还是工作流之内的环节也使用的是它？",
+    "row": 199,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

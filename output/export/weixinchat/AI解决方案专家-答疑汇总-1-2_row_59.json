@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_59",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "问1：在部署大模型时，如果硬件不支持CUDA，是否必须使用CPU进行计算？有哪些替代方案？",
+    "问2：CUDA和CPU在运行大模型时的性能差异具体有多大？如何根据模型大小选择计算方案？",
+    "问3：除了CUDA，还有哪些加速库或技术可以用于大模型部署？例如OpenCL或DirectML？",
+    "问4：在Coze或Agent等产品中，如何配置计算资源以支持大模型推理？是否支持混合计算模式？",
+    "问5：如果使用CPU部署大模型，有哪些优化技巧可以提升推理速度？例如量化或模型剪枝？",
+    "问2：我对这个原理还不太明白哈，安装cuda是git上着的说明，但是在实际部署的时候，我们也可以灵活的修改计算方案让他用CPU代替计算么？想这种大模型也可以部署在lamma上么？"
+  ],
+  "answer": "CUDA是NVIDIA显卡专用的底层计算库，仅支持英伟达GPU。对于较小的模型，可以部署在CPU上运行，但推理速度会显著降低。若需在CPU上部署，建议采用模型量化、剪枝等优化技术以提升性能。此外，也可考虑使用OpenCL、DirectML等跨平台加速库作为替代方案。关于CUDA和显卡的详细原理，可参考回放课程第6节。",
+  "metadata": {
+    "original_question": "问2：我对这个原理还不太明白哈，安装cuda是git上着的说明，但是在实际部署的时候，我们也可以灵活的修改计算方案让他用CPU代替计算么？想这种大模型也可以部署在lamma上么？",
+    "row": 59,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

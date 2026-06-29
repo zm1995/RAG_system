@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_176",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "产品经理使用Coze平台开发应用时，是否需要掌握编程技能？",
+    "Coze平台上的Agent和应用有什么区别？",
+    "在Coze中创建应用是否需要依赖程序员或算法工程师？",
+    "产品经理如何利用Coze平台独立完成应用开发？",
+    "Coze平台是否支持非技术人员创建带界面的应用？",
+    "像这种应用，产品经理学完后都能自己一个人做吗？还是必须有程序员 算法之类的一起弄？"
+  ],
+  "answer": "在Coze平台上，创建功能时提供了两种选项：创建Agent和创建应用。其中，应用是指带有用户界面的类型，且整个过程无需编写代码。因此，产品经理可以独立完成应用开发，无需依赖程序员或算法工程师。",
+  "metadata": {
+    "original_question": "·像这种应用，产品经理学完后都能自己一个人做吗？还是必须有程序员 算法之类的一起弄？",
+    "row": 176,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

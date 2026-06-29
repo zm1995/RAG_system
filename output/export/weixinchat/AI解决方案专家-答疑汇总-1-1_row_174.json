@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_174",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "Web VQA 模型在 Coze 平台中是否作为内置功能提供？",
+    "除了 Coze，Web VQA 模型在其他 AI 平台或搜索引擎中是否可获取？",
+    "Web VQA 模型是否属于第三方商业插件，需要单独购买或授权？",
+    "Coze 平台未来有计划集成类似 Web VQA 的视觉问答模型吗？",
+    "如果 Coze 不支持 Web VQA，有哪些替代方案可以实现类似功能？",
+    "web vqa这个模型我再coze、搜索引擎等等地方都找不到，这个是商业的插件吗"
+  ],
+  "answer": "Web VQA 是一个大型的视觉问答模型，目前 Coze 平台尚未引入此类插件。该模型并非 Coze 的内置功能，也未被广泛集成到其他常见 AI 平台或搜索引擎中。它可能属于特定商业产品或研究项目，需要单独获取或授权。若需在 Coze 中实现类似功能，可考虑使用其他视觉问答模型或通过自定义工作流（workflows）结合外部 API 进行集成。",
+  "metadata": {
+    "original_question": "web vqa这个模型我再coze、搜索引擎等等地方都找不到，这个是商业的插件吗",
+    "row": 174,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

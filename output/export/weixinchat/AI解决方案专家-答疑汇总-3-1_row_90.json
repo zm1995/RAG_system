@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_90",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze的Team空间中调用DeepSeek V3时，为什么模型回答会与官方平台不一致？",
+    "如何确保在Coze平台上使用的DeepSeek V3模型输出与原始模型一致？",
+    "Coze平台对DeepSeek V3模型进行了哪些额外处理，导致回答差异？",
+    "在Coze的Team空间中，DeepSeek V3模型是否经过了微调或定制化配置？",
+    "如果我在Coze平台上发现DeepSeek V3回答不准确，应该如何排查问题？",
+    "老师，为什么我在咱们的Team空间里调用DeepSeek V3，问它是什么模型，它会说自己是基于GPT-4架构的LLM？\n我直接在DS提问，DS V3不是这么说的"
+  ],
+  "answer": "在Coze的Team空间中调用DeepSeek V3时，模型回答与官方DeepSeek平台不一致，主要原因是训练数据差异和平台处理逻辑不同。在DeepSeek官方平台上，用户与模型交互时，平台代码会进行额外的预处理和后处理，例如添加系统提示、过滤或调整输出，从而影响模型回答。而在Coze平台上，我们直接调用原始模型，未经过这些额外处理，因此模型可能基于其训练数据中的常见模式（如GPT-4架构相关描述）给出回答。建议在Coze平台上使用时，通过明确设置系统提示或上下文来引导模型输出，以减少偏差。",
+  "metadata": {
+    "original_question": "老师，为什么我在咱们的Team空间里调用DeepSeek V3，问它是什么模型，它会说自己是基于GPT-4架构的LLM？\n我直接在DS提问，DS V3不是这么说的",
+    "row": 90,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

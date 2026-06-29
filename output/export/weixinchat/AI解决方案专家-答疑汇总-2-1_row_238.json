@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_238",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在GPT3中，如果linear层复用Embedding的参数，那么Embedding层的模型参数在训练过程中是否还会更新？",
+    "当linear层与Embedding层共享参数时，这种设计对模型的计算效率有何影响？",
+    "在自注意力机制中，linear层计算余弦相似度时，如果复用Embedding参数，是否会影响模型对token表示的区分能力？",
+    "GPT3中linear层不纳入参数集的情况下，参数总量174,599,568,465是如何计算得出的？",
+    "如果linear层复用Embedding参数，这种参数共享机制在训练和推理阶段分别有哪些优缺点？",
+    "如果linear 层完全复用 Embedding 的参数，是不是相当于把 Embedding 的神经网络模型 model1拿到 linear 层，经过 Embedding 层之后，model1 模型已经固定，参数也已经固定。那对于linear 层来讲，其实是拿一个已知的神经网络模型来计算自注意力机制输出的向量W 和 token 词表各向量的余弦相似度。在此基础上，不将 linear 层的参数发纳入到 GPT3 的参数集，计算得到的参数总量是 174,599,568,465"
+  ],
+  "answer": "是的，您的理解是正确的。当linear层完全复用Embedding层的参数时，相当于将Embedding层的神经网络模型（记为model1）直接应用于linear层。经过Embedding层处理后，model1的模型结构和参数均已固定。对于linear层而言，其本质是利用一个已知的神经网络模型，计算自注意力机制输出的向量W与token词表中各向量的余弦相似度。在此情况下，linear层的参数不纳入GPT3的参数集，因此计算得到的参数总量为174,599,568,465。",
+  "metadata": {
+    "original_question": "如果linear 层完全复用 Embedding 的参数，是不是相当于把 Embedding 的神经网络模型 model1拿到 linear 层，经过 Embedding 层之后，model1 模型已经固定，参数也已经固定。那对于linear 层来讲，其实是拿一个已知的神经网络模型来计算自注意力机制输出的向量W 和 token 词表各向量的余弦相似度。在此基础上，不将 linear 层的参数发纳入到 GPT3 的参数集，计算得到的参数总量是 174,599,568,465",
+    "row": 238,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

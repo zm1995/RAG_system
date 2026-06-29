@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_3",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在构建智能体时，除了LLM本身，所有外部输入（如知识库、工作流参数）是否都算作prompt的一部分？",
+    "LLM的token上限是硬性限制还是性能瓶颈？如果超出，会直接报错还是仅影响响应速度？",
+    "在Coze平台中，如何有效管理prompt长度以避免超出模型token限制？",
+    "Workflows中的节点输出作为LLM输入时，是否也受token上限约束？如何优化？",
+    "知识库检索结果作为prompt注入时，是否计入token消耗？如何控制其大小？",
+    "崔老师，下午好。\n在LLM之外一切对LLM的再输入是否都可以理解为是prompt?\n第一节课提到很多LLM API服务商对单次chat输入的token有上限，\nLLM本身接受的输入是否也有一个总上限，或只是会使计算速度降低？"
+  ],
+  "answer": "是的，在LLM之外，所有对LLM的再输入（包括知识库内容、工作流参数、用户消息等）都可以理解为prompt的一部分，因为它们共同构成模型的输入上下文。关于token上限，这是模型本身的硬性限制，而非仅影响计算速度。大多数LLM（如GPT系列）有固定的最大token数（例如4096或8192），超出后API会返回错误或截断输入，而非仅降低速度。因此，在设计智能体或工作流时，需严格控制prompt长度，避免超出限制。",
+  "metadata": {
+    "original_question": "崔老师，下午好。\n在LLM之外一切对LLM的再输入是否都可以理解为是prompt?\n第一节课提到很多LLM API服务商对单次chat输入的token有上限，\nLLM本身接受的输入是否也有一个总上限，或只是会使计算速度降低？",
+    "row": 3,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

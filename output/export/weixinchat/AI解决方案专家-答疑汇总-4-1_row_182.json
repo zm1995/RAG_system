@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_182",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在AutoGPT案例中，使用{{index}}进行定位时，是否必须确保文件顺序与索引一致？",
+    "如果模型理解力较弱，除了改写prompt外，还有哪些方法可以降低{{index}}定位的出错率？",
+    "在workflows中，{{index}}定位机制是否适用于所有类型的变量，还是仅限文件列表？",
+    "能否举例说明，当{{index}}定位失败时，常见的错误表现是什么？",
+    "在智能体开发中，如何测试{{index}}定位的准确性，以确保prompt执行正确？",
+    "崔老师，请问autogpt这个案例里的这一步，我是不是可以理解为【{{index}}】是用来定位的？就是说“跑到这一条支线上的第index个文件，我来改你”那么这个prompt前半句是不是也可以写成: 将第【{{index}}】个{{variable}}中的值，设置为…………………………"
+  ],
+  "answer": "是的，您的理解是正确的。{{index}}用于定位特定文件或元素，但需注意，这种写法对模型的理解能力有一定要求。对于理解力较弱的模型，在解析索引与变量对应关系时容易出错，建议在prompt中明确索引范围或使用更直观的表述方式，以降低错误率。",
+  "metadata": {
+    "original_question": "崔老师，请问autogpt这个案例里的这一步，我是不是可以理解为【{{index}}】是用来定位的？就是说“跑到这一条支线上的第index个文件，我来改你”\n那么这个prompt前半句是不是也可以写成: 将第【{{index}}】个{{variable}}中的值，设置为…………………………",
+    "row": 182,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

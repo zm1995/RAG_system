@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_162",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze智能体的自注意力机制中，softmax函数的具体作用是什么？它如何影响QKV的计算顺序？",
+    "如果我想在Coze workflows中自定义一个注意力层，softmax应该放在哪里？V矩阵是在softmax内部还是外部处理？",
+    "在Coze知识库的文本处理流程里，softmax函数是否只用于最终输出概率？它在中间步骤中如何应用？",
+    "Coze agent的模型架构中，softmax在QKV计算和最终输出时有何不同？能否举例说明？",
+    "在Coze智能体的训练过程中，softmax函数的输入和输出分别是什么？V矩阵的权重相乘是在softmax之前还是之后？",
+    "咱们课上公式里的softmax是指的图里的浅绿色softmax框吗？如果是的话，那公式里的\"V\"是不是应该在softmax函数的括号里面？这个地方没理解的特别清楚"
+  ],
+  "answer": "在自注意力机制中，softmax函数被多次使用。首先，在QKV（查询、键、值）计算过程中，softmax用于处理查询和键的点积结果，生成注意力权重矩阵（也称为相关度矩阵）。该矩阵表示每个位置对其他位置的关注程度。然后，这个注意力权重矩阵与值矩阵V进行加权求和，从而得到最终的输出。因此，V矩阵位于softmax函数的括号外部，即先通过softmax计算注意力权重，再与V相乘。此外，在模型的最终输出层，softmax也用于将logits转换为概率分布，以进行分类或生成任务。",
+  "metadata": {
+    "original_question": "咱们课上公式里的softmax是指的图里的浅绿色softmax框吗？如果是的话，那公式里的\"V\"是不是应该在softmax函数的括号里面？这个地方没理解的特别清楚",
+    "row": 162,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

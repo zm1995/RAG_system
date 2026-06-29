@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_241",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze平台中，如何设计一个用于Reward Model人工标注的工作流？",
+    "使用智能体进行Reward Model标注时，有哪些常见的自动化分发任务策略？",
+    "在知识库集成场景下，Reward Model的人工标注流程是否需要单独配置？",
+    "Workflows中如何整合外部标注系统（如Scale AI）来优化Reward Model的标注效率？",
+    "对于Agent开发，Reward Model的人工标注数据如何与模型训练流程对接？",
+    "在实际项目交付过程中，有在Reward Model这块做人工标注的工作流吗"
+  ],
+  "answer": "在Reward Model的人工标注环节，通常需要依赖专门的标注系统来管理任务分发。标注任务由系统自动分配，以确保流程高效和标准化。若需深入了解，可参考相关标注平台，例如美国的Scale AI，或国内一些大型互联网公司提供的类似服务。这些系统通常具备任务调度、质量控制和数据管理功能，但具体实现较为复杂，建议根据项目需求选择合适的平台或定制化方案。",
+  "metadata": {
+    "original_question": "在实际项目交付过程中，有在Reward Model这块做人工标注的工作流吗",
+    "row": 241,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_65",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "DeepSeek模型在哪些具体应用场景中可能替代GPT？",
+    "从技术性能角度看，DeepSeek与GPT相比有哪些优势和劣势？",
+    "DeepSeek模型在行业内的用户接受度如何，是否有可能在未来超越GPT？",
+    "如果企业计划从GPT迁移到DeepSeek，需要考虑哪些关键因素？",
+    "DeepSeek模型在开发AI应用时，与GPT的兼容性和集成难度如何？",
+    "老师DeepSeek这个大模型以后能替换gpt吗"
+  ],
+  "answer": "关于DeepSeek是否能替换GPT，需要明确替换的具体含义。如果是指在开发AI应用时选择调用哪个模型，目前已有多个模型（包括DeepSeek）在某些场景下替代了GPT，例如在成本敏感或特定领域任务中。但如果是指行业地位或用户量级，短期内DeepSeek难以超越GPT，因为GPT在品牌影响力、生态系统和用户基础方面具有显著优势。总体而言，替换的可能性取决于应用场景和评估标准。",
+  "metadata": {
+    "original_question": "老师DeepSeek这个大模型以后能替换gpt吗",
+    "row": 65,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

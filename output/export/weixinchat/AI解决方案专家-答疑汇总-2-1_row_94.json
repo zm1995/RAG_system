@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_94",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Coze平台中，更新智能体的Reward Model后，强化学习阶段使用的数据来源是否与初始训练数据相同？",
+    "针对Agent的强化学习流程，Reward Model更新后，是否需要重新收集用户反馈数据来优化模型？",
+    "在Workflows中集成智能体时，Reward Model的更新是否会影响知识库中已存储的数据使用方式？",
+    "Coze中智能体的强化学习过程，是否依赖初始标注数据（如博士标注）来持续改进，还是仅依赖Reward Model的评分？",
+    "对于Coze平台上的智能体，Reward Model更新后，强化学习阶段的数据集是否需要包含人工撰写的回答？",
+    "请问GPT在更新了Reward Model后，再次强化学习，使用的数据有更新吗，还是说还是原来那些博士标注的数据？"
+  ],
+  "answer": "在强化学习阶段，Reward Model（奖励模型）与语言模型（LLM）协同优化时，仅需使用一批问题数据，无需依赖人类撰写的回答。这些问题由LLM自行生成回答，Reward Model对回答进行评分。强化学习的目标是通过调整LLM的参数，使其在未来面对类似问题时能获得更高评分。因此，此阶段不再需要初始标注数据（如博士标注的内容），而是基于Reward Model的反馈进行迭代优化。",
+  "metadata": {
+    "original_question": "请问GPT在更新了Reward Model后，再次强化学习，使用的数据有更新吗，还是说还是原来那些博士标注的数据？",
+    "row": 94,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

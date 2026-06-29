@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_118",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "DeepSeek系列模型在训练数据预处理上与GPT系列和Llama系列有何差异？",
+    "DeepSeek模型的注意力机制与Llama系列相比有哪些创新点？",
+    "DeepSeek系列模型在训练过程中是否采用了与GPT系列不同的优化策略？",
+    "DeepSeek模型的架构设计与Llama系列相比，在效率或性能上有哪些优势？",
+    "DeepSeek系列模型在训练时是否使用了与GPT系列不同的损失函数或正则化方法？",
+    "崔老师，我想问一下，deepseek系列模型的训练过程和课上讲的GPT系列和Llama系列有哪些不同"
+  ],
+  "answer": "DeepSeek系列模型的训练过程与GPT系列和Llama系列在核心框架上基本一致，均基于自回归语言模型架构，采用大规模无监督预训练和后续微调。然而，DeepSeek在模型结构上引入了特定创新，例如更高效的注意力机制或优化策略，这些内容将在后续关于DeepSeek模型结构的课程中详细讲解。具体差异包括训练数据预处理、模型架构细节（如层数、隐藏维度）、以及可能使用的不同优化算法或正则化技术，建议参考官方技术报告以获取精确对比。",
+  "metadata": {
+    "original_question": "崔老师，我想问一下，deepseek系列模型的训练过程和课上讲的GPT系列和Llama系列有哪些不同",
+    "row": 118,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_131",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在私有化部署场景下，Coze和Dify在功能扩展性方面有何差异？",
+    "对于非技术背景的用户，LangChain的学习曲线是否比Coze和Dify更陡峭？",
+    "Coze、Dify和LangChain在支持企业级工作流自动化方面，各自的优势是什么？",
+    "如果团队中既有开发者也有业务人员，如何选择Coze、Dify或LangChain来平衡易用性和定制化需求？",
+    "在构建复杂AI智能体时，LangChain相比Coze和Dify在技术门槛和灵活性上如何权衡？",
+    "原问题：coze做demo比较方便，但真正做私有化实施部署还是dify更合适一些是吧，LangChain怎么样是不是比较复杂，使用门槛比较高？"
+  ],
+  "answer": "LangChain是大模型应用开发工程师常用的工具，对于具备编程能力的工程师而言，学习后能够较快上手，难度适中。然而，对于没有编程基础的用户，LangChain的使用门槛非常高，几乎难以独立掌握。相比之下，Coze和Dify在易用性上更友好，尤其适合非技术用户快速搭建原型或进行私有化部署。",
+  "metadata": {
+    "original_question": "coze做demo比较方便，但真正做私有化实施部署还是dify更合适一些是吧，LangChain怎么样是不是比较复杂，使用门槛比较高？",
+    "row": 131,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

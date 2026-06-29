@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_109",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "崔老师，在DeepSeek的MoE架构中，专家网络是如何与Transformer的层结构集成的？",
+    "DeepSeek使用的MoE架构中，路由机制如何决定将token分配给哪些专家？",
+    "在DeepSeek的Transformer模型中，MoE层是否替代了传统的前馈网络（FFN）？",
+    "DeepSeek的MoE架构如何解决专家负载不均衡的问题？",
+    "崔老师，DeepSeek的MoE架构在训练和推理时有哪些性能优化策略？",
+    "崔老师，deepseek使用的moe架构和transformer的多头是怎么结合的？"
+  ],
+  "answer": "在DeepSeek的MoE架构中，多头自注意力机制的计算完成后，其输出结果会作为输入传递给MoE层。MoE层通常替代了传统Transformer中的前馈网络（FFN），由多个专家网络和一个门控路由机制组成。路由机制根据输入token的特征，动态选择激活部分专家网络，并将它们的输出进行加权求和，从而与多头自注意力的输出结合，形成完整的Transformer层处理流程。",
+  "metadata": {
+    "original_question": "崔老师，deepseek使用的moe架构和transformer的多头是怎么结合的？",
+    "row": 109,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_2",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在构建embedding字典时，算法工程师需要确定哪些关键参数？",
+    "embedding矩阵的行数和列数是如何确定的？",
+    "token词表大小和向量维度对embedding字典的生成有何影响？",
+    "embedding字典初始化时，每个位置的值是如何设置的？",
+    "算法工程师在设计token切分模型时，通常如何选择词表大小？",
+    "今天讲的那个字典是按照什么，怎么样生成的？"
+  ],
+  "answer": "首先，算法工程师需要设计模型如何切分token，并确定token词表的总数，例如50000个。其次，算法工程师需要设定每个token转换为向量后的维度，例如12288维。基于这两个参数，整个embedding字典（或称为矩阵）的行数和列数即可确定：行数等于token词表总数，列数等于向量维度。随后，在每个位置上填充一个随机数，从而完成字典表的初始化。",
+  "metadata": {
+    "original_question": "今天讲的那个字典是按照什么，怎么样生成的？",
+    "row": 2,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

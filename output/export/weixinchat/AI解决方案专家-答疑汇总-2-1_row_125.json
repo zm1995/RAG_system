@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_125",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Transformer模型中，cross attention与self attention的主要区别是什么？",
+    "Cross attention在解码器中的具体作用是什么？",
+    "能否举例说明cross attention如何从两个不同序列中聚合信息？",
+    "Cross attention的输入通常来自哪些模块？",
+    "在机器翻译任务中，cross attention如何帮助解码器生成目标语言？",
+    "这个cross attention。那是不是就可以说cross attention是接收两个不同的序列的，用于区别是否在encoder被解码了，是这样吗？"
+  ],
+  "answer": "Cross attention是Transformer解码器中的一个关键模块，它接收两个不同的序列作为输入：一个来自编码器的输出（如源语言序列的表示），另一个来自解码器自身的输出（如已生成的目标语言序列）。其核心作用不是用于区分序列是否被解码，而是从源序列中提取与当前解码位置相关的信息，实现信息聚合。具体来说，cross attention以解码器当前状态为查询（Query），以编码器输出为键（Key）和值（Value），通过注意力机制计算相关性，从而将源序列中的关键信息融入解码过程。这与self attention不同，self attention处理的是单一序列内部的依赖关系。例如，在机器翻译中，cross attention帮助解码器在生成每个目标词时，聚焦于源句子中对应的相关部分，从而提升翻译准确性。",
+  "metadata": {
+    "original_question": "这个cross attention 。那是不是就可以说cross attention是接收两个不同的序列的，用于区别是否在encoder被解码了，是这样吗？",
+    "row": 125,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

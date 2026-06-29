@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_63",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在DeepSeek模型中，KV压缩维度dc=512与GPT-3中的Wk/Wv维度有何不同？",
+    "DeepSeek论文中提到的“per-head dimension dh=128”具体指什么？它与注意力机制中的哪个参数对应？",
+    "DeepSeek在GPT-3的Wq、Wk、Wv、Wo基础上新增的压缩矩阵，其设计目的是什么？",
+    "DeepSeek中的降秩矩阵Wdkv与GPT-3中的Wk/Wv在功能上如何区分？",
+    "在DeepSeek架构中，KV压缩维度dc和每头维度dh如何影响模型的计算效率和缓存需求？",
+    "崔老师，之前在讲GPT3框架的时候，提到的Wk/Wv跟deepseek中的降秩矩阵Wdkv在架构中是起到类似的作用吗，来降秩\n“the per-head dimension dh to 128. The KV compression dimension dc is set to 512” deepseek论文中这两个参数分别对应的什么意思（哪个对标GPT3框架中Wk/Wv的维度，那另一个又是什么维度呢）"
+  ],
+  "answer": "在DeepSeek模型中，GPT-3原有的Wq、Wk、Wv、Wo参数矩阵仍然存在，它们分别负责查询、键、值和输出的线性变换。此外，DeepSeek引入了额外的压缩矩阵，用于对需要缓存的计算结果（如键值对）进行降维处理，以减少内存占用和计算开销。具体而言，论文中的“per-head dimension dh=128”指的是每个注意力头的维度，即每个头中键和值的向量长度，这与GPT-3中Wk/Wv的输出维度相对应。而“KV compression dimension dc=512”则代表键值压缩后的维度，即通过新增的降秩矩阵将原始键值对压缩至更低维度的空间，从而优化缓存效率。这两个参数并非直接对标GPT-3中的Wk/Wv维度，而是DeepSeek在标准注意力机制基础上增加的独立设计，旨在平衡模型性能与资源消耗。",
+  "metadata": {
+    "original_question": "崔老师，之前在讲GPT3框架的时候，提到的Wk/Wv跟deepseek中的降秩矩阵Wdkv在架构中是起到类似的作用吗，来降秩\n“the per-head dimension dh to 128. The KV compression dimension dc is set to 512” deepseek论文中这两个参数分别对应的什么意思（哪个对标GPT3框架中Wk/Wv的维度，那另一个又是什么维度呢）",
+    "row": 63,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

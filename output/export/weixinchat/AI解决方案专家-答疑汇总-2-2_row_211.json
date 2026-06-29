@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_211",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Transformer模型中，为什么在Linear层之后还需要Softmax层，而不是直接取最大值对应的token？",
+    "Transformer的Softmax层除了归一化，还有哪些作用？",
+    "如果不使用Softmax，直接使用Linear层的输出进行token选择，会有什么问题？",
+    "在Transformer的解码过程中，Softmax输出的概率分布如何影响生成文本的多样性？",
+    "Transformer模型中，Softmax的温度参数（temperature）是如何调节概率分布的？",
+    "崔老师，想再问一下，transformer模型中最后linear 和softmax部分，其实linear已经计算出相关度最高的向量了（即对应某个token），为什么还要转换成概率，去算概率最大的那个呢？"
+  ],
+  "answer": "在Transformer模型中，Linear层计算出的向量表示每个token的相关度分数，但这些分数未经归一化，数值范围可能很大或很小，难以直接比较。Softmax层的作用是将这些分数转换为0到1之间的概率分布，使得所有token的概率之和为1。这样，每个token的概率值具有明确的含义：概率越大，表示该token与当前上下文的相关度越高。通过选择概率最大的token，可以确保输出结果具有可解释性和稳定性。此外，Softmax层还引入了非线性变换，增强了模型的表达能力，并支持通过温度参数调节概率分布的平滑程度，从而控制生成文本的多样性和确定性。",
+  "metadata": {
+    "original_question": "崔老师，想再问一下，transformer模型中最后linear 和softmax部分，其实linear已经计算出相关度最高的向量了（即对应某个token），为什么还要转换成概率，去算概率最大的那个呢？",
+    "row": 211,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

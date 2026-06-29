@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_38",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze智能体训练中，如何确保每个epoch内所有数据都被完整遍历一次？",
+    "如果batch采样是不放回的，那么一个epoch中batch的数量是如何确定的？",
+    "在workflows中，数据集的划分方式（如不放回采样）对模型训练效果有何影响？",
+    "知识库中的样本在训练时，batch大小和epoch数量如何影响模型的学习效率？",
+    "在agent训练过程中，如何避免因batch采样重复导致数据利用率降低的问题？",
+    "1、大模型训练的时候，一个epoch就是数据被完整的跑一遍，但batch的样本是随机获取的，这样一个epoch怎么会知道数据被完整跑了一遍？因为batch的样本可能重复被抽到吧！\n2、“每个batch里的数据样本相互是不重叠”就是说batch采样是不放回采样？如果是这样就合理了"
+  ],
+  "answer": "在模型训练中，一个epoch表示数据集被完整遍历一次。数据集被划分为多个不重叠的batch，每个batch包含固定数量的样本。例如，若数据集有1000个样本，每个batch包含100个样本，则数据集被分割为10个batch。尽管每个batch内的样本是随机选取的，但采样方式为不放回采样，即每个样本在一个epoch中仅出现一次。因此，当所有batch依次执行完毕后，数据集中的所有样本均被处理一次，从而完成一个epoch。这种机制确保了数据利用的完整性和一致性。",
+  "metadata": {
+    "original_question": "1、大模型训练的时候，一个epoch就是数据被完整的跑一遍，但batch的样本是随机获取的，这样一个epoch怎么会知道数据被完整跑了一遍？因为batch的样本可能重复被抽到吧！\n2、“每个batch里的数据样本相互是不重叠”就是说batch采样是不放回采样？如果是这样就合理了",
+    "row": 38,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

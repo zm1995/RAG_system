@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_138",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "minmax-hailuo视频生成是否支持通过参数调整（如帧率、分辨率）来实现精细控制？",
+    "除了提示词，minmax-hailuo有没有提供像coze workflows那样的多步骤流程控制功能？",
+    "minmax-hailuo的API文档中是否包含对视频生成过程的实时干预接口？",
+    "如何利用minmax-hailuo的现有功能实现类似agent的自主决策式视频生成？",
+    "minmax-hailuo在精细控制方面与coze智能体相比有哪些差异？",
+    "老师，我想问一下，minmax-hailuo的视频生成，我想要精细控制的话，他这一套体系有没有开放使用者的精细控制接口的"
+  ],
+  "answer": "minmax-hailuo视频生成的精细控制目前主要通过提示词实现。官方API文档中未提供其他控制方式，如帧率、分辨率等参数调整接口，也未开放多步骤流程控制或实时干预功能。因此，用户仅能通过优化提示词内容来影响生成结果。若需更复杂的控制逻辑，建议参考coze或agent等产品的workflows功能，但minmax-hailuo本身暂不支持此类扩展。",
+  "metadata": {
+    "original_question": "老师，我想问一下，minmax-hailuo的视频生成，我想要精细控制的话，他这一套体系有没有开放使用者的精细控制接口的",
+    "row": 138,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_242",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "GPT-3和Llama模型在训练数据的选择上有什么主要差异？",
+    "除了decoder-only架构，GPT-3和Llama在模型参数规模上是否有显著不同？",
+    "GPT-3和Llama模型在推理效率方面有哪些区别？",
+    "在模型微调过程中，GPT-3和Llama通常采用哪些不同的策略？",
+    "GPT-3和Llama模型在开源社区的支持和可用性上有何不同？",
+    "可以这么理解吗：GPT3和Llama模型模型架构都是一样的，都是decode-only，只是训练的方式不一样，第一节课里面那4阶段和5阶段。模型里面是一点差别都没有吗？"
+  ],
+  "answer": "是的，GPT-3和Llama模型都采用decoder-only架构。然而，尽管整体框架相似，它们在具体实现上存在差异。每个计算步骤中，不同公司会引入各自的微创新，例如在注意力机制、层归一化、激活函数等方面可能有所不同。此外，训练方式（如预训练阶段和微调阶段）的差异也会导致模型性能的差异。因此，虽然架构相同，但模型内部并非完全一致。",
+  "metadata": {
+    "original_question": "可以这么理解吗：GPT3和Llama模型模型架构都是一样的，都是decode-only，只是训练的方式不一样，第一节课里面那4阶段和5阶段。模型里面是一点差别都没有吗？",
+    "row": 242,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_42",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze或智能体开发中，图片patch的向量化过程是否与LLM的token embedding类似？",
+    "对于workflows中的多模态输入，图片patch的embedding层是如何初始化和训练的？",
+    "在知识库中处理图片时，patch矩阵的向量映射是否依赖于预训练模型？",
+    "Agent在处理图片输入时，patch embedding的维度如何确定？",
+    "在Coze平台中，图片patch的embedding训练是否与文本embedding共享相同的优化策略？",
+    "LLM是专门训练了embedding模型来将token映射到向量空间的，图片patch矩阵是怎么映射成向量空间中的一个向量的？也有embedding吗？是怎么训练的？"
+  ],
+  "answer": "在视觉Transformer（ViT）中，图片patch的向量映射过程与LLM的token embedding类似，但并非使用专门的预训练embedding模型。初始时，patch embedding层的参数被初始化为随机数，随后与整个Transformer模型一起进行端到端训练。训练过程中，通过计算总误差（如交叉熵损失）并利用反向传播算法计算梯度，更新所有参数（包括embedding层），从而找到最适合当前任务的embedding表示。这种方式确保了embedding层能够自适应地学习到图片patch的有效特征表示。",
+  "metadata": {
+    "original_question": "LLM是专门训练了embedding模型来将token映射到向量空间的，图片patch矩阵是怎么映射成向量空间中的一个向量的？也有embedding吗？是怎么训练的？",
+    "row": 42,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

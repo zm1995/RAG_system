@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_189",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze的提取外部搜索结果节点中，如何正确配置input字段以获取所需数据？",
+    "使用智能体时，response_for_model字段在提取搜索结果中起什么作用？",
+    "在workflows中，如果外部搜索结果节点返回的数据结构复杂，如何高效提取关键信息？",
+    "Coze知识库与外部搜索结果节点结合使用时，如何确保数据映射正确？",
+    "在Agent开发中，如何调试外部搜索结果节点的数据字段以避免取值错误？",
+    "老师，在提取外部搜索结果节点，input的赋值是data这个json，而response_for_model这个键值并不包含在data里面，为什么系统提示词必须这样写呢？我尝试把response_for_model替换成webPages取不到结果"
+  ],
+  "answer": "在Coze的提取外部搜索结果节点中，input字段应赋值为包含搜索结果数据的JSON对象。response_for_model字段并非必需，它仅用于指定模型处理后的输出格式。实际使用时，建议先运行一次插件，观察返回的JSON数据结构，识别包含有价值结果的字段（如webPages）。如果数据结构复杂，可通过编写提示词要求模型整理出关键信息，例如指定提取前5个搜索结果。直接替换response_for_model为webPages可能失败，因为字段名称需与返回数据中的实际键名完全匹配。",
+  "metadata": {
+    "original_question": "老师，在提取外部搜索结果节点，input的赋值是data这个json，而response_for_model这个键值并不包含在data里面，为什么系统提示词必须这样写呢？我尝试把response_for_model替换成webPages取不到结果",
+    "row": 189,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

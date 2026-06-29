@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_151",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "除了Ollama，还有哪些工具或平台可以用于本地部署DeepSeek模型？",
+    "如何通过Hugging Face命令行工具部署DeepSeek模型？",
+    "本地部署DeepSeek模型时，需要哪些硬件和软件环境要求？",
+    "部署DeepSeek模型时，如何优化性能以适配低配置设备？",
+    "在Coze或Agent产品中，如何集成本地部署的DeepSeek模型？",
+    "如果本地部署DeepSeek，不用Ollama要怎么做，网上搜出来的都是用Ollama部署"
+  ],
+  "answer": "Ollama是普通用户最常用的本地部署方式，但专业用户通常采用其他方法，例如通过Hugging Face平台使用命令行工具进行部署。具体步骤包括：从Hugging Face模型库下载DeepSeek模型文件，使用Python脚本或Transformers库加载模型，并配置本地推理服务。此外，还可以使用Docker容器化部署或直接调用PyTorch/TensorFlow框架。部署前需确保硬件满足要求（如GPU、内存），并安装必要的依赖库（如CUDA、Python包）。",
+  "metadata": {
+    "original_question": "@崔超 老师如果本地部署deepseek，不用ollama要怎么做，网上搜出来的都是用ollama部署",
+    "row": 151,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

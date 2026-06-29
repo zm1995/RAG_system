@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_72",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze上创建的Agent能否通过导出功能迁移到其他AI平台，比如Dify？",
+    "如果我想将Coze的Workflow复用到Dify，除了手动重建，有没有自动化工具或脚本支持？",
+    "Coze平台是否提供与其他主流AI平台（如Dify）的兼容性导出格式？",
+    "对于教学场景，我们是否计划开发Coze到Dify的迁移工具或教程？",
+    "手动复现Coze上的Agent到Dify时，需要注意哪些关键步骤或常见问题？",
+    "问题：老师现在还没有简单的把在Coze上做的Agent或者Workflow直接搬到Dify上的办法，如果想搬只有自己复现一次是吧？我搜了一下Coze的文档，至今也没找到简单方法可以下载成其他平台可以兼容的格式。我们现在也没有用Dify教学的计划对吧？"
+  ],
+  "answer": "目前没有直接的方法将Coze上的Agent或Workflow迁移到Dify，因为Coze不支持导出为其他平台兼容的格式。用户需要手动复现这些内容。由于我们教学中的demo通常结构简单，手动复现所需时间较短，因此当前没有计划开发迁移工具或使用Dify进行教学。",
+  "metadata": {
+    "original_question": "问题：老师现在还没有简单的把在Coze上做的Agent或者Workflow直接搬到Dify上的办法，如果想搬只有自己复现一次是吧？我搜了一下Coze的文档，至今也没找到简单方法可以下载成其他平台可以兼容的格式。我们现在也没有用Dify教学的计划对吧？",
+    "row": 72,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_210",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze中，如何判断文件类型是否为Excel并执行相应分支？",
+    "Coze的选择器是否支持类似Python的'in'操作符来检查文件扩展名？",
+    "在Coze的工作流中，如何根据文件类型（如xlsx或xls）设置条件判断？",
+    "Coze的智能体能否通过条件判断实现文件类型分类并输出结果？",
+    "在Coze中，如果我想根据文件扩展名执行不同操作，应该使用什么功能？",
+    "崔老师，请问coze能否实现if file_type in ['xlsx','xls']: return 'Excel'这句话？我看到选择器里的包含好像是contains不是in"
+  ],
+  "answer": "在Coze中，选择器提供的'包含'（contains）功能类似于Python中的'in'操作符，用于检查某个值是否存在于列表中。但Coze不支持直接返回'Excel'这样的字符串值，而是通过条件判断引导工作流进入特定分支。例如，您可以在选择器中设置条件为'文件类型包含xlsx或xls'，然后让模型或后续节点执行对应分支操作，如输出'Excel'或处理Excel文件。具体实现时，建议使用选择器节点，配置条件为'文件类型 contains xlsx'或'文件类型 contains xls'，并将满足条件的分支连接到相应处理步骤。",
+  "metadata": {
+    "original_question": "崔老师，请问coze能否实现if file_type in ['xlsx','xls']: return 'Excel'这句话？我看到选择器里的包含好像是contains不是in",
+    "row": 210,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_26",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze智能体开发中，P-tuning和Prompt-tuning在动态生成前缀方面的具体实现差异是什么？",
+    "Prefix-tuning如何利用Transformer结构提升模型泛化能力，与P-tuning相比有何优势？",
+    "LoRA微调方法在Coze workflows中应用时，其效果优于Prefix-tuning的关键因素有哪些？",
+    "从微调效果和计算成本两个维度，如何评估LoRA、Prefix-tuning、P-tuning和Prompt-tuning在智能体训练中的适用性？",
+    "在Coze知识库集成场景下，不同微调方法（如LoRA vs Prefix-tuning）对模型输出稳定性的影响有何差异？",
+    "p tuning比prompt tuning的先进之处，就是能在一定程度上，跟随user prompt使 lstm/mlp具备一定的泛化性，从而使整个模型的效果具有比prompt tuning更好的泛化性 也就是输出效果？同理，prefix tuning比p tuning、lora tuning 比 prefix tuning 也是如此？所以从微调效果来说，lora > prefix > p >prompt?对应的使用成本 也是越靠前越高？"
+  ],
+  "answer": "是的，P-tuning相比Prompt-tuning的先进之处在于其能够动态生成前缀，从而在一定程度上跟随用户提示（user prompt）使LSTM/MLP具备更好的泛化性，进而提升整体模型效果的泛化能力。Prefix-tuning的先进之处在于它借助了Transformer本身的结构，该结构具有复杂的表述能力，能够更有效地捕捉上下文信息。从微调效果来看，目前LoRA通常被认为是最优选择，Prompt-tuning效果最差，而P-tuning和Prefix-tuning的效果则介于两者之间，具体优劣需根据任务场景评估。在计算成本方面，LoRA通常需要更高的资源投入，而Prompt-tuning成本最低，但效果与成本并非严格线性相关。",
+  "metadata": {
+    "original_question": "p tuning比prompt tuning的先进之处，就是能在一定程度上，跟随user prompt使 lstm/mlp具备一定的泛化性，从而使整个模型的效果具有比prompt tuning更好的泛化性 也就是输出效果？同理，prefix tuning比p tuning、lora tuning 比 prefix tuning 也是如此？所以从微调效果来说，lora > prefix > p >prompt?对应的使用成本 也是越靠前越高？",
+    "row": 26,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

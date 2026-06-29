@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_155",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze平台中，如果需要对智能体同时应用Lora微调和RLHF对齐，应该采用什么策略来避免参数冲突？",
+    "对于workflows中的模型微调，Lora和RLHF的先后顺序如何影响最终模型性能？",
+    "在知识库场景下，如何平衡Lora的轻量级微调与RLHF的全量参数对齐？",
+    "Coze中智能体的微调流程中，Lora和RLHF是否可以并行执行？为什么？",
+    "如果必须在一个模型上同时进行Lora instruct tuning和RLHF，有哪些替代方案可以降低失败风险？",
+    "如果一个模型又要用Lora做instruct tuning，又要做RLHF的微调，也是把数据混在一起改目标函数还是用两阶段的微调更好一些？"
+  ],
+  "answer": "在Coze、Agent、智能体、Workflows或知识库等产品中，对模型同时应用Lora微调和RLHF对齐时，不建议采用混合数据或两阶段微调的方式，因为这两种方法都会显著降低微调成功的概率。RLHF主要用于模型基础能力的对齐，例如提升对话的自然度和人类预期符合度，通常涉及全量参数调整；而Lora是一种轻量级微调方法，仅调整增量参数。如果必须结合两者，理论上RLHF应在前，因为RLHF通常作用于全量参数，而Lora针对增量参数。然而，若先执行RLHF，模型已完成基础对齐，后续Lora微调的意义不大；若先执行Lora，再执行RLHF，则Lora的增量参数调整可能被RLHF的全量参数更新覆盖，导致Lora效果失效。因此，建议根据具体需求选择单一方法，或采用其他替代方案，如分阶段优化不同目标，以避免参数冲突和性能下降。",
+  "metadata": {
+    "original_question": "如果一个模型又要用Lora做instruct tuning，又要做RLHF的微调，也是把数据混在一起改目标函数还是用两阶段的微调更好一些？",
+    "row": 155,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

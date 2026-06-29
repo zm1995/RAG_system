@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_245",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "除了PPO和DPO，强化学习中还有哪些常见的算法？",
+    "PPO和DPO在强化学习中的应用场景有何不同？",
+    "强化学习中的PPO算法是如何实现策略优化的？",
+    "DPO算法与PPO算法相比，在训练效率上有哪些优势？",
+    "在Coze或智能体开发中，如何选择适合的强化学习算法（如PPO或DPO）？",
+    "强化学习不是PPO和DPO嘛？"
+  ],
+  "answer": "强化学习包含多种算法，PPO（Proximal Policy Optimization）和DPO（Direct Preference Optimization）是其中两种常见方法。PPO是一种基于策略梯度的算法，通过限制策略更新幅度来稳定训练过程，广泛应用于连续动作空间和复杂环境。DPO则是一种直接优化偏好的方法，常用于从人类反馈中学习，简化了传统强化学习中的奖励建模步骤。两者各有侧重：PPO适用于需要探索和稳定策略的场景，而DPO更适合基于偏好数据的优化任务。在实际应用中，如Coze或智能体开发中，选择算法需根据具体任务需求、数据可用性和计算资源来决定。",
+  "metadata": {
+    "original_question": "强化学习不是ppo 和dpo 嘛？",
+    "row": 245,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

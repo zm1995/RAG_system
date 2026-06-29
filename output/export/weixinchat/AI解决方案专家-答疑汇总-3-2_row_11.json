@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_11",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "除了Flux，还有哪些AI工具能生成逼真的人物图像？",
+    "在AI生成模拟人的领域，有哪些开源模型可以替代Flux？",
+    "如何利用AI工具生成具有特定风格或特征的模拟人？",
+    "除了图像生成，哪些AI工具可以生成3D模拟人？",
+    "在生成模拟人时，Flux与其他工具相比有哪些优缺点？",
+    "哪些AI工具可以生成模拟人，除了课上说的Flux"
+  ],
+  "answer": "在AI生成模拟人（人物图像）的领域，除了Flux，常用的工具包括Stable Diffusion，这是一款广泛使用的开源生图模型，支持通过文本提示生成高质量的人物图像。此外，还有Midjourney、DALL-E 3、Adobe Firefly等商业工具，以及基于GAN的模型如StyleGAN，均可用于生成逼真或风格化的模拟人。具体选择取决于需求，例如Stable Diffusion适合自定义和本地部署，而Midjourney则擅长艺术风格化输出。",
+  "metadata": {
+    "original_question": "哪些AI工具可以生成模拟人，除了课上说的Flux",
+    "row": 11,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

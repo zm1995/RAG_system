@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_6",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "Agent的自我成长机制是否依赖于预设的规则或外部干预？",
+    "在Coze平台中，Agent如何通过工作流实现经验积累？",
+    "Agent的成长能力是否受限于其底层Transformer架构？",
+    "如何评估Agent自我成长功能在实际应用中的有效性？",
+    "Agent在成长过程中，如何确保其行为不偏离设计目标？",
+    "这种AI是靠什么实现自我成长的[疑问]如果它自己横着长了，是不是说明它脱离Transform了？"
+  ],
+  "answer": "Agent的自我成长机制完全基于预设的设计逻辑。例如，当Agent在执行特定任务时遇到无法处理的情况，它会主动向用户请求帮助。设计者已预先配置好流程：Agent会先检查内部存储的经验库，若存在相关经验则直接应用；若无，则向用户询问，并将新获取的知识存储下来供后续使用。这种成长方式本质上是经验积累，而非自主进化，因此其实际效用有限，且不会脱离Transformer架构的约束。",
+  "metadata": {
+    "original_question": "这种AI是靠什么实现自我成长的[疑问]如果它自己横着长了，是不是说明它脱离Transform了？",
+    "row": 6,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_64",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze智能体的Transformer架构中，Encoder内部的96次Encode过程是否共享同一组网络参数？",
+    "对于Agent工作流中的Encoder和Decoder模块，它们的参数是否可以跨模块复用？",
+    "在知识库的文本处理流程中，如果Encoder被多次调用，其内部权重参数是否会动态更新？",
+    "在Coze的Workflows中，Encoder和Decoder的参数共享机制对模型训练效率有何影响？",
+    "在智能体系统中，Encoder的96次迭代是否意味着每次迭代都使用独立的参数集？",
+    "下面这个图中，Nx也就是96次Encode过程中的每一次Encode用到的那些内部网络参数是共用的么？另外，Encoder和Decoder里面的参数是共用的么？"
+  ],
+  "answer": "在Transformer架构中，Encoder是参数共享的，即96次Encode过程均使用同一组Encoder网络参数，这些参数在每次迭代中保持不变。然而，Encoder和Decoder之间的参数是不共享的，两者各自维护独立的参数集，以确保编码和解码过程的独立性与功能分离。",
+  "metadata": {
+    "original_question": "下面这个图中，Nx也就是96次Encode过程中的每一次Encode用到的那些内部网络参数是共用的么？另外，Encoder和Decoder里面的参数是共用的么？",
+    "row": 64,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

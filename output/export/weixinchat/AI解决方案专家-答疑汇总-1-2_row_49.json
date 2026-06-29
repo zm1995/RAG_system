@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_49",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在知识检索场景中，Glean采用的RAG+知识图谱方案与GraphRAG方案在技术实现上有哪些核心差异？",
+    "GraphRAG主要用于全局摘要，而Glean的RAG+知识图谱方案更侧重于哪些具体功能？",
+    "如果企业需要同时实现精准检索和全局摘要，应如何结合Glean的RAG+知识图谱方案与GraphRAG？",
+    "Glean的RAG+知识图谱方案与GraphRAG在数据组织方式上有何不同？",
+    "在Coze或智能体开发中，选择RAG+知识图谱还是GraphRAG，主要取决于哪些业务需求？",
+    "问题：4、        方案A：比如Glean使用rag+知识图谱；  方案B：直接使用GraphRAG。方案A和B有什么相同点，又有什么不同点？"
+  ],
+  "answer": "原问题中提到的方案A（Glean使用RAG+知识图谱）和方案B（直接使用GraphRAG）在技术目标和应用场景上存在本质区别。方案A的RAG+知识图谱主要用于精准检索和知识关联，通过知识图谱增强实体关系理解，提升检索的准确性和上下文相关性；而方案B的GraphRAG则专注于全局摘要生成，通过图结构对大规模文本进行整体概括，适用于需要宏观视角的场景。两者在数据组织方式上也有差异：方案A依赖结构化知识图谱与向量检索的结合，方案B则基于文本的图索引进行摘要。在Coze或智能体开发中，选择哪种方案取决于具体需求：若需精确查找特定信息，优先考虑方案A；若需快速获取文档或知识库的整体概要，则方案B更为合适。",
+  "metadata": {
+    "original_question": "问题：4、        方案A：比如Glean使用rag+知识图谱；  方案B：直接使用GraphRAG。方案A和B有什么相同点，又有什么不同点？",
+    "row": 49,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_206",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze平台上，系统提示词中是否必须包含JSON格式的指令？",
+    "如果未来迁移到其他平台，系统提示词的编写方式会有哪些变化？",
+    "Coze的插件机制如何影响系统提示词的内容设计？",
+    "在Coze中，如何确保Agent正确理解工具调用的格式要求？",
+    "除了Coze，其他智能体平台对系统提示词的JSON格式要求是否相同？",
+    "所以系统提示词还是要写json，虽然coze帮忙处理了，但是等不用coze的时候就有用了"
+  ],
+  "answer": "在Coze平台上，系统提示词中无需显式编写JSON格式。当您为Agent添加插件时，Coze会自动在系统提示词中嵌入工具调用的格式要求。若未来迁移至其他平台，各平台通常也会提供相应的机制来处理工具调用格式，无需手动编写JSON。因此，建议根据具体平台的文档和功能来设计系统提示词，以确保兼容性和正确性。",
+  "metadata": {
+    "original_question": "所以系统提示词还是要写json，虽然coze帮忙处理了，但是等不用coze的时候就有用了",
+    "row": 206,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

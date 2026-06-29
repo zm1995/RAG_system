@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_141",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在reward model训练中，如何确保偏好数据标注的一致性？",
+    "reward model阶段，模型生成多个回答后，标注人员具体如何排序这些回答？",
+    "除了GPT的方式，还有其他方法生成reward model的偏好数据吗？",
+    "reward model训练中，标注人员的角色是什么？他们是否直接回答问题？",
+    "在reward model阶段，如何避免模型生成的回答质量差异过大影响标注效果？",
+    "reward model阶段，是标注工每个人都回答一样的问题，然后模型选择输出量比较大的作为正确标注，这样来保证标注的正确性吗"
+  ],
+  "answer": "在reward model（奖励模型）阶段，偏好数据的生成并非由标注人员直接回答问题，而是由模型自身生成回答。以GPT为例，每个问题会让模型生成4个不同的回答，标注人员仅需对这些回答进行排序，标注出优劣顺序。这种方式确保了偏好数据的客观性和一致性，避免了标注人员主观回答带来的偏差。",
+  "metadata": {
+    "original_question": "reward model阶段，是标注工每个人都回答一样的问题，然后模型选择输出量比较大的作为正确标注，这样来保证标注的正确性吗",
+    "row": 141,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

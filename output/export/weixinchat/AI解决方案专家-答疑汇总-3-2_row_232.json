@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_232",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "老师，MCP和Google A2A标准如何影响现有Agent开发中RAG和微调技术的应用？",
+    "在MCP和A2A推动统一通信标准后，Agent之间的协作是否会完全取代知识库和模型定制化？",
+    "MCP和A2A的发布是否意味着未来Agent开发不再需要关注数据孤岛问题？",
+    "老师，MCP和A2A标准与RAG、微调在Agent系统中是互补还是竞争关系？",
+    "随着MCP和A2A的普及，Agent的通信标准化是否会降低对RAG和微调等优化手段的依赖？",
+    "老师，在目前MCP逐渐成熟和Google A2A发布之后，统一大模型与Agent，以及Agent与Agent之间统一连接通信标准。\n\n会不会替代以前依赖RAG和微调等手段相对孤岛的趋势？ 请问对这两个开源标准怎么看"
+  ],
+  "answer": "MCP和Google A2A标准与RAG、微调技术并非替代关系，而是互补协作。MCP负责Agent之间的通信协议，确保不同Agent能够高效交互；A2A则定义了Agent与外部系统（如大模型）的统一接口。而RAG和微调旨在提升单个Agent在特定场景下的性能，例如通过检索增强生成提高回答准确性，或通过微调优化模型行为。因此，通信标准化解决了Agent间的互联互通问题，而RAG和微调仍用于优化Agent内部能力，两者共同推动Agent系统从孤岛式向协同化发展。",
+  "metadata": {
+    "original_question": "老师，在目前MCP逐渐成熟和Google A2A发布之后，统一大模型与Agent，以及Agent与Agent之间统一连接通信标准。\n\n会不会替代以前依赖RAG和微调等手段相对孤岛的趋势？ 请问对这两个开源标准怎么看",
+    "row": 232,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

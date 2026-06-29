@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_81",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在视频生成领域，DiT和3D UNet的主要区别是什么？",
+    "为什么在早期的视频生成模型中，3D UNet被广泛使用，而DiT后来才被引入？",
+    "DiT在图像生成中表现优于UNet，但在视频生成中，3D UNet是否仍有其独特优势？",
+    "从技术演进角度看，3D UNet和DiT在视频生成中的角色如何变化？",
+    "Sora采用DiT架构后，3D UNet在视频生成中是否已被完全取代？",
+    "DIT，不是说潜空间里transform效果比Unet，表现更好，所以用DIT替换了Unet，这边为啥还有3D的Unet，我好像搞混了~"
+  ],
+  "answer": "在技术发展初期，DiT（Diffusion Transformer）主要应用于图像生成领域，而3D UNet则被用于视频生成领域的探索。两者处于相近的发展阶段，但针对不同的应用场景。DiT在潜空间中的Transformer结构在图像生成上表现出优于UNet的效果，因此被用于替换UNet。然而，在视频生成中，3D UNet因其能够有效处理时空维度的特征，被广泛采用。直到后来，Sora模型直接采用DiT架构应用于视频生成，实现了对视频时空信息的统一建模，从而在视频领域取得了突破。因此，3D UNet和DiT并非简单的替代关系，而是不同时期针对不同任务的技术选择。",
+  "metadata": {
+    "original_question": "DIT，不是说潜空间里transform效果比Unet，表现更好，所以用DIT替换了Unet，这边为啥还有3D的Unet，我好像搞混了~",
+    "row": 81,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

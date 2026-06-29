@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_59",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在构建智能体时，reranker模型和embedding模型通常如何协同工作？",
+    "除了腾讯的Conan，还有哪些主流产品同时提供embedding和reranker模型？",
+    "如果我只使用embedding模型而不使用reranker，对检索效果会有多大影响？",
+    "在Coze平台中，是否支持用户自定义选择embedding和reranker模型？",
+    "Reranker模型在workflows中的典型应用场景是什么？",
+    "那这个reranker一般是跟embedding绑定的吗，还是独立的？之前讲过腾讯的那个Conan，里面仅包括embedding还是也包括reranker？"
+  ],
+  "answer": "Reranker模型与Embedding模型是独立分开的。Embedding模型负责将文本转换为向量表示，用于初步检索；而Reranker模型则对初步检索结果进行重新排序，以提升相关性。两者通常作为独立的组件提供，具体是否同时提供取决于产品设计。例如，腾讯的Conan产品可能仅提供Embedding模型，也可能同时提供Reranker模型，需要查阅具体文档确认。在构建智能体或知识库时，建议根据实际需求选择是否集成Reranker模型，以优化检索效果。",
+  "metadata": {
+    "original_question": "那这个reranker一般是跟embedding绑定的吗，还是独立的？之前讲过腾讯的那个Conan，里面仅包括embedding还是也包括reranker？",
+    "row": 59,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

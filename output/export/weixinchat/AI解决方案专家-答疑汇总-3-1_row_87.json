@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_87",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在推理大模型（如DeepSeek R1）中，prompt engineering是否仍然有效，还是应该完全依赖模型的自主推理能力？",
+    "对于需要结构化输出的任务（如数据提取或格式化报告），使用prompt engineering在推理模型上是否比非推理模型更高效？",
+    "在Coze或Agent平台上，如何平衡prompt engineering与推理模型的灵活性，以避免过度约束？",
+    "如果任务涉及多步骤推理（如workflows中的复杂逻辑），prompt engineering在推理模型上是否可能干扰其链式思考过程？",
+    "在知识库查询场景中，使用推理模型时，prompt engineering应如何调整以提升检索准确性，同时避免限制模型的推理潜力？",
+    "崔老师请问：在现在有推理大模型的情况下，还有必要进行prompt engineering吗？\n\n什么样的任务适合用prompt engineering来写？是不是必须搭配 非推理大模型？\n\n如果在DeepSeek R1上使用prompt engineering，会不会产生蹩脚的感觉、或者因为提示词的复杂限制了R1的推理能力？"
+  ],
+  "answer": "在推理大模型（如DeepSeek R1）上，prompt engineering的应用确实较少，因为这类模型具备较强的自主推理能力。然而，对于特定任务（如需要精确输出格式或复杂逻辑引导的场景），精心设计的提示词仍能显著提升效果。例如，在Coze或Agent平台中，若任务涉及结构化数据提取或多步骤推理，适当的prompt engineering可帮助模型聚焦于关键点，避免偏离目标。但需注意，过度复杂的提示词可能限制模型的推理灵活性，导致输出僵化。因此，建议在推理模型上采用简洁、明确的提示词，重点在于任务描述而非步骤约束，以充分发挥模型的自主优势。对于非推理模型，prompt engineering则更为关键，需详细定义规则和示例来弥补其推理能力的不足。",
+  "metadata": {
+    "original_question": "崔老师请问：在现在有推理大模型的情况下，还有必要进行prompt engineering吗？\n\n什么样的任务适合用prompt engineering来写？是不是必须搭配 非推理大模型？\n\n如果在DeepSeek R1上使用prompt engineering，会不会产生蹩脚的感觉、或者因为提示词的复杂限制了R1的推理能力？",
+    "row": 87,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

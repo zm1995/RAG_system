@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_229",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "请问6节原理课主要涵盖哪些核心主题？",
+    "这些原理课对应的教材或参考书有哪些推荐？",
+    "6节原理课的内容是否涉及神经网络和深度学习？",
+    "学习这些原理课需要提前准备哪些基础知识？",
+    "原理课中提到的模型类型包括哪些？",
+    "请问下 6节原理课对应的书籍是？"
+  ],
+  "answer": "6节原理课主要涵盖神经网络、机器学习、深度学习、大语言模型、预训练模型以及Transformer等核心主题。这些课程对应的参考书籍通常包括《神经网络与深度学习》、《机器学习》（周志华著）、《深度学习》（Ian Goodfellow等著）、《大语言模型》以及《Transformer自然语言处理》等。建议学习者提前掌握线性代数、概率论和编程基础，以便更好地理解课程内容。",
+  "metadata": {
+    "original_question": "请问下 6节原理课对应的书籍是？",
+    "row": 229,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

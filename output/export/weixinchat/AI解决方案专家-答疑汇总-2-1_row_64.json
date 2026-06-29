@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_64",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在计算z0时，w784这个参数在神经网络中代表什么？",
+    "为什么在计算z0时需要添加一个偏置项，而不是直接使用加权和？",
+    "在coze智能体的模型训练中，偏置项（如w784）的作用是什么？",
+    "在workflows中，如果省略偏置项（如w784），会对模型输出产生什么影响？",
+    "在知识库的向量计算中，偏置项（如w784）与权重参数有何区别？",
+    "老师计算z0时为什么最后还要加一个w784"
+  ],
+  "answer": "在神经网络计算中，w784 是一个偏置项（bias），其作用与线性函数 y = ax + b 中的 b 相同，用于对加权和进行平移调整。通过添加偏置项，模型能够更好地拟合数据，提高预测的灵活性，避免因数据偏移导致输出偏差。在 coze、agent、智能体、workflows 或知识库等产品的模型训练中，偏置项是优化模型性能的关键参数之一。",
+  "metadata": {
+    "original_question": "老师计算z0时为什么最后还要加一个w784",
+    "row": 64,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

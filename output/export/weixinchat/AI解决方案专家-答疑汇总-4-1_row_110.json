@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_110",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在知识库检索中，向量相似度计算的具体算法有哪些？",
+    "如何配置知识库的top K参数以优化检索效果？",
+    "Embedding模型生成的向量与知识切片向量之间如何进行匹配？",
+    "在coze平台中，知识库检索的向量化流程是怎样的？",
+    "向量相似度计算对检索结果准确性的影响有哪些因素？",
+    "请问Embedding模型选出top K 向量的逻辑是什么？"
+  ],
+  "answer": "Embedding模型选出top K向量的逻辑并非由模型本身完成，而是通过外部代码实现。具体流程如下：首先，将用户输入的查询文本通过Embedding模型转换为向量表示；然后，将该查询向量与知识库中所有知识切片的向量逐一进行相似度计算，常用的相似度计算方法包括余弦相似度或欧氏距离；最后，根据计算出的相似度得分进行排序，选取得分最高的K个向量作为检索结果。这一过程依赖于代码实现，而非Embedding模型的内置功能。",
+  "metadata": {
+    "original_question": "请问 Embedding模型选出top K 向量的逻辑是什么？",
+    "row": 110,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

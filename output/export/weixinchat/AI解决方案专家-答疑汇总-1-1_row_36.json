@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_36",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在Coze平台中，一个汉字通常占用多少个token？",
+    "不同大语言模型对汉字的token化处理方式是否一致？",
+    "如何查看特定模型（如GPT或Coze内置模型）的token计数规则？",
+    "在构建智能体或workflows时，token数量对成本或性能有何影响？",
+    "知识库中存储的汉字内容，其token计算是否与对话中的一致？",
+    "老师 一个汉字占两个token吗？"
+  ],
+  "answer": "回答：在GPT模型中，平均每个汉字约占用2个token，但这并非绝对标准。不同大语言模型（如Coze平台集成的模型）在token化步骤和算法上存在差异，因此具体占用情况需根据所使用的模型而定。建议查阅对应模型的官方文档或使用其提供的token计数工具以获取准确信息。",
+  "metadata": {
+    "original_question": "老师 一个汉字占两个token吗？",
+    "row": 36,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

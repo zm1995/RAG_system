@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_65",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze平台中，Agent调用插件时，LLM输出的JSON格式具体包含哪些关键字段？",
+    "如果开发者想自定义Agent调用插件的行为，需要修改哪些底层代码？",
+    "Agent在调用插件失败时，平台是否有重试机制或错误处理逻辑？",
+    "LLM输出JSON后，Agent背后的代码如何确保调用的安全性和权限控制？",
+    "在Workflows中，Agent调用插件与直接调用API有何区别？",
+    "LLM是没能力调用插件的，LLM只能告诉AGENT去调插件，AGENT怎么能调成功？ 2.是LLM现写个代码给Agent调用吗？ 还是AGENT有能力调用，不用LLM参与？ 这个问题偏底层一些，接着这位同学的问题深入了。"
+  ],
+  "answer": "在Coze等平台中，Agent调用插件的机制基于预定义的代码逻辑。当LLM（大语言模型）输出特定格式的JSON（例如包含工具名称、参数等字段）后，Agent背后的平台代码会解析该JSON，并根据其中的指令调用相应的插件或工具。这些代码由平台预先编写并封装，用户无需关心底层实现。对于开发者而言，这类似于编程中的function call模式：LLM生成调用请求，开发者预先定义好函数（即插件接口），LLM通过JSON格式回调这些函数。平台确保了调用的标准化和可靠性，用户只需关注插件配置和参数传递。",
+  "metadata": {
+    "original_question": "1.LLM是没能力调用插件的，LLM只能告诉AGENT去调插件，AGENT怎么能调成功？\n2.是LLM现写个代码给Agent调用吗？ 还是AGENT有能力调用，不用LLM参与？\n这个问题偏底层一些，接着这位同学的问题深入了。",
+    "row": 65,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

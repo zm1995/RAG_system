@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_25",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "老师，COZE的agent发布后，如何通过API集成到现有的移动应用中？",
+    "COZE工作流发布为SDK后，在集成到小程序时需要注意哪些关键步骤？",
+    "除了API和SDK，COZE的agent还有哪些发布方式可以嵌入到第三方平台？",
+    "COZE的agent发布后，如何确保在集成到APP时数据安全和用户权限管理？",
+    "老师，COZE工作流发布后，如何在不使用COZE登录的情况下，让用户通过外部应用直接调用？",
+    "老师，COZE的工作流或者agent如何落地到具体应用或者APP，不能给每个人用都登录coze吧。"
+  ],
+  "answer": "答：在COZE中，Agent或工作流可以通过右上角的“发布”功能，选择API或SDK两种形式进行发布。发布后，您可以将其集成到自己的网站、移动应用或小程序中，无需用户单独登录COZE。具体步骤包括：生成API密钥或下载SDK，按照官方文档配置接口，并在应用中调用相应功能。",
+  "metadata": {
+    "original_question": "老师，COZE的工作流或者agent如何落地到具体应用或者APP，不能给每个人用都登录coze吧。",
+    "row": 25,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_30",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze平台中，如何利用Workflows实现类似Long chain的文档切割与向量数据库调用功能？",
+    "智能体开发中，Long chain框架如何优化Prompt模板的组织以提升大模型输出准确性？",
+    "使用Agent时，Long chain在管理历史对话和上下文方面有哪些具体优势？",
+    "在知识库集成场景下，Long chain如何与向量数据库协同工作以增强检索效果？",
+    "对于非编程用户，Coze平台是否提供了替代Long chain的简化工具来实现类似功能？",
+    "Long chain作用在于将用户输入的内容转化成chat model，然后调用Promp模板，同时将文档进行切割，调用向量数据库，最后调用大模型输出精准的内容"
+  ],
+  "answer": "Long chain是工程师在编写AI项目代码时常用的开发框架之一，它能够高效组织与大模型的交互、管理Prompt模板以及处理历史对话记录。通过将文档切割并调用向量数据库，Long chain显著提升了研发工程师的开发效率，并确保大模型输出内容的精准性。",
+  "metadata": {
+    "original_question": "Long chain 作用在于将用户输入的内容转化成chat model，然后调用Promp模板，同时将文档进行切割，调用向量数据库，最后调用大模型输出精准的内容",
+    "row": 30,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

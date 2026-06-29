@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_53",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在使用ChatExcel时，如何通过优化prompt实现跨文件多sheet的品类合并？",
+    "如果ChatExcel无法完成复杂的表格合并任务，是否建议改用Coze的工作流来实现？",
+    "ChatExcel底层模型更换后，对表格合并等基础功能的影响有哪些？",
+    "除了合并表格，ChatExcel还能处理哪些常见的Excel自动化操作？",
+    "在Coze中，如何设计一个工作流来处理多文件多sheet的合并与工序自动化？",
+    "崔老师您好，我试用chatexcel本身的prompt，想让它把我三个文件不同sheet按照已给定的品类分别合并（其实还有很多希望AI帮我完成的工序）\n\n试了多次，它不能完成\n\n我是不是要建立工作流，想办法用coze来处理"
+  ],
+  "answer": "对于简单的表格合并需求，通常无需构建工作流，仅通过一个精心设计的prompt即可实现。然而，ChatExcel近期正在将底层模型从海外模型切换为国内模型，这一变更导致多项功能受到影响，包括表格合并等基础操作。目前，开发团队正在积极调整和优化这些功能。因此，如果遇到合并失败的情况，建议等待模型切换完成后的功能恢复，或考虑使用Coze的工作流作为替代方案，以实现更复杂的自动化处理。",
+  "metadata": {
+    "original_question": "崔老师您好，我试用chatexcel本身的prompt，想让它把我三个文件不同sheet按照已给定的品类分别合并（其实还有很多希望AI帮我完成的工序）\n\n试了多次，它不能完成\n\n我是不是要建立工作流，想办法用coze来处理",
+    "row": 53,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

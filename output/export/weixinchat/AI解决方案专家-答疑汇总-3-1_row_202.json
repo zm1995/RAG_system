@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_202",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze智能体开发中，如何根据任务类型选择Transformer或CNN架构？",
+    "Transformer模型中的自注意力机制与CNN的卷积操作在特征提取上有何本质区别？",
+    "在构建Workflows时，如果输入数据包含文本和图像，应如何混合使用Transformer和CNN？",
+    "知识库中的文档检索任务更适合用Transformer还是CNN？请说明理由。",
+    "在Agent系统中，Transformer和CNN在实时性要求高的场景下哪个更优？为什么？",
+    "我记得有一段日子，卷积神经网络比较火，我看Transformer模型里用的主要都是全连接的神经网络，这两种网络有啥子不同特点，一般用在什么情境中？"
+  ],
+  "answer": "Transformer模型擅长处理序列数据（如文本、时间序列），其自注意力机制能够有效捕捉远距离元素之间的依赖关系，适用于自然语言处理、机器翻译等任务。CNN（卷积神经网络）则擅长处理具有局部空间结构的数据（如图像），通过卷积核提取局部特征，适用于图像分类、目标检测等场景。在Coze智能体或Workflows中，若任务涉及文本理解或序列建模，优先选择Transformer；若涉及图像处理或局部模式识别，则选择CNN。两者也可结合使用，例如先用CNN提取图像特征，再输入Transformer进行序列建模。",
+  "metadata": {
+    "original_question": "我记得有一段日子，卷积神经网络比较火，我看Transformer模型里用的主要都是全连接的神经网络，这两种网络有啥子不同特点，一般用在什么情境中？",
+    "row": 202,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

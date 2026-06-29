@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_46",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze平台中，重排序模型是如何被集成到知识库调用流程中的？",
+    "如果用户想自定义重排序模型，Coze是否支持这样的配置？",
+    "在RAG架构中，重排序阶段与检索阶段的主要区别是什么？",
+    "Coze内置的重排序模型是否适用于所有类型的知识库查询？",
+    "在自行开发RAG系统时，如何选择合适的embedding模型和重排序模型？",
+    "那模型调用知识库完成用户任务的过程中re-ranking阶段还需要一个重排序模型来支撑是吧？"
+  ],
+  "answer": "是的，在Coze平台中，系统默认内置了重排序（rerank）模型，无需用户额外配置。当用户自行编写代码实现检索增强生成（RAG）流程时，则需要通过代码显式调用嵌入（embedding）模型和重排序模型，以完成文档检索和结果排序的完整步骤。",
+  "metadata": {
+    "original_question": "那模型调用知识库完成用户任务的过程中re-ranking阶段还需要一个重排序模型来支撑是吧？",
+    "row": 46,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

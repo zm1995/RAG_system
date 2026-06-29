@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_130",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在coze或dify中调试成功的智能体案例，如何高效地转交给开发团队进行代码实现？",
+    "使用coze或dify构建的workflows，能否通过代码完全复现其逻辑，并部署到生产环境？",
+    "对于私有化部署场景，coze或dify上的agent能否直接导出为代码形式，以便集成到现有系统中？",
+    "coze或dify中的知识库配置，在转交给开发人员用代码实现时，需要注意哪些关键点？",
+    "将coze或dify上的智能体逻辑迁移到代码实现，相比直接在平台上运行，有哪些优势和潜在挑战？",
+    "coze或dify实现的方式是不是也可以通过代码来完成，无论是不是私有化部署，只要在coze或dify上调试成功，就可以把案例交给开发来做，可以这么理解吗？"
+  ],
+  "answer": "是的，可以将调试成功的Coze或Dify智能体案例直接提供给开发人员，由他们通过代码实现。代码实现通常能提供更高的灵活性，并在优化空间上优于在Coze或Dify平台上的直接操作。尽管实现方式不同，但核心逻辑保持一致。",
+  "metadata": {
+    "original_question": "coze或dify实现的方式是不是也可以通过代码来完成，无论是不是私有化部署，只要在coze或dify上调试成功，就可以把案例交给开发来做，可以这么理解吗？",
+    "row": 130,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

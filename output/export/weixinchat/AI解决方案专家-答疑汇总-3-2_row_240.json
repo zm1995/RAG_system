@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_240",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Transformer解码器中，为什么最后一个token通常被用于生成最终输出？",
+    "解码器中的每个token是否都能访问所有前序token的信息？",
+    "如果解码器所有token都获得了前一层特征，为什么最后一个token被认为更关键？",
+    "在自回归生成中，最后一个token的位置编码如何影响其价值？",
+    "解码器中的因果掩码如何限制token的信息获取范围？",
+    "为什么第96层解码器是最后一个token才是最有价值？这层的token不都获得了前一层所有token计算后特征的吗？是因为最后一个token，所以在位置上有特殊的意义吗？"
+  ],
+  "answer": "在Transformer解码器中，每个token的信息获取受到因果掩码的限制，即每个token只能关注其自身及之前位置的token，而不能关注后续位置的token。因此，最后一个token能够访问所有前序token的信息，包括整个输入序列的上下文，这使得它在生成最终输出时具有最全面的信息。此外，最后一个token的位置编码在自回归生成中具有特殊意义，因为它代表了当前生成步骤的终点，通常用于预测下一个token或作为最终输出的表示。其他token由于无法访问后续信息，其价值相对有限。",
+  "metadata": {
+    "original_question": "为什么第96层解码器是最后一个token才是最有价值？这层的token不都获得了前一层所有token计算后特征的吗？是因为最后一个token，所以在位置上有特殊的意义吗？",
+    "row": 240,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

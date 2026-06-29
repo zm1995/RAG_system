@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_125",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "除了公众号，有哪些推荐的AI技术博客或网站可以深入学习？",
+    "对于初学者，有哪些适合的AI入门书籍或在线课程推荐？",
+    "如何通过社交媒体高效获取AI领域的最新动态和研究成果？",
+    "在coze或智能体开发中，有哪些社区或论坛可以交流经验？",
+    "有哪些专注于AI应用落地的公众号或平台值得关注？",
+    "老师好，想问一下，AI知识的拓展有推荐的什么公众号或者社媒账号吗"
+  ],
+  "answer": "推荐关注以下公众号和社交媒体账号以拓展AI知识：机器之心、新智元。这些平台提供高质量的AI技术文章、行业动态和研究成果，适合不同层次的学习者。此外，建议结合其他资源如技术博客（如Medium的AI专栏）、在线课程（如Coursera的AI专项课程）以及社区论坛（如GitHub的AI项目讨论区）进行综合学习。",
+  "metadata": {
+    "original_question": "老师好，想问一下，AI知识的拓展有推荐的什么公众号或者社媒账号吗",
+    "row": 125,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

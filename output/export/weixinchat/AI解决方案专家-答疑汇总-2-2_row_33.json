@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_33",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在分布式训练中，如何实现跨显卡的数据共享和同步？",
+    "苹果M系列芯片的统一内存架构对AI推理性能有何具体优势？",
+    "图片在计算机中存储为数组矩阵时，常见的格式和通道顺序是怎样的？",
+    "GPU核心故障时，深度学习框架如何自动恢复或重新分配任务？",
+    "部署基座大模型时，选择Linux还是Windows操作系统对NVIDIA驱动稳定性有何影响？",
+    "基座模型是部署在GPU吗？理解基座模型应该是部署在CPU的，CPU将这个基座模型的推理过程（步骤）涉及到的科学计算工作分配给GPU处理，是这样吗？"
+  ],
+  "answer": "基座模型通常部署在GPU上，因为GPU具备强大的并行计算能力，能够高效处理深度学习中的矩阵运算和科学计算任务。即使是微调后的模型，也主要运行在GPU上。然而，如果模型规模较小，不需要高性能并行计算，也可以部署在CPU上。CPU负责调度和分配任务，但模型推理的核心计算仍由GPU完成。因此，您的理解基本正确：CPU协调整体流程，GPU执行具体的科学计算工作。",
+  "metadata": {
+    "original_question": "1. 每个显卡内的计算核心只能用自己的显存数据吗？\n2. 苹果的M系列处理器Unified Memory Architecture或者今年Nvidia要发布的Project Digits是不是就不需要CPU在内存和显存之间搬数据了？\n3. 图片信息是怎么转成代码里的数组的？\n4. GPU里面的某个核心会不会挂掉了？这种问题能否被及时发现？\n5. 基座模型是部署在GPU吗？理解基座模型应该是部署在CPU的，CPU将这个基座模型的推理过程（步骤）涉及到的科学计算工作分配给GPU处理，是这样吗？\n6. 部署基座大模型的服务器操作系统是windows吗？听说linux的nvidia gpu驱动不是特别好",
+    "row": 33,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

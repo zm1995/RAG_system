@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_142",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "崔老师，请问深度求索公司开发的DeepSeek模型与英伟达推出的DeepSeek R1版本之间是否存在技术合作或授权关系？",
+    "崔老师，能否解释一下杭州深度求索的DeepSeek和英伟达的DeepSeek R1在品牌归属上有什么不同？",
+    "崔老师，深度求索的DeepSeek与英伟达的DeepSeek R1是否属于同一产品系列，还是各自独立开发？",
+    "崔老师，关于DeepSeek和DeepSeek R1，它们是否由同一家公司维护和更新？",
+    "崔老师，杭州深度求索与英伟达在DeepSeek相关产品上是否有任何商业或研发上的关联？",
+    "崔老师，请教一下：崔老师，请教一下：\n杭州深度求索的deepseek，和英伟达的deepseek R1 等产品，有关系吗？这2家公司，有没有关系？"
+  ],
+  "answer": "杭州深度求索公司是DeepSeek模型的开发方，而英伟达的DeepSeek R1实际上是同一模型的不同版本或命名，两者均属于深度求索公司的产品。两家公司之间不存在直接关系，英伟达仅作为硬件或平台提供方，而非模型开发者。",
+  "metadata": {
+    "original_question": "崔老师，请教一下：崔老师，请教一下：\n杭州深度求索的deepseek，和英伟达的deepseek R1 等产品，有关系吗？这2家公司，有没有关系？",
+    "row": 142,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

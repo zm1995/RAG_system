@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_105",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "DeepSeekMoE的FFN层与GPT-3.5的FFN层在结构上有哪些具体差异？",
+    "在DeepSeekMoE中，每个Transformer解码器层的门控路由网络是如何选择专家的？",
+    "DeepSeekMoE训练时，专家网络的参数是固定不变的吗？",
+    "DeepSeekMoE推理过程中，专家网络的激活是否依赖于历史调用频率？",
+    "DeepSeekMoE中的相关度系数是如何计算的，它是否影响模型参数的更新？",
+    "不关注细节尺寸，除开论文里提到的一些结构，其他论文里未提到的部分都和gpt3.5相同吗？\nDeepseekMoE是优化改进的ffn，（gpt里W1和W2部分）这里是每一个transfor decoder里都有一个deepseekmoe的router吗？\n\n老师您好，咱们deepseek v3追新课时，这里标注部分也是在训练时确定下来的参数吗？还是在模型部署后推理过程中根据模型专家近一段时间内【被翻牌子】的情况动态调整呀？这里没有特别理解"
+  ],
+  "answer": "DeepSeekMoE采用MoE架构，与GPT-3.5的密集架构有本质区别。在FFN层中，DeepSeekMoE通过门控路由网络为每个输入token选择激活部分专家网络，而非使用全部参数。每个Transformer解码器层都包含一个门控路由网络和一组专家网络，门控网络负责计算输入与各专家的相关度系数，并据此选择top-k专家进行激活。相关度系数是推理过程中的中间计算结果，用于动态决定专家网络的参与，而非训练时确定的固定参数。在模型部署后，专家网络的激活完全基于当前输入的相关度系数，不依赖于历史调用频率或动态调整机制。",
+  "metadata": {
+    "original_question": "不关注细节尺寸，除开论文里提到的一些结构，其他论文里未提到的部分都和gpt3.5相同吗？\nDeepseekMoE是优化改进的ffn，（gpt里W1和W2部分）这里是每一个transfor decoder里都有一个deepseekmoe的router吗？\n\n老师您好，咱们deepseek v3追新课时，这里标注部分也是在训练时确定下来的参数吗？还是在模型部署后推理过程中根据模型专家近一段时间内【被翻牌子】的情况动态调整呀？这里没有特别理解",
+    "row": 105,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

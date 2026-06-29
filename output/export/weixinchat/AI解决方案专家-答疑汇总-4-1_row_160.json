@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_160",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "医院本地部署的DeepSeek R1模型，其API接口的访问权限如何设置，以确保只有授权的开发厂商能够调用？",
+    "开发厂商在远程开发时，通过医院本地DeepSeek R1的API接口进行调用，是否需要考虑网络延迟或数据安全传输的问题？",
+    "如果医院本地部署的DeepSeek R1模型需要更新或维护，开发厂商在远程开发时如何确保调用接口的稳定性？",
+    "开发厂商在远程调用医院本地DeepSeek R1模型时，是否需要配置特定的VPN或专线连接来保障通信？",
+    "医院本地部署的DeepSeek R1模型API接口是否支持并发调用，开发厂商在测试高负载场景时需要注意哪些限制？",
+    "请教个问题，如果医院本地部署了deepseek R1，开发厂商在日常工作时，进行开发和测试的时候应该就得调用本地deepseek吧？如果不在医院驻场，在公司远程开发的话，如何调用医院本地的deepseek？"
+  ],
+  "answer": "本地部署的模型通常会对外提供一个标准的API接口，所有AI应用通过该接口调用模型。开发厂商只需获取该API接口的访问地址和必要的认证信息（如API密钥），即可通过互联网远程调用医院本地的DeepSeek R1模型。为确保安全，建议通过VPN或专线连接进行通信，并配置访问控制策略以限制授权调用。",
+  "metadata": {
+    "original_question": "请教个问题，如果医院本地部署了deepseek R1，开发厂商在日常工作时，进行开发和测试的时候应该就得调用本地deepseek吧？如果不在医院驻场，在公司远程开发的话，如何调用医院本地的deepseek？",
+    "row": 160,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

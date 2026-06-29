@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-2_row_108",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-2.xlsx",
+  "questions": [
+    "在Transformer模型中，多头注意力机制之后是否必须连接线性层？",
+    "线性层在多头注意力机制后的作用是什么，它如何利用聚合后的信息？",
+    "如果跳过线性层，直接使用多头注意力机制的输出进行概率计算会有什么影响？",
+    "在Coze或智能体相关的模型架构中，线性层与embedding层的关系是怎样的？",
+    "经过多层decoder的信息聚合后，线性层是否仍然需要从embedding层获取输入？",
+    "在经过多头注意力机制后，还会再进行liner层计算概率吗，因为我理解liner层来自embedding，没经过信息聚合计算概率意义不大"
+  ],
+  "answer": "在多头注意力机制之后，通常会连接一个线性层（Linear layer）。线性层本质上是一个数学变换，不依赖于数据是否经过信息聚合。在Transformer模型中，输入数据经过多层decoder（例如96层）的迭代计算，每一层都进行了信息聚合。因此，在96层decoder计算完成后，输出的是已经充分聚合了上下文信息的数据。这些聚合后的数据随后进入线性层，线性层通过权重矩阵将其映射到目标维度（如词汇表大小），从而计算每个类别的概率分布。线性层的输入来自前一层（即decoder输出），而非直接来自embedding层，因此它能够有效利用聚合后的信息进行概率计算。",
+  "metadata": {
+    "original_question": "在经过多头注意力机制后，还会再进行liner层计算概率吗，因为我理解liner层来自embedding，没经过信息聚合计算概率意义不大",
+    "row": 108,
+    "sheet": "AI解决方案专家-答疑汇总-2-2"
+  }
+}

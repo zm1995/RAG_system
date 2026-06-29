@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-1_row_25",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-1.xlsx",
+  "questions": [
+    "在prefix tuning中，前缀向量是如何在每一层的自注意力计算中具体参与运算的？",
+    "prefix tuning中，每一层添加的前缀向量数量是否必须保持一致？",
+    "在prefix tuning中，如果输入序列长度变化，前缀向量的处理方式会如何调整？",
+    "prefix tuning与传统的fine-tuning相比，在参数更新和计算效率上有哪些优势？",
+    "在prefix tuning中，前缀向量的初始化方式对模型性能有何影响？",
+    "prefix tuning 在实际每一层中是如何代入计算的？是说在每一层增加的前缀只会在kv增加向量数量吗？如果qkvo12都有增加向量数量，他怎么做到改变了每层输入prompt向量数量后还使输出还是原来的数量的？"
+  ],
+  "answer": "在prefix tuning中，自注意力机制的处理流程如下：假设输入序列包含10个向量，其中3个是预先添加的前缀向量。在自注意力计算过程中，所有10个向量（包括前缀）共同参与计算，输出仍为10个向量。然而，在进入下一层计算之前，会将前缀对应的3个向量移除，仅保留剩余的7个向量。随后，再为下一层添加该层预设的3个前缀向量，使得下一层的输入向量总数恢复为10个。通过这种“添加-移除-再添加”的机制，prefix tuning能够在保持每层输出向量数量不变的同时，有效引入前缀信息以影响模型行为。",
+  "metadata": {
+    "original_question": "prefix tuning 在实际每一层中是如何代入计算的？是说在每一层增加的前缀只会在kv增加向量数量吗？如果qkvo12都有增加向量数量，他怎么做到改变了每层输入prompt向量数量后还使输出还是原来的数量的？",
+    "row": 25,
+    "sheet": "AI解决方案专家-答疑汇总-1-1"
+  }
+}

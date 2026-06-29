@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_110",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在哪些场景下，使用多Agent架构比单Agent更有效？",
+    "多Agent与多工作流在解决复杂任务时有何异同？",
+    "如何判断一个任务是否适合拆分为多个Agent协作完成？",
+    "多Agent在头脑风暴类任务中具体如何提升效果？",
+    "除了头脑风暴，多Agent还适用于哪些类型的深度讨论问题？",
+    "什么样的需求适合用多Agent的方式解决呢？"
+  ],
+  "answer": "目前，多工作流的使用比多Agent更为常见，而多工作流可视为多Agent的一种形式。在对话式多Agent的应用中，对于头脑风暴类任务或需要深度讨论的问题，多Agent能够显著提升效果。具体而言，多Agent通过分工协作，可促进不同视角的碰撞与整合，从而在复杂决策、创意生成或争议性话题的探讨中发挥优势。",
+  "metadata": {
+    "original_question": "什么样的需求适合用多Agent的方式解决呢？",
+    "row": 110,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

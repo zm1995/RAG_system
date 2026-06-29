@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_233",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在模型训练中，特殊token（如[CLS]、[SEP]）的向量表示是如何初始化的？",
+    "特殊token的向量参数在微调阶段是否会发生变化？",
+    "如果自定义添加新的特殊token，模型需要如何适应？",
+    "特殊token的向量维度是否与普通token一致？",
+    "在推理时，特殊token的向量是否会影响模型对普通token的注意力权重？",
+    "崔老师 start、end这些特殊的token是特殊的向量吗，还是跟其他token一样向量参数都是模型学习而来"
+  ],
+  "answer": "特殊token（如start、end）的向量参数并非独立于模型训练的特殊向量，而是通过机器学习训练得到的。在预训练阶段，这些特殊token已被纳入训练数据中，模型将其视为普通token的一部分，认为人类语言中自然包含这些标记。因此，模型并不认为这些token具有特殊性，其向量表示与其他token一样，均由模型在训练过程中学习得到。",
+  "metadata": {
+    "original_question": "崔老师 start、end这些特殊的token是特殊的向量吗，还是跟其他token一样向量参数都是模型学习而来",
+    "row": 233,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_96",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Hugging Face上体验模型时，是否需要编程基础？",
+    "除了Hugging Face，还有哪些平台可以无需API直接体验AI模型？",
+    "课程中是否会涉及如何利用Hugging Face Spaces进行模型测试？",
+    "如果我想深入使用模型，但不会编程，有什么推荐的学习路径？",
+    "Hugging Face Spaces上的模型是否都免费且无需注册即可使用？",
+    "你说过在这个网站去多多体验，多玩，去了解模型以及模型边界，这个网站里有些事需要调用api的才能用吧？后面课程会讲到吗？咱们这期讲assitant API吗？"
+  ],
+  "answer": "本课程不涉及API调用和编程代码部分。不过，在Hugging Face平台中有一个名为Spaces的频道，其中包含许多已经部署好的模型，您可以直接在线体验，无需编写代码。",
+  "metadata": {
+    "original_question": "你说过在这个网站去多多体验，多玩，去了解模型以及模型边界，这个网站里有些事需要调用api的才能用吧？后面课程会讲到吗？咱们这期讲assitant API吗？",
+    "row": 96,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

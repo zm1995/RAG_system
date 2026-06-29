@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_39",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Coze中，如何从文档中提取超链接的URL地址？",
+    "Coze的文档解析功能是否支持直接获取超链接的链接部分？",
+    "除了使用大模型节点，还有哪些方法可以从Coze文档中提取超链接？",
+    "Coze中，如何通过Workflows自动化提取文档中的超链接？",
+    "在Coze的知识库中，能否直接获取文档超链接的URL？",
+    "再问一个问题哈，文档上的超链接，我试了下，coze只能获取到超链接的文本，拿不到链接，有什么办法获取到超链接的链接么"
+  ],
+  "answer": "在Coze中，当文档包含超链接时，系统默认仅提取链接的显示文本，而不包含URL地址。要获取超链接的链接，您可以在获取所有文本内容后，利用大模型节点对文本进行解析，识别并提取以“http”开头的字符串作为链接。此外，您也可以考虑使用正则表达式或自定义脚本在Workflows中进一步处理文本，以精确提取URL。",
+  "metadata": {
+    "original_question": "再问一个问题哈，文档上的超链接，我试了下，coze只能获取到超链接的文本，拿不到链接，有什么办法获取到超链接的链接么",
+    "row": 39,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

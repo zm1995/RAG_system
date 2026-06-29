@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_134",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "在Transformer架构中，embedding层和encoder层各自承担什么核心功能？为什么不能简单地将它们合并？",
+    "如果embedding和encoder都输出向量，那么在实际应用中，如何区分它们的作用和必要性？",
+    "除了Transformer，还有哪些模型架构尝试将embedding步骤整合到encoder中？这种整合对模型性能有何影响？",
+    "在构建智能体或工作流时，embedding步骤是否可以被视为一个独立的预处理模块？它与encoder的交互如何设计？",
+    "对于知识库中的文本处理，embedding和encoder的分离设计有什么优势？能否举例说明？",
+    "老师，词和段落这个地方我有疑惑。既然embedding和encoder都是将输入数据转化为向量输出，那么是否可以省去embedding这个步骤或者说将embedding的步骤合并到encoder里面，反正他们最终输出的都是向量"
+  ],
+  "answer": "在Transformer架构中，embedding层和encoder层虽然都输出向量，但它们的角色和功能不同。embedding层负责将离散的输入符号（如词或子词）映射到连续的向量空间，为模型提供初始的语义表示；而encoder层则通过自注意力机制和前馈网络对输入序列进行深层编码，捕捉上下文依赖关系。尽管某些模型（如部分变体）尝试将embedding步骤合并到encoder中，但标准Transformer中，encoder需要重复执行多层，而embedding仅在输入时进行一次，因此将embedding置于encoder外部可以避免重复计算，提高效率。此外，分离设计使得embedding层可以独立优化（如使用预训练的词向量），并便于在知识库或智能体工作流中作为预处理模块灵活集成。",
+  "metadata": {
+    "original_question": "老师，词和段落这个地方我有疑惑。既然embedding和encoder都是将输入数据转化为向量输出，那么是否可以省去embedding这个步骤或者说将embedding的步骤合并到encoder里面，反正他们最终输出的都是向量",
+    "row": 134,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

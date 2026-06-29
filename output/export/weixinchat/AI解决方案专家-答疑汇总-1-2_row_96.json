@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_96",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在微调MOE模型时，如何选择需要调整的专家参数？",
+    "MOE模型微调过程中，是否只调整门控网络而不改变专家FFN参数？",
+    "针对MOE模型的部分参数微调（如LoRA），通常会影响哪些专家模块？",
+    "MOE模型微调时，不同专家的FFN参数调整策略有何差异？",
+    "微调MOE模型时，如何平衡专家参数更新与模型稳定性？",
+    "问题2：如果说对MOE模型做微调？我们会改变多个专家的FFN部分的参数吗？"
+  ],
+  "answer": "微调MOE模型时，参数调整的范围取决于所采用的微调策略。若进行全量参数微调，则所有参数（包括多个专家的FFN层参数）均会参与更新。若采用部分参数微调方法（如LoRA或仅调整门控网络），则可能仅更新特定模块的参数，而保持专家FFN层参数不变。具体调整哪些参数需根据任务需求和计算资源进行选择。",
+  "metadata": {
+    "original_question": "问题2：如果说对MOE模型做微调？我们会改变多个专家的FFN部分的参数吗？",
+    "row": 96,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

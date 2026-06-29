@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_178",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "老师，除了OpenAI的whisper，还有哪些主流的ASR模型可以用于语音转文本？",
+    "在ASR模型选择中，如何处理方言和少数民族语言的识别难题？",
+    "对于实时语音转文本场景，有哪些低延迟的ASR模型推荐？",
+    "ASR模型的准确率通常受哪些因素影响，如何评估其性能？",
+    "在coze或agent产品中，如何集成ASR模型实现语音交互功能？",
+    "老师，上次聊的ｃｏｓｙｖｏｉｃｅ适合做文本转语音，那语音转文本的 ASR的模型有推荐的么？"
+  ],
+  "answer": "ASR（自动语音识别）技术目前已经相当成熟。我们团队在实际应用中较多使用OpenAI的Whisper模型，其效果稳定且支持多种语言。在ASR模型选择中，主要难点在于方言和少数民族语言的识别，这需要针对特定语料进行模型微调或选用专门优化的模型。对于通用场景，大多数主流ASR模型（如Whisper、Google Speech-to-Text、Azure Speech等）均能提供良好的识别效果。建议根据具体应用场景（如实时性要求、语言种类、环境噪声等）进行模型评估和选型。",
+  "metadata": {
+    "original_question": "老师，上次聊的ｃｏｓｙｖｏｉｃｅ适合做文本转语音，那语音转文本的 ASR的模型有推荐的么？",
+    "row": 178,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

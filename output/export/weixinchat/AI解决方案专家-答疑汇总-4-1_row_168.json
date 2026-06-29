@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_168",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在智能体处理文本时，如何确保不会输出不完整的汉字？",
+    "如果模型输出了半个汉字，系统内部是如何自动补全的？",
+    "在 workflows 中，对于 token 切分导致的汉字不完整问题，有哪些处理机制？",
+    "知识库中的字典是如何识别并处理半个汉字 token 的？",
+    "在 coze 平台中，如何通过代码逻辑避免生成不完整的汉字？",
+    "所以这里用代码去做了限制哈？如果这个token 是一个偏旁的话"
+  ],
+  "answer": "当 token 代表半个汉字时，系统内置的字典能够识别这些 token 对应的偏旁或部首。在输出过程中，如果模型生成了半个汉字，下一轮生成时，系统会优先选择概率较高的 token，这些 token 通常能够与之前的半个汉字组合成一个完整的汉字。这种机制确保了最终输出的文本是完整且正确的汉字。",
+  "metadata": {
+    "original_question": "所以这里用代码去做了限制哈？如果这个token 是一个偏旁的话",
+    "row": 168,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

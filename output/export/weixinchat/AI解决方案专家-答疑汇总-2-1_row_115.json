@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_115",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "NVIDIA个人超算对AI模型训练效率有何具体提升？",
+    "使用NVIDIA个人超算后，本地部署智能体（Agent）的流程会有哪些变化？",
+    "NVIDIA个人超算在知识库构建和更新方面能带来哪些优势？",
+    "对于Workflows工作流设计，NVIDIA个人超算如何降低计算资源门槛？",
+    "NVIDIA个人超算与云端算力相比，在Coze平台集成时有哪些独特应用场景？",
+    "老师有关注NVIDIA新发布的个人超算吗，如果我们有了这个能干些什么"
+  ],
+  "answer": "NVIDIA个人超算的发布显著降低了AI模型部署的硬件门槛和成本。具体而言，用户可以在本地更高效地运行和微调大型语言模型，从而简化智能体（Agent）的本地化部署流程。在知识库管理方面，个人超算能加速文档向量化和索引更新，提升检索效率。对于Workflows工作流，它允许在本地执行更复杂的计算任务，减少对云端资源的依赖。此外，在Coze等平台集成时，个人超算可提供低延迟的推理能力，适用于实时交互和隐私敏感场景。总体而言，它使个人开发者和小型团队能以更低成本获得接近企业级的AI计算能力。",
+  "metadata": {
+    "original_question": "老师有关注NVIDIA新发布的个人超算吗，如果我们有了这个能干些什么",
+    "row": 115,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

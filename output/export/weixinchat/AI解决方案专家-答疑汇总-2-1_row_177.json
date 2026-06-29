@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-2-1_row_177",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-2-1.xlsx",
+  "questions": [
+    "DeepSeek的KV缓存机制在MoE架构下如何优化显存使用？",
+    "MoE模型的激活参数与稠密模型的全参数激活有何本质区别？",
+    "除了DeepSeek，还有哪些主流MoE模型采用了激活参数技术？",
+    "KV缓存的大小对MoE模型推理性能有何具体影响？",
+    "在Coze平台中配置DeepSeek模型时，如何调整KV缓存策略以提升效率？",
+    "deepseek的kv缓存是缓存在内存还是显存（显卡）？ \nGPT3等其他模型有激活参数的说法吗？（激活参数是deepseek独有的特性吗）"
+  ],
+  "answer": "DeepSeek的KV缓存存储在显卡的显存中。GPT-3等早期模型尚未引入激活参数的概念。当前大语言模型主要分为两类：稠密模型（如Llama系列）和混合专家模型（MoE，如MiniMax、DeepSeek）。激活参数是MoE模型的固有特性，并非DeepSeek独有。该概念并非近期提出，早在2023年的GPT-4中就已采用MoE架构并涉及激活参数。",
+  "metadata": {
+    "original_question": "deepseek的kv缓存是缓存在内存还是显存（显卡）？ \nGPT3等其他模型有激活参数的说法吗？（激活参数是deepseek独有的特性吗）",
+    "row": 177,
+    "sheet": "AI解决方案专家-答疑汇总-2-1"
+  }
+}

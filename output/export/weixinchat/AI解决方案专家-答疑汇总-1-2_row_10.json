@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-1-2_row_10",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-1-2.xlsx",
+  "questions": [
+    "在Coze平台中，如何利用MCP协议实现知识库与大模型的通信？",
+    "在智能体开发中，MCP协议与RAG技术有何区别与联系？",
+    "在Workflows中，如何集成MCP协议以提升企业搜索效率？",
+    "在情感分析场景下，如何结合语音数据与Coze智能体进行多模态分析？",
+    "在知识库应用中，如何通过MCP协议优化大模型对结构化数据的访问？",
+    "超哥，有俩个问题问一下：1.最新有个技术是rag知识库和底座大模型搭建通信协议的技术叫啥？2.大模型在情感分析上，有什么好的案例或者技术嘛"
+  ],
+  "answer": "1. 该技术称为MCP（Model Context Protocol），是一种用于知识库与底座大模型之间建立标准化通信的协议。在企业搜索场景中，MCP协议尤为重要，它允许大模型按照统一标准从企业数据源中获取信息并执行任务，从而显著提升企业整体运行效率。关于企业搜索和企业办公的具体实现方法，将在相关课程中详细讲解。\n2. 情感分析方面，使用语音数据（如语速、音调变化）比纯文本分析效果更佳。若仅依赖文本，需预先设定清晰的情感类别选项（如低落、郁闷、愉快、兴奋等），并让大模型基于这些选项进行判断。大模型在此类任务中表现良好，关键在于列出所有可能的类别并确保其覆盖全面。\n参考技术文章：https://mp.weixin.qq.com/s?__biz=MzkxMTAwOTU1MA==&mid=2247485486&idx=1&sn=e4bbb5214120656060e889b1ce327ee3&chksm=c0650718bcc00e612816da0650a1124f528b10f298feaa639795ea82146d06c278be3c731fbb&mpshare=1&scene=1&srcid=1205hEsDAS6sW76dESYP4TME&sharer_shareinfo=c4de66002ef5c0e0c9bfcd15f3ec5e2c&sharer_shareinfo_first=c4de66002ef5c0e0c9bfcd15f3ec5e2c&version=4.1.30.70460&platform=mac&nwr_flag=1#wechat_redirect",
+  "metadata": {
+    "original_question": "问题：\n超哥，有俩个问题问一下：\n1.最新有个技术是rag知识库和底座大模型搭建通信协议的技术叫啥？\n2.大模型在情感分析上，有什么好的案例或者技术嘛",
+    "row": 10,
+    "sheet": "AI解决方案专家-答疑汇总-1-2"
+  }
+}

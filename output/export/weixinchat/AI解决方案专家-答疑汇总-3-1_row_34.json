@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_34",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在if选择器中，如何设置多个条件分支？",
+    "if选择器中的循环体中间变量如何定义和使用？",
+    "当分数小于90分时，if选择器的分支应该如何处理？",
+    "在if选择器中，break节点的作用是什么？",
+    "if选择器中的保存节点如何配置以存储中间结果？",
+    "我现在加了一个if选择器"
+  ],
+  "answer": "当条件满足（例如分数大于90分）时，该分支内需要包含两个节点：第一个节点为保存节点，用于通过循环体的中间变量存储当前回答；第二个节点为结束节点，用于执行break操作以终止循环。",
+  "metadata": {
+    "original_question": "我现在加了一个if选择器",
+    "row": 34,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

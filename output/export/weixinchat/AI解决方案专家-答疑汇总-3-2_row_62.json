@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_62",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在coze平台上，如何为Python代码节点安装第三方库如python-pptx？",
+    "如果coze的代码运行环境不支持直接安装库，有哪些替代方案可以实现PPT生成功能？",
+    "在coze workflows中，如何调试Python代码节点以解决库依赖问题？",
+    "除了python-pptx，coze上是否有内置工具或插件可以生成PPT文件？",
+    "在coze agent中，如何通过其他方式（如调用外部API）绕过库安装限制来生成PPT？",
+    "deepseek给写了代码去实现，python-pptx的库可以用，但是我不太会弄，也没有测试环境，so...卡住了"
+  ],
+  "answer": "在coze平台上运行Python代码时，若需要安装第三方库（如python-pptx），需确保代码运行节点具备库安装权限。具体操作步骤为：在代码节点配置中，检查是否支持通过pip命令安装依赖，或使用coze提供的预装库列表。若环境不支持直接安装，建议采用以下替代方案：1. 使用coze内置的HTTP请求节点调用外部API（如PPT生成服务）来间接实现功能；2. 将代码逻辑迁移至支持自定义环境的平台（如本地或云服务器），并通过coze的Webhook或API接口进行集成；3. 利用coze workflows中的条件判断和循环节点，结合现有工具（如文档处理插件）分步实现PPT生成。调试时，可通过添加日志输出节点或使用coze的测试功能逐步排查依赖问题。",
+  "metadata": {
+    "original_question": "deepseek给写了代码去实现，python-pptx的库可以用，但是我不太会弄，也没有测试环境，so...卡住了",
+    "row": 62,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

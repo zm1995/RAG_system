@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_143",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在Coze平台中，DeepSeek-V3模型是如何实现function call功能的？",
+    "Coze对DeepSeek模型进行改造后，其function call能力在哪些场景下表现不稳定？",
+    "除了DeepSeek-V3，Coze平台是否对其他模型也进行了类似的function call功能增强？",
+    "在使用Coze的智能体时，如何确保DeepSeek模型的function call功能稳定运行？",
+    "Coze平台中，DeepSeek模型的function call能力与原生支持该功能的模型（如GPT-4）相比，有哪些差异？",
+    "想起来崔老师说deepseek-v3没有function call能力，那这个问题就解决了，不过奇怪的是崔老师讲RAG的课上实操时又是可以使用这个能力的，针对这种情况请问两位老师，有可能是什么导致的呢？@崔超 @朱国良"
+  ],
+  "answer": "DeepSeek模型本身不具备function call能力。Coze平台通过自身改造，为DeepSeek模型增加了这一功能，但该功能在稳定性方面存在明显不足。",
+  "metadata": {
+    "original_question": "想起来崔老师说deepseek-v3没有function call能力，那这个问题就解决了，不过奇怪的是崔老师讲RAG的课上实操时又是可以使用这个能力的，针对这种情况请问两位老师，有可能是什么导致的呢？@崔超 @朱国良",
+    "row": 143,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-1_row_57",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-1.xlsx",
+  "questions": [
+    "在Coze或智能体开发中，如何利用知识库处理图片内容？",
+    "对于X光骨折识别这类视觉任务，Workflows能否集成相关模型？",
+    "在Agent应用中，图片识别（如房间整洁度判断）是否属于RAG的范畴？",
+    "Coze平台是否支持通过Embedding处理频谱图等非文本数据？",
+    "智能体如何结合外部视觉模型实现路口拥堵识别？",
+    "现在涉及图片的，基本上没法搞？ 以下场景是没法embedding的？@崔超 老师\n比如：识别X光是否有骨折，查看频谱图中信号异常，识别一个房间是否整洁，识别一个路口是否堵车。"
+  ],
+  "answer": "这些场景属于视觉识别类模型的工作范畴，与RAG（检索增强生成）和Embedding（嵌入）技术无关。RAG和Embedding主要处理文本数据，而视觉识别需要专门的图像分析模型。在Coze、Agent或Workflows中，可以通过集成第三方视觉API或模型来实现此类功能，但不应将其与文本处理流程混淆。",
+  "metadata": {
+    "original_question": "现在涉及图片的，基本上没法搞？ 以下场景是没法embedding的？@崔超 老师\n比如：识别X光是否有骨折，查看频谱图中信号异常，识别一个房间是否整洁，识别一个路口是否堵车。",
+    "row": 57,
+    "sheet": "AI解决方案专家-答疑汇总-3-1"
+  }
+}

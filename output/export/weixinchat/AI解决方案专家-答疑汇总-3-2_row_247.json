@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-3-2_row_247",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-3-2.xlsx",
+  "questions": [
+    "在Transformer架构中，位置编码和Decoder模块是否必须与Embedding层结合使用才能构成完整模型？",
+    "为什么在RAG（检索增强生成）场景中，Embedding可以独立作为模型使用，而位置编码和Decoder通常不能？",
+    "位置编码在Transformer中的作用是什么？它能否像Embedding一样被单独训练或部署？",
+    "Decoder模块在Transformer中是否具有独立参数？它能否脱离Encoder或Embedding单独作为模型运行？",
+    "在Coze或智能体开发中，如何理解Embedding、位置编码和Decoder的模块化差异？",
+    "刚刚答疑的时候你回答了我的半个问题，我想再问问清楚，Embedding可以作为一个单独的模型，也可以是transformer里面的一步。那“位置编码”和“Decoder”（虽然也是有调参数），但不能单独作为一个模型的，对吗？"
+  ],
+  "answer": "在Transformer架构中，位置编码和Decoder通常不能单独作为模型使用，而Embedding可以，尤其是在私有知识库的RAG（检索增强生成）场景中。位置编码是Transformer中的一步，用于为输入序列添加位置信息，它依赖于Embedding层的输出，无法独立存在。Decoder虽然包含可调参数，但其设计依赖于Encoder的输出或Embedding的输入，通常需要与Encoder或Embedding结合才能完成序列生成任务。相比之下，Embedding层可以将文本转换为向量表示，在RAG中，单独的Embedding模型用于将知识库内容向量化，以便进行相似度检索，因此可以独立部署。",
+  "metadata": {
+    "original_question": "刚刚答疑的时候你回答了我的半个问题，我想再问问清楚，Embedding可以作为一个单独的模型，也可以是transformer里面的一步。那“位置编码”和“Decoder”（虽然也是有调参数），但不能单独作为一个模型的，对吗？",
+    "row": 247,
+    "sheet": "AI解决方案专家-答疑汇总-3-2"
+  }
+}

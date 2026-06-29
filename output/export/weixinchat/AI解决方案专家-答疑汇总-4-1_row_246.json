@@ -1,0 +1,19 @@
+{
+  "id": "weixinchat/AI解决方案专家-答疑汇总-4-1_row_246",
+  "source": "weixinchat",
+  "source_file": "D:\\helen\\workspace\\repositories\\RAG_System\\data\\raw\\ai_assistant\\weixinchat\\excel\\AI解决方案专家-答疑汇总-4-1.xlsx",
+  "questions": [
+    "在文件自动处理项目中，使用代码实现工作流时，如何判断是否利用了function calling能力？",
+    "工作流中的模型决策过程与function calling的核心区别是什么？",
+    "除了提供选项让模型选择，还有哪些方式可以触发function calling？",
+    "在Coze或Agent开发中，function calling通常用于哪些场景？",
+    "如何设计工作流以更好地利用function calling能力？",
+    "老师，请问文件自动处理项目中，如果整个工作流用代码去实现的话，那么工作流里的这部分算是用到了function calling的能力吗？"
+  ],
+  "answer": "function calling与工作流或代码实现方式无直接关联。该示例本身并不属于function calling的典型应用，因为每次模型决策时，仅提供了5个预设选项供模型选择，而非通过函数调用来动态执行外部操作。function calling的核心在于模型能够识别并调用预定义的函数，以完成特定任务或获取外部数据。",
+  "metadata": {
+    "original_question": "老师，请问文件自动处理项目中，如果整个工作流用代码去实现的话，那么工作流里的这部分算是用到了function calling的能力吗？",
+    "row": 246,
+    "sheet": "AI解决方案专家-答疑汇总-4-1"
+  }
+}
